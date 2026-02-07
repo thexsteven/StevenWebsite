@@ -3,10 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to My Website</title>
+    <meta name="description" content="Persönliche Website von Steven" />
+    <title>Steven | Home</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a simple HTML page.</p>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">Steven</a>
+        <ul class="nav-links">
+          <li><a href="pages/about.html">Über mich</a></li>
+          <li><a href="pages/skills.html">Skills</a></li>
+          <li><a href="pages/experiences.html">Erfahrungen</a></li>
+          <li><a href="pages/ttravel.html">Reisen</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Hero-Bereich">
+        <h1>Hi, ich bin Steven</h1>
+        <p>Angewandter Informatikstudent und Sportler.</p>
+        <a
+          href="pages/about.html"
+          class="btn"
+          aria-label="Mehr über Steven erfahren"
+          >Mehr erfahren</a
+        >
+      </section>
+
+      <!-- Fallback content for users without JavaScript -->
+      <noscript>
+        <p>
+          Bitte aktivieren Sie JavaScript, um diese Website vollständig zu
+          nutzen.
+        </p>
+      </noscript>
+    </main>
+
+    <!-- Optional: Add footer for better page structure -->
+    <footer role="contentinfo">
+      <p>&copy; 2026 Steven. Alle Rechte vorbehalten.</p>
+    </footer>
+    
+    <script src="js/main.js"></script>
   </body>
 </html>
