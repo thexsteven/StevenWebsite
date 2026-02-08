@@ -1,0 +1,284 @@
+/* =========================================
+	 Design-System (Basis)
+	 ========================================= */
+
+:root {
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-text: #0f172a;
+  --color-muted: #475569;
+  --color-border: #e2e8f0;
+  --color-primary: #0f2f5f; /* Emerson-ähnliches Dunkelblau */
+  --color-accent: #c8102e; /* DHBW-Rot */
+
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --shadow-sm: 0 6px 20px rgba(15, 23, 42, 0.08);
+
+  --max-width: 1100px;
+}
+
+/* =========================================
+	 Basis-Reset
+	 ========================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin: 0 0 var(--space-md);
+  color: var(--color-muted);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 var(--space-sm);
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+main {
+  display: block;
+}
+
+section {
+  padding: var(--space-3xl) var(--space-lg);
+}
+
+section > * {
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================================
+	 Navigation & Header (Basis)
+	 ========================================= */
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: var(--space-lg);
+  background: var(--color-accent);
+  color: #fff;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  z-index: 10;
+}
+
+.skip-link:focus {
+  top: var(--space-sm);
+}
+
+.site-header {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-nav {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-md) var(--space-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: 0.02em;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: var(--color-muted);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--color-primary);
+}
+
+/* =========================================
+	 Hero & Buttons (Basis)
+	 ========================================= */
+
+.hero {
+  display: grid;
+  gap: var(--space-2xl);
+  align-items: center;
+  background: var(--color-surface);
+}
+
+.hero-content {
+  max-width: 520px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  margin-bottom: var(--space-sm);
+}
+
+.lead {
+  font-size: 1.05rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.btn {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  border-radius: 999px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn:hover {
+  filter: brightness(1.05);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.hero-media {
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-placeholder {
+  width: min(420px, 100%);
+  height: 220px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, #e2e8f0, #cbd5f5);
+  display: grid;
+  place-items: center;
+  color: var(--color-muted);
+  font-weight: 600;
+}
+
+/* =========================================
+	 Vorschau-Kacheln (Basis)
+	 ========================================= */
+
+.preview {
+  background: var(--color-bg);
+}
+
+.section-intro {
+  max-width: 680px;
+}
+
+.preview-grid {
+  display: grid;
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+
+.preview-card {
+  background: var(--color-surface);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.preview-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+}
+
+/* =========================================
+	 Footer
+	 ========================================= */
+
+.site-footer {
+  text-align: center;
+  padding: var(--space-xl) var(--space-lg);
+  color: var(--color-muted);
+}
+
+/* =========================================
+	 Responsive Basics
+	 ========================================= */
+
+@media (min-width: 768px) {
+  .hero {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .preview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .preview-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
