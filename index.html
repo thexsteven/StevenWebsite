@@ -3,33 +3,131 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Persönliche Website von Steven" />
-    <title>Steven | Home</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta
+      name="description"
+      content="Persönliche Portfolio-Website von Steven"
+    />
+    <title>Steven | Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html" class="logo">Steven</a>
+    <a href="#main" class="skip-link">Zum Inhalt springen</a>
+
+    <header class="site-header" role="banner">
+      <nav class="site-nav" aria-label="Hauptnavigation">
+        <a href="#top" class="logo">Steven</a>
         <ul class="nav-links">
-          <li><a href="pages/about.html">Über mich</a></li>
-          <li><a href="pages/skills.html">Skills</a></li>
-          <li><a href="pages/experiences.html">Erfahrungen</a></li>
-          <li><a href="pages/ttravel.html">Reisen</a></li>
+          <li><a href="#about">Über mich</a></li>
+          <li><a href="#resume">Lebenslauf</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#career">Karriere</a></li>
+          <li><a href="#travel">Reisen</a></li>
+          <li><a href="#sport">Sport</a></li>
+          <li><a href="#projects">Projekte</a></li>
+          <li><a href="#contact">Kontakt</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <section class="hero" aria-label="Hero-Bereich">
-        <h1>Hi, ich bin Steven</h1>
-        <p>Angewandter Informatikstudent und Sportler.</p>
-        <a
-          href="pages/about.html"
-          class="btn"
-          aria-label="Mehr über Steven erfahren"
-          >Mehr erfahren</a
-        >
+    <main id="main">
+      <section id="top" class="hero" aria-label="Hero-Bereich">
+        <div class="hero-content">
+          <p class="eyebrow">Portfolio · Angewandte Informatik</p>
+          <h1>Hi, ich bin Steven.</h1>
+          <p class="lead">
+            Dualer Informatikstudent, sportbegeistert und auf Reisen zuhause.
+          </p>
+          <div class="hero-actions">
+            <a href="#travel" class="btn">Meine Reisen</a>
+            <a href="#about" class="btn btn-ghost">Mehr über mich</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <div class="hero-placeholder">Hero-Visual</div>
+        </div>
+      </section>
+
+      <section class="preview" aria-label="Vorschau der Inhalte">
+        <h2>Entdecke meine Welt</h2>
+        <p class="section-intro">
+          Ein schneller Überblick über die wichtigsten Bereiche meiner Website.
+        </p>
+        <div class="preview-grid">
+          <a class="preview-card" href="#travel">
+            <h3>Reisen</h3>
+            <p>Fahrradabenteuer, Natur und Dokumentationen.</p>
+          </a>
+          <a class="preview-card" href="#sport">
+            <h3>Sport</h3>
+            <p>Motivation, Disziplin und dynamische Inhalte.</p>
+          </a>
+          <a class="preview-card" href="#resume">
+            <h3>Lebenslauf</h3>
+            <p>Meine Stationen, klar und seriös.</p>
+          </a>
+          <a class="preview-card" href="#projects">
+            <h3>Projekte</h3>
+            <p>Aktuelle Ideen und bald mehr Details.</p>
+          </a>
+        </div>
+      </section>
+
+      <section id="about" class="about" aria-labelledby="about-title">
+        <h2 id="about-title">Über mich</h2>
+        <p>
+          Kurzprofil und persönliche Einblicke. (Platzhalter – wird mit Inhalt
+          gefüllt.)
+        </p>
+      </section>
+
+      <section id="resume" class="resume" aria-labelledby="resume-title">
+        <h2 id="resume-title">Lebenslauf</h2>
+        <p>
+          Interaktive Timeline im Stil eines klassischen Lebenslaufs.
+          (Platzhalter)
+        </p>
+      </section>
+
+      <section id="skills" class="skills" aria-labelledby="skills-title">
+        <h2 id="skills-title">Skills</h2>
+        <p>Technische und persönliche Fähigkeiten. (Platzhalter)</p>
+      </section>
+
+      <section id="career" class="career" aria-labelledby="career-title">
+        <h2 id="career-title">Karriere</h2>
+        <p>
+          Theorie- & Praxisphasen des dualen Studiums mit
+          Semesterzusammenfassungen. (Platzhalter)
+        </p>
+      </section>
+
+      <section id="travel" class="travel" aria-labelledby="travel-title">
+        <h2 id="travel-title">Reisen</h2>
+        <p>
+          Hauptbereich mit Video-Storys: Konstanz → Cannes über die Alpen,
+          Hawaii und mehr. (Platzhalter)
+        </p>
+      </section>
+
+      <section id="sport" class="sport" aria-labelledby="sport-title">
+        <h2 id="sport-title">Sport</h2>
+        <p>Motivationsvideos und dynamische Inhalte. (Platzhalter)</p>
+      </section>
+
+      <section id="projects" class="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projekte</h2>
+        <p>
+          Demnächst: DHBW-Projekt für Events & Standortinformationen.
+          (Platzhalter)
+        </p>
+      </section>
+
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Kontakt</h2>
+        <p>
+          E-Mail, LinkedIn, GitHub und Standort. (Platzhalter – folgt im
+          nächsten Schritt)
+        </p>
       </section>
 
       <!-- Fallback content for users without JavaScript -->
@@ -42,10 +140,10 @@
     </main>
 
     <!-- Optional: Add footer for better page structure -->
-    <footer role="contentinfo">
+    <footer class="site-footer" role="contentinfo">
       <p>&copy; 2026 Steven. Alle Rechte vorbehalten.</p>
     </footer>
-    
+
     <script src="js/main.js"></script>
   </body>
 </html>
