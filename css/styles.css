@@ -30,6 +30,7 @@
   --max-width: 1100px;
   --scroll-offset: 6rem;
   --text-max-width: 70ch;
+  --hero-image: url("../images/jungle_steven.jpeg");
 }
 
 /* =========================================
@@ -494,6 +495,50 @@ section > * {
   align-items: center;
   background: var(--color-surface);
   min-height: 60vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero--image {
+  background-image: var(--hero-image);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.hero--image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 0.75) 0%,
+    rgba(15, 23, 42, 0.4) 50%,
+    rgba(15, 23, 42, 0.7) 100%
+  );
+}
+
+.hero--image .hero-content,
+.hero--image .hero-media {
+  position: relative;
+  z-index: 1;
+}
+
+.hero--image .eyebrow,
+.hero--image .lead,
+.hero--image h1 {
+  color: #fff;
+}
+
+.hero--image .btn {
+  background: #fff;
+  color: var(--color-primary);
+}
+
+.hero--image .btn-ghost {
+  border-color: #fff;
+  color: #fff;
+  background: transparent;
 }
 
 .hero-content {
@@ -546,6 +591,35 @@ section > * {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hero-badge {
+  position: absolute;
+  top: var(--space-lg);
+  right: var(--space-lg);
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--color-primary);
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.18);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.hero-badge.is-hidden {
+  opacity: 0;
+  transform: translateY(-8px);
+  pointer-events: none;
+}
+
+.hero-badge.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .hero-placeholder {
