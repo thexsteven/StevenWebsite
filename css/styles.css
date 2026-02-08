@@ -92,6 +92,140 @@ section > * {
   margin-right: auto;
 }
 
+.section-head {
+  margin-bottom: var(--space-xl);
+}
+
+.section-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.7rem;
+  color: var(--color-accent);
+  margin-bottom: var(--space-sm);
+}
+
+.section-body {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.grid-2 {
+  grid-template-columns: 1fr;
+}
+
+.grid-3 {
+  grid-template-columns: 1fr;
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--color-muted);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-top: var(--space-sm);
+}
+
+.tag {
+  font-size: 0.75rem;
+  background: rgba(15, 47, 95, 0.08);
+  color: var(--color-primary);
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+}
+
+.text-link {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.text-link:hover {
+  color: var(--color-accent);
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.timeline-item {
+  padding: var(--space-lg);
+  border-left: 3px solid var(--color-primary);
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.timeline-meta {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-bottom: var(--space-xs);
+}
+
+.media-card {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.media-placeholder {
+  background: linear-gradient(135deg, #e2e8f0, #dbeafe);
+  border-radius: var(--radius-md);
+  min-height: 180px;
+  display: grid;
+  place-items: center;
+  color: var(--color-muted);
+  font-weight: 600;
+}
+
+.sport-strip {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: 1fr;
+}
+
+.sport-tile {
+  background: linear-gradient(135deg, #0f2f5f, #1f3b73);
+  color: #fff;
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+  min-height: 140px;
+  display: grid;
+  align-content: end;
+  font-weight: 600;
+}
+
+.contact-grid {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.contact-card {
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.contact-label {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 /* =========================================
 	 Navigation & Header (Basis)
 	 ========================================= */
@@ -296,6 +430,22 @@ section > * {
   }
 
   .preview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sport-strip {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
