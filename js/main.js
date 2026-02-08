@@ -86,4 +86,37 @@
     window.addEventListener("resize", setActiveLink);
     setActiveLink();
   }
+
+  // Skills: Auto-Loop-Scroller (kontinuierlich nach rechts)
+  const skillsSection = document.querySelector(".skills .section-body");
+  const skillsTrack = document.querySelector(".skills-track");
+  const reduceMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches;
+
+  if (skillsSection && skillsTrack && !reduceMotion) {
+    // 1) Karten duplizieren, damit ein nahtloser Loop entsteht
+    const originalCards = Array.from(skillsTrack.children);
+    originalCards.forEach((card) => {
+      const clone = card.cloneNode(true);
+      clone.setAttribute("aria-hidden", "true");
+      skillsTrack.appendChild(clone);
+    });
+
+    // 2) Konstantes, sanftes Scrollen über requestAnimationFrame
+    let scrollPosition = 0;
+    const speed = 0.4; // px pro Frame (klein = ruhiger)
+    const loopPoint = skillsTrack.scrollWidth / 2;
+
+    const step = () => {
+      scrollPosition += speed;
+      if (scrollPosition >= loopPoint) {
+        scrollPosition = 0;
+      }
+      skillsSection.scrollLeft = scrollPosition;
+      window.requestAnimationFrame(step);
+    };
+
+    window.requestAnimationFrame(step);
+  }
 })();

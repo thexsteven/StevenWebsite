@@ -141,6 +141,26 @@ section > * {
   box-shadow: var(--shadow-sm);
 }
 
+/* =========================================
+   Skills: Auto-Loop-Scroller
+   ========================================= */
+
+.skills .section-body {
+  display: block;
+  overflow: hidden;
+}
+
+.skills-track {
+  display: flex;
+  gap: var(--space-lg);
+  width: max-content;
+  align-items: stretch;
+}
+
+.skills .card {
+  flex: 0 0 260px;
+}
+
 .list {
   margin: 0;
   padding-left: 1.2rem;
