@@ -377,6 +377,9 @@ section > * {
 
 .preview {
   background: var(--color-bg);
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
 }
 
 .section-intro {
