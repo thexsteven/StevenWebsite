@@ -107,13 +107,25 @@
     let scrollPosition = 0;
     const speed = 0.4; // px pro Frame (klein = ruhiger)
     const loopPoint = skillsTrack.scrollWidth / 2;
+    let isPaused = false;
+
+    // Pause scrolling when hovering over skill cards
+    skillsTrack.addEventListener("mouseenter", () => {
+      isPaused = true;
+    });
+
+    skillsTrack.addEventListener("mouseleave", () => {
+      isPaused = false;
+    });
 
     const step = () => {
-      scrollPosition += speed;
-      if (scrollPosition >= loopPoint) {
-        scrollPosition = 0;
+      if (!isPaused) {
+        scrollPosition += speed;
+        if (scrollPosition >= loopPoint) {
+          scrollPosition = 0;
+        }
+        skillsSection.scrollLeft = scrollPosition;
       }
-      skillsSection.scrollLeft = scrollPosition;
       window.requestAnimationFrame(step);
     };
 
