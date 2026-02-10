@@ -592,6 +592,16 @@ section > * {
   display: block;
 }
 
+.image-tile {
+  padding: 0;
+  background: #000;
+}
+
+.image-tile img {
+  display: block;
+  min-height: 200px;
+}
+
 /* Video Tile Styles */
 .video-tile {
   background: var(--color-primary);
