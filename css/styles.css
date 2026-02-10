@@ -581,6 +581,95 @@ section > * {
   font-weight: 600;
 }
 
+/* Video Tile Styles */
+.video-tile {
+  background: var(--color-primary);
+  min-height: 400px;
+}
+
+.video-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-primary), #1a3a5c);
+  border-radius: var(--radius-md);
+}
+
+.video-placeholder-content {
+  text-align: center;
+  color: #fff;
+}
+
+.video-icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  line-height: 60px;
+  font-size: 24px;
+  margin-bottom: var(--space-md);
+}
+
+.video-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: var(--space-xs);
+}
+
+.video-sublabel {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+/* YouTube Embed Container */
+.video-embed-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+}
+
+.video-embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Portrait Video (9:16) */
+.video-embed-container.video-portrait {
+  padding-bottom: 177.78%; /* 9:16 Aspect Ratio */
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Story Video Container */
+.story-video {
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.story-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #000;
+}
+
 .story-pagination {
   display: flex;
   flex-wrap: wrap;

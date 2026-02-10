@@ -1,4 +1,48 @@
 (() => {
+  /* =========================================
+	 Story Video Loader
+	 Lädt Videos automatisch wenn data-video gesetzt ist
+	 ========================================= */
+  const setupStoryVideos = () => {
+    const videoContainers = document.querySelectorAll(".story-video");
+
+    videoContainers.forEach((container) => {
+      const videoSrc = container.dataset.video;
+      const video = container.querySelector("video");
+      const placeholder = container.querySelector(".story-video-placeholder");
+
+      if (videoSrc && video && placeholder) {
+        // Video-Quelle setzen
+        video.querySelector("source").src = videoSrc;
+        video.load();
+
+        // Video-Event-Listener
+        video.addEventListener("loadeddata", () => {
+          // Video geladen - Placeholder ausblenden
+          placeholder.style.display = "none";
+          video.style.display = "block";
+        });
+
+        video.addEventListener("error", () => {
+          // Video konnte nicht geladen werden
+          console.log("Video konnte nicht geladen werden:", videoSrc);
+          // Placeholder bleibt sichtbar
+        });
+
+        // Auch prüfen ob Video nicht gefunden wurde
+        video.addEventListener("emptied", () => {
+          if (video.error) {
+            placeholder.style.display = "flex";
+            placeholder.querySelector(".video-sublabel").textContent =
+              "Video nicht gefunden: " + videoSrc;
+          }
+        });
+      }
+    });
+  };
+
+  setupStoryVideos();
+
   const badge = document.querySelector(".hero-badge");
   if (badge) {
     const secret = ["h", "i"]; // Tastenkombi: H + I
