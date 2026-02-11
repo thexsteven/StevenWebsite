@@ -566,6 +566,7 @@ section > * {
 
 .story-media-grid {
   display: grid;
+  overflow: hidden;
   gap: var(--space-md);
   margin: 0 auto var(--space-2xl);
   max-width: var(--max-width);
@@ -582,14 +583,11 @@ section > * {
   overflow: hidden;
 }
 
-.map-tile {
-  min-height: 300px;
-  padding: 0;
-  background: #fff;
-}
+header * {z-index: 20;}
 
-.map-tile iframe {
-  display: block;
+#map-tile-leaflet {
+    overflow: hidden;
+    z-index: 0;
 }
 
 .image-tile {
