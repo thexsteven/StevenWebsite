@@ -9,8 +9,17 @@
     />
     <title>Cannes · Motivation | Steven</title>
     <link rel="stylesheet" href="../../../css/styles.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
   </head>
   <body>
     <a href="#main" class="skip-link">Skip to content</a>
@@ -37,37 +46,38 @@
           <h1 id="story-title">Motivation</h1>
           <p class="story-meta">June 2025 · ~900 km · 3 Countries</p>
           <p class="story-summary">
-            No job. A cheap tent. A bike I had never ridden long-distance. That was
-            all I needed. Sometimes the best ideas are the ones you don't overthink.
+            No job. A cheap tent. A bike I had never ridden long-distance. That
+            was all I needed. Sometimes the best ideas are the ones you don't
+            overthink.
           </p>
         </header>
 
         <div class="story-content">
           <p>
             After finishing my Technician degree in February 2025 and before my
-            Computer Science studies at DHBW Mosbach were set to begin in September,
-            I had a rare window of freedom — time without obligation, without a
-            schedule, without a plan. Most people would have used it to rest.
+            Computer Science studies at DHBW Mosbach were set to begin in
+            September, I had a rare window of freedom — time without obligation,
+            without a schedule, without a plan. Most people would have used it
+            to rest.
+          </p>
+          <p>I decided to cycle from Konstanz to Cannes.</p>
+          <p>
+            There was no grand backstory. No years of preparation. I had done
+            the Hawaii language trip just before this, come back to Germany, and
+            found myself with energy to burn and no reason to sit still. A
+            friend was in Cannes. The weather was getting warm. I looked at a
+            map, saw the route, and thought: <em>why not?</em>
           </p>
           <p>
-            I decided to cycle from Konstanz to Cannes.
+            I bought a second-hand touring bike, packed a lightweight tent,
+            grabbed some basic camping gear, and booked a one-way train ticket
+            to Konstanz — the southernmost point of Germany on Lake Constance.
+            The plan: ride south. Cross the Alps. Get to France. Figure out the
+            rest on the road.
           </p>
           <p>
-            There was no grand backstory. No years of preparation. I had done the
-            Hawaii language trip just before this, come back to Germany, and found
-            myself with energy to burn and no reason to sit still. A friend was in
-            Cannes. The weather was getting warm. I looked at a map, saw the route,
-            and thought: <em>why not?</em>
-          </p>
-          <p>
-            I bought a second-hand touring bike, packed a lightweight tent, grabbed
-            some basic camping gear, and booked a one-way train ticket to Konstanz —
-            the southernmost point of Germany on Lake Constance. The plan: ride
-            south. Cross the Alps. Get to France. Figure out the rest on the road.
-          </p>
-          <p>
-            No cycling experience. No GPS device. No support vehicle. Just the bike,
-            the road, and whatever came next.
+            No cycling experience. No GPS device. No support vehicle. Just the
+            bike, the road, and whatever came next.
           </p>
 
           <ul class="story-highlights">
@@ -77,7 +87,9 @@
             </li>
             <li class="story-highlight">
               <span class="highlight-label">Countries</span>
-              <span class="highlight-value">Germany · Switzerland · Italy · France</span>
+              <span class="highlight-value"
+                >Germany · Switzerland · Italy · France</span
+              >
             </li>
             <li class="story-highlight">
               <span class="highlight-label">Alpine Crossings</span>
@@ -99,25 +111,49 @@
         </div>
 
         <!-- Interactive Route Map -->
-        <div class="story-media-grid" aria-label="Route overview" style="grid-template-columns: 1fr;">
-          <div class="media-tile" style="min-height: 420px; padding: 0; overflow: hidden;" id="map-cannes-overview"></div>
+        <div
+          class="story-media-grid"
+          aria-label="Route overview"
+          style="grid-template-columns: 1fr"
+        >
+          <div
+            class="media-tile"
+            style="min-height: 420px; padding: 0; overflow: hidden"
+            id="map-cannes-overview"
+          ></div>
         </div>
         <script src="leaflet_cannes.js"></script>
 
         <div class="story-media-grid" aria-label="Media gallery">
-          <div class="media-tile">
-            <div style="text-align: center; padding: 2rem; color: var(--color-muted);">
-              <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🚲</div>
-              <strong>The Bike</strong>
-              <p style="margin: 0.5rem 0 0; font-size: 0.9rem;">Photo coming soon</p>
-            </div>
+          <div
+            class="media-tile"
+            style="min-height: 300px; padding: 0; overflow: hidden"
+          >
+            <img
+              src="images/Fahrrad Abschluss.jpg"
+              alt="The Bike"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+              "
+            />
           </div>
-          <div class="media-tile">
-            <div style="text-align: center; padding: 2rem; color: var(--color-muted);">
-              <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🎒</div>
-              <strong>The Gear</strong>
-              <p style="margin: 0.5rem 0 0; font-size: 0.9rem;">Photo coming soon</p>
-            </div>
+          <div
+            class="media-tile"
+            style="min-height: 300px; padding: 0; overflow: hidden"
+          >
+            <img
+              src="images/1 Tour Start.JPG"
+              alt="The Gear"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+              "
+            />
           </div>
         </div>
 
