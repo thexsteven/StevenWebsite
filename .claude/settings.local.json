@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l \"C:/Users/resolve_test/Downloads/Reise & Medien/2025 – Konstanz nach Cannes/Routen \\(GPX & KML\\)/full route_800.kml\")",
+      "Bash(cat \"C:/Users/resolve_test/Downloads/Reise & Medien/2025 – Konstanz nach Cannes/Routen \\(GPX & KML\\)/full route_800.kml\")",
+      "Bash(/c/Python314/python --version)",
+      "Bash(/c/Python314/python -:*)",
+      "Bash(git add pages/travel/cannes/motivation.html)",
+      "Bash(git commit:*)",
+      "Bash(git push -u origin claude/lucid-almeida)",
+      "Bash(gh pr:*)",
+      "Bash(git add pages/travel/cannes/)",
+      "Bash(git push)",
+      "Bash(git add pages/travel/cannes/abschnitt-italien.html pages/travel/cannes/zweite-alpenueberquerung.html)",
+      "Bash(git add pages/travel/cannes/ankunft-suedfrankreich.html)"
+    ]
+  }
+}
