@@ -1,0 +1,6 @@
+# Claude AI working files
+.claude/
+
+# OS-Dateien
+.DS_Store
+Thumbs.db
