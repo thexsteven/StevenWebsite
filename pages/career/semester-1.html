@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Semester-Zusammenfassung: Theoriephase, Inhalte und Learnings."
+      content="Mein erstes Theorie-Semester an der DHBW Mosbach – Inhalte, Beispiele und persönliche Rückblicke aus allen 7 Modulen."
     />
-    <title>Semester-Zusammenfassung | Steven</title>
+    <title>Theorie-Semester 1 | Steven</title>
     <link rel="stylesheet" href="../../css/styles.css" />
   </head>
   <body>
@@ -31,38 +31,507 @@
         </div>
 
         <header class="story-detail-header">
-          <p class="section-kicker">Theoriephase</p>
-          <h1 id="summary-title">Semester‑Zusammenfassung</h1>
-          <p class="story-meta">Semester 1</p>
+          <p class="section-kicker">Theoriephase · DHBW Mosbach</p>
+          <h1 id="summary-title">Theorie-Semester 1</h1>
+          <p class="story-meta">Oktober 2025 – März 2026 · Informatik</p>
           <p class="story-summary">
-            Überblick über Inhalte, Projekte und zentrale Learnings.
+            Sieben Module, hunderte Lerneinheiten und ein Dungeon-Spiel später –
+            hier teile ich, was ich gelernt habe, was mich überrascht hat und
+            welche Konzepte wirklich hängen geblieben sind.
           </p>
         </header>
 
-        <div class="story-content">
-          <p>
-            Beschrebeschreibe ich die wichtigsten Module, Konzepte und
-            Erkenntnisse aus dem Semester.
-          </p>
-          <p>
-            Reflexionen: Was fiel leicht, was war schwierig, was nehme ich mit?
-          </p>
-        </div>
+        <!-- Modul-Navigation -->
+        <nav aria-label="Module im Überblick">
+          <div class="module-nav-grid">
+            <a href="#modul-mathe" class="module-nav-card">
+              <span class="module-nav-icon" aria-hidden="true">∑</span>
+              <span>Mathe 1</span>
+              <span class="module-nav-label">Lineare Algebra</span>
+            </a>
+            <a href="#modul-webeng" class="module-nav-card">
+              <span class="module-nav-icon" aria-hidden="true">🌐</span>
+              <span>Web Engineering 1</span>
+              <span class="module-nav-label">HTTP · JS · Backend</span>
+            </a>
+            <a href="#modul-elektro" class="module-nav-card">
+              <span class="module-nav-icon" aria-hidden="true">⚡</span>
+              <span>Elektrotechnik</span>
+              <span class="module-nav-label">Schaltungen · Transistor</span>
+            </a>
+            <a href="#modul-thinf" class="module-nav-card">
+              <span class="module-nav-icon" aria-hidden="true">🧩</span>
+              <span>Theoret. Informatik</span>
+              <span class="module-nav-label">Logik · Prolog · O-Notation</span>
+            </a>
+            <a href="#modul-schluessel" class="module-nav-card">
+              <span class="module-nav-icon" aria-hidden="true">🎓</span>
+              <span>Schlüsselquali.</span>
+              <span class="module-nav-label">BWL · Wiss. Arbeiten · Englisch</span>
+            </a>
+            <a href="#modul-prog" class="module-nav-card">
+              <span class="module-nav-icon" aria-hidden="true">💻</span>
+              <span>Programmieren 1</span>
+              <span class="module-nav-label">Python · OOP · Projekt</span>
+            </a>
+            <a href="#modul-projekt" class="module-nav-card">
+              <span class="module-nav-icon" aria-hidden="true">🚀</span>
+              <span>Anwendungspr.</span>
+              <span class="module-nav-label">MQTT · Dashboard</span>
+            </a>
+          </div>
+        </nav>
 
-        <div class="story-media-grid" aria-label="Zusammenfassung">
-          <div class="media-tile">Platzhalter: Modul-Übersicht</div>
-          <div class="media-tile">Platzhalter: Projekt/Abgabe</div>
-          <div class="media-tile">Platzhalter: Lern-Notizen</div>
+        <!-- ===================== MODUL 1: MATHE ===================== -->
+        <article
+          class="module-section"
+          id="modul-mathe"
+          data-color="blue"
+          aria-labelledby="modul-mathe-title"
+        >
+          <header class="module-section-header">
+            <span class="module-icon" aria-hidden="true">∑</span>
+            <span class="module-badge">Modul 1</span>
+            <h2 id="modul-mathe-title">Mathematik 1 – Lineare Algebra</h2>
+          </header>
+
+          <div class="module-body">
+            <div class="module-topics">
+              <h3>Kerninhalte</h3>
+              <ul>
+                <li>Mengenlehre &amp; Grundlagen der Logik</li>
+                <li>Vektoren, Linearkombinationen, Vektorräume</li>
+                <li>Lineare Gleichungssysteme (LGS): Einsetzungs-, Additions- und Gauß-Verfahren</li>
+                <li>Matrizen: Multiplikation, Inverse, Determinante</li>
+                <li>Rang, Eigenvektoren &amp; Basiswechsel</li>
+                <li>Euklidischer Algorithmus &amp; modulare Arithmetik</li>
+                <li>Einblick in asymmetrische Kryptographie (RSA)</li>
+              </ul>
+            </div>
+
+            <div class="module-highlight">
+              <h3>Beispiel – Gauß-Verfahren</h3>
+              <p style="font-size:0.9rem; margin-bottom: 0.75rem;">
+                Ein LGS mit 3 Unbekannten lässt sich als erweiterte Koeffizientenmatrix darstellen
+                und durch Zeilenoperationen in Zeilenstufenform bringen:
+              </p>
+              <pre><code>A|b =
+| 2  1  -1 |  8 |
+|-3 -1   2 | -11|
+|-2  1   2 | -3 |
+
+→ Zeilenstufenform → Rückwärtseinsetzen
+→ Eindeutige Lösung: x=(2, 3, -1)</code></pre>
+              <p style="font-size:0.82rem; color:var(--color-muted); margin-top:0.6rem;">
+                Lösungsfall ergibt sich aus dem Rang: rang(A) = rang(A|b) = n → eindeutig.
+              </p>
+            </div>
+          </div>
+
+          <div class="module-retro">
+            <strong>Rückblick:</strong> Lineare Algebra wirkt zunächst abstrakt – bis man merkt,
+            dass Eigenvektoren und Matrizen die Grundlage von Machine-Learning-Modellen sind.
+            Transformermodelle machen nichts anderes als riesige Matrixmultiplikationen.
+            Das hab ich erst im Nachhinein wirklich verstanden.
+          </div>
+        </article>
+
+        <!-- ===================== MODUL 2: WEB ENGINEERING ===================== -->
+        <article
+          class="module-section"
+          id="modul-webeng"
+          data-color="teal"
+          aria-labelledby="modul-webeng-title"
+        >
+          <header class="module-section-header">
+            <span class="module-icon" aria-hidden="true">🌐</span>
+            <span class="module-badge">Modul 2</span>
+            <h2 id="modul-webeng-title">Web Engineering 1</h2>
+          </header>
+
+          <div class="module-body">
+            <div class="module-topics">
+              <h3>Kerninhalte</h3>
+              <ul>
+                <li>HTTP/HTTPS: Request-Response-Modell, Status-Codes, Header</li>
+                <li>DNS, TCP/IP, TLS/SSL – wie Daten durchs Netz reisen</li>
+                <li>URL, URI, URN – Aufbau und Unterschiede</li>
+                <li>HTML &amp; CSS – Semantik, Box-Modell, Selektoren, Layouts</li>
+                <li>JavaScript – DOM, Events, Funktionen, Scope</li>
+                <li>Asynchrones JS – Promises, async/await, Fetch API</li>
+                <li>Backend-Grundlagen – statisch vs. dynamisch, Node.js</li>
+                <li>Datenbanken für Webprojekte – JSON, SQL-Grundkonzepte</li>
+              </ul>
+            </div>
+
+            <div class="module-highlight">
+              <h3>Der Weg einer URL – 6 Schritte</h3>
+              <div class="module-flow">
+                <span class="module-flow-step">1 URL eingeben</span>
+                <span class="module-flow-arrow">→</span>
+                <span class="module-flow-step">2 DNS-Auflösung</span>
+                <span class="module-flow-arrow">→</span>
+                <span class="module-flow-step">3 TCP + TLS</span>
+                <span class="module-flow-arrow">→</span>
+                <span class="module-flow-step">4 HTTP-Request</span>
+                <span class="module-flow-arrow">→</span>
+                <span class="module-flow-step">5 Server-Response</span>
+                <span class="module-flow-arrow">→</span>
+                <span class="module-flow-step">6 DOM-Rendering</span>
+              </div>
+              <p style="font-size:0.82rem; color:var(--color-muted); margin-top:0.75rem;">
+                Jede Interaktion auf einer Seite kann diesen Zyklus erneut starten –
+                bei AJAX asynchron im Hintergrund.
+              </p>
+            </div>
+          </div>
+
+          <div class="module-retro">
+            <strong>Rückblick:</strong> Ich dachte, Web Engineering bedeutet HTML schreiben.
+            Tatsächlich steckt dahinter ein komplexes Zusammenspiel aus Netzwerkprotokollen,
+            Browser-Rendering und Server-Logik. Den vollständigen Weg vom Tastendruck bis zum
+            gerenderten Pixel zu kennen, hat mein Verständnis grundlegend verändert – besonders
+            für meine eigene Webseite hier.
+          </div>
+        </article>
+
+        <!-- ===================== MODUL 3: ELEKTROTECHNIK ===================== -->
+        <article
+          class="module-section"
+          id="modul-elektro"
+          data-color="orange"
+          aria-labelledby="modul-elektro-title"
+        >
+          <header class="module-section-header">
+            <span class="module-icon" aria-hidden="true">⚡</span>
+            <span class="module-badge">Modul 3</span>
+            <h2 id="modul-elektro-title">Elektrotechnik</h2>
+          </header>
+
+          <div class="module-body">
+            <div class="module-topics">
+              <h3>Kerninhalte</h3>
+              <ul>
+                <li>Grundgrößen: Spannung (U), Strom (I), Widerstand (R) – Ohm'sches Gesetz</li>
+                <li>Kirchhoff'sche Gesetze (Maschen- &amp; Knotenregel)</li>
+                <li>Reihen- und Parallelschaltungen, gemischte Netzwerke</li>
+                <li>Bauteile: Kondensator, Diode, Transistor (BJT &amp; FET)</li>
+                <li>Transistor als digitaler Schalter (npn, Arduino → Last)</li>
+                <li>Analog/Digital-Wandlung (ADC)</li>
+                <li>Gleichrichtung &amp; Glättung – Aufbau eines Netzteils</li>
+                <li>Elektromagnetisches Feld &amp; Magnetismus</li>
+              </ul>
+            </div>
+
+            <div class="module-highlight">
+              <h3>Beispiel – Handy laden</h3>
+              <div class="module-flow" style="flex-direction: column; align-items: flex-start; gap: 0.5rem;">
+                <div style="display:flex; align-items:center; gap:0.4rem; flex-wrap:wrap;">
+                  <span class="module-flow-step">Steckdose (230V AC)</span>
+                  <span class="module-flow-arrow">→</span>
+                  <span class="module-flow-step">Gleichrichtung</span>
+                  <span class="module-flow-arrow">→</span>
+                  <span class="module-flow-step">Glättung</span>
+                </div>
+                <div style="display:flex; align-items:center; gap:0.4rem; flex-wrap:wrap;">
+                  <span class="module-flow-arrow" style="padding-left:0.2rem;">→</span>
+                  <span class="module-flow-step">Geregelte DC (5V)</span>
+                  <span class="module-flow-arrow">→</span>
+                  <span class="module-flow-step">Akku lädt</span>
+                </div>
+              </div>
+              <p style="font-size:0.82rem; color:var(--color-muted); margin-top:0.75rem;">
+                Hinter dem Ladevorgang steckt ein vollständiger elektrotechnischer Kreislauf –
+                von Wechselstrom zu geglättetem Gleichstrom.
+              </p>
+            </div>
+          </div>
+
+          <div class="module-retro">
+            <strong>Rückblick:</strong> Elektrotechnik war das Modul, das ich am wenigsten
+            erwartet hatte. Aber genau hier hat sich für mich der Zusammenhang zwischen
+            Physik und Informatik erschlossen: Ein Transistor ist nichts anderes als ein
+            steuerbarer Schalter – und aus Millionen solcher Schalter entsteht jeder Prozessor.
+          </div>
+        </article>
+
+        <!-- ===================== MODUL 4: THEORETISCHE INFORMATIK ===================== -->
+        <article
+          class="module-section"
+          id="modul-thinf"
+          data-color="purple"
+          aria-labelledby="modul-thinf-title"
+        >
+          <header class="module-section-header">
+            <span class="module-icon" aria-hidden="true">🧩</span>
+            <span class="module-badge">Modul 4</span>
+            <h2 id="modul-thinf-title">Theoretische Informatik</h2>
+          </header>
+
+          <div class="module-body">
+            <div class="module-topics">
+              <h3>Kerninhalte</h3>
+              <ul>
+                <li>Aussagen- &amp; Prädikatenlogik, Mengenlehre</li>
+                <li>Algorithmen &amp; Komplexitätsklassen (O-Notation: O(1) bis O(n!))</li>
+                <li>Euklidischer &amp; Erweiterter Euklidischer Algorithmus</li>
+                <li>Modulare Arithmetik &amp; RSA-Verschlüsselungsprinzip</li>
+                <li>Prolog – Fakten, Regeln, Anfragen (deklaratives Paradigma)</li>
+                <li>Negation als Fehlschlag (<code>\+</code>) &amp; Nicht-Unifizierbarkeit (<code>\=</code>)</li>
+                <li>Closed World Assumption (CWA)</li>
+                <li>Relationen: Reflexivität, Symmetrie, Transitivität</li>
+              </ul>
+            </div>
+
+            <div class="module-highlight">
+              <h3>Beispiel – Prolog &amp; CWA</h3>
+              <pre><code>student(alex). student(sam).
+immatrikuliert(alex).
+
+nicht_immatrikuliert(X) :-
+    student(X),
+    \+ immatrikuliert(X).
+
+?- nicht_immatrikuliert(sam).
+% → true  (sam ist nicht beweisbar immatrikuliert)</code></pre>
+              <p style="font-size:0.82rem; color:var(--color-muted); margin-top:0.6rem;">
+                Die Closed World Assumption: Was nicht in der Wissensbasis steht, gilt als falsch.
+              </p>
+            </div>
+          </div>
+
+          <div class="module-retro">
+            <strong>Rückblick:</strong> Prolog war ein Paradigmenwechsel. In imperativen
+            Sprachen beschreibt man <em>wie</em> etwas berechnet wird – in Prolog beschreibt
+            man <em>was</em> wahr ist, und die Engine sucht selbst nach Lösungen.
+            Dieses deklarative Denken hat meinen Blick auf Programmierung dauerhaft verändert.
+          </div>
+        </article>
+
+        <!-- ===================== MODUL 5: SCHLÜSSELQUALIFIKATIONEN ===================== -->
+        <article
+          class="module-section"
+          id="modul-schluessel"
+          data-color="green"
+          aria-labelledby="modul-schluessel-title"
+        >
+          <header class="module-section-header">
+            <span class="module-icon" aria-hidden="true">🎓</span>
+            <span class="module-badge">Modul 5</span>
+            <h2 id="modul-schluessel-title">Schlüsselqualifikationen</h2>
+          </header>
+
+          <!-- BWL -->
+          <div class="module-body">
+            <div class="module-topics">
+              <h3>BWL – Betriebswirtschaftslehre</h3>
+              <ul>
+                <li>Bedürfnisse, Güter &amp; Knappheit als Grundlage des Wirtschaftens</li>
+                <li>Ökonomisches Prinzip: Maximum-, Minimum- &amp; Extremumprinzip</li>
+                <li>Güterarten: Input/Output, Konsum/Produktion, materiell/immateriell</li>
+                <li>BWL vs. VWL – Mikro- und Makroperspektive</li>
+                <li>Ceteris-paribus-Bedingung bei wirtschaftlichen Modellen</li>
+                <li>Drei Grundfragen der Marktwirtschaft: Was? Wie? Für wen?</li>
+              </ul>
+            </div>
+
+            <div class="module-highlight">
+              <h3>Das Ökonomische Prinzip</h3>
+              <ul style="font-size:0.9rem; padding-left:1rem;">
+                <li style="margin-bottom:0.5rem;">
+                  <strong>Maximumprinzip:</strong> Gegebener Aufwand →
+                  möglichst hoher Ertrag
+                </li>
+                <li style="margin-bottom:0.5rem;">
+                  <strong>Minimumprinzip:</strong> Vorgegebenes Ziel →
+                  möglichst geringer Aufwand
+                </li>
+                <li>
+                  <strong>Extremumprinzip:</strong> Bestes Verhältnis von
+                  Aufwand zu Ertrag finden
+                </li>
+              </ul>
+              <p style="font-size:0.82rem; color:var(--color-muted); margin-top:0.75rem;">
+                Typ 3 (Extremum) trifft auf die meisten realen Entscheidungen zu –
+                gutes Ergebnis und Freizeit gleichzeitig.
+              </p>
+            </div>
+          </div>
+
+          <!-- Wissenschaftliches Arbeiten -->
+          <div class="module-sub">
+            <h3>Technisch-Wissenschaftliches Arbeiten</h3>
+            <ul class="module-topics" style="padding-left:1.2rem;">
+              <li>Wissenschaftliche Methodik: Recherchieren, Strukturieren, Belegen</li>
+              <li>Korrekte Quellenangaben &amp; Zitiernormen (APA, IEEE)</li>
+              <li>Aufbau technischer Dokumentationen &amp; Berichte</li>
+              <li>Kritisches Lesen und Einordnen von Fachliteratur</li>
+            </ul>
+          </div>
+
+          <!-- Fremdsprachen -->
+          <div class="module-sub">
+            <h3>Fremdsprachen 1 – Academic English</h3>
+            <p style="font-size:0.95rem;">
+              C1-Intensivkurs in Honolulu, Hawaii (März–April 2025) – vier Wochen
+              vollständig auf Englisch: Vorlesungen, Präsentationen, Gruppenarbeit.
+              Schwerpunkte: Academic Writing, Listening Comprehension, Sprechkompetenz.
+              <a href="../travel/hawaii/erster-schultag.html" style="color:var(--color-accent); font-weight:600;">
+                Zum Erlebnisbericht →
+              </a>
+            </p>
+          </div>
+
+          <div class="module-retro">
+            <strong>Rückblick BWL:</strong> Das Extremumprinzip hab ich sofort auf mein
+            Studium angewendet: Welche Module bringen mir den größten Mehrwert pro
+            investierter Lernstunde? Diese Frage hat meine Priorisierung verändert.
+          </div>
+        </article>
+
+        <!-- ===================== MODUL 6: PROGRAMMIEREN ===================== -->
+        <article
+          class="module-section"
+          id="modul-prog"
+          data-color="indigo"
+          aria-labelledby="modul-prog-title"
+        >
+          <header class="module-section-header">
+            <span class="module-icon" aria-hidden="true">💻</span>
+            <span class="module-badge">Modul 6</span>
+            <h2 id="modul-prog-title">Programmieren 1 – Python</h2>
+          </header>
+
+          <div class="module-body">
+            <div class="module-topics">
+              <h3>Kerninhalte</h3>
+              <ul>
+                <li>Python Basics: Variablen, Datentypen, Numbers, Strings</li>
+                <li>Collections: Listen, Tupel, Dictionaries, Sets</li>
+                <li>Kontrollstrukturen, Funktionen, Scope</li>
+                <li>Objektorientierte Programmierung: Klassen, Objekte, <code>self</code>, <code>__init__</code></li>
+                <li>Kapselung, Vererbung, Polymorphismus</li>
+                <li>Rekursion – lineare &amp; endrekursive Formen</li>
+                <li>Unit-Testing mit <code>unittest</code> &amp; Mock-Objekten</li>
+              </ul>
+            </div>
+
+            <div class="module-highlight">
+              <h3>OOP-Beispiel – Kontoverwaltung</h3>
+              <pre><code>class Konto:
+    def __init__(self, inhaber: str,
+                 start: float = 0.0):
+        self.inhaber = inhaber
+        self.guthaben = start
+
+    def einzahlen(self, betrag: float):
+        self.guthaben += betrag
+
+    def abheben(self, betrag: float):
+        if betrag <= self.guthaben:
+            self.guthaben -= betrag
+
+konto = Konto("Alex", 100.0)
+konto.einzahlen(50)
+konto.abheben(30)
+# konto.guthaben → 120.0</code></pre>
+            </div>
+          </div>
+
+          <!-- Dungeon-Projekt -->
+          <div class="module-sub">
+            <h3>Projekt – Dungeon-Spiel</h3>
+            <p style="font-size:0.95rem; margin-bottom:0.75rem;">
+              Textbasiertes Spiel mit vollständiger OOP-Architektur:
+              <strong>5 Klassen</strong> (<code>Game</code>, <code>RoomManager</code>,
+              <code>Room</code>, <code>Player</code>, <code>Monster</code>),
+              Unit-Tests für <code>Player</code> &amp; <code>RoomManager</code>
+              sowie systematisches Debugging von 8 gefundenen Bugs.
+            </p>
+            <p style="font-size:0.9rem; color:var(--color-muted);">
+              Größte Herausforderung: die Abhängigkeiten zwischen Klassen sauber aufeinander
+              abstimmen – wer ist für was zuständig, und wann ruft wer wen auf?
+            </p>
+          </div>
+
+          <div class="module-retro">
+            <strong>Rückblick:</strong> Das Dungeon-Projekt war mein erster echter OOP-Code.
+            Bugs wie fehlende Attribute (<code>AttributeError</code>), negative Health-Werte
+            oder eine nie endende Spielschleife haben mir mehr beigebracht als jede Übungsaufgabe –
+            weil ich wirklich verstehen musste, was in welcher Klasse lebt.
+          </div>
+        </article>
+
+        <!-- ===================== MODUL 7: ANWENDUNGSPROJEKT ===================== -->
+        <article
+          class="module-section"
+          id="modul-projekt"
+          data-color="red"
+          aria-labelledby="modul-projekt-title"
+        >
+          <header class="module-section-header">
+            <span class="module-icon" aria-hidden="true">🚀</span>
+            <span class="module-badge">Modul 7</span>
+            <h2 id="modul-projekt-title">Anwendungsprojekt Informatik</h2>
+          </header>
+
+          <div class="module-body">
+            <div class="module-topics">
+              <h3>Projektziel</h3>
+              <ul>
+                <li>Web-basiertes Dashboard zur Erfassung von MQTT-Daten</li>
+                <li>IoT-Datenstrom in Echtzeit empfangen und aufbereitet visualisieren</li>
+                <li>Teamarbeit: Anforderungsanalyse, Konzeption, Umsetzung</li>
+                <li>Dokumentation und Präsentation der Ergebnisse</li>
+              </ul>
+            </div>
+
+            <div class="module-highlight" style="display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; min-height:120px;">
+              <p style="font-size:1.1rem; margin:0 0 0.5rem; font-weight:600;">In Kürze mehr</p>
+              <p style="font-size:0.9rem; color:var(--color-muted); margin:0;">
+                Detaillierte Einblicke in das Projekt folgen – Architektur, Tech-Stack
+                und Learnings werden hier ergänzt.
+              </p>
+            </div>
+          </div>
+
+          <div class="module-retro">
+            <strong>Rückblick:</strong> Das Projekt hat gezeigt, dass Softwareentwicklung
+            im Team weit mehr als Codeschreiben ist – Kommunikation, klare Aufgabenteilung
+            und Dokumentation sind genauso wichtig wie die technische Umsetzung.
+          </div>
+        </article>
+
+        <!-- ===================== GESAMTFAZIT ===================== -->
+        <div class="semester-retro" role="region" aria-label="Gesamtfazit">
+          <h2>Fazit – Was bleibt?</h2>
+          <p>
+            Das erste Theorie-Semester war intensiv: sieben Module gleichzeitig, von
+            Mengenlehre bis Elektrotechnik bis hin zu meinem ersten Python-Projekt.
+            Was mich am meisten überrascht hat: Wie eng alles zusammenhängt.
+            Der Transistor erklärt das logische Gatter, das logische Gatter erklärt
+            den Prozessor, der Prozessor führt meinen Python-Code aus.
+          </p>
+          <p>
+            Prolog hat mein Denken am stärksten beeinflusst – deklaratives Programmieren
+            war ein echter Perspektivwechsel. Und das Gauß-Verfahren, das zunächst
+            abstrakt wirkte, steckt heute in jedem Machine-Learning-Modell das ich nutze.
+          </p>
+          <p>
+            Das zweite Semester und die erste Praxisphase haben gezeigt, wie sich diese
+            Grundlagen in reale Projekte übersetzen.
+          </p>
         </div>
 
         <nav class="story-pagination" aria-label="Weiter">
           <a class="btn btn-ghost" href="../../index.html#career">
             Zur Übersicht
           </a>
-          <a class="btn" href="praxis-1.html">Praxis‑Insights ansehen</a>
+          <a class="btn" href="praxis-1.html">Praxis-Insights ansehen</a>
         </nav>
       </section>
     </main>
+
     <script src="../../js/main.js"></script>
   </body>
 </html>
