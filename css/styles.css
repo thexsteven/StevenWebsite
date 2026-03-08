@@ -935,7 +935,7 @@ header * {z-index: 20;}
    ========================================= */
 
 .reveal {
-  opacity: 0;
+  opacity: 100;
   transform: translateY(24px);
   transition:
     opacity 0.5s ease,
@@ -1204,6 +1204,231 @@ header * {z-index: 20;}
   .travel-stats {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+/* =========================================
+	 Semester – Modul-Sektionen
+	 ========================================= */
+
+.module-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: var(--space-sm);
+  margin: var(--space-xl) 0 var(--space-2xl);
+}
+
+.module-nav-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: var(--space-md) var(--space-sm);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+  transition: box-shadow 0.2s, border-color 0.2s, transform 0.15s;
+  box-shadow: var(--shadow-sm);
+}
+
+.module-nav-card:hover,
+.module-nav-card:focus-visible {
+  border-color: var(--color-primary);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+  transform: translateY(-2px);
+}
+
+.module-nav-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.module-nav-label {
+  color: var(--color-muted);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.module-section {
+  margin: var(--space-2xl) 0;
+  padding: var(--space-xl);
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--color-accent);
+  box-shadow: var(--shadow-sm);
+  scroll-margin-top: var(--scroll-offset);
+}
+
+.module-section[data-color="blue"]   { border-left-color: #2563eb; }
+.module-section[data-color="green"]  { border-left-color: #16a34a; }
+.module-section[data-color="purple"] { border-left-color: #7c3aed; }
+.module-section[data-color="orange"] { border-left-color: #ea580c; }
+.module-section[data-color="teal"]   { border-left-color: #0d9488; }
+.module-section[data-color="red"]    { border-left-color: var(--color-accent); }
+.module-section[data-color="indigo"] { border-left-color: #4f46e5; }
+
+.module-section-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.module-section-header h2 {
+  margin: 0;
+  font-size: clamp(1.2rem, 1vw + 1rem, 1.5rem);
+}
+
+.module-badge {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: var(--color-primary);
+  color: #fff;
+  white-space: nowrap;
+}
+
+.module-icon {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.module-body {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .module-body {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.module-topics h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--color-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.module-topics ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.module-topics li {
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+}
+
+.module-highlight {
+  background: #f1f5f9;
+  border-radius: var(--radius-sm);
+  padding: var(--space-lg);
+}
+
+.module-highlight h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--color-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.module-highlight pre {
+  margin: 0;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+}
+
+.module-highlight code {
+  font-family: "SF Mono", "Cascadia Code", "Fira Code", Consolas, monospace;
+}
+
+.module-flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+  margin-top: var(--space-sm);
+}
+
+.module-flow-step {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.module-flow-arrow {
+  color: var(--color-muted);
+  font-weight: 700;
+}
+
+.module-retro {
+  margin-top: var(--space-lg);
+  padding: var(--space-md) var(--space-lg);
+  background: #f8fafc;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--color-border);
+  font-style: italic;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.module-retro strong {
+  font-style: normal;
+  color: var(--color-text);
+}
+
+.module-sub {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border);
+}
+
+.module-sub h3 {
+  font-size: 1rem;
+  margin-bottom: var(--space-sm);
+}
+
+.semester-retro {
+  margin: var(--space-2xl) 0;
+  padding: var(--space-xl);
+  background: linear-gradient(135deg, var(--color-primary), #1a3a5c);
+  border-radius: var(--radius-md);
+  color: #fff;
+}
+
+.semester-retro h2 {
+  color: #fff;
+  margin-bottom: var(--space-md);
+}
+
+.semester-retro p {
+  color: rgba(255,255,255,0.9);
+  max-width: 65ch;
+  line-height: 1.8;
+  margin-bottom: var(--space-sm);
 }
 
 /* =========================================
