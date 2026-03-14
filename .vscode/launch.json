@@ -4,12 +4,21 @@
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
-    
     {
+      // Öffnet die Seite über Live Server (http://) – Auto-Reload bei jeder Änderung
+      // Voraussetzung: Live Server Extension muss laufen ("Go Live" in der Statusleiste)
       "type": "msedge",
       "request": "launch",
-      "name": "Open index.html",
-      "file": "c:\\Users\\resolve_test\\iCloudDrive\\DHBW Mosbach\\WebEng1\\Projekte\\StevenWebsite\\.claude\\worktrees\\nostalgic-dirac\\index.html"
+      "name": "Live Server (Edge)",
+      "url": "http://127.0.0.1:5500/index.html",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      // Fallback: Öffnet index.html direkt ohne Server (kein Auto-Reload)
+      "type": "msedge",
+      "request": "launch",
+      "name": "Open index.html (lokal)",
+      "file": "${workspaceFolder}/index.html"
     }
   ]
 }

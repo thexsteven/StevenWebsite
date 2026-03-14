@@ -9,8 +9,12 @@
     />
     <title>Hawaii · Flug & Ankunft | Steven</title>
     <link rel="stylesheet" href="../../../css/styles.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="./maps_hawaii.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8N3Ucq7KOnXeZO9PNAaTdphw0iZjvZTM&callback=initMap"
+      async
+      defer
+    ></script>
   </head>
   <body>
     <a href="#main" class="skip-link">Zum Inhalt springen</a>
@@ -154,30 +158,46 @@
             nicht einordnen kann. Es ist keine europäische Wärme, keine
             trockene Hitze des Südens. Hawaii riecht anders. Es fühlt sich
             anders an. Die Palmen am Parkplatz wirken nicht wie Kulisse – sie
-            gehören einfach dazu. Das Taxi Richtung Waikiki fährt durch
-            Straßen, die ich aus keiner Servosteuerung kenne, und für einen
-            Moment bin ich einfach nur Passagier in einer Welt, die ich noch
-            gar nicht verstehe.
+            gehören einfach dazu.
           </p>
 
           <p>
-            Das Hotel Waikiki Malia liegt mitten in Waikiki, wenige Gehminuten
-            vom Strand. Die Rezeption nimmt mich mit einem freundlichen
-            <em>„Aloha"</em> in Empfang – und dieses Wort klingt hier anders
-            als zu Hause. Es klingt, als würde es wirklich so gemeint.
-            Ich lasse den Koffer fallen, öffne das Fenster und höre zum ersten
-            Mal das Rauschen des Pazifiks. Ich bin auf Hawaii. Die Reise
-            beginnt gerade erst.
+            Das Taxi nach Waikiki ist knapp zwanzig Minuten. Die Strecke vom
+            Flughafen führt erst durch nüchterne Industriegebiete, breite
+            Highways, viel Beton – und dann, fast abrupt, öffnet sich die Stadt.
+            Die Straßen werden enger, die Bäume mehr, und irgendwann taucht er
+            auf: der Diamond Head, dieser schlafende Vulkankegel am östlichen
+            Ende von Waikiki, der stoisch über allem thront. Ich habe ihn
+            hundertmal auf Fotos gesehen. Jetzt sitzt er einfach da, am Ende
+            einer vierspurigen Straße, als wäre er das Normalste der Welt.
+            Das Taxi biegt in die Kuhio Avenue ein – Waikiki. Ich bin angekommen.
+          </p>
+
+          <p>
+            Das Hotel Waikiki Malia, 2211 Kuhio Ave, liegt einen Block vom
+            Strand entfernt, mitten im Treiben von Waikiki. Die Rezeption nimmt
+            mich mit einem freundlichen <em>„Aloha"</em> in Empfang – und
+            dieses Wort klingt hier anders als zu Hause. Es klingt, als würde
+            es wirklich so gemeint. Ich lasse den Koffer fallen, öffne das
+            Fenster und höre zum ersten Mal das Rauschen des Pazifiks.
+            Ich bin auf Hawaii. Die Reise beginnt gerade erst.
           </p>
 
         </div>
 
         <div class="story-media-grid" aria-label="Mediengalerie">
-          <div id="map-tile-leaflet"></div><script src="./leaflet_hawaii.js"></script>
+          <div id="map-hawaii" class="media-tile" style="min-height: 350px;"></div>
           <div class="media-tile image-tile">
             <img
               src="videos/me.jpeg"
               alt="Ankunft in Honolulu"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+          </div>
+          <div class="media-tile image-tile">
+            <img
+              src="videos/City (1).png"
+              alt="Honolulu City"
               style="width: 100%; height: 100%; object-fit: cover"
             />
           </div>
