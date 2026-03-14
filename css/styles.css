@@ -564,6 +564,25 @@ section > * {
   gap: var(--space-md);
 }
 
+.story-inline-figure {
+  margin: var(--space-lg) 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.story-inline-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.story-inline-figure figcaption {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  padding: var(--space-xs) var(--space-sm);
+}
+
 .story-media-grid {
   display: grid;
   overflow: hidden;
