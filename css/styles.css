@@ -565,7 +565,8 @@ section > * {
 }
 
 .story-inline-figure {
-  margin: var(--space-lg) 0;
+  max-width: 65%;
+  margin: var(--space-lg) auto;
   border-radius: var(--radius-md);
   overflow: hidden;
 }
@@ -581,6 +582,18 @@ section > * {
   font-size: 0.8rem;
   color: var(--color-muted);
   padding: var(--space-xs) var(--space-sm);
+}
+
+.story-inline-video {
+  max-width: 45%;
+  margin: var(--space-lg) auto;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.story-inline-video video {
+  width: 100%;
+  display: block;
 }
 
 .story-media-grid {
@@ -1517,6 +1530,11 @@ header * {z-index: 20;}
 }
 
 @media (max-width: 640px) {
+  .story-inline-figure,
+  .story-inline-video {
+    max-width: 100%;
+  }
+
   .site-nav {
     gap: var(--space-sm);
   }
