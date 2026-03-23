@@ -4,3 +4,20 @@
 # OS-Dateien
 .DS_Store
 Thumbs.db
+
+# Mediendateien (werden auf Cloudinary gehostet)
+images/
+pages/travel/cannes/images/
+pages/travel/hawaii/videos/
+
+# Rohmaterial (zu groß für Git)
+HawaiiAufnahmen/
+
+# Node.js
+node_modules/
+
+# Lokal generiertes Upload-Mapping
+scripts/cloudinary-map.json
+
+# Environment-Variablen
+.env

@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Hawaii Sprachreise – Alltag: Schulalltag, Fahrrad, Campus-Leben und Waikiki Beach."
+      content="Hawaii Sprachreise – Alltag: Schulweg mit dem Fahrrad, EF Language School, Surfkurs am Ala Moana Beach und Nachmittage in Waikiki."
     />
     <title>Hawaii · Alltag | Steven</title>
     <link rel="stylesheet" href="../../../css/styles.css" />
+    <script src="./maps_alltag.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8N3Ucq7KOnXeZO9PNAaTdphw0iZjvZTM&callback=initAlltag"
+      async
+      defer
+    ></script>
   </head>
   <body>
     <a href="#main" class="skip-link">Zum Inhalt springen</a>
@@ -33,35 +39,225 @@
         <header class="story-detail-header">
           <p class="section-kicker">Hawaii Sprachreise</p>
           <h1 id="story-title">Alltag</h1>
-          <p class="story-meta">März – April 2025</p>
+          <p class="story-meta">März – April 2025 · Waikiki, Honolulu</p>
           <p class="story-summary">
-            Fahrrad über Marketplace, Schulweg an der Küste, Campus-Leben
-            und Waikiki Beach nach dem Unterricht. So sah ein ganz normaler
-            Tag in Hawaii aus.
+            Sechs Wochen Waikiki – mit einem festen Tagesrhythmus, einem Fahrrad
+            und genug Zeit, die Insel ein bisschen besser zu verstehen als der
+            Durchschnittstourist.
           </p>
         </header>
 
         <div class="story-content">
+
+          <ul class="story-highlights">
+            <li class="story-highlight">
+              <span class="highlight-label">Unterkunft</span>
+              <span class="highlight-value">Waikiki Malia Hotel · 2211 Kuhio Ave</span>
+            </li>
+            <li class="story-highlight">
+              <span class="highlight-label">Sprachschule</span>
+              <span class="highlight-value">EF Education First · Kapiolani Blvd, neben Ala Moana Center</span>
+            </li>
+            <li class="story-highlight">
+              <span class="highlight-label">Schulweg</span>
+              <span class="highlight-value">~2,5 km mit dem Fahrrad, täglich</span>
+            </li>
+            <li class="story-highlight">
+              <span class="highlight-label">Kurse</span>
+              <span class="highlight-value">Vokabelkurs + Surfkurs am Ala Moana Beach</span>
+            </li>
+            <li class="story-highlight">
+              <span class="highlight-label">Aufenthalt</span>
+              <span class="highlight-value">6 Wochen · März – April 2025</span>
+            </li>
+          </ul>
+
+          <h2>Mit dem Fahrrad durch Honolulu</h2>
+
           <p>
-            Platzhalter: Beschreibung des Alltags – Fahrradkauf, täglicher
-            Schulweg, Campus-Eindrücke und Routinen.
+            Jeden Morgen das gleiche Ritual: Fahrrad raus, Richtung Ala Wai Blvd.
+            Die Route von Waikiki Malia zur EF School ist knapp zwei Kilometer
+            und führt entlang des Ala Wai Kanals – einer ruhigen Wasserstraße,
+            die Waikiki von der restlichen Stadt trennt. Frühmorgens ist es dort
+            noch erstaunlich still.
           </p>
+
+          <figure class="story-inline-figure">
+            <img
+              src="https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237665/pages/travel/hawaii/videos/alltag_schulweg.jpg"
+              alt="Schulweg mit dem Fahrrad durch Waikiki"
+              loading="lazy"
+            />
+          </figure>
+
           <p>
-            Ergänze hier konkrete Erlebnisse, Fotos und kurze Anekdoten, die
-            den Alltag in Hawaii greifbar machen.
+            Auf dem Weg gibt es Hochhäuser, Palmen, manchmal Surfer die ihr
+            Board zum Strand schleppen. Und immer wieder die Angler. Sie sitzen
+            jeden Morgen am Kanalrand, ganz ruhig, als hätten sie alle Zeit der
+            Welt. Ich weiß bis heute nicht, ob da jemals einer was fängt.
           </p>
+
+          <figure class="story-inline-figure">
+            <img
+              src="https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237668/pages/travel/hawaii/videos/alltag_angler.jpg"
+              alt="Angler am Ala Wai Canal"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure class="story-inline-figure">
+            <img
+              src="https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237669/pages/travel/hawaii/videos/alltag_kanal.jpg"
+              alt="Reiher am Ala Wai Canal"
+              loading="lazy"
+            />
+          </figure>
+
+          <figure class="story-inline-figure">
+            <img
+              src="https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237671/pages/travel/hawaii/videos/alltag_stadt.jpg"
+              alt="Honolulus Skyline auf dem Schulweg"
+              loading="lazy"
+            />
+          </figure>
+
+          <!-- Karte: Bike-Route -->
+          <div id="map-alltag" class="media-tile map-tile"></div>
+
+          <h2>EF Language School</h2>
+
+          <p>
+            Die EF School liegt direkt neben dem Ala Moana Center – also da, wo
+            Waikiki aufhört und der Rest von Honolulu anfängt. Ich hatte zwei
+            verschiedene Kursformate: den normalen Vokabelunterricht und einen
+            Surfkurs, der regelmäßig an den Ala Moana Beach führte.
+          </p>
+
+          <figure class="story-inline-figure">
+            <img
+              src="https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237672/pages/travel/hawaii/videos/alltag_alamoana.jpg"
+              alt="Ala Moana Beach Park nahe der EF School"
+              loading="lazy"
+            />
+          </figure>
+
+          <h2>Der Calisthenics Park am Ala Moana Beach</h2>
+
+          <p>
+            Direkt vor der Schule, am Ala Moana Beach Park, gibt es eine
+            Outdoor-Fitnessanlage. Stangen, Barren, Ringe – alles mit freiem
+            Blick aufs Meer. Ich bin da regelmäßig trainiert, meistens nach dem
+            Unterricht.
+          </p>
+
+          <div class="media-pair">
+            <div id="map-cali" class="map-tile"></div>
+            <div class="story-inline-video">
+              <video controls preload="metadata">
+                <source src="https://res.cloudinary.com/dozdjb4fi/video/upload/v1774237676/pages/travel/hawaii/videos/alltag_workout.mp4" type="video/mp4" />
+                Dein Browser unterstützt dieses Videoformat leider nicht.
+              </video>
+            </div>
+          </div>
+
+          <p>
+            Der Surfkurs war wahrscheinlich das, was ich am wenigsten erwartet
+            hatte. Wir sind von der Schule aus mit Surfboards zum Strand gelaufen,
+            direkt ins Wasser. Die drei Lehrer – Reid, Nui und Silva – waren
+            genau so, wie man sich hawaiianische Surflehrer vorstellt: entspannt,
+            geduldig, und immer gut drauf. Man merkt, dass die das nicht nur als
+            Job sehen. Surfen ist dort einfach normal, fast wie ein Zweitzustand.
+          </p>
+
+          <figure class="story-inline-figure">
+            <img
+              src="https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237678/pages/travel/hawaii/videos/alltag_cali.jpg"
+              alt="Calisthenics Park am Ala Moana Beach Park"
+              loading="lazy"
+            />
+          </figure>
+
+          <p>
+            Was mich am meisten überrascht hat: die Leute, die dort trainieren,
+            sind wirklich gut. Man trifft dort Athleten, die Sachen können, die
+            man sonst nur in Videos sieht. Ich hab einiges zugeschaut und
+            gelegentlich was abgeschaut. Das Training mit Meeresblick und dem
+            Geruch von Salzwasser in der Nase hat dabei geholfen, den Arbeitstag
+            hinter sich zu lassen.
+          </p>
+
+          <h2>Nachmittage in Waikiki</h2>
+
+          <p>
+            Nach der Schule gehörte die Zeit mir. Meistens bin ich mit Freunden
+            was essen gegangen – die Outdoor-Mall neben der Schule und die
+            Foodtrucks in der Gegend waren feste Anlaufpunkte. Was danach passierte,
+            hing vom Tag ab: manchmal ein Hike, manchmal einfach an den Waikiki
+            Beach.
+          </p>
+
+          <div class="media-pair">
+            <figure class="story-inline-figure">
+              <img
+                src="https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237679/pages/travel/hawaii/videos/alltag_beach.jpg"
+                alt="Duke Kahanamoku Statue am Waikiki Beach"
+                loading="lazy"
+              />
+            </figure>
+            <div class="story-inline-video">
+              <video controls preload="metadata">
+                <source src="https://res.cloudinary.com/dozdjb4fi/video/upload/v1774237680/pages/travel/hawaii/videos/alltag_jump.mp4" type="video/mp4" />
+                Dein Browser unterstützt dieses Videoformat leider nicht.
+              </video>
+            </div>
+          </div>
+
+          <p>
+            Fußball am Strand, schwimmen, im Sand sitzen und einfach schauen.
+            Der Waikiki Beach ist touristisch, keine Frage – aber nachmittags,
+            wenn die Kreuzfahrt-Besucher wieder weg sind, ist er ganz gut aus.
+            Das Wasser ist warm, die Wellen sind klein, und man muss sich keine
+            Sorgen machen. Für die Sportlicheren unter den Ausflügen gab es
+            dann die Adventures – Hikes, Roller, Trails. Aber das ist ein anderes
+            Kapitel.
+          </p>
+
+          <div class="media-pair">
+            <figure class="story-inline-figure">
+              <img
+                src="https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237682/pages/travel/hawaii/videos/alltag_waikiki_beach.jpg"
+                alt="Feuerwerk am Waikiki Beach freitagabends"
+                loading="lazy"
+              />
+            </figure>
+            <div class="story-inline-video">
+              <video controls preload="metadata">
+                <source src="https://res.cloudinary.com/dozdjb4fi/video/upload/v1774237685/pages/travel/hawaii/videos/alltag_deeptalk.mp4" type="video/mp4" />
+                Dein Browser unterstützt dieses Videoformat leider nicht.
+              </video>
+            </div>
+          </div>
+
         </div>
 
         <div class="story-media-grid" aria-label="Mediengalerie">
-          <div class="media-tile">Platzhalter: Fahrrad</div>
-          <div class="media-tile">Platzhalter: Campus</div>
-          <div class="media-tile">Platzhalter: Schulweg</div>
-          <div class="media-tile">Platzhalter: Waikiki Beach</div>
+          <div class="media-tile image-tile">
+            <img src="https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237671/pages/travel/hawaii/videos/alltag_stadt.jpg" alt="Honolulus Skyline" />
+          </div>
+          <div class="media-tile image-tile">
+            <img src="https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237668/pages/travel/hawaii/videos/alltag_angler.jpg" alt="Angler am Ala Wai Canal" />
+          </div>
+          <div class="media-tile image-tile">
+            <img src="https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237679/pages/travel/hawaii/videos/alltag_beach.jpg" alt="Duke Kahanamoku Statue" />
+          </div>
+          <div class="media-tile image-tile">
+            <img src="https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237682/pages/travel/hawaii/videos/alltag_waikiki_beach.jpg" alt="Feuerwerk Waikiki Beach" />
+          </div>
         </div>
 
         <nav class="story-pagination" aria-label="Kapitelnavigation">
           <a class="btn btn-ghost" href="flug-ankunft.html">
-            Vorheriges Kapitel: Flug & Ankunft
+            Vorheriges Kapitel: Flug &amp; Ankunft
           </a>
           <a class="btn" href="adventures.html">
             Nächstes Kapitel: Adventures
