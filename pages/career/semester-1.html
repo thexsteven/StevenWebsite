@@ -77,7 +77,7 @@
             <a href="#modul-projekt" class="module-nav-card">
               <span class="module-nav-icon" aria-hidden="true">🚀</span>
               <span>Anwendungspr.</span>
-              <span class="module-nav-label">MQTT · Dashboard</span>
+              <span class="module-nav-label">Industrie 4.0 · Dashboard</span>
             </a>
           </div>
         </nav>
@@ -376,9 +376,6 @@ nicht_immatrikuliert(X) :-
               C1-Intensivkurs in Honolulu, Hawaii (März–April 2025) – vier Wochen
               vollständig auf Englisch: Vorlesungen, Präsentationen, Gruppenarbeit.
               Schwerpunkte: Academic Writing, Listening Comprehension, Sprechkompetenz.
-              <a href="../travel/hawaii/erster-schultag.html" style="color:var(--color-accent); font-weight:600;">
-                Zum Erlebnisbericht →
-              </a>
             </p>
           </div>
 
@@ -479,18 +476,28 @@ konto.abheben(30)
             <div class="module-topics">
               <h3>Projektziel</h3>
               <ul>
-                <li>Web-basiertes Dashboard zur Erfassung von MQTT-Daten</li>
-                <li>IoT-Datenstrom in Echtzeit empfangen und aufbereitet visualisieren</li>
-                <li>Teamarbeit: Anforderungsanalyse, Konzeption, Umsetzung</li>
-                <li>Dokumentation und Präsentation der Ergebnisse</li>
+                <li>Web-basiertes Dashboard-System zur Analyse von Energie- und Materialverbräuchen im Industrie‑4.0‑Labor</li>
+                <li>Reale und simulierte Daten über MQTT- und Kafka-Schnittstellen erfassen</li>
+                <li>Daten serverseitig aufbereiten und in einer relationalen Datenbank speichern</li>
+                <li>Zentrale Kennzahlen berechnen und in einem interaktiven Web-Dashboard visualisieren</li>
+                <li>Semester 1: Projektplanung und Konzeption · Semester 2: Umsetzung und Dokumentation</li>
               </ul>
             </div>
 
-            <div class="module-highlight" style="display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; min-height:120px;">
-              <p style="font-size:1.1rem; margin:0 0 0.5rem; font-weight:600;">In Kürze mehr</p>
-              <p style="font-size:0.9rem; color:var(--color-muted); margin:0;">
-                Detaillierte Einblicke in das Projekt folgen – Architektur, Tech-Stack
-                und Learnings werden hier ergänzt.
+            <div class="module-highlight">
+              <h3>Architektur & Tech-Stack</h3>
+              <p>
+                Das System setzt auf eine klassische dreischichtige Architektur: Datenerfassung
+                über <strong>MQTT</strong> und <strong>Kafka</strong> als Message-Broker,
+                serverseitige Verarbeitung mit Speicherung in einer <strong>relationalen Datenbank</strong>,
+                und ein <strong>Web-Frontend</strong> zur interaktiven Visualisierung der Kennzahlen.
+                Die Datenquellen sind teils reale Sensoren im Labor, teils simulierte Ströme –
+                das System muss beides konsistent verarbeiten können.
+              </p>
+              <p>
+                Im ersten Semester lag der Fokus auf der Planung: Anforderungsanalyse,
+                Systemarchitektur, Schnittstellendefinition. Die eigentliche Implementierung
+                folgt im zweiten Semester.
               </p>
             </div>
           </div>
