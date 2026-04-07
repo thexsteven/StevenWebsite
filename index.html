@@ -402,9 +402,18 @@
           </p>
         </div>
         <div class="section-body sport-strip">
-          <div class="sport-tile">Motivation</div>
-          <div class="sport-tile">Training</div>
-          <div class="sport-tile">Challenges</div>
+          <div class="sport-tile">
+            <h3 class="sport-tile-title">Ausdauer</h3>
+            <p class="sport-tile-desc">Laufen, Radfahren, tägliche Bewegung.</p>
+          </div>
+          <div class="sport-tile">
+            <h3 class="sport-tile-title">Kraft & Training</h3>
+            <p class="sport-tile-desc">Strukturiertes Workout, kontinuierliche Progression.</p>
+          </div>
+          <div class="sport-tile">
+            <h3 class="sport-tile-title">Mindset</h3>
+            <p class="sport-tile-desc">Disziplin, mentale Stärke, Recovery.</p>
+          </div>
         </div>
       </section>
 
@@ -424,6 +433,43 @@
               Konzept für eine Informationsseite zu Events und Standorten an der
               DHBW Mosbach Campus Bad MGH.
             </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Love Story Section (versteckt – Shortcut: L → O → V → E, dann Passwort) -->
+      <section id="love-story" class="love-story" aria-hidden="true" aria-labelledby="love-story-title">
+        <div class="section-head">
+          <p class="section-kicker love-kicker">Privat · Nur für uns</p>
+          <h2 id="love-story-title">Unsere Geschichte</h2>
+          <p class="section-intro">
+            Alles hat seinen Anfang. Hier ist unserer.
+          </p>
+        </div>
+        <div class="love-chapters">
+          <article class="love-chapter">
+            <span class="love-chapter-meta">Kapitel 01</span>
+            <h3 class="love-chapter-title">Wie wir uns kennengelernt haben</h3>
+            <p class="love-chapter-date">— Datum folgt —</p>
+            <p class="love-chapter-text love-placeholder">Dieser Abschnitt wartet noch auf seine Geschichte …</p>
+          </article>
+          <article class="love-chapter">
+            <span class="love-chapter-meta">Kapitel 02</span>
+            <h3 class="love-chapter-title">Die ersten gemeinsamen Abenteuer</h3>
+            <p class="love-chapter-date">— Datum folgt —</p>
+            <p class="love-chapter-text love-placeholder">Dieser Abschnitt wartet noch auf seine Geschichte …</p>
+          </article>
+          <article class="love-chapter">
+            <span class="love-chapter-meta">Kapitel 03</span>
+            <h3 class="love-chapter-title">Was uns zusammenhält</h3>
+            <p class="love-chapter-date">— Datum folgt —</p>
+            <p class="love-chapter-text love-placeholder">Dieser Abschnitt wartet noch auf seine Geschichte …</p>
+          </article>
+          <article class="love-chapter">
+            <span class="love-chapter-meta">Kapitel 04</span>
+            <h3 class="love-chapter-title">Unsere schönsten Momente</h3>
+            <p class="love-chapter-date">— Datum folgt —</p>
+            <p class="love-chapter-text love-placeholder">Dieser Abschnitt wartet noch auf seine Geschichte …</p>
           </article>
         </div>
       </section>
@@ -473,6 +519,29 @@
     <footer class="site-footer" role="contentinfo">
       <p>&copy; 2026 Steven. Alle Rechte vorbehalten.</p>
     </footer>
+
+    <!-- Love Story Passwort-Modal -->
+    <div class="love-modal-overlay" id="love-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="love-modal-title">
+      <div class="love-modal">
+        <span class="love-modal-icon" aria-hidden="true">🔒</span>
+        <h2 id="love-modal-title">Private Sektion</h2>
+        <p class="love-modal-sub">Diese Seite ist passwortgeschützt.</p>
+        <input
+          type="password"
+          id="love-password"
+          class="love-password-input"
+          placeholder="Passwort …"
+          autocomplete="off"
+          aria-label="Passwort für Love Story"
+        />
+        <p class="love-modal-error" id="love-modal-error" role="alert" aria-live="polite"></p>
+        <div class="love-modal-actions">
+          <button class="btn" id="love-submit">Entsperren</button>
+          <button class="btn btn-ghost" id="love-cancel">Abbrechen</button>
+        </div>
+        <p class="love-modal-hint">Tipp: L → O → V → E</p>
+      </div>
+    </div>
 
     <script src="js/main.js"></script>
   </body>

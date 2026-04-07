@@ -229,6 +229,91 @@
     "(prefers-reduced-motion: reduce)",
   ).matches;
 
+  /* =========================================
+   Love Story – Keyboard-Sequenz + Passwort
+   Shortcut: tippe L → O → V → E (außerhalb von Eingabefeldern)
+   Passwort: "Adelina"
+   Zum Ändern: btoa('NeuesPasswort') in der Browser-Konsole ausführen
+   und LOVE_KEY ersetzen.
+   ========================================= */
+
+  const LOVE_KEY = 'QWRlbGluYQ=='; // btoa('Adelina')
+  const LOVE_SEQUENCE = ['l', 'o', 'v', 'e'];
+  const loveBuffer = [];
+
+  const loveOverlay = document.getElementById('love-modal');
+  const loveSection = document.getElementById('love-story');
+  const loveInput  = document.getElementById('love-password');
+  const loveError  = document.getElementById('love-modal-error');
+  const loveSubmit = document.getElementById('love-submit');
+  const loveCancel = document.getElementById('love-cancel');
+
+  const openLoveModal = () => {
+    if (!loveOverlay) return;
+    loveOverlay.classList.add('is-open');
+    loveOverlay.removeAttribute('aria-hidden');
+    setTimeout(() => loveInput && loveInput.focus(), 320);
+  };
+
+  const closeLoveModal = () => {
+    loveOverlay && loveOverlay.classList.remove('is-open');
+    loveOverlay && loveOverlay.setAttribute('aria-hidden', 'true');
+    if (loveInput)  { loveInput.value = ''; loveInput.classList.remove('is-error'); }
+    if (loveError)  { loveError.textContent = ''; }
+  };
+
+  const unlockLoveStory = () => {
+    closeLoveModal();
+    if (!loveSection) return;
+    loveSection.classList.add('is-unlocked');
+    loveSection.removeAttribute('aria-hidden');
+    setTimeout(() => {
+      loveSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 300);
+  };
+
+  const checkLovePassword = () => {
+    if (!loveInput) return;
+    if (btoa(loveInput.value) === LOVE_KEY) {
+      unlockLoveStory();
+    } else {
+      loveInput.classList.add('is-error');
+      if (loveError) loveError.textContent = 'Falsches Passwort – versuch es nochmal.';
+      setTimeout(() => loveInput.classList.remove('is-error'), 500);
+      loveInput.value = '';
+      loveInput.focus();
+    }
+  };
+
+  // Sequenz-Detektor (außerhalb von Eingabefeldern)
+  document.addEventListener('keydown', (e) => {
+    const tag = e.target.tagName;
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || e.target.isContentEditable) return;
+    if (e.repeat) return;
+    const key = e.key.toLowerCase();
+    if (key.length !== 1) return;
+
+    loveBuffer.push(key);
+    if (loveBuffer.length > LOVE_SEQUENCE.length) loveBuffer.shift();
+
+    if (LOVE_SEQUENCE.every((v, i) => v === loveBuffer[i])) {
+      loveBuffer.length = 0;
+      openLoveModal();
+    }
+  });
+
+  loveSubmit && loveSubmit.addEventListener('click', checkLovePassword);
+  loveCancel && loveCancel.addEventListener('click', closeLoveModal);
+
+  loveInput && loveInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter')  checkLovePassword();
+    if (e.key === 'Escape') closeLoveModal();
+  });
+
+  loveOverlay && loveOverlay.addEventListener('click', (e) => {
+    if (e.target === loveOverlay) closeLoveModal();
+  });
+
   if (skillsSection && skillsTrack && !reduceMotion) {
     // 1) Karten duplizieren, damit ein nahtloser Loop entsteht
     const originalCards = Array.from(skillsTrack.children);
