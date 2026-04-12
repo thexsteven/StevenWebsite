@@ -264,6 +264,7 @@
 
   const unlockLoveStory = () => {
     closeLoveModal();
+    sessionStorage.setItem('love_unlocked', '1');
     if (!loveSection) return;
     loveSection.classList.add('is-unlocked');
     loveSection.removeAttribute('aria-hidden');
@@ -313,6 +314,15 @@
   loveOverlay && loveOverlay.addEventListener('click', (e) => {
     if (e.target === loveOverlay) closeLoveModal();
   });
+
+  // Auto-unlock if already authenticated in this session
+  if (sessionStorage.getItem('love_unlocked') === '1' && loveSection) {
+    loveSection.classList.add('is-unlocked');
+    loveSection.removeAttribute('aria-hidden');
+    if (window.location.hash === '#love-story') {
+      setTimeout(() => loveSection.scrollIntoView({ behavior: 'smooth', block: 'start' }), 150);
+    }
+  }
 
   if (skillsSection && skillsTrack && !reduceMotion) {
     // 1) Karten duplizieren, damit ein nahtloser Loop entsteht
