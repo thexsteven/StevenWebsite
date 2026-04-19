@@ -21,3 +21,9 @@ scripts/cloudinary-map.json
 
 # Environment-Variablen
 .env
+
+# MCP-Server-Konfiguration (enthaelt API-Secrets)
+.mcp.json
+
+# Love-Story Klartextquellen (werden verschluesselt in encrypted/ ausgeliefert)
+_love-source/

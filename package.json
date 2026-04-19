@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "upload": "node scripts/upload-to-cloudinary.js"
+    "upload": "node scripts/upload-to-cloudinary.js",
+    "encrypt-love": "node scripts/encrypt-love.js"
   },
   "dependencies": {
     "cloudinary": "^2.9.0",

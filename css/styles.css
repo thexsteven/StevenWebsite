@@ -2010,3 +2010,92 @@ header * {z-index: 20;}
   opacity: 0.5;
   margin-bottom: 0;
 }
+
+/* =========================================
+   Story Content (entschluesselte Kapitel-Inhalte)
+   Wird zur Laufzeit in #chapter-content injiziert
+   ========================================= */
+
+.story-content .story-h1 {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: var(--space-md) 0 var(--space-sm);
+  color: var(--color-primary);
+}
+
+.story-content .story-h2 {
+  font-size: clamp(1.3rem, 3vw, 1.7rem);
+  font-weight: 600;
+  margin: var(--space-lg) 0 var(--space-xs);
+  color: var(--color-primary);
+}
+
+.story-content .story-h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: var(--space-md) 0 var(--space-xs);
+}
+
+.story-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.story-content blockquote {
+  border-left: 3px solid #fce7f3;
+  padding: var(--space-xs) var(--space-md);
+  margin: var(--space-sm) 0;
+  font-style: italic;
+  color: var(--color-muted);
+  background: rgba(252, 231, 243, 0.25);
+  border-radius: 4px;
+}
+
+.story-figure {
+  margin: var(--space-lg) auto;
+  text-align: center;
+  width: 100%;
+  max-width: 720px;
+}
+
+.story-figure img,
+.story-figure video {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  background: #000;
+  display: block;
+}
+
+.story-figure figcaption {
+  margin-top: var(--space-xs);
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  font-style: italic;
+}
+
+#chapter-content {
+  min-height: 50vh;
+}
+
+#chapter-content:not(.is-loaded)::before {
+  content: "";
+  display: block;
+  height: 50vh;
+}
+
+@media (max-width: 640px) {
+  .story-detail {
+    padding: var(--space-xl) var(--space-md);
+  }
+  .story-content {
+    gap: var(--space-sm);
+  }
+  .story-figure {
+    margin: var(--space-md) auto;
+  }
+}

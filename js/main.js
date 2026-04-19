@@ -232,12 +232,12 @@
   /* =========================================
    Love Story – Keyboard-Sequenz + Passwort
    Shortcut: tippe L → O → V → E (außerhalb von Eingabefeldern)
-   Passwort: "Adelina"
-   Zum Ändern: btoa('NeuesPasswort') in der Browser-Konsole ausführen
-   und LOVE_KEY ersetzen.
+   Passwort wird ueber AES-GCM-Decrypt eines Probe-Payloads validiert.
+   Zum Aendern: LOVE_PW=NeuesPasswort npm run encrypt-love
    ========================================= */
 
-  const LOVE_KEY = 'QWRlbGluYQ=='; // btoa('Adelina')
+  const LOVE_SESSION_KEY = 'love_key';
+  const LOVE_PROBE_URL = 'encrypted/prolog.enc';
   const LOVE_SEQUENCE = ['l', 'o', 'v', 'e'];
   const loveBuffer = [];
 
@@ -260,11 +260,11 @@
     loveOverlay && loveOverlay.setAttribute('aria-hidden', 'true');
     if (loveInput)  { loveInput.value = ''; loveInput.classList.remove('is-error'); }
     if (loveError)  { loveError.textContent = ''; }
+    if (loveSubmit) { loveSubmit.disabled = false; loveSubmit.textContent = 'Entsperren'; }
   };
 
   const unlockLoveStory = () => {
     closeLoveModal();
-    sessionStorage.setItem('love_unlocked', '1');
     if (!loveSection) return;
     loveSection.classList.add('is-unlocked');
     loveSection.removeAttribute('aria-hidden');
@@ -273,16 +273,28 @@
     }, 300);
   };
 
-  const checkLovePassword = () => {
-    if (!loveInput) return;
-    if (btoa(loveInput.value) === LOVE_KEY) {
+  const setLoveBusy = (busy) => {
+    if (!loveSubmit) return;
+    loveSubmit.disabled = busy;
+    loveSubmit.textContent = busy ? 'Prüfe …' : 'Entsperren';
+  };
+
+  const checkLovePassword = async () => {
+    if (!loveInput || !loveInput.value) return;
+    const pw = loveInput.value;
+    setLoveBusy(true);
+    try {
+      await window.LoveCrypto.fetchAndDecrypt(pw, LOVE_PROBE_URL);
+      sessionStorage.setItem(LOVE_SESSION_KEY, pw);
       unlockLoveStory();
-    } else {
+    } catch (_) {
       loveInput.classList.add('is-error');
       if (loveError) loveError.textContent = 'Falsches Passwort – versuch es nochmal.';
       setTimeout(() => loveInput.classList.remove('is-error'), 500);
       loveInput.value = '';
       loveInput.focus();
+    } finally {
+      setLoveBusy(false);
     }
   };
 
@@ -316,7 +328,7 @@
   });
 
   // Auto-unlock if already authenticated in this session
-  if (sessionStorage.getItem('love_unlocked') === '1' && loveSection) {
+  if (sessionStorage.getItem(LOVE_SESSION_KEY) && loveSection) {
     loveSection.classList.add('is-unlocked');
     loveSection.removeAttribute('aria-hidden');
     if (window.location.hash === '#love-story') {
