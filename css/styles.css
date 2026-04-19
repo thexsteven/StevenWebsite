@@ -2060,6 +2060,23 @@ header * {z-index: 20;}
   max-width: 720px;
 }
 
+.story-figure.is-xsmall {
+  max-width: 280px;
+}
+
+.story-figure.is-xsmall img {
+  background: transparent;
+  max-height: none;
+}
+
+.story-figure.is-small {
+  max-width: 400px;
+}
+
+.story-figure.is-medium {
+  max-width: 560px;
+}
+
 .story-figure img,
 .story-figure video {
   width: 100%;
