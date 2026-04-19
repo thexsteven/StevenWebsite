@@ -315,6 +315,24 @@
     }
   });
 
+  // Mobile-Trigger: 4x kurz hintereinander auf das Logo tippen
+  const loveLogo = document.querySelector('.site-nav .logo');
+  if (loveLogo) {
+    let logoTaps = 0;
+    let logoTapTimer = null;
+    loveLogo.addEventListener('click', (e) => {
+      logoTaps += 1;
+      if (logoTapTimer) clearTimeout(logoTapTimer);
+      if (logoTaps >= 4) {
+        e.preventDefault();
+        logoTaps = 0;
+        openLoveModal();
+        return;
+      }
+      logoTapTimer = setTimeout(() => { logoTaps = 0; }, 600);
+    });
+  }
+
   loveSubmit && loveSubmit.addEventListener('click', checkLovePassword);
   loveCancel && loveCancel.addEventListener('click', closeLoveModal);
 
