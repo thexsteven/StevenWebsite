@@ -132,6 +132,12 @@ const renderMarkdown = (md) => {
       out.push(media);
       continue;
     }
+    if (/^<iframe\b[^>]*>\s*<\/iframe>\s*$/i.test(line)) {
+      flushParagraph();
+      flushBlockquote();
+      out.push(`<figure class="story-figure story-map">${line}</figure>`);
+      continue;
+    }
     if (inBlockquote) {
       blockquoteLines.push(line);
       continue;
