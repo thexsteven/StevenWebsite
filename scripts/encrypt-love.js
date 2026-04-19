@@ -64,6 +64,7 @@ const renderMediaLine = (line) => {
   }
   const captionHtml = caption ? `<figcaption>${escapeHtml(caption)}</figcaption>` : '';
   const sizeClass = opts.size ? ` is-${opts.size}` : '';
+  const alignClass = opts.align ? ` is-align-${opts.align}` : '';
   if (kind === 'video') {
     const src = cloudinaryVideoUrl(publicId, opts);
     const poster = cloudinaryPosterUrl(publicId);
@@ -71,11 +72,11 @@ const renderMediaLine = (line) => {
     const attrs = autoplay
       ? 'autoplay muted loop playsinline preload="auto"'
       : 'controls playsinline preload="metadata"';
-    return `<figure class="story-figure${sizeClass}"><video ${attrs} poster="${poster}"><source src="${src}" type="video/mp4">Dein Browser unterstuetzt kein Video-Tag.</video>${captionHtml}</figure>`;
+    return `<figure class="story-figure${sizeClass}${alignClass}"><video ${attrs} poster="${poster}"><source src="${src}" type="video/mp4">Dein Browser unterstuetzt kein Video-Tag.</video>${captionHtml}</figure>`;
   }
   const src = cloudinaryImageUrl(publicId, opts);
   const alt = caption ? escapeHtml(caption) : '';
-  return `<figure class="story-figure${sizeClass}"><img src="${src}" alt="${alt}" loading="lazy" />${captionHtml}</figure>`;
+  return `<figure class="story-figure${sizeClass}${alignClass}"><img src="${src}" alt="${alt}" loading="lazy" />${captionHtml}</figure>`;
 };
 
 const renderMarkdown = (md) => {
