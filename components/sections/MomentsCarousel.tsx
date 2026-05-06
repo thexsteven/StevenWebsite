@@ -16,8 +16,7 @@ const CLOUDINARY_PLACEHOLDER =
 const moments: Moment[] = [
   {
     id: 1,
-    // TODO: Cloudinary-URL für Halbmarathon-Foto hier eintragen
-    image: CLOUDINARY_PLACEHOLDER,
+    image: 'https://res.cloudinary.com/dozdjb4fi/image/upload/v1778101763/WhatsApp_Image_2026-05-06_at_23.08.32_d7uqau.jpg',
     tag: 'Halbmarathon · 2026',
     statement: 'Das Gehirn lügt früher als der Körper.',
     location: 'Bad Mergentheim, Deutschland',
@@ -25,7 +24,7 @@ const moments: Moment[] = [
   {
     id: 2,
     // TODO: Cloudinary-URL für Alpen-Foto hier eintragen
-    image: CLOUDINARY_PLACEHOLDER,
+    image: 'https://res.cloudinary.com/dozdjb4fi/image/upload/v1778102238/IMG_6337_aezuso.jpg',
     tag: 'Alpen',
     statement: 'Die Aussicht gehört denen, die aufsteigen.',
     location: 'Italienische Alpen',
@@ -35,7 +34,7 @@ const moments: Moment[] = [
     // TODO: Cloudinary-URL für Venedig-Foto hier eintragen
     image: CLOUDINARY_PLACEHOLDER,
     tag: 'Venedig · 2026',
-    statement: 'Schönheit braucht keine Erklärung.',
+    statement: 'Manche Dinge braucht keine Erklärung.',
     location: 'Italien',
   },
   {
