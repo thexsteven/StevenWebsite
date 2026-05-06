@@ -10,9 +10,17 @@ type LoveModalProps = {
   open: boolean;
   onClose: () => void;
   onUnlock: () => void;
+  hint?: string;
+  cancelLabel?: string;
 };
 
-export function LoveModal({ open, onClose, onUnlock }: LoveModalProps) {
+export function LoveModal({
+  open,
+  onClose,
+  onUnlock,
+  hint = 'Tipp: L → O → V → E',
+  cancelLabel = 'Abbrechen',
+}: LoveModalProps) {
   const [password, setPassword] = useState('');
   const [errorMsg, setErrorMsg] = useState('');
   const [shake, setShake] = useState(false);
@@ -102,10 +110,10 @@ export function LoveModal({ open, onClose, onUnlock }: LoveModalProps) {
             className="btn btn-ghost"
             onClick={handleClose}
           >
-            Abbrechen
+            {cancelLabel}
           </button>
         </div>
-        <p className="love-modal-hint">Tipp: L → O → V → E</p>
+        <p className="love-modal-hint">{hint}</p>
       </div>
     </div>
   );
