@@ -32,15 +32,15 @@ const moments: Moment[] = [
   {
     id: 3,
     // TODO: Cloudinary-URL für Venedig-Foto hier eintragen
-    image: CLOUDINARY_PLACEHOLDER,
-    tag: 'Venedig · 2026',
+    image: 'https://res.cloudinary.com/dozdjb4fi/image/upload/v1778103295/IMG_0126_bavula.jpg',
+    tag: 'Venedig Trip · 2026',
     statement: 'Manche Dinge braucht keine Erklärung.',
-    location: 'Italien',
+    location: 'Italien, Dolomiten',
   },
   {
     id: 4,
     // TODO: Cloudinary-URL für Coding-Nacht-Foto hier eintragen
-    image: CLOUDINARY_PLACEHOLDER,
+    image: 'https://res.cloudinary.com/dozdjb4fi/image/upload/v1778103616/IMG_0367_km3cq5.jpg',
     tag: 'Coding · Nacht',
     statement: 'Bauen ist die beste Art zu verstehen.',
     location: 'Zuhause',
@@ -48,7 +48,7 @@ const moments: Moment[] = [
   {
     id: 5,
     // TODO: Cloudinary-URL für Gym-Foto hier eintragen
-    image: CLOUDINARY_PLACEHOLDER,
+    image: 'https://res.cloudinary.com/dozdjb4fi/image/upload/v1778104579/IMG_0371_trtvnt.jpg',
     tag: 'Gym · täglich',
     statement: 'Wer seinen Körper kontrolliert, kontrolliert seinen Kopf.',
     location: 'Überall',
