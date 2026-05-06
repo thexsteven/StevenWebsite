@@ -19,6 +19,7 @@
     -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-serif: var(--font-playfair), "Playfair Display", "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-display: var(--font-bricolage), "Bricolage Grotesque", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
 
   --space-xs: 0.5rem;
   --space-sm: 0.75rem;
@@ -903,9 +904,62 @@ header * {
 }
 
 .hero--image .eyebrow,
-.hero--image .lead,
 .hero--image h1 {
   color: #fff;
+}
+
+.hero--image .eyebrow {
+  font-style: italic;
+}
+
+.hero--image h1 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.hero--image .hero-tagline {
+  position: absolute;
+  top: clamp(1.5rem, 3vw, 2.75rem);
+  right: clamp(1.5rem, 3vw, 2.75rem);
+  z-index: 2;
+  margin: 0;
+  max-width: 280px;
+  text-align: right;
+  color: var(--color-accent);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  letter-spacing: 0.01em;
+  text-shadow:
+    0 2px 14px rgba(0, 0, 0, 0.55),
+    0 0 4px rgba(0, 0, 0, 0.35);
+}
+
+.hero--image .hero-tagline::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 2px;
+  background: var(--color-accent);
+  margin: 0 0 0.7rem auto;
+  border-radius: 999px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+}
+
+@media (max-width: 720px) {
+  .hero--image .hero-tagline {
+    position: static;
+    max-width: 100%;
+    text-align: left;
+    margin: var(--space-md) 0 0;
+  }
+
+  .hero--image .hero-tagline::before {
+    margin: 0 auto 0.5rem 0;
+  }
 }
 
 .hero--image .btn {

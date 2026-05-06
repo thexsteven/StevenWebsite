@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Playfair_Display } from 'next/font/google';
+import { Playfair_Display, Bricolage_Grotesque } from 'next/font/google';
 import { SkipLink } from '@/components/SkipLink';
 import './globals.css';
 
@@ -8,6 +8,13 @@ const playfair = Playfair_Display({
   variable: '--font-playfair',
   style: ['normal', 'italic'],
   weight: ['400', '600', '700'],
+  display: 'swap',
+});
+
+const bricolage = Bricolage_Grotesque({
+  subsets: ['latin'],
+  variable: '--font-bricolage',
+  weight: ['400', '600', '700', '800'],
   display: 'swap',
 });
 
@@ -22,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="de" className={playfair.variable}>
+    <html lang="de" className={`${playfair.variable} ${bricolage.variable}`}>
       <body>
         <SkipLink />
         {children}
