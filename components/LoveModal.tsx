@@ -1,9 +1,12 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { fetchAndDecrypt } from '@/lib/love-crypto';
+import {
+  fetchAndDecrypt,
+  importPasswordAsBaseKey,
+} from '@/lib/love-crypto';
+import { putBaseKey } from '@/lib/love-key-store';
 
-const LOVE_SESSION_KEY = 'love_key';
 const LOVE_PROBE_URL = '/encrypted/prolog.enc';
 
 type LoveModalProps = {
@@ -48,7 +51,9 @@ export function LoveModal({
     setBusy(true);
     try {
       await fetchAndDecrypt(password, LOVE_PROBE_URL);
-      sessionStorage.setItem(LOVE_SESSION_KEY, password);
+      const baseKey = await importPasswordAsBaseKey(password);
+      await putBaseKey(baseKey);
+      setPassword('');
       onUnlock();
     } catch {
       setShake(true);

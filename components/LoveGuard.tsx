@@ -2,10 +2,9 @@
 
 import { useCallback, useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { fetchAndDecrypt } from '@/lib/love-crypto';
+import { fetchAndDecryptWithBaseKey } from '@/lib/love-crypto';
+import { clearBaseKey, getBaseKey } from '@/lib/love-key-store';
 import { LoveModal } from '@/components/LoveModal';
-
-const SESSION_KEY = 'love_key';
 
 export function LoveGuard({ chapter }: { chapter: string }) {
   const router = useRouter();
@@ -15,34 +14,36 @@ export function LoveGuard({ chapter }: { chapter: string }) {
 
   useEffect(() => {
     let cancelled = false;
-    const sessionPw = sessionStorage.getItem(SESSION_KEY);
-    if (!sessionPw) {
-      setShowModal(true);
-      return;
-    }
-    fetchAndDecrypt(sessionPw, url)
-      .then((decrypted) => {
-        if (!cancelled) setHtml(decrypted);
-      })
-      .catch(() => {
-        if (cancelled) return;
-        sessionStorage.removeItem(SESSION_KEY);
+    (async () => {
+      const baseKey = await getBaseKey();
+      if (cancelled) return;
+      if (!baseKey) {
         setShowModal(true);
-      });
+        return;
+      }
+      try {
+        const decrypted = await fetchAndDecryptWithBaseKey(baseKey, url);
+        if (!cancelled) setHtml(decrypted);
+      } catch {
+        if (cancelled) return;
+        await clearBaseKey();
+        setShowModal(true);
+      }
+    })();
     return () => {
       cancelled = true;
     };
   }, [url]);
 
   const handleUnlock = useCallback(async () => {
-    const pw = sessionStorage.getItem(SESSION_KEY);
-    if (!pw) return;
+    const baseKey = await getBaseKey();
+    if (!baseKey) return;
     try {
-      const decrypted = await fetchAndDecrypt(pw, url);
+      const decrypted = await fetchAndDecryptWithBaseKey(baseKey, url);
       setHtml(decrypted);
       setShowModal(false);
     } catch {
-      sessionStorage.removeItem(SESSION_KEY);
+      await clearBaseKey();
     }
   }, [url]);
 

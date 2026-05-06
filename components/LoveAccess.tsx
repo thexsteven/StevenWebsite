@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import { LoveModal } from '@/components/LoveModal';
+import { hasBaseKey } from '@/lib/love-key-store';
 
-const LOVE_SESSION_KEY = 'love_key';
 const LOVE_SEQUENCE = ['l', 'o', 'v', 'e'] as const;
 const LOGO_TAPS_TO_TRIGGER = 4;
 const LOGO_TAP_RESET_MS = 600;
@@ -19,17 +19,24 @@ export function LoveAccess() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    if (sessionStorage.getItem(LOVE_SESSION_KEY)) {
+    let cancelled = false;
+    let scrollTimer: number | null = null;
+    (async () => {
+      const unlocked = await hasBaseKey();
+      if (cancelled || !unlocked) return;
       unlockSection();
       if (window.location.hash === '#love-story') {
-        const t = window.setTimeout(() => {
+        scrollTimer = window.setTimeout(() => {
           document
             .getElementById('love-story')
             ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }, 150);
-        return () => window.clearTimeout(t);
       }
-    }
+    })();
+    return () => {
+      cancelled = true;
+      if (scrollTimer !== null) window.clearTimeout(scrollTimer);
+    };
   }, []);
 
   useEffect(() => {

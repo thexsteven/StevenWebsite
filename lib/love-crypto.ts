@@ -15,17 +15,22 @@ function b64ToBytes(b64: string): Uint8Array<ArrayBuffer> {
   return bytes;
 }
 
-async function deriveKey(
+export async function importPasswordAsBaseKey(
   password: string,
-  saltBytes: Uint8Array<ArrayBuffer>,
 ): Promise<CryptoKey> {
-  const passKey = await crypto.subtle.importKey(
+  return crypto.subtle.importKey(
     'raw',
     new TextEncoder().encode(password),
     { name: 'PBKDF2' },
     false,
     ['deriveKey'],
   );
+}
+
+async function deriveAesKey(
+  baseKey: CryptoKey,
+  saltBytes: Uint8Array<ArrayBuffer>,
+): Promise<CryptoKey> {
   return crypto.subtle.deriveKey(
     {
       name: 'PBKDF2',
@@ -33,15 +38,15 @@ async function deriveKey(
       iterations: PBKDF2_ITERATIONS,
       hash: 'SHA-256',
     },
-    passKey,
+    baseKey,
     { name: 'AES-GCM', length: 256 },
     false,
     ['decrypt'],
   );
 }
 
-export async function decryptPayload(
-  password: string,
+export async function decryptPayloadWithBaseKey(
+  baseKey: CryptoKey,
   payload: Payload,
 ): Promise<string> {
   if (!payload || payload.v !== 1) {
@@ -50,21 +55,41 @@ export async function decryptPayload(
   const salt = b64ToBytes(payload.salt);
   const iv = b64ToBytes(payload.iv);
   const ct = b64ToBytes(payload.ct);
-  const key = await deriveKey(password, salt);
+  const aesKey = await deriveAesKey(baseKey, salt);
   const plaintextBytes = await crypto.subtle.decrypt(
     { name: 'AES-GCM', iv },
-    key,
+    aesKey,
     ct,
   );
   return new TextDecoder().decode(plaintextBytes);
+}
+
+export async function decryptPayload(
+  password: string,
+  payload: Payload,
+): Promise<string> {
+  const baseKey = await importPasswordAsBaseKey(password);
+  return decryptPayloadWithBaseKey(baseKey, payload);
+}
+
+async function fetchPayload(url: string): Promise<Payload> {
+  const res = await fetch(url, { cache: 'no-store' });
+  if (!res.ok) throw new Error(`Fetch failed: ${res.status}`);
+  return (await res.json()) as Payload;
+}
+
+export async function fetchAndDecryptWithBaseKey(
+  baseKey: CryptoKey,
+  url: string,
+): Promise<string> {
+  const payload = await fetchPayload(url);
+  return decryptPayloadWithBaseKey(baseKey, payload);
 }
 
 export async function fetchAndDecrypt(
   password: string,
   url: string,
 ): Promise<string> {
-  const res = await fetch(url, { cache: 'no-store' });
-  if (!res.ok) throw new Error(`Fetch failed: ${res.status}`);
-  const payload = (await res.json()) as Payload;
+  const payload = await fetchPayload(url);
   return decryptPayload(password, payload);
 }
