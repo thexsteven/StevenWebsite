@@ -71,6 +71,25 @@ export function About() {
         ))}
       </div>
 
+      <div className="werdegang-text">
+        <p>
+          Ich habe nie wirklich für die Schule gelernt. Weder in der Realschule
+          noch in der Berufsschule. Arbeit war körperlich — und das war okay,
+          bis eine Knieverletzung meinen Plan zerstörte.
+        </p>
+        <p>
+          Plötzlich musste ich mit dem Kopf verdienen, nicht mit den Händen.
+          Beim Maschinenbau-Techniker habe ich mich zum ersten Mal in meinem
+          Leben wirklich angestrengt — und gemerkt, dass Lernen Spaß machen
+          kann. Abschluss: <strong>1,2</strong>.
+        </p>
+        <p>
+          Danach war klar: Ich wollte in ein Feld, das maximales Lernen
+          fordert und mich gleichzeitig fasziniert. Angewandte Informatik,
+          KI, Lernsysteme. Das ist es.
+        </p>
+      </div>
+
       <div className="werte-vision-wrap">
         <a href="/motivation" className="flip-card-link">
           <div className="flip-card" tabIndex={0}>
@@ -93,15 +112,19 @@ export function About() {
                 </blockquote>
               </div>
               <div className="flip-card-back">
-                <h3>Meine Vision</h3>
+                <h3>Was das bedeutet</h3>
                 <p className="flip-back-text">
-                  Mein Weg war kein gerader.
+                  &ldquo;I never go back on my word.&rdquo;
                   <br />
-                  Aber er war immer meiner.
+                  <span className="flip-back-cite">— Naruto Uzumaki</span>
                   <br />
-                  Technik. Software. KI. Freiheit.
+                  <br />
+                  &ldquo;If you don&rsquo;t take risks,
+                  you can&rsquo;t create a future.&rdquo;
+                  <br />
+                  <span className="flip-back-cite">— Monkey D. Luffy</span>
                 </p>
-                <span className="flip-cta">Volle Story lesen</span>
+                <span className="flip-cta">Zitate die mich inspirieren</span>
               </div>
             </div>
           </div>

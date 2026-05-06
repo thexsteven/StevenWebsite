@@ -1330,6 +1330,12 @@ header * {
   margin-bottom: var(--space-lg);
 }
 
+.flip-back-cite {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+}
+
 .flip-cta {
   display: inline-block;
   background: var(--color-accent);
@@ -1670,6 +1676,25 @@ header * {
   font-style: italic;
 }
 
+.werdegang-text {
+  max-width: var(--text-max-width);
+  margin: 0 auto var(--space-xl);
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.werdegang-text p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-muted);
+  margin: 0;
+}
+
+.werdegang-text strong {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
 .werte-vision-wrap {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -1688,7 +1713,7 @@ header * {
 .werte-vision-wrap .flip-card-inner,
 .werte-vision-wrap .flip-card-front,
 .werte-vision-wrap .flip-card-back {
-  min-height: 260px;
+  min-height: 360px;
 }
 
 /* =========================================
