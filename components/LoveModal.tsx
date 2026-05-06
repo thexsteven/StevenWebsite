@@ -18,7 +18,7 @@ export function LoveModal({
   open,
   onClose,
   onUnlock,
-  hint = 'Tipp: L → O → V → E',
+  hint = '',
   cancelLabel = 'Abbrechen',
 }: LoveModalProps) {
   const [password, setPassword] = useState('');
@@ -68,7 +68,7 @@ export function LoveModal({
       role="dialog"
       aria-modal="true"
       aria-labelledby="love-modal-title"
-      aria-hidden={open ? 'false' : 'true'}
+      aria-hidden={!open}
       onClick={(e) => {
         if (e.target === overlayRef.current) handleClose();
       }}
