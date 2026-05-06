@@ -7,7 +7,7 @@ import { Hero } from '@/components/sections/Hero';
 import { Preview } from '@/components/sections/Preview';
 import { About } from '@/components/sections/About';
 import { Resume } from '@/components/sections/Resume';
-import { Skills } from '@/components/sections/Skills';
+import { MomentsCarousel } from '@/components/sections/MomentsCarousel';
 import { CareerPreview } from '@/components/sections/CareerPreview';
 import { Travel } from '@/components/sections/Travel';
 import { Sport } from '@/components/sections/Sport';
@@ -24,7 +24,7 @@ export default function HomePage() {
         <Preview />
         <About />
         <Resume />
-        <Skills />
+        <MomentsCarousel />
         <CareerPreview />
         <Travel />
         <Sport />

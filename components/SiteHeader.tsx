@@ -14,7 +14,7 @@ const VARIANTS: Record<Variant, VariantConfig> = {
     links: [
       { href: '#about', label: 'Über mich' },
       { href: '#resume', label: 'Lebenslauf' },
-      { href: '#skills', label: 'Skills' },
+      { href: '#moments', label: 'Moments' },
       { href: '#career', label: 'Karriere' },
       { href: '#travel', label: 'Reisen' },
       { href: '#sport', label: 'Sport' },
