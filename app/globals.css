@@ -1594,6 +1594,104 @@ header * {
 }
 
 /* =========================================
+   Werdegang Strip (About Section)
+   ========================================= */
+
+.werdegang-strip {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-md);
+  max-width: var(--max-width);
+  margin: 0 auto var(--space-xl);
+}
+
+@media (max-width: 900px) {
+  .werdegang-strip {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .werdegang-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.station-card {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--color-primary), #1a3a5c);
+}
+
+.station-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.station-placeholder {
+  width: 100%;
+  height: 220px;
+  background: linear-gradient(160deg, #1a3a5c 0%, var(--color-primary) 100%);
+}
+
+.station-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--space-md) var(--space-sm);
+  background: linear-gradient(to top, rgba(10, 20, 40, 0.92) 0%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.station-period {
+  font-size: 0.65rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.station-title {
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.station-subtitle {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-style: italic;
+}
+
+.werte-vision-wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .werte-vision-wrap {
+    grid-template-columns: minmax(0, 480px);
+    justify-content: center;
+  }
+}
+
+.werte-vision-wrap .flip-card,
+.werte-vision-wrap .flip-card-inner,
+.werte-vision-wrap .flip-card-front,
+.werte-vision-wrap .flip-card-back {
+  min-height: 260px;
+}
+
+/* =========================================
    Werte & Vision Card (About Section)
    ========================================= */
 

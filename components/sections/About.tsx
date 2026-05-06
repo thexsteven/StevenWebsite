@@ -1,5 +1,47 @@
 import { SectionHead } from '@/components/SectionHead';
 
+const stations = [
+  {
+    id: 'schule',
+    title: 'Realschule',
+    period: 'Aug. 2011 – Juli 2017',
+    imageSrc: null as string | null,
+    imageAlt: 'Schulzeit',
+  },
+  {
+    id: 'ausbildung',
+    title: 'Ausbildung',
+    subtitle: 'Industriemechaniker',
+    period: 'Aug. 2017 – Juli 2021',
+    imageSrc: null as string | null,
+    imageAlt: 'Ausbildung Industriemechaniker',
+  },
+  {
+    id: 'beruf',
+    title: 'Berufstätigkeit',
+    subtitle: 'Industriemechaniker',
+    period: 'März 2021 – Dez. 2022',
+    imageSrc: null as string | null,
+    imageAlt: 'Job als Industriemechaniker',
+  },
+  {
+    id: 'techniker',
+    title: 'Techniker',
+    subtitle: 'Maschinenbau',
+    period: 'März 2023 – Feb. 2025',
+    imageSrc: null as string | null,
+    imageAlt: 'Maschinenbau-Techniker',
+  },
+  {
+    id: 'studium',
+    title: 'Duales Studium',
+    subtitle: 'Angewandte Informatik',
+    period: 'Sept. 2025 – heute',
+    imageSrc: null as string | null,
+    imageAlt: 'Duales Studium DHBW Mosbach',
+  },
+];
+
 export function About() {
   return (
     <section id="about" className="about" aria-labelledby="about-title">
@@ -9,60 +51,61 @@ export function About() {
         title="Kurz, klar, persönlich."
         intro="Mein Fokus liegt auf angewandter Informatik, Gesundheit und kontinuierlichem Lernen – im Studium, im Sport und auf Reisen."
       />
-      <div className="section-body grid-2">
+
+      <div className="werdegang-strip">
+        {stations.map((s) => (
+          <div key={s.id} className="station-card">
+            {s.imageSrc ? (
+              <img src={s.imageSrc} alt={s.imageAlt} />
+            ) : (
+              <div className="station-placeholder" aria-hidden="true" />
+            )}
+            <div className="station-overlay">
+              <span className="station-period">{s.period}</span>
+              <strong className="station-title">{s.title}</strong>
+              {'subtitle' in s && s.subtitle && (
+                <span className="station-subtitle">{s.subtitle}</span>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="werte-vision-wrap">
         <a href="/motivation" className="flip-card-link">
           <div className="flip-card" tabIndex={0}>
             <div className="flip-card-inner">
-              <div className="flip-card-front card">
-                <h3>Profil</h3>
-                <p>
-                  Eine Knieverletzung hat meinen Plan zerstört. Und mir den
-                  richtigen gezeigt.
-                </p>
-                <p>
-                  Als Industriemechaniker war Arbeit körperlich. Dann zwang
-                  mich mein Knie umzudenken. Zum ersten Mal in meinem Leben
-                  habe ich wirklich gelernt — und gemerkt, dass es mir Spaß
-                  macht. Techniker-Abschluss: 1,2. Heute studiere ich
-                  Angewandte Informatik, entwickle KI-Systeme und baue
-                  Lernmethoden, die wirklich funktionieren.
-                </p>
-                <span className="flip-hint">Klick für Motivation →</span>
+              <div className="flip-card-front card werte-vision-card">
+                <h3>Werte &amp; Vision</h3>
+                <blockquote className="anime-quote">
+                  <p>
+                    &ldquo;I&rsquo;m not gonna run away, I never go back on my
+                    word! That&rsquo;s my nindo: my ninja way!&rdquo;
+                  </p>
+                  <cite>— Naruto Uzumaki</cite>
+                </blockquote>
+                <blockquote className="anime-quote">
+                  <p>
+                    &ldquo;If you don&rsquo;t take risks, you can&rsquo;t
+                    create a future!&rdquo;
+                  </p>
+                  <cite>— Monkey D. Luffy</cite>
+                </blockquote>
               </div>
               <div className="flip-card-back">
-                <h3>Meine Motivation</h3>
+                <h3>Meine Vision</h3>
                 <p className="flip-back-text">
-                  Maximale Kompetenzentwicklung:
+                  Mein Weg war kein gerader.
                   <br />
-                  Systeme verstehen – Technik, Software, KI.
+                  Aber er war immer meiner.
+                  <br />
+                  Technik. Software. KI. Freiheit.
                 </p>
-                <span className="flip-cta">Mehr erfahren</span>
+                <span className="flip-cta">Volle Story lesen</span>
               </div>
             </div>
           </div>
         </a>
-        <div className="card werte-vision-card">
-          <h3>Werte &amp; Vision</h3>
-          <blockquote className="anime-quote">
-            <p>
-              &ldquo;I&rsquo;m not gonna run away, I never go back on my word!
-              That&rsquo;s my nindo: my ninja way!&rdquo;
-            </p>
-            <cite>— Naruto Uzumaki</cite>
-          </blockquote>
-          <blockquote className="anime-quote">
-            <p>&ldquo;If you don&rsquo;t take risks, you can&rsquo;t create a future!&rdquo;</p>
-            <cite>— Monkey D. Luffy</cite>
-          </blockquote>
-          <p className="werte-transfer">
-            Mein Weg war kein gerader. Aber er war immer meiner. Technik.
-            Software. KI. Freiheit. Das ist, was mich antreibt — und wohin
-            ich gehe.
-          </p>
-          <a href="/motivation" className="text-link werte-more">
-            Meine volle Story →
-          </a>
-        </div>
       </div>
     </section>
   );
