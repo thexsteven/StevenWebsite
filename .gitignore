@@ -6,9 +6,13 @@
 Thumbs.db
 
 # Mediendateien (werden auf Cloudinary gehostet)
-images/
+/images/
 pages/travel/cannes/images/
 pages/travel/hawaii/videos/
+
+# public/images bleibt ausdrücklich getrackt (Hero-Bild für Next.js)
+!/public/images/
+!/public/images/**
 
 # Rohmaterial (zu groß für Git)
 HawaiiAufnahmen/
@@ -27,3 +31,13 @@ scripts/cloudinary-map.json
 
 # Love-Story Klartextquellen (werden verschluesselt in encrypted/ ausgeliefert)
 _love-source/
+
+# Next.js
+.next/
+out/
+build/
+.vercel
+*.tsbuildinfo
+
+# Lokale Env-Variablen (Next.js-Konvention)
+.env*.local
