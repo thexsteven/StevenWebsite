@@ -98,9 +98,14 @@ export function MomentsCarousel() {
         .mc-root {
           position: relative;
           width: 100%;
+          max-width: 1100px;
+          margin: 0 auto;
           height: 100vh;
-          min-height: 600px;
+          min-height: 420px;
+          max-height: 520px;
           overflow: hidden;
+          border-radius: 16px;
+          box-shadow: 0 8px 40px rgba(0,0,0,0.18);
           background: #0a0a0a;
           font-family: var(--font-cormorant), serif;
           cursor: default;
@@ -147,7 +152,7 @@ export function MomentsCarousel() {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          padding: 48px 56px;
+          padding: 32px 40px;
         }
 
         /* Section title */
@@ -157,7 +162,7 @@ export function MomentsCarousel() {
           font-weight: 300;
           letter-spacing: 0.22em;
           text-transform: uppercase;
-          color: rgba(255,255,255,0.45);
+          color: rgba(255,255,255,0.35);
           margin: 0;
         }
 
@@ -187,7 +192,7 @@ export function MomentsCarousel() {
 
         /* Statement */
         .mc-statement {
-          font-size: clamp(28px, 4.5vw, 58px);
+          font-size: clamp(20px, 3vw, 38px);
           font-weight: 300;
           font-style: italic;
           color: #fff;
@@ -203,15 +208,15 @@ export function MomentsCarousel() {
         .mc-controls {
           display: flex;
           align-items: center;
-          gap: 20px;
+          gap: 14px;
         }
 
         .mc-arrow {
           background: none;
           border: 1px solid rgba(255,255,255,0.2);
           color: rgba(255,255,255,0.6);
-          width: 40px;
-          height: 40px;
+          width: 32px;
+          height: 32px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -275,7 +280,11 @@ export function MomentsCarousel() {
           margin-top: 4px;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 640px) {
+          .mc-root {
+            border-radius: 10px;
+            margin: 0 16px;
+          }
           .mc-content { padding: 32px 28px; }
           .mc-tag { font-size: 9px; }
         }

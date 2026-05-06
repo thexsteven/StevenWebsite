@@ -24,8 +24,10 @@ export default function HomePage() {
         <Preview />
         <About />
         <Resume />
-        <MomentsCarousel />
         <CareerPreview />
+        <div className="px-6">
+          <MomentsCarousel />
+        </div>
         <Travel />
         <Sport />
         <Projects />
