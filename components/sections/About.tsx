@@ -5,7 +5,7 @@ const stations = [
     id: 'schule',
     title: 'Realschule',
     period: 'Aug. 2011 – Juli 2017',
-    imageSrc: null as string | null,
+    imageSrc: 'https://res.cloudinary.com/dozdjb4fi/image/upload/v1778156328/IMG_0383_x5xcp9.jpg',
     imageAlt: 'Schulzeit',
   },
   {
@@ -13,7 +13,7 @@ const stations = [
     title: 'Ausbildung',
     subtitle: 'Industriemechaniker',
     period: 'Aug. 2017 – Juli 2021',
-    imageSrc: null as string | null,
+    imageSrc: 'https://res.cloudinary.com/dozdjb4fi/image/upload/v1778156329/IMG_0384_kngetr.jpg',
     imageAlt: 'Ausbildung Industriemechaniker',
   },
   {
@@ -21,7 +21,7 @@ const stations = [
     title: 'Berufstätigkeit',
     subtitle: 'Industriemechaniker',
     period: 'März 2021 – Dez. 2022',
-    imageSrc: null as string | null,
+    imageSrc: 'https://res.cloudinary.com/dozdjb4fi/image/upload/v1778156329/IMG_0385_y9ov7s.jpg',
     imageAlt: 'Job als Industriemechaniker',
   },
   {
@@ -29,7 +29,7 @@ const stations = [
     title: 'Techniker',
     subtitle: 'Maschinenbau',
     period: 'März 2023 – Feb. 2025',
-    imageSrc: null as string | null,
+    imageSrc: 'https://res.cloudinary.com/dozdjb4fi/image/upload/v1778156329/IMG_0387_yma1fc.jpg',
     imageAlt: 'Maschinenbau-Techniker',
   },
   {
@@ -37,7 +37,7 @@ const stations = [
     title: 'Duales Studium',
     subtitle: 'Angewandte Informatik',
     period: 'Sept. 2025 – heute',
-    imageSrc: null as string | null,
+    imageSrc: 'https://res.cloudinary.com/dozdjb4fi/image/upload/v1778156513/IMG_8821_l2mkjj.jpg',
     imageAlt: 'Duales Studium DHBW Mosbach',
   },
 ];
@@ -54,7 +54,7 @@ export function About() {
 
       <div className="werdegang-strip">
         {stations.map((s) => (
-          <div key={s.id} className="station-card">
+          <div key={s.id} className={`station-card station-card--${s.id}`}>
             {s.imageSrc ? (
               <img src={s.imageSrc} alt={s.imageAlt} />
             ) : (
