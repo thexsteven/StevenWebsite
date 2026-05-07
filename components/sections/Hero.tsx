@@ -1,4 +1,5 @@
 import { HeroBadge } from '@/components/HeroBadge';
+import { RotatingQuote } from '@/components/RotatingQuote';
 
 export function Hero() {
   return (
@@ -7,7 +8,7 @@ export function Hero() {
         Dualer Informatikstudent, sportbegeistert und auf Reisen zuhause.
       </p>
       <div className="hero-content">
-        <p className="eyebrow">Pressure shapes diamonds · Stay hard</p>
+        <RotatingQuote />
         <h1>Homepage Steven Braun</h1>
         <div className="hero-actions">
           <a href="#travel" className="btn">

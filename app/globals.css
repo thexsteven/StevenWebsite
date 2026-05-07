@@ -912,6 +912,22 @@ header * {
   font-style: italic;
 }
 
+.rotating-quote {
+  margin-bottom: var(--space-sm);
+}
+
+.rotating-quote .eyebrow {
+  margin-bottom: 0;
+}
+
+.rotating-quote__bar {
+  height: 1px;
+  width: 100%;
+  background: currentColor;
+  opacity: 0.35;
+  margin-top: 6px;
+}
+
 .hero--image h1 {
   font-family: var(--font-display);
   font-weight: 800;
@@ -926,39 +942,27 @@ header * {
   margin: 0;
   max-width: 280px;
   text-align: right;
-  color: var(--color-accent);
+  color: rgba(255, 255, 255, 0.92);
   font-family: var(--font-serif);
-  font-style: italic;
-  font-weight: 400;
+  font-style: normal;
+  font-weight: 300;
   font-size: 1.05rem;
   line-height: 1.45;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.06em;
+  border-right: 2px solid rgba(255, 255, 255, 0.45);
+  padding-right: 0.85rem;
   text-shadow:
-    0 2px 14px rgba(0, 0, 0, 0.55),
-    0 0 4px rgba(0, 0, 0, 0.35);
-}
-
-.hero--image .hero-tagline::before {
-  content: "";
-  display: block;
-  width: 36px;
-  height: 2px;
-  background: var(--color-accent);
-  margin: 0 0 0.7rem auto;
-  border-radius: 999px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+    0 1px 4px rgba(0, 0, 0, 0.6),
+    0 2px 12px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 720px) {
   .hero--image .hero-tagline {
-    position: static;
-    max-width: 100%;
-    text-align: left;
-    margin: var(--space-md) 0 0;
-  }
-
-  .hero--image .hero-tagline::before {
-    margin: 0 auto 0.5rem 0;
+    top: 1rem;
+    right: 1rem;
+    max-width: 55vw;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
   }
 }
 
