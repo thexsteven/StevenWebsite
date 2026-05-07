@@ -118,7 +118,7 @@ export function BookLibrary() {
           return (
             <article key={book.id} className={styles.flipCard}>
               <div className={innerClass}>
-                <div className={styles.flipCardFace}>
+                <div className={`${styles.flipCardFace} ${styles.flipCardFront}`}>
                   <header className={styles.bookHeader}>
                     <h4 className={styles.bookTitle}>{book.title}</h4>
                     <span className={styles.bookAuthor}>{book.author}</span>
