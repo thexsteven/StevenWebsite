@@ -1,4 +1,6 @@
 import { SectionHead } from '@/components/SectionHead';
+import { BookLibrary } from '@/components/sections/BookLibrary';
+import { characters } from '@/lib/characters';
 
 const stations = [
   {
@@ -90,26 +92,19 @@ export function About() {
         </p>
       </div>
 
-      <div className="werte-vision-wrap">
-        <a href="/motivation" className="flip-card-link">
+      <div className="about-side-by-side">
+        <div className="werte-vision-wrap">
+          <a href="/motivation" className="flip-card-link">
           <div className="flip-card" tabIndex={0}>
             <div className="flip-card-inner">
               <div className="flip-card-front card werte-vision-card">
-                <h3>Werte &amp; Vision</h3>
-                <blockquote className="anime-quote">
-                  <p>
-                    &ldquo;I&rsquo;m not gonna run away, I never go back on my
-                    word! That&rsquo;s my nindo: my ninja way!&rdquo;
-                  </p>
-                  <cite>— Naruto Uzumaki</cite>
-                </blockquote>
-                <blockquote className="anime-quote">
-                  <p>
-                    &ldquo;If you don&rsquo;t take risks, you can&rsquo;t
-                    create a future!&rdquo;
-                  </p>
-                  <cite>— Monkey D. Luffy</cite>
-                </blockquote>
+                <h3>Quotes that inspire me.</h3>
+                {characters.map((char) => (
+                  <blockquote key={char.id} className="anime-quote">
+                    <p>&ldquo;{char.quotes[0]}&rdquo;</p>
+                    <cite>— {char.name}</cite>
+                  </blockquote>
+                ))}
               </div>
               <div className="flip-card-back">
                 <h3>Was das bedeutet</h3>
@@ -127,8 +122,10 @@ export function About() {
                 <span className="flip-cta">Zitate die mich inspirieren</span>
               </div>
             </div>
-          </div>
-        </a>
+            </div>
+          </a>
+        </div>
+        <BookLibrary />
       </div>
     </section>
   );
