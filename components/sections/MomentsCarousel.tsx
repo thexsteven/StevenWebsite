@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, type CSSProperties } from 'react';
 
 type Moment = {
   id: number;
@@ -8,6 +8,8 @@ type Moment = {
   tag: string;
   statement: string;
   location: string;
+  position?: string;
+  mobilePosition?: string;
 };
 
 const CLOUDINARY_PLACEHOLDER =
@@ -52,6 +54,7 @@ const moments: Moment[] = [
     tag: 'Gym · täglich',
     statement: 'Wer seinen Körper kontrolliert, kontrolliert seinen Kopf.',
     location: 'Überall',
+    mobilePosition: '70% center',
   },
 ];
 
@@ -115,7 +118,7 @@ export function MomentsCarousel() {
           position: absolute;
           inset: 0;
           background-size: cover;
-          background-position: center;
+          background-position: var(--mc-pos, center);
           transition: opacity ${TRANSITION_DURATION}ms cubic-bezier(0.4, 0, 0.2, 1);
         }
         .mc-slide::after {
@@ -286,6 +289,7 @@ export function MomentsCarousel() {
           }
           .mc-content { padding: 32px 28px; }
           .mc-tag { font-size: 9px; }
+          .mc-slide { background-position: var(--mc-pos-mobile, var(--mc-pos, center)); }
         }
       `}</style>
 
@@ -301,13 +305,23 @@ export function MomentsCarousel() {
         {prevMoment && (
           <div
             className="mc-slide mc-slide-prev"
-            style={{ backgroundImage: `url(${prevMoment.image})` }}
+            style={{
+              backgroundImage: `url(${prevMoment.image})`,
+              ['--mc-pos' as string]: prevMoment.position ?? 'center',
+              ['--mc-pos-mobile' as string]:
+                prevMoment.mobilePosition ?? prevMoment.position ?? 'center',
+            } as CSSProperties}
           />
         )}
 
         <div
           className="mc-slide mc-slide-current"
-          style={{ backgroundImage: `url(${currentMoment.image})` }}
+          style={{
+            backgroundImage: `url(${currentMoment.image})`,
+            ['--mc-pos' as string]: currentMoment.position ?? 'center',
+            ['--mc-pos-mobile' as string]:
+              currentMoment.mobilePosition ?? currentMoment.position ?? 'center',
+          } as CSSProperties}
         />
 
         <div className="mc-content">
