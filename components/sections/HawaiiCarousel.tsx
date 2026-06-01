@@ -144,9 +144,17 @@ export function HawaiiCarousel({ slides, label }: HawaiiCarouselProps) {
         .hc-slide video {
           width: 100%;
           height: 100%;
-          object-fit: cover;
           display: block;
           background: #0a0a0a;
+        }
+        /* Bilder füllen die Bühne (einheitlich, kinoartig zugeschnitten). */
+        .hc-slide img {
+          object-fit: cover;
+        }
+        /* Videos NICHT beschneiden – ganz zeigen, mit Letterbox auf der
+           dunklen Bühne. So geht kein Bildausschnitt verloren. */
+        .hc-slide video {
+          object-fit: contain;
         }
 
         /* ——— Bildunterschrift (wechselt mit der aktiven Folie) ——— */
