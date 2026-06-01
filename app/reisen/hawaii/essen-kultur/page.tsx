@@ -3,6 +3,8 @@ import { Breadcrumb } from '@/components/Breadcrumb';
 import { StoryDetailHeader } from '@/components/StoryDetailHeader';
 import { StoryHighlights } from '@/components/StoryHighlights';
 import { StoryPagination } from '@/components/StoryPagination';
+import { HawaiiSectionHeader } from '@/components/HawaiiSectionHeader';
+import { HawaiiCarousel } from '@/components/sections/HawaiiCarousel';
 import { HawaiiEssenMap } from '@/components/HawaiiEssenMap';
 
 export const metadata: Metadata = {
@@ -41,155 +43,129 @@ export default function HawaiiEssenKultur() {
           ]}
         />
 
-        <div className="album-grid">
-          <div className="album-section">
-            <h2>Poke Bowl</h2>
+        <div className="hawaii-section">
+          <HawaiiSectionHeader title="Poke Bowl" />
+          <div className="hawaii-section-text">
             <p>
               Das Gericht der Insel. Jede Tankstelle, jeder Supermarkt, jedes
               kleine Restaurant hat sie – und sie schmeckt jedes Mal anders. Und
               jedes Mal gut.
             </p>
           </div>
+          <HawaiiCarousel
+            label="Poke Bowl"
+            slides={[
+              {
+                type: 'image',
+                src: 'https://res.cloudinary.com/dozdjb4fi/image/upload/v1774240022/pages/travel/hawaii/videos/PokeBowl.jpg',
+                alt: 'Poke Bowl auf Oahu',
+                caption:
+                  'Frischer Thunfisch, Sojasauce, Sesamöl, Avocado, Edamame. Kein Trend – hier einfach Lebensmittel.',
+              },
+              {
+                type: 'image',
+                src: 'https://res.cloudinary.com/dozdjb4fi/image/upload/v1774240030/pages/travel/hawaii/videos/Acai_Bowl_.jpg',
+                alt: 'Açaí Bowl',
+              },
+              {
+                type: 'image',
+                src: 'https://res.cloudinary.com/dozdjb4fi/image/upload/v1774240032/pages/travel/hawaii/videos/ChickenBowl.jpg',
+                alt: 'Chicken Bowl',
+              },
+            ]}
+          />
+        </div>
 
-          <figure className="album-item album-item--wide">
-            <img
-              src="https://res.cloudinary.com/dozdjb4fi/image/upload/v1774240022/pages/travel/hawaii/videos/PokeBowl.jpg"
-              alt="Poke Bowl auf Oahu"
-              loading="lazy"
-            />
-            <figcaption>
-              Frischer Thunfisch, Sojasauce, Sesamöl, Avocado, Edamame. Kein
-              Trend – hier einfach Lebensmittel.
-            </figcaption>
-          </figure>
-
-          <figure className="album-item">
-            <img
-              src="https://res.cloudinary.com/dozdjb4fi/image/upload/v1774240030/pages/travel/hawaii/videos/Acai_Bowl_.jpg"
-              alt="Açaí Bowl"
-              loading="lazy"
-            />
-          </figure>
-
-          <figure className="album-item">
-            <img
-              src="https://res.cloudinary.com/dozdjb4fi/image/upload/v1774240032/pages/travel/hawaii/videos/ChickenBowl.jpg"
-              alt="Chicken Bowl"
-              loading="lazy"
-            />
-          </figure>
-
-          <div className="album-section">
-            <h2>Food Trucks · Cartwright Road</h2>
+        <div className="hawaii-section">
+          <HawaiiSectionHeader title="Food Trucks · Cartwright Road" />
+          <div className="hawaii-section-text">
             <p>
               Ein Dutzend Trucks nebeneinander, jeden Tag. Jeder mit einem
               anderen Konzept. Die Warteschlangen zeigen, wo man richtig ist.
             </p>
           </div>
+          <HawaiiCarousel
+            label="Food Trucks an der Cartwright Road"
+            slides={[
+              {
+                type: 'video',
+                src: 'https://res.cloudinary.com/dozdjb4fi/video/upload/v1774237698/pages/travel/hawaii/videos/Foodtruck.mov',
+                label: 'Food Trucks an der Cartwright Road',
+                caption:
+                  'Cartwright Road, direkt am Kapiolani Park. Ich bin mehr als einmal zurückgekommen.',
+              },
+              {
+                type: 'video',
+                src: 'https://res.cloudinary.com/dozdjb4fi/video/upload/v1774237709/pages/travel/hawaii/videos/FoodtrucksSmoothie.mov',
+                label: 'Bambus-Smoothie am Food Truck',
+                caption:
+                  'Bambus-Smoothie: frisches Bambus, direkt ausgepresst, mit Früchten. Grün, leicht süßlich, erdiger Unterton.',
+              },
+              {
+                type: 'image',
+                src: 'https://res.cloudinary.com/dozdjb4fi/image/upload/v1774240025/pages/travel/hawaii/videos/FoodtruckBurger.jpg',
+                alt: 'Burger am Food Truck',
+                caption:
+                  'Burger-Truck – saftige Patties, handgemachte Saucen, auf einer Parkbank mit Blick auf den Ozean.',
+              },
+              {
+                type: 'image',
+                src: 'https://res.cloudinary.com/dozdjb4fi/image/upload/v1774240034/pages/travel/hawaii/videos/HotDog.jpg',
+                alt: 'Hot Dog am Foodtruck',
+              },
+            ]}
+          />
+          <HawaiiEssenMap className="hawaii-section-map" />
+        </div>
 
-          <figure className="album-item album-item--wide">
-            <video controls preload="metadata">
-              <source
-                src="https://res.cloudinary.com/dozdjb4fi/video/upload/v1774237698/pages/travel/hawaii/videos/Foodtruck.mov"
-                type="video/mp4"
-              />
-              Dein Browser unterstützt dieses Videoformat leider nicht.
-            </video>
-            <figcaption>
-              Cartwright Road, direkt am Kapiolani Park. Ich bin mehr als einmal
-              zurückgekommen.
-            </figcaption>
-          </figure>
+        <div className="hawaii-section">
+          <HawaiiSectionHeader title="Shaved Ice · Rainbow Drive-In · Betty's Burger" />
+          <HawaiiCarousel
+            label="Shaved Ice und Rainbow Drive-In"
+            slides={[
+              {
+                type: 'image',
+                src: 'https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237736/pages/travel/hawaii/videos/Ice.jpg',
+                alt: 'Shaved Ice',
+                caption:
+                  'Shaved Ice – Pflicht auf Hawaii. Himbeere, Mango, Kokosnuss.',
+              },
+              {
+                type: 'image',
+                src: 'https://res.cloudinary.com/dozdjb4fi/image/upload/v1774240037/pages/travel/hawaii/videos/RainbowRestaurant.jpg',
+                alt: 'Rainbow Drive-In',
+                caption:
+                  'Rainbow Drive-In – seit 1961, Plate Lunch, kein Schnickschnack.',
+              },
+            ]}
+          />
+        </div>
 
-          <figure className="album-item">
-            <video controls preload="metadata">
-              <source
-                src="https://res.cloudinary.com/dozdjb4fi/video/upload/v1774237709/pages/travel/hawaii/videos/FoodtrucksSmoothie.mov"
-                type="video/mp4"
-              />
-              Dein Browser unterstützt dieses Videoformat leider nicht.
-            </video>
-            <figcaption>
-              Bambus-Smoothie: frisches Bambus, direkt ausgepresst, mit
-              Früchten. Grün, leicht süßlich, erdiger Unterton.
-            </figcaption>
-          </figure>
-
-          <figure className="album-item">
-            <img
-              src="https://res.cloudinary.com/dozdjb4fi/image/upload/v1774240025/pages/travel/hawaii/videos/FoodtruckBurger.jpg"
-              alt="Burger am Food Truck"
-              loading="lazy"
-            />
-            <figcaption>
-              Burger-Truck – saftige Patties, handgemachte Saucen, auf einer
-              Parkbank mit Blick auf den Ozean.
-            </figcaption>
-          </figure>
-
-          <figure className="album-item">
-            <img
-              src="https://res.cloudinary.com/dozdjb4fi/image/upload/v1774240034/pages/travel/hawaii/videos/HotDog.jpg"
-              alt="Hot Dog am Foodtruck"
-              loading="lazy"
-            />
-          </figure>
-
-          <HawaiiEssenMap className="album-item album-item--wide album-map" />
-
-          <div className="album-section">
-            <h2>Shaved Ice · Rainbow Drive-In · Betty's Burger</h2>
-          </div>
-
-          <figure className="album-item">
-            <img
-              src="https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237736/pages/travel/hawaii/videos/Ice.jpg"
-              alt="Shaved Ice"
-              loading="lazy"
-            />
-            <figcaption>
-              Shaved Ice – Pflicht auf Hawaii. Himbeere, Mango, Kokosnuss.
-            </figcaption>
-          </figure>
-
-          <figure className="album-item">
-            <img
-              src="https://res.cloudinary.com/dozdjb4fi/image/upload/v1774240037/pages/travel/hawaii/videos/RainbowRestaurant.jpg"
-              alt="Rainbow Drive-In"
-              loading="lazy"
-            />
-            <figcaption>
-              Rainbow Drive-In – seit 1961, Plate Lunch, kein Schnickschnack.
-            </figcaption>
-          </figure>
-
-          <div className="album-section">
-            <h2>Americanization</h2>
+        <div className="hawaii-section">
+          <HawaiiSectionHeader title="Americanization" />
+          <div className="hawaii-section-text">
             <p>
               Eine Insel mit reicher, eigener Esskultur – und an jeder zweiten
               Ecke Raising Cane's, McDonald's, Subway. Der Kontrast ist real.
             </p>
           </div>
-
-          <figure className="album-item">
-            <img
-              src="https://res.cloudinary.com/dozdjb4fi/image/upload/v1774240027/pages/travel/hawaii/videos/RaisingCanes.jpg"
-              alt="Raising Cane's in Honolulu"
-              loading="lazy"
-            />
-            <figcaption>
-              Raising Cane's – fast ausschließlich Chicken Fingers auf der
-              Karte, trotzdem Schlangen bis auf den Bürgersteig.
-            </figcaption>
-          </figure>
-
-          <figure className="album-item">
-            <img
-              src="https://res.cloudinary.com/dozdjb4fi/image/upload/v1774240040/pages/travel/hawaii/videos/BettysBurger.jpg"
-              alt="Betty's Burger"
-              loading="lazy"
-            />
-          </figure>
+          <HawaiiCarousel
+            label="Americanization"
+            slides={[
+              {
+                type: 'image',
+                src: 'https://res.cloudinary.com/dozdjb4fi/image/upload/v1774240027/pages/travel/hawaii/videos/RaisingCanes.jpg',
+                alt: "Raising Cane's in Honolulu",
+                caption:
+                  "Raising Cane's – fast ausschließlich Chicken Fingers auf der Karte, trotzdem Schlangen bis auf den Bürgersteig.",
+              },
+              {
+                type: 'image',
+                src: 'https://res.cloudinary.com/dozdjb4fi/image/upload/v1774240040/pages/travel/hawaii/videos/BettysBurger.jpg',
+                alt: "Betty's Burger",
+              },
+            ]}
+          />
         </div>
       </div>
 

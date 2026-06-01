@@ -3,6 +3,7 @@ import { Breadcrumb } from '@/components/Breadcrumb';
 import { StoryDetailHeader } from '@/components/StoryDetailHeader';
 import { StoryHighlights } from '@/components/StoryHighlights';
 import { StoryPagination } from '@/components/StoryPagination';
+import { HawaiiSectionHeader } from '@/components/HawaiiSectionHeader';
 
 export const metadata: Metadata = {
   title: 'Hawaii · Abschluss | Steven',
@@ -35,17 +36,14 @@ export default function HawaiiAbschluss() {
           ]}
         />
 
-        <div className="album-grid">
-          <div className="album-section">
-            <h2>Die Graduation</h2>
+        <div className="hawaii-section">
+          <HawaiiSectionHeader title="Die Graduation" />
+          <div className="hawaii-section-text">
             <p>
               Kurz. Zertifikat, Foto, Rede – vorbei. Keine große Feier, kein
               langer Abend. Aber das Zertifikat in der Hand zu halten ist
               trotzdem was.
             </p>
-          </div>
-
-          <div className="album-text">
             <p>
               C1 Academic English nach 6 Wochen Vollzeit-Englisch. Vorlesungen,
               Präsentationen, Gespräche – alles auf Englisch. Was sich wirklich
@@ -54,28 +52,26 @@ export default function HawaiiAbschluss() {
               hat, im Kopf zu übersetzen.
             </p>
           </div>
+        </div>
 
-          <div className="album-section">
-            <h2>Das Gym</h2>
+        <div className="hawaii-section">
+          <HawaiiSectionHeader title="Das Gym" />
+          <div className="hawaii-section-text">
             <p>
               Ehrlich gesagt spannender als die Graduation. Amerikanische Gyms
               sind anders – größer, lauter, irgendwie primitiver. Wir waren
               vorher hin und danach wieder hin. Dazwischen lag die Graduation.
             </p>
-          </div>
-
-          <div className="album-text">
             <p>
               Das sagt wahrscheinlich mehr über den Tag aus als jede offizielle
               Beschreibung.
             </p>
           </div>
+        </div>
 
-          <div className="album-section">
-            <h2>Was bleibt</h2>
-          </div>
-
-          <div className="album-text">
+        <div className="hawaii-section">
+          <HawaiiSectionHeader title="Was bleibt" />
+          <div className="hawaii-section-text">
             <p>
               Sechs Wochen auf einer Insel im Pazifik, tausend Kilometer vom
               nächsten Kontinent entfernt. Leute aus Korea, Japan, Brasilien,
