@@ -41,3 +41,5 @@ build/
 
 # Lokale Env-Variablen (Next.js-Konvention)
 .env*.local
+.env
+.env.local
