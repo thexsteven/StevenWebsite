@@ -37,7 +37,7 @@ const KONSTANZ_SLIDES: CoverflowSlide[] = [
   {
     src: 'https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237643/pages/travel/cannes/images/21062025_Bild_von_mir_.jpg',
     alt: 'Steven in cycling gear at the start of the tour – helmet, sunglasses and hydration vest on, train tracks visible in background',
-    caption: 'Startklar am Bodensee – Helm auf, Weste gepackt.',
+    caption: 'Startklar am Bodensee – Helm auf, Rucksack gepackt.',
   },
 ];
 
