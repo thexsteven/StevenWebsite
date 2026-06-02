@@ -570,6 +570,21 @@ section > * {
   gap: var(--space-md);
 }
 
+/* Konsolidierte Story-Seite: Etappen-Anker + eingebettete Mini-Karussells.
+   scroll-margin haelt die Etappe unter dem sticky Header sichtbar, wenn ein
+   Chip (#tag-1 …) sie anspringt. */
+.story-stage {
+  scroll-margin-top: 96px;
+}
+
+.story-carousel {
+  max-width: var(--text-max-width);
+  margin: var(--space-lg) auto var(--space-2xl);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.12);
+}
+
 .story-inline-figure {
   max-width: 65%;
   margin: var(--space-lg) auto;

@@ -157,7 +157,7 @@ export function Travel() {
             {CANNES_STATIONS.map((s) => (
               <a
                 key={s.slug}
-                href={`/reisen/cannes/${s.slug}`}
+                href={`/reisen/cannes#${s.slug}`}
                 className="travel-station"
               >
                 {s.label}
