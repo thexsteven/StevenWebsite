@@ -68,6 +68,9 @@ export function Coverflow({ slides, label }: CoverflowProps) {
 
   const rootRef = useRef<HTMLDivElement>(null);
   const pointerStart = useRef<number | null>(null);
+  // Merkt sich, ob die letzte Geste ein Wisch war – dann den nachfolgenden
+  // Klick (Browser feuert pointerup → click) auf der Folie unterdrücken.
+  const swiped = useRef(false);
 
   // prefers-reduced-motion, Breakpoint & Hover-Fähigkeit beobachten
   useEffect(() => {
@@ -134,12 +137,14 @@ export function Coverflow({ slides, label }: CoverflowProps) {
 
   const onPointerDown = (e: ReactPointerEvent<HTMLDivElement>) => {
     pointerStart.current = e.clientX;
+    swiped.current = false; // jede Geste startet frisch
   };
   const onPointerUp = (e: ReactPointerEvent<HTMLDivElement>) => {
     if (pointerStart.current === null) return;
     const dx = e.clientX - pointerStart.current;
     pointerStart.current = null;
     if (Math.abs(dx) > SWIPE_THRESHOLD) {
+      swiped.current = true; // verhindert den nachfolgenden Folien-Klick
       if (dx < 0) next();
       else prev();
     }
@@ -354,7 +359,10 @@ export function Coverflow({ slides, label }: CoverflowProps) {
                   style={style}
                   aria-hidden={isCurrent ? 'false' : 'true'}
                   tabIndex={-1}
-                  onClick={() => !isCurrent && goTo(i)}
+                  onClick={() => {
+                    if (swiped.current) return; // war ein Wisch, kein Tap
+                    if (!isCurrent) goTo(i);
+                  }}
                 >
                   <img src={slide.src} alt={slide.alt} loading="lazy" decoding="async" />
                   {slide.caption && (
