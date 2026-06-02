@@ -1,0 +1,29 @@
+{
+  "stylePalette": "warm tropical sunset palette: coral and gold skies over deep ocean navy blues, lush volcanic greens",
+  "pages": [
+    {
+      "slug": "flug-ankunft",
+      "scene": "Waikiki in Honolulu on Oahu at golden hour: the green tuff cone of Diamond Head (Lēʻahi) rising at the end of a palm-lined boulevard, a curve of turquoise Pacific beside a strip of beachfront hotels, gentle trade-wind clouds drifting over the ocean"
+    },
+    {
+      "slug": "alltag",
+      "scene": "the Ala Wai Canal in Waikiki, Honolulu on a calm early morning: a long straight palm-lined waterway reflecting a soft sky, a quiet paved bike path running along the bank, the cluster of Honolulu high-rises on one side and the steep green ridges of the Koʻolau mountain range rising behind the city"
+    },
+    {
+      "slug": "adventures",
+      "scene": "the Koko Head Crater Trail on the southeast coast of Oahu at dawn: a steep, dead-straight stairway of old wooden railroad ties climbing a dry reddish volcanic ridge, the deep-blue Pacific and a sweeping curved coastline far below, scrubby slopes catching warm first light"
+    },
+    {
+      "slug": "big-island",
+      "scene": "the summit region of Mauna Kea on Hawaiʻi Island at sunset: rust-red volcanic cinder cones and bare lava fields rising above a vast sea of clouds, a few distant small white observatory domes along a far ridgeline, a deep orange-to-violet gradient sky"
+    },
+    {
+      "slug": "essen-kultur",
+      "scene": "a row of colorful vintage food trucks with plain unmarked panels parked under tall coconut palms beside Kapiolani Park in Waikiki, Honolulu, the green slope of Diamond Head crater rising behind them, warm tropical late-afternoon light"
+    },
+    {
+      "slug": "abschluss",
+      "scene": "Waikiki Beach in Honolulu at sunset on a calm clear evening: the broad silhouette of Diamond Head to one side, golden and rose light spreading across the glassy Pacific, tall coconut palm fronds framing the upper sky, a peaceful end-of-journey mood"
+    }
+  ]
+}
