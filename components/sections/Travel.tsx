@@ -136,7 +136,7 @@ export function Travel() {
         <article className="travel-box">
           <header className="travel-box-header">
             <h3>Fahrradtour Konstanz → Cannes</h3>
-            <span className="travel-date">21.06.2025 – 01.07.2026</span>
+            <span className="travel-date">21.06.2025 – 01.07.2025</span>
           </header>
           <Coverflow slides={CANNES_SLIDES} label="Cannes" />
           <ul className="travel-stats">

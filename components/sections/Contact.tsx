@@ -10,7 +10,7 @@ export function Contact() {
         intro="Du erreichst mich über folgende Kanäle – ich freue mich auf den Austausch."
       />
       <div className="section-body contact-grid">
-        <a className="card contact-card" href="mailto:steven@example.com">
+        <a className="card contact-card" href="mailto:stevenbraun3107@icloud.com">
           <span className="contact-label">E-Mail</span>
           <strong>stevenbraun3107@icloud.com</strong>
         </a>
@@ -21,7 +21,7 @@ export function Contact() {
           <span className="contact-label">LinkedIn</span>
           <strong>Steven Braun</strong>
         </a>
-        <a className="card contact-card" href="#">
+        <a className="card contact-card" href="https://github.com/thexsteven">
           <span className="contact-label">GitHub</span>
           <strong>github.com/thexsteven</strong>
         </a>
