@@ -1,5 +1,5 @@
 type NavItem = { href: string; label: string };
-type Variant = 'home' | 'career' | 'travel-hawaii' | 'travel-cannes' | 'love' | 'motivation';
+type Variant = 'home' | 'career' | 'travel-hawaii' | 'travel-cannes' | 'motivation';
 
 type VariantConfig = {
   navLabel: string;
@@ -48,11 +48,6 @@ const VARIANTS: Record<Variant, VariantConfig> = {
       { href: '/#about', label: 'About' },
       { href: '/#contact', label: 'Contact' },
     ],
-  },
-  love: {
-    navLabel: 'Hauptnavigation',
-    logoHref: '/#top',
-    links: [{ href: '/#love-story', label: '← Unsere Geschichte' }],
   },
   motivation: {
     navLabel: 'Hauptnavigation',
