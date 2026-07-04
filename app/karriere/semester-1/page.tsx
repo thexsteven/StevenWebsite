@@ -146,8 +146,8 @@ export default function Semester1() {
             <h3>Praktische Anwendung</h3>
             <p>
               Matrizen begegnen mir z.B. bei CSS-Transformationen, in der Bildverarbeitung
-              mit Sharp (im Cloudinary-Upload-Skript dieser Site) und im RSA-Prinzip,
-              das die verschlüsselte Love-Story dieser Seite schützt.
+              mit Sharp (im Cloudinary-Upload-Skript dieser Site) und im RSA-Prinzip
+              hinter modernen Verschlüsselungsverfahren.
             </p>
           </section>
           <section className="module-projects" aria-label="Verwandte Projekte">

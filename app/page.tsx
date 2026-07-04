@@ -1,6 +1,5 @@
 import { SiteHeader } from '@/components/SiteHeader';
 import { SiteFooter } from '@/components/SiteFooter';
-import { LoveAccess } from '@/components/LoveAccess';
 import { RevealOnScroll } from '@/components/RevealOnScroll';
 import { StickyNavActive } from '@/components/StickyNavActive';
 import { Hero } from '@/components/sections/Hero';
@@ -12,7 +11,6 @@ import { CareerPreview } from '@/components/sections/CareerPreview';
 import { Travel } from '@/components/sections/Travel';
 import { Sport } from '@/components/sections/Sport';
 import { Projects } from '@/components/sections/Projects';
-import { LoveStory } from '@/components/sections/LoveStory';
 import { Contact } from '@/components/sections/Contact';
 
 export default function HomePage() {
@@ -31,7 +29,6 @@ export default function HomePage() {
         <Travel />
         <Sport />
         <Projects />
-        <LoveStory />
         <Contact />
         <noscript>
           <p>
@@ -43,7 +40,6 @@ export default function HomePage() {
       <SiteFooter />
       <StickyNavActive />
       <RevealOnScroll />
-      <LoveAccess />
     </>
   );
 }

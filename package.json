@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "upload": "node scripts/upload-to-cloudinary.js",
-    "encrypt-love": "node scripts/encrypt-love.js"
+    "upload": "node scripts/upload-to-cloudinary.js"
   },
   "dependencies": {
     "@next/mdx": "^15.1.0",
