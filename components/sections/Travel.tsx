@@ -78,6 +78,17 @@ const HAWAII_STATIONS = [
   { slug: 'abschluss', label: 'Abschluss' },
 ];
 
+// ——— Thailand (Platzhalter) ————————————————————————————————————
+// Inhalte folgen. Die Route steht, Bilder und Texte kommen nach der Reise.
+const THAILAND_STATIONS = [
+  { slug: 'bangkok', label: 'Bangkok' },
+  { slug: 'koh-phangan', label: 'Koh Phangan' },
+  { slug: 'koh-samui', label: 'Koh Samui' },
+  { slug: 'krabi', label: 'Krabi' },
+  { slug: 'phi-phi-inseln', label: 'Inseln um Koh Phi Phi' },
+  { slug: 'phuket', label: 'Phuket' },
+];
+
 const CANNES_STATIONS = [
   { slug: 'motivation', label: 'Motivation' },
   { slug: 'startpunkt-konstanz', label: 'Startpunkt Konstanz' },
@@ -97,7 +108,7 @@ export function Travel() {
         kicker="Reisen"
         titleId="travel-title"
         title="Meine Reisegeschichten"
-        intro="Hawaii als Sprachreise und eine Fahrradtour von Konstanz nach Cannes."
+        intro="Hawaii als Sprachreise, eine Fahrradtour von Konstanz nach Cannes – und als Nächstes Thailand."
       />
       <div className="travel-grid">
         <article className="travel-box">
@@ -158,6 +169,53 @@ export function Travel() {
               <a
                 key={s.slug}
                 href={`/reisen/cannes#${s.slug}`}
+                className="travel-station"
+              >
+                {s.label}
+              </a>
+            ))}
+          </nav>
+        </article>
+
+        <article className="travel-box travel-box--upcoming">
+          <header className="travel-box-header">
+            <h3>Thailand Rundreise</h3>
+            <span className="travel-date">Termin folgt</span>
+          </header>
+          <div className="travel-placeholder">
+            <span className="travel-badge">In Planung</span>
+            <p className="travel-placeholder-text">
+              Von Bangkok in den Süden: Inselhopping durch den Golf von Thailand
+              und die Andamanensee. Bilder und Reisebericht folgen nach der
+              Reise.
+            </p>
+            <ol className="travel-route" aria-label="Geplante Route">
+              {THAILAND_STATIONS.map((s) => (
+                <li key={s.slug} className="travel-route-stop">
+                  {s.label}
+                </li>
+              ))}
+            </ol>
+          </div>
+          <ul className="travel-stats">
+            <li>
+              <strong>Start:</strong> Bangkok
+            </li>
+            <li>
+              <strong>Route:</strong> Golf von Thailand → Andamanensee
+            </li>
+            <li>
+              <strong>Fokus:</strong> Inseln, Küste, Kultur
+            </li>
+            <li>
+              <strong>Ziel:</strong> Phuket
+            </li>
+          </ul>
+          <nav className="travel-stations">
+            {THAILAND_STATIONS.map((s) => (
+              <a
+                key={s.slug}
+                href={`/reisen/thailand#${s.slug}`}
                 className="travel-station"
               >
                 {s.label}
