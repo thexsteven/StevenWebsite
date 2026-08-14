@@ -1,5 +1,11 @@
 type NavItem = { href: string; label: string };
-type Variant = 'home' | 'career' | 'travel-hawaii' | 'travel-cannes' | 'motivation';
+type Variant =
+  | 'home'
+  | 'sub'
+  | 'career'
+  | 'travel-hawaii'
+  | 'travel-cannes'
+  | 'motivation';
 
 type VariantConfig = {
   navLabel: string;
@@ -12,14 +18,20 @@ const VARIANTS: Record<Variant, VariantConfig> = {
     navLabel: 'Hauptnavigation',
     logoHref: '#top',
     links: [
-      { href: '#about', label: 'Über mich' },
-      { href: '#resume', label: 'Lebenslauf' },
-      { href: '#moments', label: 'Moments' },
-      { href: '#career', label: 'Karriere' },
-      { href: '#travel', label: 'Reisen' },
-      { href: '#sport', label: 'Sport' },
-      { href: '#projects', label: 'Projekte' },
+      { href: '#projekte', label: 'Projekte' },
+      { href: '#werdegang', label: 'Werdegang' },
+      { href: '#beyond', label: 'Beyond Code' },
       { href: '#contact', label: 'Kontakt' },
+    ],
+  },
+  // Hub-Seiten der zweiten Ebene (/projekte, /reisen, /sport, /bibliothek).
+  sub: {
+    navLabel: 'Hauptnavigation',
+    logoHref: '/#top',
+    links: [
+      { href: '/#projekte', label: 'Projekte' },
+      { href: '/#werdegang', label: 'Werdegang' },
+      { href: '/#contact', label: 'Kontakt' },
     ],
   },
   career: {
