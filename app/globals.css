@@ -4165,3 +4165,456 @@ header * {
     display: none;
   }
 }
+
+/* =========================================================================
+   STARTSEITE v2 — Hero, Projekte, Werdegang, Beyond Code
+   -------------------------------------------------------------------------
+   Geschlossener Block, ausschließlich `.home-*`. Fasst bewusst keine
+   bestehende Regel an: die alten Sektions-Styles (`.about`, `.resume`,
+   `.travel`, `.sport`, `.preview`) werden weiterhin von den Hub-Seiten der
+   zweiten Ebene benutzt.
+
+   Zwei Akzente, sonst Neutraltöne:
+     Navy  var(--color-primary) #0f2f5f — Träger, Buttons, Titel
+     Rot   var(--color-accent)  #c8102e — Kicker, aktive Station, Hover-Cue
+   Die sechs Sektionsfarben aus „Farbakzente je Sektion" greifen hier nicht
+   mehr, weil die neuen Sektionen kein `.section-kicker` verwenden.
+   ========================================================================= */
+
+.home-main {
+  /* Der große Sprung im Weißraum: vorher var(--space-3xl) = 4rem. */
+  --home-gap: clamp(5rem, 11vw, 9rem);
+  --home-rule: rgba(15, 47, 95, 0.1);
+  --home-shell-pad: clamp(1.25rem, 5vw, 2.5rem);
+}
+
+/* Globale `section`-Regeln neutralisieren: Innenabstand und Zentrierung
+   übernimmt `.home-shell`, damit Hero und Karten voll ausbrechen können. */
+.home-hero,
+.home-section {
+  padding: 0;
+}
+
+.home-hero > *,
+.home-section > * {
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.home-shell {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-inline: var(--home-shell-pad);
+}
+
+.home-section {
+  padding-block: var(--home-gap);
+  border-top: 1px solid var(--home-rule);
+}
+
+/* Rücksprungziele aus den Unterseiten – ohne eigene Fläche. */
+.home-anchor-alias {
+  display: block;
+  height: 0;
+  scroll-margin-top: var(--scroll-offset);
+}
+
+/* ——— Sektionsköpfe ————————————————————————————————————————————— */
+
+.home-head {
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.home-kicker {
+  margin: 0 0 var(--space-sm);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.home-title {
+  margin: 0;
+  /* Kurze Zeilen halten den Titel kompakt; der Intro darunter läuft
+     bewusst breiter, sonst quetscht ihn der Titel auf Spaltenbreite. */
+  max-width: 18ch;
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.2vw + 0.6rem, 2.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+}
+
+.home-intro {
+  margin: var(--space-md) 0 0;
+  max-width: 52ch;
+  color: var(--color-muted);
+}
+
+/* ——— Hero ——————————————————————————————————————————————————————
+   Typografisch statt fotografisch: das Vollbild mit dunklem Overlay hat den
+   Weißraum aufgefressen, den die Headline zum Dominieren braucht. */
+
+.home-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--color-bg);
+  padding-block: clamp(4rem, 13vh, 8rem) clamp(3.5rem, 10vh, 6.5rem);
+}
+
+/* Sehr flacher Navy-Schimmer – gibt der Fläche Tiefe, ohne Farbe zu kosten. */
+.home-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      70% 55% at 8% 0%,
+      rgba(15, 47, 95, 0.07) 0%,
+      rgba(15, 47, 95, 0) 70%
+    );
+  pointer-events: none;
+}
+
+.home-hero-shell {
+  position: relative;
+  z-index: 1;
+}
+
+.home-hero-eyebrow {
+  display: inline-block;
+  margin: 0 0 clamp(1.25rem, 3vw, 2rem);
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--color-accent);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  color: var(--color-muted);
+}
+
+.home-hero-title {
+  margin: 0;
+  max-width: 17ch;
+  font-family: var(--font-display);
+  /* Faktor ~2,1 gegenüber `.home-title` – der Sprung, der die Hierarchie trägt. */
+  font-size: clamp(2.6rem, 7.5vw + 0.4rem, 5.25rem);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+  color: var(--color-primary);
+}
+
+.home-hero-dot {
+  color: var(--color-accent);
+}
+
+.home-hero-lead {
+  margin: clamp(1.5rem, 3.5vw, 2.25rem) 0 0;
+  max-width: 46ch;
+  font-size: clamp(1.02rem, 0.6vw + 0.9rem, 1.22rem);
+  line-height: 1.65;
+  color: var(--color-muted);
+}
+
+.home-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: clamp(2rem, 4.5vw, 3rem);
+}
+
+@media (min-width: 768px) {
+  .home-hero {
+    min-height: min(86svh, 880px);
+  }
+}
+
+/* ——— Buttons ———————————————————————————————————————————————————— */
+
+.home-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.8rem 1.6rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 0.98rem;
+  font-weight: 600;
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.home-btn--primary {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.home-btn--primary:hover {
+  background: #143b78;
+  border-color: #143b78;
+}
+
+.home-btn--ghost {
+  background: transparent;
+  border-color: rgba(15, 47, 95, 0.28);
+  color: var(--color-primary);
+}
+
+.home-btn--ghost:hover {
+  border-color: var(--color-primary);
+  background: rgba(15, 47, 95, 0.05);
+}
+
+.home-btn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* ——— Textlinks ——————————————————————————————————————————————————— */
+
+.home-link {
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-color: rgba(15, 47, 95, 0.28);
+  text-underline-offset: 5px;
+  transition:
+    color 0.2s ease,
+    text-decoration-color 0.2s ease;
+}
+
+.home-link:hover,
+.home-link:focus-visible {
+  color: var(--color-accent);
+  text-decoration-color: currentColor;
+}
+
+/* ——— Projekte ——————————————————————————————————————————————————— */
+
+.home-more {
+  margin: clamp(2rem, 4vw, 3rem) 0 0;
+}
+
+.home-empty {
+  max-width: var(--text-max-width);
+  color: var(--color-muted);
+}
+
+/* ——— Werdegang —————————————————————————————————————————————————— */
+
+.home-werdegang-layout {
+  display: grid;
+  gap: clamp(2.5rem, 6vw, 4rem);
+}
+
+.home-werdegang-text > p {
+  max-width: 54ch;
+}
+
+.home-werdegang-text strong {
+  color: var(--color-text);
+}
+
+.home-werdegang-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md) var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+/* Die Timeline erbt fünf Farben aus „Timeline v2"; hier auf die zwei
+   Akzente reduziert: Rot markiert die aktuelle Station, die früheren
+   verblassen in derselben Navy-Familie. */
+.home-werdegang .tl-item:nth-child(1) {
+  border-left-color: var(--color-accent);
+}
+.home-werdegang .tl-item:nth-child(2) {
+  border-left-color: var(--color-primary);
+}
+.home-werdegang .tl-item:nth-child(3) {
+  border-left-color: rgba(15, 47, 95, 0.55);
+}
+.home-werdegang .tl-item:nth-child(4) {
+  border-left-color: rgba(15, 47, 95, 0.32);
+}
+.home-werdegang .tl-item:nth-child(5) {
+  border-left-color: rgba(15, 47, 95, 0.16);
+}
+
+@media (min-width: 900px) {
+  .home-werdegang-layout {
+    grid-template-columns: 1fr 1.05fr;
+    align-items: start;
+  }
+
+  /* Die Timeline ist deutlich höher als der Text. Ohne `sticky` bliebe
+     links eine halbe Bildschirmhöhe tot – so läuft der Bruch-Text mit,
+     während die Stationen durchscrollen. */
+  .home-werdegang-text {
+    position: sticky;
+    top: calc(var(--scroll-offset) + 0.5rem);
+  }
+}
+
+/* ——— Beyond Code ———————————————————————————————————————————————— */
+
+.home-beyond-grid {
+  display: grid;
+  gap: var(--space-md);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-teaser {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: var(--space-lg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.home-teaser:hover,
+.home-teaser:focus-visible {
+  border-color: rgba(15, 47, 95, 0.35);
+  box-shadow: 0 18px 40px -28px rgba(15, 47, 95, 0.55);
+  transform: translateY(-3px);
+}
+
+.home-teaser:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.home-teaser-meta {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.home-teaser-title {
+  margin-top: 0.6rem;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--color-text);
+}
+
+.home-teaser-desc {
+  margin-top: 0.55rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--color-muted);
+}
+
+.home-teaser-cue {
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+  font-size: 1rem;
+  color: var(--color-primary);
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.home-teaser:hover .home-teaser-cue,
+.home-teaser:focus-visible .home-teaser-cue {
+  color: var(--color-accent);
+  transform: translateX(4px);
+}
+
+@media (min-width: 640px) {
+  .home-beyond-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-beyond-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ——— Kontakt ————————————————————————————————————————————————————
+   Bleibt inhaltlich unverändert, bekommt nur den neuen Vertikalrhythmus. */
+
+.home-main > #contact {
+  padding-block: var(--home-gap);
+  padding-inline: 0;
+  border-top: 1px solid var(--home-rule);
+}
+
+/* Die globale Regel `section > *` zentriert die Kinder auf 70ch bzw. 1100px
+   und setzt den Kontaktblock damit ~40px gegen die neuen Sektionen versetzt.
+   Hier bekommen die Kinder dieselbe Geometrie wie `.home-shell`. */
+.home-main > #contact > * {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--home-shell-pad);
+}
+
+/* ——— Hub-Seiten der zweiten Ebene ————————————————————————————— */
+
+.home-hub-top {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-xl) var(--home-shell-pad, var(--space-lg)) 0;
+}
+
+.home-hub-top .breadcrumb {
+  margin-bottom: 0;
+}
+
+/* ——— Reduced Motion ————————————————————————————————————————————— */
+
+@media (prefers-reduced-motion: reduce) {
+  .home-teaser,
+  .home-teaser-cue {
+    transition: none;
+  }
+
+  .home-teaser:hover,
+  .home-teaser:focus-visible {
+    transform: none;
+  }
+
+  .home-teaser:hover .home-teaser-cue,
+  .home-teaser:focus-visible .home-teaser-cue {
+    transform: none;
+  }
+}
+
+/* Touch-Geräte: kein Hover-Lift, dafür Druck-Feedback (wie im Basis-Layer). */
+@media (hover: none) {
+  .home-teaser:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: var(--color-border);
+  }
+
+  .home-teaser:active {
+    transform: scale(0.99);
+  }
+}
