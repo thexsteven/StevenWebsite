@@ -23,7 +23,7 @@ export default function HomePage() {
         <About />
         <Resume />
         <CareerPreview />
-        <div className="px-6">
+        <div className="moments-wrap">
           <MomentsCarousel />
         </div>
         <Travel />

@@ -161,6 +161,58 @@
   .flipCardBack {
     display: none;
   }
+
+  /* Statt eines endlos langen Stapels: eine randlose Snap-Rail. Jede Karte
+     zeigt drei Zitate, die nächste lugt hervor und lädt zum Wischen ein. */
+  .bookLibrary {
+    min-width: 0;
+  }
+
+  .bookLibrary .title {
+    font-size: 1.2rem;
+  }
+
+  .bookLibrary .intro {
+    font-size: 0.87rem;
+  }
+
+  .cardList {
+    flex-direction: row;
+    /* Ohne min-width:0 würde die Rail ihre Spalte auf Inhaltsbreite aufblasen
+       und die ganze Seite horizontal überlaufen lassen. */
+    min-width: 0;
+    gap: 0.7rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    margin: 0 calc(var(--space-lg) * -1);
+    padding: 2px var(--space-lg) 0.6rem;
+  }
+
+  .cardList::-webkit-scrollbar {
+    display: none;
+  }
+
+  .flipCard {
+    flex: 0 0 76%;
+    max-width: 290px;
+    scroll-snap-align: center;
+  }
+
+  .flipCardFace {
+    height: 100%;
+    padding: var(--space-md) var(--space-md) calc(var(--space-md) + 0.1rem);
+  }
+
+  .quote {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .quote:nth-of-type(n + 4) {
+    display: none;
+  }
 }
 
 /* Back face content */

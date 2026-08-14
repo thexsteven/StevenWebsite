@@ -108,16 +108,16 @@ export function Travel() {
           <Coverflow slides={HAWAII_SLIDES} label="Hawaii" />
           <ul className="travel-stats">
             <li>
-              <strong>Dauer:</strong> ca. 6 Wochen
+              <strong>Dauer</strong> ca. 6 Wochen
             </li>
             <li>
-              <strong>Fokus:</strong> Sprache, Kultur, Alltag
+              <strong>Fokus</strong> Sprache, Kultur, Alltag
             </li>
             <li>
-              <strong>Höhepunkte:</strong> Vulkan, Big Island, Skydiving
+              <strong>Höhepunkte</strong> Vulkan, Big Island, Skydiving
             </li>
             <li>
-              <strong>Abschluss:</strong> C1-Zertifikat
+              <strong>Abschluss</strong> C1-Zertifikat
             </li>
           </ul>
           <nav className="travel-stations">
@@ -141,16 +141,16 @@ export function Travel() {
           <Coverflow slides={CANNES_SLIDES} label="Cannes" />
           <ul className="travel-stats">
             <li>
-              <strong>Antrieb:</strong> Spontan, selbstfinanziert
+              <strong>Antrieb</strong> Spontan, selbstfinanziert
             </li>
             <li>
-              <strong>Route:</strong> Konstanz → Cannes
+              <strong>Route</strong> Konstanz → Cannes
             </li>
             <li>
-              <strong>Herausforderung:</strong> Alpen, Wetter, Umwege
+              <strong>Herausforderung</strong> Alpen, Wetter, Umwege
             </li>
             <li>
-              <strong>Ende:</strong> Südfrankreich &amp; Wiedersehen
+              <strong>Ende</strong> Südfrankreich &amp; Wiedersehen
             </li>
           </ul>
           <nav className="travel-stations">

@@ -282,13 +282,38 @@ export function MomentsCarousel() {
           margin-top: 4px;
         }
 
-        @media (max-width: 640px) {
+        @media (max-width: 768px) {
           .mc-root {
-            border-radius: 10px;
-            margin: 0 16px;
+            border-radius: 18px;
+            margin: 0;
+            min-height: 460px;
+            max-height: 74svh;
+            box-shadow:
+              0 1px 2px rgba(15, 23, 42, 0.05),
+              0 26px 50px -30px rgba(15, 47, 95, 0.7);
           }
-          .mc-content { padding: 32px 28px; }
-          .mc-tag { font-size: 9px; }
+          .mc-content { padding: 22px 22px 24px; }
+          .mc-section-title { font-size: 10px; letter-spacing: 0.24em; }
+          .mc-bottom { gap: 20px; }
+          .mc-tag { font-size: 9px; letter-spacing: 0.16em; padding: 4px 10px; }
+          .mc-statement {
+            font-size: clamp(22px, 6.4vw, 30px);
+            line-height: 1.24;
+            margin-top: 12px;
+          }
+          .mc-location { font-size: 9px; margin-top: 10px; }
+          /* Auf Touch navigieren Striche statt Pfeile — ruhigere Leiste. */
+          .mc-arrow { display: none; }
+          .mc-controls { gap: 12px; }
+          /* Striche bleiben 1px dünn, die Trefferfläche wächst auf 24px. */
+          .mc-dot,
+          .mc-dot.active {
+            height: 1px;
+            padding: 12px 0;
+            background-clip: content-box;
+          }
+          .mc-dot { width: 18px; }
+          .mc-dot.active { width: 30px; }
           .mc-slide { background-position: var(--mc-pos-mobile, var(--mc-pos, center)); }
         }
       `}</style>
