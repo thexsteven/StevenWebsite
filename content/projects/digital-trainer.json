@@ -1,0 +1,17 @@
+{
+  "slug": "digital-trainer",
+  "title": "Digital-Trainer",
+  "tagline": "Klausurtrainer für Digitaltechnik, offline nutzbar.",
+  "description": "Interaktiver Klausur-Trainer für Digitaltechnik: Zahlensysteme, IEEE 754, Schaltalgebra, Logikgatter und Addierer. Umgesetzt als statische PWA, die sich installieren und ohne Verbindung nutzen lässt – gedacht für die Bahnfahrt zur Prüfung.",
+  "repo": "thexsteven/digital-trainer",
+  "liveUrl": "https://digital-trainer-five.vercel.app",
+  "screenshot": "/images/projects/digital-trainer.png",
+  "techStack": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "PWA"
+  ],
+  "featured": false,
+  "order": 50
+}

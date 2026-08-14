@@ -1,0 +1,16 @@
+{
+  "slug": "reise-plan",
+  "title": "Reise-Plan",
+  "tagline": "Routen, Etappen und Packlisten an einem Ort.",
+  "description": "Eine schlanke Web-App zur Planung meiner Reisen: Etappen, Termine und Notizen gebündelt statt über Notizzettel und Chatverläufe verstreut. Bewusst als einzelne statische Seite ohne Backend gebaut – lädt sofort und funktioniert auch mit wackligem Netz unterwegs.",
+  "repo": "thexsteven/reise-plan",
+  "liveUrl": "https://reise-plan.vercel.app",
+  "screenshot": "/images/projects/reise-plan.png",
+  "techStack": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "featured": false,
+  "order": 80
+}

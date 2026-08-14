@@ -6,9 +6,17 @@
  * Austausch (CLS).
  */
 
-/** 1 Spalte mobil, 2 ab `md`, 3 ab `xl`. */
+/**
+ * 1 Spalte mobil, 2 ab `md`, 3 ab `xl`.
+ *
+ * `grid-flow-row-dense` füllt die Lücken, die zweispaltige
+ * Featured-Karten sonst am Zeilenende hinterlassen. Dabei rückt
+ * höchstens eine spätere einspaltige Karte nach vorne – für ein Raster
+ * unabhängiger Projekte ist diese Abweichung von der DOM-Reihenfolge
+ * vertretbar, die Tab-Reihenfolge bleibt die der Datendateien.
+ */
 export const PROJECT_GRID_CLASSNAME =
-  'grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3';
+  'grid grid-flow-row-dense grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3';
 
 /** Featured-Projekte spannen sich über zwei Spalten. */
 export const FEATURED_SPAN_CLASSNAME = 'md:col-span-2';

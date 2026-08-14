@@ -1,0 +1,17 @@
+{
+  "slug": "ai-prompt-library",
+  "title": "AI Prompt Library",
+  "tagline": "Prompts speichern, taggen und wiederfinden.",
+  "description": "Eine Anwendung zum Sammeln und Verschlagworten von KI-Prompts, entstanden als Prüfungsleistung in Backendentwicklung. Das Backend läuft mit FastAPI und SQLAlchemy inklusive Passwort-Hashing über bcrypt, das Frontend bewusst mit Vanilla JavaScript – ohne Framework, um die Schnittstelle wirklich zu verstehen.",
+  "repo": "thexsteven/ai-prompt-library",
+  "liveUrl": null,
+  "screenshot": "/images/projects/ai-prompt-library.png",
+  "techStack": [
+    "Python",
+    "FastAPI",
+    "SQLAlchemy",
+    "Vanilla JS"
+  ],
+  "featured": false,
+  "order": 40
+}

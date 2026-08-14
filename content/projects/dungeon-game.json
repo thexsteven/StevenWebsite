@@ -1,0 +1,16 @@
+{
+  "slug": "dungeon-game",
+  "title": "Dungeon Escape",
+  "tagline": "Textbasiertes Dungeon-Spiel in Python.",
+  "description": "Ein konsolenbasiertes Escape-Spiel: zufallsgenerierte Räume durchqueren, Monster bekämpfen oder strategisch fliehen. Sauber nach OOP-Prinzipien aufgebaut mit eigenen Klassen für Player, Monster, Room und Dungeon, dazu Eingabevalidierung und vollständige Unit-Test-Abdeckung.",
+  "repo": "thexsteven/dungeon_game",
+  "liveUrl": null,
+  "screenshot": "/images/projects/dungeon-game.png",
+  "techStack": [
+    "Python",
+    "OOP",
+    "Unit Tests"
+  ],
+  "featured": false,
+  "order": 60
+}

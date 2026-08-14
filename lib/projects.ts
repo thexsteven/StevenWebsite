@@ -8,7 +8,7 @@
  * Diese Datei liest nur vom Dateisystem und ist damit serverseitig.
  */
 
-import { readdir, readFile } from 'node:fs/promises';
+import { access, readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import matter from 'gray-matter';
 
@@ -147,6 +147,34 @@ function parseFile(
   return { raw: data, body: parsed.content.trim() };
 }
 
+// ——— Screenshots ——————————————————————————————————————————————
+
+const PUBLIC_DIR = path.join(process.cwd(), 'public');
+
+/**
+ * Prüft, ob ein lokal referenzierter Screenshot wirklich unter `public/`
+ * liegt. Fehlt die Datei – etwa weil `npm run screenshots` noch nicht
+ * gelaufen ist – wird `null` zurückgegeben und die Karte zeigt ihr
+ * Initialen-Motiv, statt ein kaputtes Bild zu rendern.
+ *
+ * Absolute URLs werden durchgereicht; die prüft Next.js über
+ * `images.remotePatterns`.
+ */
+async function resolveScreenshot(
+  screenshot: string | null,
+): Promise<string | null> {
+  if (!screenshot) return null;
+  if (/^https?:\/\//.test(screenshot)) return screenshot;
+  if (!screenshot.startsWith('/')) return null;
+
+  try {
+    await access(path.join(PUBLIC_DIR, screenshot.replace(/^\//, '')));
+    return screenshot;
+  } catch {
+    return null;
+  }
+}
+
 // ——— Laden ————————————————————————————————————————————————————
 
 /**
@@ -181,7 +209,10 @@ export async function getProjects(): Promise<Project[]> {
 
       const fallbackSlug = fileName.replace(/\.(json|mdx|md)$/, '');
       const project = toProject(parsed.raw, fallbackSlug, parsed.body);
-      if (project) projects.push(project);
+      if (!project) continue;
+
+      project.screenshot = await resolveScreenshot(project.screenshot);
+      projects.push(project);
     } catch (error) {
       console.warn(`[projects] "${fileName}" konnte nicht gelesen werden`, error);
     }
