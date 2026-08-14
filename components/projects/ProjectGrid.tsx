@@ -1,48 +1,28 @@
-'use client';
-
-import { motion, useReducedMotion, type Variants } from 'framer-motion';
-
 import type { ProjectWithStats } from '@/lib/projects';
 import { ProjectCard } from '@/components/projects/ProjectCard';
 import { PROJECT_GRID_CLASSNAME } from '@/components/projects/layout';
-
-/** Staffelung der Karten: ~80 ms Versatz, nur beim ersten Sichtbarwerden. */
-const GRID_VARIANTS: Variants = {
-  hidden: {},
-  visible: {
-    transition: { staggerChildren: 0.08, delayChildren: 0.05 },
-  },
-};
-
-const STATIC_GRID_VARIANTS: Variants = {
-  hidden: {},
-  visible: {},
-};
 
 type ProjectGridProps = {
   projects: readonly ProjectWithStats[];
 };
 
 /**
- * Responsives Grid der Projektkarten. Übernimmt die Orchestrierung des
- * Scroll-Reveals; die einzelnen Karten liefern ihre eigenen Varianten.
+ * Responsives Grid der Projektkarten.
+ *
+ * Den Scroll-Reveal löst bewusst jede Karte für sich aus, nicht dieses
+ * Grid: In einer Spalte wird der Container über 4000 px hoch, und ein
+ * Schwellwert auf einem so hohen Element greift erst weit hinter dem
+ * Sektionsanfang. Die Staffelung entsteht stattdessen über einen
+ * Versatz pro Spaltenposition in der Karte selbst.
  */
 export function ProjectGrid({ projects }: ProjectGridProps) {
-  const prefersReducedMotion = useReducedMotion();
-
   if (projects.length === 0) return null;
 
   return (
-    <motion.div
-      className={PROJECT_GRID_CLASSNAME}
-      variants={prefersReducedMotion ? STATIC_GRID_VARIANTS : GRID_VARIANTS}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.15 }}
-    >
-      {projects.map((project) => (
-        <ProjectCard key={project.slug} project={project} />
+    <div className={PROJECT_GRID_CLASSNAME}>
+      {projects.map((project, index) => (
+        <ProjectCard key={project.slug} project={project} index={index} />
       ))}
-    </motion.div>
+    </div>
   );
 }

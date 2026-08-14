@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { motion, useReducedMotion, type Variants } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 
 import { cn } from '@/lib/utils';
 import type { ProjectWithStats } from '@/lib/projects';
@@ -14,21 +14,31 @@ import {
   FEATURED_SPAN_CLASSNAME,
 } from '@/components/projects/layout';
 
-/** Scroll-Reveal: leichter Fade plus Y-Offset, gestaffelt vom Grid. */
-const CARD_VARIANTS: Variants = {
-  hidden: { opacity: 0, y: 24 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
-  },
-};
+/**
+ * Jede Karte beobachtet sich selbst. Der Schwellwert bezieht sich damit
+ * auf ~600 px Kartenhöhe statt auf das mehrere tausend Pixel hohe Grid –
+ * nur so löst der Reveal am Sektionsanfang aus und nicht erst weit
+ * dahinter.
+ */
+const REVEAL_VIEWPORT = { once: true, amount: 0.15 } as const;
 
-/** Bei `prefers-reduced-motion` bleibt die Karte einfach stehen. */
-const STATIC_VARIANTS: Variants = {
-  hidden: { opacity: 1, y: 0 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0 } },
-};
+/** Startzustand des Reveals: leichter Fade plus Y-Offset. */
+const HIDDEN = { opacity: 0, y: 24 } as const;
+
+/** Endzustand – bei reduzierter Bewegung ohne Übergang direkt gesetzt. */
+const SHOWN = { opacity: 1, y: 0 } as const;
+const SHOWN_INSTANT = { ...SHOWN, transition: { duration: 0 } } as const;
+
+/**
+ * Staffelung von ~80 ms. Der Versatz richtet sich nach der Position
+ * innerhalb der Dreierreihe, nicht nach dem Listenindex: Karten, die
+ * gemeinsam ins Bild kommen, laufen dadurch nacheinander an, während
+ * weiter unten liegende Karten nicht auf einen aufsummierten Delay
+ * warten.
+ */
+function revealDelay(index: number): number {
+  return (index % 3) * 0.08;
+}
 
 /** Textlinks in der Meta-Zeile – Navy, im Hover auf das DHBW-Rot. */
 const LINK_CLASSNAME =
@@ -163,9 +173,11 @@ function Screenshot({ src, title, featured }: ScreenshotProps) {
 
 type ProjectCardProps = {
   project: ProjectWithStats;
+  /** Position im Grid – steuert nur den Versatz des Reveals. */
+  index: number;
 };
 
-export function ProjectCard({ project }: ProjectCardProps) {
+export function ProjectCard({ project, index }: ProjectCardProps) {
   const prefersReducedMotion = useReducedMotion();
   const { stats } = project;
 
@@ -180,8 +192,27 @@ export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <motion.article
       aria-labelledby={headingId}
-      variants={prefersReducedMotion ? STATIC_VARIANTS : CARD_VARIANTS}
+      initial={HIDDEN}
+      // `useReducedMotion` ist beim Server-Rendering noch `false`, die Karte
+      // geht also immer mit opacity 0 raus. Bei reduzierter Bewegung muss
+      // sie deshalb aktiv sichtbar geschaltet werden – und zwar sofort und
+      // unabhängig vom Scrollen, sonst bleibt sie für immer unsichtbar.
+      animate={prefersReducedMotion ? SHOWN_INSTANT : undefined}
+      whileInView={
+        prefersReducedMotion
+          ? undefined
+          : {
+              ...SHOWN,
+              transition: {
+                duration: 0.5,
+                delay: revealDelay(index),
+                ease: [0.22, 1, 0.36, 1],
+              },
+            }
+      }
+      viewport={REVEAL_VIEWPORT}
       whileHover={prefersReducedMotion ? undefined : { y: -4 }}
+      // Gilt für den Hover; der Reveal bringt seine eigene Transition mit.
       transition={{ duration: 0.25, ease: 'easeOut' }}
       className={cn(
         'group',
