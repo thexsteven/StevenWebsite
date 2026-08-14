@@ -1,0 +1,16 @@
+{
+  "slug": "t1000-era-datenanalyse",
+  "title": "ERA Watch Data Analysis",
+  "tagline": "Datenqualität für eine Messdaten-Pipeline – Praxissemesterarbeit.",
+  "description": "Die Datenanalyse-Komponente meiner T1000-Praxisarbeit bei Emerson. Ergänzt eine bestehende Aufzeichnungs-Pipeline um eine Prüfschicht für physikalische Plausibilität: Wo die vorhandene Validierung rein statistisch urteilt, kommt hier ein fachlich begründeter Kriterienkatalog dazu. Ausgewertet wird in Python, die Ergebnisse landen in generierten HTML-Dashboards.",
+  "repo": "thexsteven/T1000",
+  "liveUrl": null,
+  "screenshot": "/images/projects/t1000-era-datenanalyse.png",
+  "techStack": [
+    "Python",
+    "Datenanalyse",
+    "HTML-Dashboards"
+  ],
+  "featured": true,
+  "order": 20
+}
