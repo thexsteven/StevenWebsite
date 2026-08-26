@@ -1,0 +1,35 @@
+{
+  "id": "2025-06-konstanz-cannes",
+  "title": "Mit dem Rad von Konstanz nach Cannes",
+  "country": "Deutschland · Schweiz · Italien · Frankreich",
+  "startDate": "2025-06-21",
+  "endDate": "2025-07-01",
+  "description": "Elf Tage, zwei Alpenüberquerungen, ein Ziel am Mittelmeer. Spontan entschieden, selbst finanziert, mit Zelt im Gepäck.",
+  "coverImage": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774239656/pages/travel/cannes/images/june24-alpine-pass.png",
+  "images": [
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774239656/pages/travel/cannes/images/june24-alpine-pass.png",
+      "alt": "Der erste Alpenpass auf der Fahrradtour"
+    },
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237639/pages/travel/cannes/images/1_Tour_Start.jpg",
+      "alt": "Kilometer null – Start der Tour in Konstanz"
+    },
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774239658/pages/travel/cannes/images/june25-lake-camping.png",
+      "alt": "Nachtlager mit Zelt an einem Bergsee"
+    },
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774239644/pages/travel/cannes/images/june26-tent-morning.jpg",
+      "alt": "Morgens am Zelt, kurz vor der Weiterfahrt"
+    },
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774239660/pages/travel/cannes/images/june30-alpine-lake.jpg",
+      "alt": "Klarer Alpensee auf der zweiten Überquerung"
+    },
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774239653/pages/travel/cannes/images/july01-arrival-bike.jpg",
+      "alt": "Ankunft mit dem Rad in Südfrankreich"
+    }
+  ]
+}

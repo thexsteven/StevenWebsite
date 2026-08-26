@@ -1,0 +1,22 @@
+{
+  "id": "2022-07-platzhalter",
+  "title": "Platzhalter · Sommer 2022",
+  "country": "Platzhalter-Land",
+  "startDate": "2022-07-09",
+  "endDate": "2022-07-20",
+  "description": "PLATZHALTER – erfundene Reise zum Testen des Feeds. Sie prüft nebenbei, ob eine Reise mit nur drei Bildern im Raster noch gut aussieht.",
+  "images": [
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237672/pages/travel/hawaii/videos/alltag_stadt.jpg",
+      "alt": "Platzhalter-Motiv: Stadtansicht"
+    },
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237669/pages/travel/hawaii/videos/alltag_kanal.jpg",
+      "alt": "Platzhalter-Motiv: Kanal am Abend"
+    },
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237668/pages/travel/hawaii/videos/alltag_angler.jpg",
+      "alt": "Platzhalter-Motiv: Angler am Wasser"
+    }
+  ]
+}

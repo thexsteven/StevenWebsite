@@ -166,6 +166,19 @@ export function Travel() {
           </nav>
         </article>
       </div>
+
+      <aside className="travel-archive">
+        <div>
+          <h3>Reise-Archiv</h3>
+          <p>
+            Alle Reisen seit 2021 in einem durchgehenden Foto-Feed – privat,
+            der Zugang läuft über ein Passwort.
+          </p>
+        </div>
+        <a href="/reisen/archiv" className="btn btn-ghost">
+          Archiv öffnen
+        </a>
+      </aside>
     </section>
   );
 }

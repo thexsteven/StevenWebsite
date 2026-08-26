@@ -14,6 +14,7 @@ const nextConfig: NextConfig = {
   // explizit ins Deployment-Bundle aufnehmen.
   outputFileTracingIncludes: {
     '/': ['./content/projects/**/*'],
+    '/reisen/archiv': ['./content/reisen/**/*'],
   },
   images: {
     remotePatterns: [

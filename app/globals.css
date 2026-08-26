@@ -1263,6 +1263,32 @@ header * {
   outline-offset: 2px;
 }
 
+/* ——— Hinweis auf das private Archiv ——————————————————————— */
+
+.travel-archive {
+  margin-top: var(--space-xl);
+  padding: var(--space-lg);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  background: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.travel-archive h3 {
+  margin: 0 0 var(--space-xs);
+  font-size: 1.1rem;
+}
+
+.travel-archive p {
+  margin: 0;
+  max-width: 46ch;
+  font-size: 0.95rem;
+}
+
 /* =========================================
    Flip Card Animation
    ========================================= */
