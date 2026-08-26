@@ -74,10 +74,76 @@ Abgleich der Spec mit dem tatsächlichen Stand von `thexsteven/StevenWebsite`:
 **Tests — Infrastruktur fehlt:**
 - Es gibt **keinen Test-Runner** im Projekt (kein Jest/Vitest, nur `playwright` als devDependency für das Screenshot-Skript). Der `tdd`-Schritt aus der Spec setzt also voraus, dass vorher Vitest o. Ä. eingerichtet wird — das ist eine bewusste Entscheidung, kein Nebenprodukt.
 
-**Offene Punkte vor dem Bauen:**
-1. Slug: `/reisen/archiv` — oder etwas Sprechenderes?
-2. Reihenfolge im Feed: neu→alt oder alt→neu?
-3. Cookie-Laufzeit: Session-Cookie oder z. B. 30 Tage?
-4. Login-Seite: eigene Route (`/reisen/archiv/login`) oder Formular direkt auf der geschützten Route?
-5. Header/Footer: `SiteHeader variant="sub"` + `SiteFooter` wie die anderen Subpages, oder bewusst reduziert für den Galerie-Look?
-6. Test-Setup: Vitest einführen (für den `tdd`-Schritt) — ja oder nein?
+## Entscheidungen
+
+Getroffen vor dem Bauen:
+
+| Frage             | Entscheidung                                                  |
+| ----------------- | ------------------------------------------------------------- |
+| Slug              | `/reisen/archiv`, Login unter `/reisen/archiv/login`           |
+| Design            | Hell, wie oben im Spec-Text beschrieben (Galeriewand)          |
+| Feed-Reihenfolge  | Neueste Reise zuerst, rückwärts bis 2021                       |
+| Cookie-Laufzeit   | Session-Cookie (stirbt beim Schließen des Browsers)            |
+| Header/Footer     | `SiteHeader variant="sub"` + `SiteFooter` wie hawaii/cannes     |
+| Test-Runner       | Vitest, aktiv genutzt                                          |
+
+### Zur Design-Entscheidung
+
+Die DESIGN.md hinter dem Refero-Link oben („Cosmos Network") beschreibt etwas
+anderes als der Spec-Text: `Theme: dark`, Canvas `#000000`, institutionelle
+Fintech-Optik, ausdrücklich **ohne** Schatten und mit nur einer Schriftart.
+Der Spec-Text beschreibt dagegen eine helle Leinen-/Museumswand mit
+schwebenden Rahmen und dezentem Hover-Schatten.
+
+Entschieden wurde für den **hellen** Weg aus dem Spec-Text. Die Cosmos-Tokens
+sind damit nicht in Verwendung; die Galerie nutzt eigene, wärmere Tokens in
+`components/travel/Archive.module.css` und die bereits geladene Playfair
+Display (`--font-serif`) für die Überschriften. Wer später doch auf Cosmos
+umschwenken will, tauscht diesen einen Token-Block aus.
+
+Nebenbei: Die DESIGN.md liefert Tailwind-v4-Syntax (`@theme`), das Repo läuft
+auf 3.4 — und die Hausschrift „The Future" ist nicht frei verfügbar.
+
+## Umsetzung
+
+| Datei                                     | Zweck                                                    |
+| ----------------------------------------- | -------------------------------------------------------- |
+| `middleware.ts`                           | Torwächter für `/reisen/archiv*`                          |
+| `lib/travelAuth.ts`                       | Passwortprüfung, Session-Token, Redirect-Absicherung      |
+| `lib/travelSession.ts`                    | Session-Prüfung für Server Components                     |
+| `lib/travelArchive.ts`                    | Typen, Validierung, Sortierung, Datumsformat (clientfähig) |
+| `lib/travelArchive.server.ts`             | Lesen von `content/reisen/`                                |
+| `app/reisen/archiv/`                      | Galerie, Login, Layout, Server Actions                     |
+| `components/travel/`                      | Feed, Login-Formular, CSS-Modul                            |
+| `content/reisen/`                         | Reisedaten + Format-Doku                                   |
+| `tests/`                                  | 58 Vitest-Tests, Schwerpunkt Auth                          |
+
+### Auth im Detail
+
+- Passwort aus `TRAVEL_PAGE_PASSWORD` (Vercel Environment Variable, nicht im Repo)
+- Vergleich zeitkonstant über SHA-256-Digests — die Laufzeit verrät weder
+  Länge noch Präfix des Passworts
+- Cookie enthält kein „eingeloggt"-Flag, sondern ein HMAC-signiertes Token
+  `v1.<ablauf>.<signatur>`; die Ablaufzeit ist mitsigniert und lässt sich nicht
+  hochdrehen
+- Der Signaturschlüssel leitet sich aus dem Passwort ab: ein Passwortwechsel
+  meldet automatisch alle offenen Sessions ab
+- Cookie: `httpOnly`, `secure` (in Produktion), `sameSite=lax`, `path=/reisen/archiv`,
+  ohne `Max-Age` → Session-Cookie
+- Zusätzlich eine serverseitige Obergrenze von 12 Stunden im Token selbst,
+  damit ein abgegriffenes Token nicht unbegrenzt außerhalb des Browsers gilt
+- Fehlt `TRAVEL_PAGE_PASSWORD`, bleibt die Galerie zu (fail closed)
+- Zwei Verteidigungslinien: Middleware **und** die Seite selbst prüfen
+- `?weiter=` ist gegen offene Weiterleitungen abgesichert
+- Nur Web Crypto, kein `node:crypto` — die Middleware läuft in der Edge-Runtime
+
+## Was noch offen ist
+
+- **Echte Inhalte.** Drei der fünf Reisen in `content/reisen/` sind Platzhalter
+  (`*platzhalter*.json`). Format siehe `content/reisen/README.md`.
+- **Kein Rate-Limit** auf dem Login. Bei einem langen Passwort unkritisch, aber
+  eine Drosselung nach mehreren Fehlversuchen wäre der nächste sinnvolle Schritt.
+- **Kein ESLint im Repo.** `npm run lint` startet nur den interaktiven Setup von
+  `next lint`; geprüft wurde stattdessen mit `npm run typecheck` und `npm run test:run`.
+- **Visuelle Abnahme** steht aus — verifiziert wurde bisher über Build, Tests und
+  HTTP-Smoke-Tests gegen den Produktions-Server, nicht im Browser.

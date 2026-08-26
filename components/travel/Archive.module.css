@@ -1,0 +1,352 @@
+/* =========================================
+   Reise-Archiv – „Galeriewand"
+   =========================================
+   Heller Leinen-Grund, Fotos wie gerahmte Abzüge an einer Museumswand.
+   Bewusst eigene Tokens statt der globalen: die Galerie ist ein ruhigerer,
+   wärmerer Raum als der Rest der Seite, soll sich aber nicht fremd anfühlen.
+   ========================================= */
+
+.wall {
+  --linen: #f2efe8;
+  --paper: #fbfaf7;
+  --hairline: #e3ddd1;
+  --ink: #211f1c;
+  --muted: #6d675e;
+  --frame-radius: 4px;
+  --frame-shadow:
+    0 1px 2px rgba(33, 31, 28, 0.05), 0 10px 30px rgba(33, 31, 28, 0.07);
+  --frame-shadow-hover:
+    0 2px 4px rgba(33, 31, 28, 0.07), 0 18px 44px rgba(33, 31, 28, 0.12);
+
+  background: var(--linen);
+  color: var(--ink);
+}
+
+/* ——— Kopfzeile der Galerie ——————————————————————————————— */
+
+.intro {
+  max-width: var(--max-width, 1100px);
+  margin: 0 auto;
+  padding: clamp(3rem, 8vw, 6rem) clamp(1.25rem, 5vw, 3rem) clamp(2rem, 5vw, 3.5rem);
+  border-bottom: 1px solid var(--hairline);
+}
+
+.kicker {
+  margin: 0 0 0.75rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.introTitle {
+  margin: 0 0 1rem;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(2rem, 6vw, 3.25rem);
+  line-height: 1.1;
+  color: var(--ink);
+}
+
+.introText {
+  margin: 0;
+  max-width: 46ch;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.introActions {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* ——— Eine Reise ————————————————————————————————————————— */
+
+.trips {
+  max-width: var(--max-width, 1100px);
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 5vw, 3rem) clamp(4rem, 10vw, 7rem);
+}
+
+.trip {
+  padding: clamp(2.5rem, 7vw, 5rem) 0;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.trip:last-child {
+  border-bottom: 0;
+}
+
+.tripHeader {
+  margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+  max-width: 60ch;
+}
+
+.tripMeta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 0.9rem;
+  margin: 0 0 0.6rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.tripCountry {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.tripTitle {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 4.5vw, 2.4rem);
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.tripText {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+/* ——— Die Rahmen ————————————————————————————————————————— */
+
+.frames {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(1.25rem, 3.5vw, 2rem);
+}
+
+@media (min-width: 640px) {
+  .frames {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Das erste Foto einer Reise bekommt die volle Breite – es trägt die
+     Szene, die folgenden sind Details dazu. */
+  .frame:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1000px) {
+  .frames {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .frame:first-child {
+    grid-column: span 2;
+  }
+}
+
+.frame {
+  margin: 0;
+}
+
+.framePlate {
+  position: relative;
+  display: block;
+  background: var(--paper);
+  padding: 10px;
+  border: 1px solid var(--hairline);
+  border-radius: var(--frame-radius);
+  box-shadow: var(--frame-shadow);
+  transition:
+    transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.frameImage {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+  background: #e8e3da;
+  aspect-ratio: 4 / 3;
+}
+
+.frame:first-child .frameImage {
+  aspect-ratio: 16 / 9;
+}
+
+.frameImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.frameCaption {
+  margin: 0.75rem 0.15rem 0.1rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+@media (hover: hover) {
+  .framePlate:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--frame-shadow-hover);
+  }
+
+  .framePlate:hover .frameImage img {
+    transform: scale(1.03);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .framePlate,
+  .frameImage img {
+    transition: none;
+  }
+
+  .framePlate:hover {
+    transform: none;
+  }
+
+  .framePlate:hover .frameImage img {
+    transform: none;
+  }
+}
+
+/* ——— Leerer Zustand ————————————————————————————————————— */
+
+.empty {
+  max-width: var(--max-width, 1100px);
+  margin: 0 auto;
+  padding: clamp(3rem, 10vw, 6rem) clamp(1.25rem, 5vw, 3rem);
+  color: var(--muted);
+  text-align: center;
+}
+
+/* ——— Ghost-Button ——————————————————————————————————————— */
+
+.ghostButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.4rem;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition:
+    background 200ms ease,
+    color 200ms ease;
+}
+
+.ghostButton:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.ghostButton:disabled {
+  opacity: 0.5;
+  cursor: progress;
+}
+
+/* ——— Login ——————————————————————————————————————————————— */
+
+.loginScreen {
+  --linen: #f2efe8;
+  --paper: #fbfaf7;
+  --hairline: #e3ddd1;
+  --ink: #211f1c;
+  --muted: #6d675e;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  padding: clamp(2rem, 8vw, 5rem) 1.25rem;
+  background: var(--linen);
+  color: var(--ink);
+}
+
+.loginCard {
+  width: 100%;
+  max-width: 30rem;
+  padding: clamp(1.75rem, 5vw, 2.75rem);
+  background: var(--paper);
+  border: 1px solid var(--hairline);
+  border-radius: 6px;
+  box-shadow:
+    0 1px 2px rgba(33, 31, 28, 0.05), 0 14px 40px rgba(33, 31, 28, 0.08);
+}
+
+.loginTitle {
+  margin: 0 0 0.6rem;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  line-height: 1.2;
+}
+
+.loginText {
+  margin: 0 0 1.75rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.loginLabel {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.loginInput {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font: inherit;
+  font-size: 1rem;
+  color: var(--ink);
+  background: #ffffff;
+  border: 1px solid var(--hairline);
+  border-radius: 4px;
+  transition: border-color 160ms ease;
+}
+
+.loginInput:focus-visible {
+  outline: none;
+  border-color: var(--ink);
+}
+
+.loginActions {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.loginBack {
+  font-size: 0.9rem;
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.loginError {
+  margin: 1rem 0 0;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  color: #7f1d1d;
+  background: #fdf0ef;
+  border: 1px solid #f3d3d0;
+  border-radius: 4px;
+}

@@ -1,0 +1,26 @@
+{
+  "id": "2024-08-platzhalter",
+  "title": "Platzhalter · Sommer 2024",
+  "country": "Platzhalter-Land",
+  "startDate": "2024-08-05",
+  "endDate": "2024-08-17",
+  "description": "PLATZHALTER – diese Reise ist erfunden und dient nur dazu, Layout und Scroll-Verhalten zu testen. Titel, Land, Datum, Text und Bilder durch echte Inhalte ersetzen oder die Datei löschen.",
+  "images": [
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237641/pages/travel/cannes/images/Abschied_Biwakhu%CC%88tte.jpg",
+      "alt": "Platzhalter-Motiv: Biwakhütte in den Bergen"
+    },
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237649/pages/travel/cannes/images/View_wrong_way.jpg",
+      "alt": "Platzhalter-Motiv: Blick zurück auf die Route"
+    },
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237647/pages/travel/cannes/images/2_Reto_.jpg",
+      "alt": "Platzhalter-Motiv: Etappe unterwegs"
+    },
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237637/pages/travel/cannes/images/Fahrrad_Abschluss.jpg",
+      "alt": "Platzhalter-Motiv: Fahrrad am Ziel"
+    }
+  ]
+}
