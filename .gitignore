@@ -43,3 +43,8 @@ build/
 .env*.local
 .env
 .env.local
+
+# scroll-craft: Laborausgaben (Screenshots, Kontaktboegen) bleiben lokal.
+# BRIEF.md und FINGERPRINTS.md sollen dagegen mit ins Repo.
+scrollcraft/**/lab/
+scrollcraft/**/out/

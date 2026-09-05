@@ -6,9 +6,8 @@ const withMDX = createMDX({
 });
 
 const nextConfig: NextConfig = {
-  // Limit page extensions to TypeScript + MDX so legacy *.js / *.html files
-  // in pages/ are NOT picked up as routes during the migration.
-  pageExtensions: ['ts', 'tsx', 'mdx'],
+  // Only the rebuild participates in routing. Legacy areas stay on disk.
+  pageExtensions: ['site.tsx', 'site.mdx'],
   images: {
     remotePatterns: [
       {
