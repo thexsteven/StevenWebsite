@@ -40,11 +40,20 @@ for (const width of [1440, 390, 360]) {
     }));
     assert.equal(result.headings, 1, `${path}: h1`);
     assert.equal(result.overflow, false, `${path}: overflow at ${width}`);
-    assert.equal(result.media.length, 0, `${path}: media before approval`);
+    assert.equal(result.placeholders.length, 0, `${path}: remaining media placeholders`);
+    const images = page.locator('img');
+    for (const img of await images.all()) {
+      await img.scrollIntoViewIfNeeded();
+      await img.evaluate(el => el.decode());
+      assert(await img.getAttribute('alt'), `${path}: missing alt`);
+      const src = await img.evaluate(el => el.currentSrc);
+      assert(src.startsWith('https://res.cloudinary.com/dozdjb4fi/') && /f_auto,q_auto/.test(src) && /w_\d+/.test(src), `${path}: unoptimized or unknown image ${src}`);
+    }
+    await page.evaluate(() => scrollTo(0, 0));
     assert(!/[—]|Lorem ipsum|Auslandssemester(?! und keine)/.test(result.body), `${path}: disallowed copy`);
     if (path !== '/impressum') assert(!result.body.includes('Goethestraße'), `${path}: address outside legal page`);
     assert(!result.links.some((href) => /^\/(liebe|motivation)/.test(href)), `${path}: legacy link`);
-    assert(!result.resources.some((entry) => /cloudinary|googleapis|google-analytics/.test(entry.name)), `${path}: external asset request`);
+    assert(!result.resources.some((entry) => /googleapis|google-analytics/.test(entry.name)), `${path}: external asset request`);
     await page.screenshot({ path: `${out}/${width}-${path.replaceAll('/', '_') || 'home'}.png`, fullPage: true });
     results.push({ path, width, title: result.title, bytes: result.resources.reduce((sum, entry) => sum + entry.bytes, 0) });
     for (const name of result.placeholders) placements[name] = [...new Set([...(placements[name] || []), path])];
@@ -57,10 +66,10 @@ const selection = page.getByRole('group', { name: 'Reiseauswahl' });
 if (await selection.count()) {
   await selection.getByRole('button', { name: 'Radtour', exact: true }).click();
   assert.equal(await page.locator('.window-caption a').getAttribute('href'), '/reisen/radtour-cannes');
-  assert.equal(await page.locator('.window-media [data-placeholder]').getAttribute('data-placeholder'), 'cycling');
+  assert.equal(await page.locator('.window-media [data-media]').getAttribute('data-media'), 'cycling');
   await selection.getByRole('button', { name: 'Anreise nach Venedig', exact: true }).focus();
   await page.keyboard.press('Enter');
-  assert.equal(await page.locator('.window-media [data-placeholder]').getAttribute('data-placeholder'), 'night');
+  assert.equal(await page.locator('.window-media [data-media]').getAttribute('data-media'), 'night');
   assert.equal(await page.locator('.window-caption a').getAttribute('href'), '/reisen');
   await selection.getByRole('button', { name: 'Hawaii', exact: true }).click();
   await page.goto(base);
@@ -83,6 +92,8 @@ for (const p of [0, .5, 1]) {
   await page.evaluate((p) => { const act = document.querySelector('[data-sc-fall]'); window.scrollTo({ top: act.offsetTop + (act.offsetHeight - innerHeight) * p, behavior: 'instant' }); }, p);
   await page.waitForTimeout(150);
   states.push(await page.locator('[data-sc-fall]').getAttribute('data-sc-verify-state'));
+  const photoOpacities = await page.locator('.fall-window > .media-figure').evaluateAll(photos => photos.map(photo => Number(getComputedStyle(photo).opacity)));
+  assert.deepEqual(photoOpacities, p === 0 ? [1, 0, 0] : p === .5 ? [0, 1, 0] : [0, 0, 1], 'Only the current fall photo remains visible');
 }
 assert.equal(new Set(states).size, 3, 'Signature must change through scroll');
 await page.getByRole('navigation', { name: 'Hauptnavigation' }).getByRole('link', { name: 'Kontakt', exact: true }).click();

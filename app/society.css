@@ -14,7 +14,7 @@
 .journey-edge { position: absolute; inset: auto -3% 0; height: 72px; border-top: 1px solid #3C4A4F; border-radius: 50% 50% 0 0; background: #14161A; z-index: 3; pointer-events: none; }
 .travel-window { display: grid; grid-template-columns: 210px 1fr; overflow: hidden; border: 1px solid #465155; border-radius: 18px; background: #1C2024; box-shadow: 0 24px 64px -24px rgba(0,0,0,.65); }
 .window-person { padding: 16px; background: #191C20; border-right: 1px solid #363C41; }
-.window-person .media-placeholder { aspect-ratio: 3/4; border-radius: 8px; background: #303A3E; }
+.window-person .media-image { aspect-ratio: 3/4; border-radius: 8px; background: #303A3E; }
 .window-person > div { padding: 1rem .25rem; }
 .window-person p { font-size: .95rem; }
 .window-person span { font-size: .75rem; color: #B6BABC; }
@@ -26,7 +26,7 @@
 .journey-options button:focus-visible { outline: 2px solid #58C6C2; outline-offset: 2px; }
 .journey-options button:active { transform: translateY(1px); }
 .window-media { padding: 16px 16px 0; }
-.window-media .media-placeholder { aspect-ratio: 16/7; border-radius: 8px; background: #29363B; }
+.window-media .media-image { aspect-ratio: 16/7; border-radius: 8px; background: #29363B; }
 .window-caption { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 1.25rem 1.5rem 2rem; }
 .window-caption h2 { font-size: 1.25rem; margin-bottom: .35rem; }
 .window-caption p { font-size: .75rem; max-width: 38ch; color: #B6BABC; }
@@ -42,14 +42,14 @@
 .panel-copy > p:not(.meta) { color: #B6BABC; font-size: .9rem; }
 .panel-copy .text-link { font-size: .8rem; margin-top: 1.5rem; }
 .panel-media { padding: 1.5rem 1.5rem 1.5rem 0; min-width: 0; }
-.panel-media .media-placeholder { aspect-ratio: 5/4; border-radius: 10px; background: #2A3539; }
-.cycling-panel .media-placeholder { background: #323A3B; }
+.panel-media .media-image { aspect-ratio: 5/4; border-radius: 10px; background: #2A3539; }
+.cycling-panel .media-image { background: #323A3B; }
 .society-silence { padding-block: 6rem; margin: 0 auto; text-align: center; font-size: 1.3rem; line-height: 1.5; }
 .society-silence span { color: #B6BABC; }
 .society-home .fall-scene { background: #101215; }
 .society-home .fall-heading h2 { font-size: clamp(2.6rem, 4.4vw, 4.4rem); line-height: 1.15; }
 .society-home .fall-heading em { font-style: normal; color: #B6BABC; }
-.society-home .fall-window .media-placeholder { border: 1px solid #3B4449; border-radius: 18px; background: #263337; }
+.society-home .fall-window .media-image { border-radius: 18px; background: transparent; }
 .society-career { display: grid; grid-template-columns: 1fr 1fr; gap: 10%; width: min(100% - var(--sc-gutter) * 2, 1050px); margin-inline: auto; padding-block: 6rem; }
 .society-career p { font-size: .95rem; }
 .society-home .contact { display: block; text-align: center; background: #191D21; border-top: 1px solid #363C41; padding-block: 5rem; }
@@ -77,15 +77,14 @@
   .journey-back { inset: -10px 10px 50px; border-radius: 18px; }
   .travel-window { grid-template-columns: 1fr; border-radius: 14px; }
   .window-person { display: grid; grid-template-columns: 72px 1fr; gap: 1rem; align-items: center; border-right: 0; border-bottom: 1px solid #363C41; padding: 12px; }
-  .window-person .media-placeholder { aspect-ratio: 3/4; }
-  .window-person .placeholder-label { padding: .3rem; font-size: .5rem; }
+  .window-person .media-image { aspect-ratio: 3/4; }
   .window-person > div { padding: 0; }
   .window-person a { display: inline-block; margin-top: .3rem; }
   .window-person p { font-size: .85rem; }
   .journey-options { padding: .5rem; gap: .15rem; justify-content: space-between; }
   .journey-options button { font-size: .65rem; padding: .55rem .6rem; min-height: 44px; }
   .window-media { padding: 10px 10px 0; }
-  .window-media .media-placeholder { aspect-ratio: 4/5; }
+  .window-media .media-image { aspect-ratio: 4/5; }
   .window-caption { align-items: start; flex-direction: column; gap: .75rem; padding: 1rem 1rem 2.5rem; }
   .window-caption h2 { font-size: 1.15rem; }
   .window-caption p { font-size: .75rem; }
@@ -98,7 +97,7 @@
   .panel-copy .meta { margin-bottom: 1.5rem; }
   .panel-copy h3 { font-size: 1.6rem; }
   .panel-media { padding: 0 12px 12px; }
-  .panel-media .media-placeholder { aspect-ratio: 4/5; }
+  .panel-media .media-image { aspect-ratio: 4/5; }
   .society-silence { font-size: 1.1rem; padding-block: 3.5rem; }
   .society-home .fall-heading h2 { font-size: 2.7rem; }
   .society-career { grid-template-columns: 1fr; gap: 2rem; padding-block: 3.5rem; }
@@ -107,3 +106,8 @@
   .site-header .wordmark { font-size: 1rem; }
 }
 @media (prefers-reduced-motion: reduce) { .solid-link:hover, .window-caption > a:hover { transform: none; } }
+
+.window-person .media-image img { object-position: 50% 28%; }
+.window-media .media-image img { object-position: 50% 45%; }
+.panel-media .media-image img { object-position: 50% 42%; }
+.window-person span { display: block; }

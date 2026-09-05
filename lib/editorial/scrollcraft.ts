@@ -51,6 +51,7 @@ export function mountScrollcraft(source: string, root: HTMLElement) {
   const peak = root.querySelector<HTMLElement>('[data-sc-fall]');
   const line = peak?.querySelector<HTMLElement>('.fall-line');
   const windowFrame = peak?.querySelector<HTMLElement>('.fall-window');
+  const fallPhotos = windowFrame?.querySelectorAll<HTMLElement>('.media-figure');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const draw = () => {
     if (peak && line && windowFrame) {
@@ -62,6 +63,13 @@ export function mountScrollcraft(source: string, root: HTMLElement) {
         line.style.transform = `rotate(${angle.toFixed(2)}deg)`;
         windowFrame.style.transform = `scale(${scale.toFixed(3)})`;
         windowFrame.style.clipPath = `inset(0 ${(12 * (1 - p)).toFixed(2)}%)`;
+        fallPhotos?.forEach((photo, index) => {
+          const firstChange = Math.max(0, Math.min(1, (p - .25) / .15));
+          const secondChange = Math.max(0, Math.min(1, (p - .65) / .15));
+          const opacity = index === 0 ? 1 - firstChange : index === 1 ? firstChange * (1 - secondChange) : secondChange;
+          photo.style.opacity = String(opacity);
+          photo.setAttribute('aria-hidden', String(index !== (p < .4 ? 0 : p < .8 ? 1 : 2)));
+        });
         peak.dataset.scVerifyState = `${angle.toFixed(1)}:${scale.toFixed(3)}`;
       }
     }

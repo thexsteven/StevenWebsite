@@ -3,7 +3,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { chapters } from '@/lib/editorial/chapters';
 import { StoryHeader, OpenQuestion, FallScene } from '@/components/editorial/Story';
-import { MediaPlaceholder } from '@/components/editorial/MediaPlaceholder';
+import { FlightScene } from '@/components/editorial/FlightScene';
+import { TravelMedia } from '@/components/editorial/TravelMedia';
 
 export const dynamicParams = false;
 export function generateStaticParams() { return chapters.map((chapter) => ({ kapitel: chapter.slug })); }
@@ -20,7 +21,7 @@ export default async function Kapitel({ params }: { params: Promise<{ kapitel: s
   const next = chapters[index + 1];
   return <>
     <StoryHeader title={chapter.title} meta="Hawaii · 2025" intro={chapter.intro} back="/reisen/hawaii" backLabel="Hawaii und alle Kapitel" />
-    <div className="wrap" data-sc-act="flow"><MediaPlaceholder name={chapter.media} caption={`Vorgesehenes Motiv zum Kapitel „${chapter.title}“.`} /></div>
+    {kapitel === 'flug-ankunft' ? <FlightScene /> : <div className="wrap" data-sc-act="flow"><TravelMedia name={chapter.media} /></div>}
     <article className="prose"><h2>{chapter.heading}</h2>{chapter.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}<OpenQuestion>{chapter.question}</OpenQuestion></article>
     {kapitel === 'adventures' && <FallScene />}
     <nav className="story-next wrap" aria-label="Weiterlesen"><Link href="/reisen/hawaii">← Alle Hawaii-Kapitel</Link>{next ? <Link href={`/reisen/hawaii/${next.slug}`}>Weiter: {next.title} ↗</Link> : <Link href="/reisen/radtour-cannes">Weiter zur Radtour ↗</Link>}</nav>

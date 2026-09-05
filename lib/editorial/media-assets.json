@@ -1,0 +1,178 @@
+{
+  "spiegel-schwarzes-shirt": {
+    "alt": "Spiegelselfie im schwarzen Shirt in einem hellen Flur",
+    "caption": "Schwarzes Shirt, heller Flur",
+    "width": 1238,
+    "height": 2200,
+    "url": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_0387_yma1fc",
+    "publicId": "IMG_0387_yma1fc"
+  },
+  "handstand": {
+    "alt": "Freier Handstand vor einer weißen Wand, daneben Kurzhanteln",
+    "caption": "Handstand, ohne Wand",
+    "width": 1179,
+    "height": 682,
+    "url": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_0375_yfltnr",
+    "publicId": "IMG_0375_yfltnr"
+  },
+  "nachthimmel-berge": {
+    "alt": "Sternenhimmel über einer gezackten Bergkette, unten ein beleuchteter Strauch",
+    "caption": "Nacht in den Bergen, auf dem Weg nach Venedig",
+    "width": 3021,
+    "height": 1836,
+    "url": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_0109_xoe48s",
+    "publicId": "IMG_0109_xoe48s"
+  },
+  "panorama-kalkmassiv": {
+    "alt": "Weites Bergpanorama mit hellem Kalkmassiv, Geröllfeldern und Schönwetterwolken",
+    "caption": "Oben, wo der Weg aufhört",
+    "width": 6338,
+    "height": 3852,
+    "url": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_6337_aezuso",
+    "publicId": "IMG_6337_aezuso"
+  },
+  "van-nacht-pass": {
+    "alt": "Ein Van steht nachts an einer Passstraße unter Sternen, dahinter eine steile Felswand",
+    "caption": "Schlafplatz auf dem Weg nach Venedig",
+    "width": 3024,
+    "height": 4032,
+    "url": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_0124_zzcv8p",
+    "publicId": "IMG_0124_zzcv8p"
+  },
+  "bambuswald-weg": {
+    "alt": "Wanderer auf einem Erdpfad durch dichten Bambuswald",
+    "caption": "Im Bambus wird es still",
+    "width": 3024,
+    "height": 4032,
+    "url": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/adv_pali_2",
+    "publicId": "pages/travel/hawaii/videos/adv_pali_2"
+  },
+  "fallschirm-absprung": {
+    "alt": "Absprung aus der offenen Flugzeugtür, das Gesicht vom Fahrtwind verzogen",
+    "caption": "Der Moment, in dem der Boden verschwindet",
+    "width": 2057,
+    "height": 1800,
+    "url": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_9535_elvh72",
+    "publicId": "IMG_9535_elvh72"
+  },
+  "fallschirm-freifall": {
+    "alt": "Freifall-Selfie im Tandem gegen die Sonne, tief darunter das Meer",
+    "caption": "Freier Fall über Oahu",
+    "width": 2057,
+    "height": 1800,
+    "url": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_9537_r6kk5x",
+    "publicId": "IMG_9537_r6kk5x"
+  },
+  "fallschirm-gurtzeug": {
+    "alt": "Drei junge Männer im Fallschirmgurtzeug unter dem Hallendach, angespannt und grinsend",
+    "caption": "Fünf Minuten vor dem Sprung",
+    "width": 3024,
+    "height": 4032,
+    "url": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_3175_abs794",
+    "publicId": "IMG_3175_abs794"
+  },
+  "fallschirm-schirm-offen": {
+    "alt": "Tandemsprung unter orangem Schirm, der Springer zeigt auf die Küstenlinie tief unten",
+    "caption": "Der Schirm ist offen, jetzt wird es schön",
+    "width": 2057,
+    "height": 1800,
+    "url": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_9534_lnt1vz",
+    "publicId": "IMG_9534_lnt1vz"
+  },
+  "kokohead-sonnenuntergang": {
+    "alt": "Bedeckter Sonnenuntergang über dem Pazifik, gesehen von einem Bergrücken",
+    "caption": "Licht, das durch die Wolkendecke bricht",
+    "width": 4032,
+    "height": 3024,
+    "url": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/adv_kokohead_1",
+    "publicId": "pages/travel/hawaii/videos/adv_kokohead_1"
+  },
+  "maunakea-sonnenuntergang": {
+    "alt": "Silhouette gegen einen orangefarbenen Sonnenuntergang über einer geschlossenen Wolkendecke",
+    "caption": "Sonnenuntergang über den Wolken, Mauna Kea",
+    "width": 1200,
+    "height": 1600,
+    "url": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/MaunakeaSunset_ouuchw",
+    "publicId": "MaunakeaSunset_ouuchw"
+  },
+  "ala-moana-palmen": {
+    "alt": "Unter hohen Palmen auf einer Wiese am Wasser gehend, dahinter Hafen und Hochhäuser",
+    "caption": "Ala Moana, der Park zwischen Sprachschule und Meer",
+    "width": 3024,
+    "height": 4032,
+    "url": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/me",
+    "publicId": "pages/travel/hawaii/videos/me"
+  },
+  "kreuzung-radfahrer": {
+    "alt": "Breite Kreuzung in Waikiki mit Zebrastreifen, ein Radfahrer quert vor Ladenfassaden",
+    "caption": "Der Weg zur Sprachschule",
+    "width": 3024,
+    "height": 4032,
+    "url": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/alltag_schulweg",
+    "publicId": "pages/travel/hawaii/videos/alltag_schulweg"
+  },
+  "sprachschule-stundenplan": {
+    "alt": "Ein Lehrer steht vor einer Leinwand mit einem Wochenstundenplan, im Vordergrund Hinterköpfe von Mitschülern",
+    "caption": "Der Stundenplan der Sprachschule in Ala Moana",
+    "width": 4032,
+    "height": 3024,
+    "url": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/alltag_alamoana",
+    "publicId": "pages/travel/hawaii/videos/alltag_alamoana"
+  },
+  "poke-bowl": {
+    "alt": "Poke-Bowl mit Lachswürfeln, Rogen und Frühlingszwiebeln auf Reis",
+    "caption": "Poke, so oft es ging",
+    "width": 3024,
+    "height": 4032,
+    "url": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/PokeBowl",
+    "publicId": "pages/travel/hawaii/videos/PokeBowl"
+  },
+  "feierabendbier-terrasse": {
+    "alt": "Bierflasche auf einem Terrassentisch, davor die eigenen Beine, Abendlicht",
+    "caption": "Feierabend",
+    "width": 2160,
+    "height": 3840,
+    "url": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/cannes/images/2_Reto_",
+    "publicId": "pages/travel/cannes/images/2_Reto_"
+  },
+  "grand-tour-schild": {
+    "alt": "Rotes Wappenschild mit der Aufschrift Grand Tour an einem Alpenpass, dahinter verschneite Gipfel",
+    "caption": "Der Pass ist geschafft",
+    "width": 1170,
+    "height": 2078,
+    "url": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/cannes/images/june24-alpine-pass",
+    "publicId": "pages/travel/cannes/images/june24-alpine-pass"
+  },
+  "pizzateig-kueche": {
+    "alt": "Ein Mann mit Schürze formt Pizzateig auf einem Küchentisch in einer einfachen Landhausküche",
+    "caption": "Abendessen bei Fremden, die keine mehr waren",
+    "width": 3024,
+    "height": 4032,
+    "url": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/cannes/images/june27-pilgrim-cooking",
+    "publicId": "pages/travel/cannes/images/june27-pilgrim-cooking"
+  },
+  "tag00-start-einfahrt": {
+    "alt": "Mit Helm und rotem Trikot auf dem beladenen Reiserad in einer Hofeinfahrt, gelbe Regenhülle über der Gepäcktasche",
+    "caption": "Tag null, die Einfahrt zu Hause",
+    "width": 1500,
+    "height": 2000,
+    "url": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/cannes/images/1_Tour_Start",
+    "publicId": "pages/travel/cannes/images/1_Tour_Start"
+  },
+  "turin-galleria": {
+    "alt": "Blick durch eine Ladenpassage in Turin, gemusterter Marmorboden, Glasdach",
+    "caption": "Turin, plötzlich Stadt",
+    "width": 1170,
+    "height": 2085,
+    "url": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/cannes/images/june28-turin-gallery",
+    "publicId": "pages/travel/cannes/images/june28-turin-gallery"
+  },
+  "flug-selfie": {
+    "alt": "Selfie im Flugzeugsitz mit Kopfhörern, Kabinenlicht gedimmt",
+    "caption": "Irgendwo über dem Pazifik",
+    "width": 1080,
+    "height": 1920,
+    "url": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto,so_1,w_{BREITE}/images/hawaii_content/Flug_Ankunft.jpg",
+    "publicId": "images/hawaii_content/Flug_Ankunft"
+  }
+}

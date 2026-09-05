@@ -1,3 +1,13 @@
+# Medienfreigabe · 5. September 2026
+
+Steven hat die ursprüngliche Türkis-Palette für braun-steven.de bestätigt und den direkten Einbau des vorhandenen Materials freigegeben. Graphit & Elfenbein ist separat in BRAUN-AGENTS-FARBPALETTE.md für die spätere Firmenwebsite gespeichert.
+
+Der geprüfte Bestand enthält keinen Fallschirmsprungfilm. Der Peak zeigt deshalb echte Fotos von Vorbereitung/Absprung, Freifall und offenem Schirm, verbunden mit der bestehenden kippenden Falllinie. Der Satz zur Weitererzählung lautet jetzt: „Beim Scrollen geht es vom Absprung bis unter den offenen Schirm.“ Video-Scrubbing wird mit einem sieben Sekunden langen Ausschnitt des vorhandenen Flugclips im Ankunftskapitel umgesetzt. Die Homepage-Grammatik und der Score bleiben erhalten; dies ist dieselbe Gestaltung mit freigegebenen Medien, kein neuer Fingerprint-Gate.
+
+Mobil werden für Hawaii, Schulalltag, Nachtstück und Vorbereitung eigene Hochformate verwendet. Wo nur Hochformat existiert (Radtour, Essen, Big Island, Porträt), werden auf Desktop natürliche Bildproportionen in Lesestrecken erhalten und Teaserausschnitte visuell geprüft. Die Freifallfotos bleiben vollständig sichtbar.
+
+Offene persönliche Erinnerungen aus PHASE1-MEDIEN.md sind weiterhin nicht beantwortet. Stevens zusätzlich bestätigter Solo-Roadtrip durch Thailand ist für spätere Inhalte vorgemerkt; keine Route, Reisedaten oder Erlebnisse dazu werden erfunden.
+
 # Steven Braun · Reisefolio
 
 ## Aktuelle Designrevision: AI Automation Society
