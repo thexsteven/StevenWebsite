@@ -35,6 +35,8 @@ changes only grammar and world will fail it.
 
 ## What is taken
 
+- Revision vom 5. September 2026 auf ausdrücklichen Nutzerwunsch: starke Orientierung an AI Automation Society; zentrierter Sans-Einstieg, Parallax-Reisefenster mit Auswahl, dunkle vertikale Panels und zentrierter Kontakt. Bestehende Fallspur bleibt erhalten. Revision desselben Builds, kein behaupteter neuer 4-von-6-Gate-Erfolg. Die ursprüngliche Zeile oben bleibt als Verlauf stehen.
+
 Add a bullet here whenever a build claims something a later build should avoid
 reusing: a grammar, a nav treatment, a close pattern, a signature move, an
 act-count-and-length band. The shared columns are what the next build inherits

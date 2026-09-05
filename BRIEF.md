@@ -1,5 +1,16 @@
 # Steven Braun · Reisefolio
 
+## Aktuelle Designrevision: AI Automation Society
+Auf ausdrücklichen Wunsch von Steven orientiert sich die Startseite jetzt stark an dem AI-Automation-Society-Beispiel aus https://github.com/nateherkai/scroll-craft. Die reale Referenz https://aiautomationsociety.ai/ wurde am 5. September 2026 im Browser an Einstieg und Scroll-Zwischenstand betrachtet; Screenshots liegen lokal unter `lab/reference`. Beobachtet: zentrierte Sans-Überschrift, kompakte Navigation, heller gerundeter Hauptlink, räumlich hervortretende Inhaltsfläche und nachfolgende dunkle Bild-Text-Panels. Übertragen werden diese Prinzipien auf eine echte Reiseauswahl. Fremde Logos, Medien, Aussagen und Statistiken werden nicht übernommen.
+
+Diese Revision ersetzt die unten dokumentierte erste Gestalt: Startseite durchgehend dunkel und mit Geist als Überschriftenschrift; Reiseprosa auf den Unterseiten bleibt auf hellem Papier mit Fraunces. Navigation und Footer sind kompakter. Ein dreidimensional gestaffeltes Reisefenster mit Porträt führt zu Hawaii, Radtour und Anreise nach Venedig. Die Auswahl wechselt tatsächlich Motivplatzhalter, Beschreibung und Linkziel. Kein nachgebautes Software-Dashboard.
+
+Aktuelle Grammatik: dunkles Reisefenster mit auswählbarem Einstieg, vertikalen Reise-Panels, einer gehaltenen Fallsequenz und zentriertem Kontaktabschluss. Diese ausdrücklich gewünschte Revision desselben Projekts wird nicht als unabhängiger neuer Build mit bestandenem 4-von-6-Fingerprint-Gate ausgegeben. Der historische Fingerprint bleibt erhalten.
+
+Feeling-Curve bleibt Neugier → Sog → Staunen → Respekt → Nähe. Score: Parallax-Reisefenster → Reveal-Reisepanels → Pin/Fallspur → Flow/In-Werdegang → statischer Kontakt. Der Fallschirmsprung behält den größten gehaltenen Scrollraum. Ohne echte Medien ist der emotionale Peak weiterhin nur als Choreografie beurteilbar. Die vorherige Vorgabe eines hellen Startseiten-Kolophons und der großen Serifen-Umschlagseite ist durch Stevens neue visuelle Referenz ersetzt.
+
+## Ursprünglicher Brief und erste Gestalt
+
 Authored under explicit creative delegation. Grundlage: CODEX-PROMPT.md, §10.
 
 ## Brief

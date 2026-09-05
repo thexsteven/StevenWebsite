@@ -1,5 +1,21 @@
 # Phase 1 · Prüfbericht
 
+## Aktuelle Revision · AI Automation Society
+
+Stand: 5. September 2026. Die Startseite folgt jetzt der ausdrücklich gewünschten Referenz: zentrierter Sans-Serif-Einstieg, dunkle Flächen mit zurückhaltendem Türkislicht, ein gerahmtes Reisefenster mit seitlicher Navigation und darunter breite Reise-Panels. Das Reisefenster schaltet zwischen Hawaii, Radtour und Anreise nach Venedig um; Beschreibung, Motivplatzhalter und Linkziel wechseln gemeinsam. Die hellen Leseseiten und die Fallsequenz bleiben erhalten. Die folgenden älteren Abschnitte dokumentieren den ursprünglichen Entwurf.
+
+Erneut erfolgreich: `npm run build`, `npm run lint` und alle 48 Routen-/Viewportprüfungen. Die Reiseauswahl wurde per Klick und Tastatur geprüft; SkipLink, SPA-Wechsel, Fallspur, 404-Routen, Cookie-Freiheit und Prosa ohne JavaScript ebenfalls. Keine Browserfehler oder horizontalen Überläufe; weiterhin keine echten Medien oder externen Bild-/Fontabrufe.
+
+Neue Scrollaufnahmen: Desktop 1440×900 (25 Stichproben), Mobil 390×844 (26) und reduzierte Bewegung (20). Alle Kontaktbögen sowie der Desktop-Einstieg und das Reisefenster in voller Größe wurden visuell geprüft. Kein toter Scroll, keine Console-Fehler, gemessene Cue-Kontraste über 4,5:1. Seitenlänge etwa 6,8 Viewporthöhen auf Desktop, 7,3 mobil und 5,0 mit reduzierter Bewegung. Feel-Check: Neugier → Orientierung → Spannung → Klarheit → Nähe. Sog und Staunen durch persönliche Aufnahmen bleiben mit Platzhaltern ungeprüft.
+
+- [Desktop der Revision](scrollcraft/builds/steven/lab/society-desktop/sheet.png)
+- [Mobil der Revision](scrollcraft/builds/steven/lab/society-mobile/sheet.png)
+- [Reduzierte Bewegung der Revision](scrollcraft/builds/steven/lab/society-reduced/sheet.png)
+
+Die neuen Routen- und Leistungsmessungen liegen lokal unter `scrollcraft/builds/steven/lab/society-routes`. Bei deaktiviertem Cache, 1,6 Mbit/s Download und 150 ms Latenz: Startseite 187.634 Byte / 1,14 s bis Ladeereignis; Radtour 223.535 Byte / 1,33 s. Diese Labormessungen sind keine Aussage über die spätere Medienfassung. Kein echtes iPhone getestet. Das Medienmanifest wurde weiterhin nicht geöffnet.
+
+## Ursprünglicher Entwurf
+
 Stand: 5. September 2026. Der Entwurf läuft lokal unter http://localhost:4500. Die Medienfreigabe ist noch offen.
 
 ## Gestalt und Score

@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import assert from 'node:assert/strict';
 
 const base = process.env.VERIFY_URL || 'http://localhost:4500';
-const out = 'scrollcraft/builds/steven/lab/routes';
+const out = process.env.VERIFY_OUT || 'scrollcraft/builds/steven/lab/routes';
 fs.mkdirSync(out, { recursive: true });
 const browser = await chromium.launch({ executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless: true });
 const context = await browser.newContext({ viewport: { width: 1440, height: 900 } });
@@ -53,6 +53,19 @@ for (const width of [1440, 390, 360]) {
 await page.setViewportSize({ width: 1440, height: 900 });
 await page.goto(base);
 await page.waitForFunction(() => window.ScrollCraft?.instances.length === 1);
+const selection = page.getByRole('group', { name: 'Reiseauswahl' });
+if (await selection.count()) {
+  await selection.getByRole('button', { name: 'Radtour', exact: true }).click();
+  assert.equal(await page.locator('.window-caption a').getAttribute('href'), '/reisen/radtour-cannes');
+  assert.equal(await page.locator('.window-media [data-placeholder]').getAttribute('data-placeholder'), 'cycling');
+  await selection.getByRole('button', { name: 'Anreise nach Venedig', exact: true }).focus();
+  await page.keyboard.press('Enter');
+  assert.equal(await page.locator('.window-media [data-placeholder]').getAttribute('data-placeholder'), 'night');
+  assert.equal(await page.locator('.window-caption a').getAttribute('href'), '/reisen');
+  await selection.getByRole('button', { name: 'Hawaii', exact: true }).click();
+  await page.goto(base);
+  await page.waitForFunction(() => window.ScrollCraft?.instances.length === 1);
+}
 await page.keyboard.press('Tab');
 assert.equal(await page.locator(':focus').innerText(), 'Zum Inhalt springen');
 await page.keyboard.press('Enter');

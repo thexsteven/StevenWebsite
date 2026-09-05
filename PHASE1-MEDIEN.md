@@ -2,6 +2,8 @@
 
 Alle Namen sind geplante Ausgabenamen, keine Behauptung über vorhandene Dateien. Das Cloudinary-Manifest wurde noch nicht geöffnet. Die Liste erfasst jeden Platzhalter auf allen geprüften Routen. Mobile Varianten werden erst nach der Motivfreigabe gegen vorhandene Hochformate abgeglichen.
 
+Designrevision: Die neue Startseite verwendet im auswählbaren Reisefenster zusätzlich die bereits aufgeführten Motive `cycling` und `night`. Die Nachtaufnahme erscheint daher nun auch auf `/`, wenn „Anreise nach Venedig“ ausgewählt wird. Es entstehen keine neuen Motivfragen.
+
 | Desktop-Datei | Mobile Datei | Verwendung | Frage an Steven |
 |---|---|---|---|
 | steven-portraet.webp | steven-portraet-mobil.webp | /, /ueber-mich | Welches Porträt soll dich auf der Startseite und auf Über mich zeigen? |

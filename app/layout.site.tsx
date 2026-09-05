@@ -5,6 +5,7 @@ import { SiteHeader, SiteFooter } from '@/components/editorial/SiteChrome';
 import { ScrollExperience } from '@/components/editorial/ScrollExperience';
 import '@/lib/scrollcraft/scrollcraft.css';
 import './editorial.css';
+import './society.css';
 
 const fraunces = Fraunces({ subsets: ['latin'], variable: '--font-display', weight: ['300', '400', '500', '600'], style: ['normal', 'italic'], display: 'swap' });
 const geist = Geist({ subsets: ['latin'], variable: '--font-text', display: 'swap' });
