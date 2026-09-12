@@ -124,37 +124,59 @@ function Screenshot({ src, title, featured }: ScreenshotProps) {
     : '(min-width: 1280px) 360px, (min-width: 768px) 50vw, 100vw';
 
   return (
-    <div className="relative aspect-video w-full overflow-hidden rounded-t-[var(--radius-md)] bg-[rgba(15,47,95,0.06)]">
-      {src ? (
-        <Image
-          src={src}
-          alt={`Screenshot des Projekts ${title}`}
-          width={1280}
-          height={720}
-          sizes={sizes}
-          className={cn(
-            'h-full w-full object-cover',
-            'transition-transform duration-500 ease-out',
-            'motion-safe:group-hover:scale-[1.03] motion-safe:group-focus-within:scale-[1.03]',
-          )}
-        />
-      ) : (
-        // Kein leerer Platzhalter, sondern ein bewusst gestaltetes Motiv
-        // aus dem bestehenden Navy-Verlauf.
-        <div
-          aria-hidden="true"
-          className={cn(
-            'flex h-full w-full items-center justify-center',
-            'bg-gradient-to-br from-[rgba(15,47,95,0.12)] to-[rgba(15,47,95,0.03)]',
-            'transition-transform duration-500 ease-out',
-            'motion-safe:group-hover:scale-[1.03] motion-safe:group-focus-within:scale-[1.03]',
-          )}
-        >
-          <span className="font-serif text-4xl font-semibold tracking-tight text-[rgba(15,47,95,0.35)]">
-            {initialsOf(title)}
-          </span>
-        </div>
-      )}
+    <div className="project-preview overflow-hidden rounded-t-[var(--radius-md)] bg-[rgba(15,47,95,0.06)]">
+      <div className="project-window-bar" aria-hidden="true">
+        <span className="project-window-dots">
+          <i />
+          <i />
+          <i />
+        </span>
+        <span className="project-window-title">{title}</span>
+        <span>↗</span>
+      </div>
+      <div className="relative aspect-video w-full overflow-hidden">
+        {src ? (
+          <a
+            href={src}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="project-preview-link"
+            aria-label={`Projektansicht von ${title} vergrößern (öffnet in neuem Tab)`}
+          >
+            <Image
+              src={src}
+              alt={`Projektansicht: ${title}`}
+              width={1280}
+              height={720}
+              sizes={sizes}
+              className={cn(
+                'h-full w-full object-cover',
+                'transition-transform duration-500 ease-out',
+                'motion-safe:group-hover:scale-[1.03] motion-safe:group-focus-within:scale-[1.03]',
+              )}
+            />
+            <span className="project-preview-hint" aria-hidden="true">
+              Ansicht vergrößern ↗
+            </span>
+          </a>
+        ) : (
+          // Kein leerer Platzhalter, sondern ein bewusst gestaltetes Motiv
+          // aus dem bestehenden Navy-Verlauf.
+          <div
+            aria-hidden="true"
+            className={cn(
+              'flex h-full w-full items-center justify-center',
+              'bg-gradient-to-br from-[rgba(15,47,95,0.12)] to-[rgba(15,47,95,0.03)]',
+              'transition-transform duration-500 ease-out',
+              'motion-safe:group-hover:scale-[1.03] motion-safe:group-focus-within:scale-[1.03]',
+            )}
+          >
+            <span className="font-serif text-4xl font-semibold tracking-tight text-[rgba(15,47,95,0.35)]">
+              {initialsOf(title)}
+            </span>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
@@ -171,7 +193,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
   const headingId = `project-${project.slug}-title`;
   const repoUrl =
-    stats?.repoUrl ?? (project.repo ? `https://github.com/${project.repo}` : null);
+    stats?.repoUrl ??
+    (project.repo ? `https://github.com/${project.repo}` : null);
 
   // Ohne Live-Daten und ohne Links bliebe nur eine leere Trennlinie stehen.
   const hasLinks = Boolean(repoUrl || project.liveUrl);

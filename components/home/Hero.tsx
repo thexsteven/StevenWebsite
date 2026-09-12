@@ -1,6 +1,7 @@
 'use client';
 
 import { motion, useReducedMotion, type Variants } from 'framer-motion';
+import Image from 'next/image';
 
 import { HeroBadge } from '@/components/HeroBadge';
 
@@ -42,31 +43,74 @@ export function Hero() {
         initial="hidden"
         animate="visible"
       >
-        <motion.p className="home-hero-eyebrow" variants={item}>
-          Angewandte Informatik · DHBW Mosbach · Praxis bei Emerson
-        </motion.p>
+        <div className="home-hero-copy">
+          <motion.p className="home-hero-eyebrow" variants={item}>
+            Angewandte Informatik · DHBW Mosbach · Praxis bei Emerson
+          </motion.p>
 
-        <motion.h1 id="home-hero-title" className="home-hero-title" variants={item}>
-          Ich baue Werkzeuge, die Lernen schneller machen
-          <span className="home-hero-dot" aria-hidden="true">
-            .
-          </span>
-        </motion.h1>
+          <motion.h1
+            id="home-hero-title"
+            className="home-hero-title"
+            variants={item}
+          >
+            Ich baue Werkzeuge, die Lernen schneller machen
+            <span className="home-hero-dot" aria-hidden="true">
+              .
+            </span>
+          </motion.h1>
 
-        <motion.p className="home-hero-lead" variants={item}>
-          Zuletzt: ein Klausurtrainer mit über 30 interaktiven Übungen und eine
-          Prüfschicht für physikalische Plausibilität in einer
-          Messdaten-Pipeline. React, Python, Next.js.
-        </motion.p>
+          <motion.p className="home-hero-lead" variants={item}>
+            Zuletzt: ein Klausurtrainer mit über 30 interaktiven Übungen und
+            eine Prüfschicht für physikalische Plausibilität in einer
+            Messdaten-Pipeline. React, Python, Next.js.
+          </motion.p>
 
-        <motion.div className="home-hero-actions" variants={item}>
-          <a href="#projekte" className="home-btn home-btn--primary">
-            Projekte ansehen
+          <motion.div className="home-hero-actions" variants={item}>
+            <a href="#projekte" className="home-btn home-btn--primary">
+              Projekte ansehen
+            </a>
+            <a href="#werdegang" className="home-btn home-btn--ghost">
+              Werdegang
+            </a>
+          </motion.div>
+        </div>
+
+        <motion.figure className="home-workbench" variants={item}>
+          <p className="home-workbench-label">Aus meiner Werkstatt</p>
+          <a
+            href="https://lern-trainer.vercel.app"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="home-workbench-window"
+            aria-label="Lern-Trainer live ausprobieren (öffnet in neuem Tab)"
+          >
+            <span className="project-window-bar" aria-hidden="true">
+              <span className="project-window-dots">
+                <i />
+                <i />
+                <i />
+              </span>
+              lern-trainer.vercel.app
+              <span>↗</span>
+            </span>
+            <Image
+              src="/images/projects/lern-trainer-galerie.png"
+              alt="Interaktiver Dijkstra-Trainer mit Graph und markiertem kürzesten Weg"
+              width={1280}
+              height={720}
+              sizes="(min-width: 1100px) 480px, (min-width: 600px) 560px, 90vw"
+              priority
+            />
           </a>
-          <a href="#werdegang" className="home-btn home-btn--ghost">
-            Werdegang
+          <figcaption>
+            Code verstehen. Ausprobieren.
+            <br />
+            <span>Und dann selbst bauen.</span>
+          </figcaption>
+          <a className="home-workbench-note" href="#projekte">
+            Ein Blick in meine Projekte <span aria-hidden="true">↓</span>
           </a>
-        </motion.div>
+        </motion.figure>
       </motion.div>
 
       <HeroBadge />

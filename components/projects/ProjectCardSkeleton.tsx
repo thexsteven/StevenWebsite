@@ -36,6 +36,9 @@ export function ProjectCardSkeleton({
         featured && FEATURED_SPAN_CLASSNAME,
       )}
     >
+      <div className="project-window-bar" aria-hidden="true">
+        <Bar className="h-2 w-24" />
+      </div>
       <div
         className="aspect-video w-full rounded-t-[var(--radius-md)] bg-[rgba(15,47,95,0.06)]"
         aria-hidden="true"
