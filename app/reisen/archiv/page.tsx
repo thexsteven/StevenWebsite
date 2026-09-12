@@ -39,6 +39,8 @@ export default async function ArchivPage() {
             : `${entries.length} ${entries.length === 1 ? 'Reise' : 'Reisen'}, ${photoCount} ${photoCount === 1 ? 'Bild' : 'Bilder'} – neueste zuerst. Einfach durchscrollen.`}
         </p>
         <div className={styles.introActions}>
+          <a href="/reisen/archiv/cannes" className={styles.ghostButton}>Konstanz → Cannes · 76 Erinnerungen →</a>
+          <a href="/reisen/archiv/hawaii" className={styles.ghostButton}>Hawaii · 41 neue Erinnerungen →</a>
           <form action={logout}>
             <button type="submit" className={styles.ghostButton}>
               Abmelden
