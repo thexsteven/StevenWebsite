@@ -1,0 +1,414 @@
+{
+  "title": "Sechs Wochen Hawaii",
+  "subtitle": "Zwischen Schulbank und Wellen",
+  "intro": "Ich kam für eine Sprachreise nach Honolulu. Geblieben sind Erinnerungen an neue Freunde, frühe Wanderungen, offene Cabriodächer und ziemlich viele Burger. Das hier sind meine Lieblingsmomente.",
+  "startDate": "2025-03-02",
+  "endDate": "2025-04-14",
+  "cover": "hawaii-02",
+  "sections": [
+    {
+      "id": "ankommen",
+      "title": "Ankommen & Alltag",
+      "intro": "Sechs Wochen, die sich schnell nach Alltag anfühlten. Nur eben mit Surfbrett, Balkonfrühstück und dem Pazifik um die Ecke.",
+      "photos": [
+        {
+          "id": "hawaii-10",
+          "publicId": "IMG_2512_f4nkpc",
+          "width": 3024,
+          "height": 4032,
+          "title": "Fünf Uhr, keine Ausreden",
+          "caption": "Am ersten Morgen ging es schon um fünf mit dem Uber zum Koko Head. Erst die vielen Stufen, dann dieser Blick – wach war ich danach auf jeden Fall.",
+          "alt": "Ein Wanderer sitzt auf den Holzstufen mit Aussicht über Honolulu."
+        },
+        {
+          "id": "hawaii-01",
+          "publicId": "210a6d2b-9f9e-492c-a207-cc841dff8201_e0fwqf",
+          "width": 1200,
+          "height": 1600,
+          "title": "Ganz oben angekommen",
+          "caption": "Mein erster Morgen auf Hawaii – und schon stehe ich mit Hansi, Marlon und Lonny auf dem Koko Head. Viel Zeit zum Ankommen haben wir uns offenbar nicht genommen.",
+          "alt": "Vier Freunde auf dem Koko Head, hinter ihnen Honolulu und das Meer."
+        },
+        {
+          "id": "hawaii-09",
+          "publicId": "IMG_2502_btvj8g",
+          "width": 3024,
+          "height": 4032,
+          "title": "So geht Ankommen",
+          "caption": "Gerade erst auf Hawaii und direkt mit Hansi, Marlon und Lonny wandern. Die Aussicht war ein ziemlich überzeugendes Willkommen.",
+          "alt": "Steven mit ausgebreiteten Armen über Honolulu."
+        },
+        {
+          "id": "hawaii-08",
+          "publicId": "DEE4FF79-13A6-442E-B2CA-A891A890493B_zieeam",
+          "width": 2160,
+          "height": 3840,
+          "title": "Frühstück mit Balkonplatz",
+          "caption": "Mein täglicher Start: Frühstück auf dem Balkon, danach Sport im Park. An diese Morgenroutine konnte ich mich gewöhnen.",
+          "alt": "Frühstücksteller auf dem Balkon vor den Häusern von Honolulu."
+        },
+        {
+          "id": "hawaii-19",
+          "publicId": "IMG_2984_axmah7",
+          "width": 3024,
+          "height": 4032,
+          "title": "Mein kleiner Fuhrpark",
+          "caption": "Fahrrad und Surfbrett: meine wertvollsten Besitztümer in Honolulu. Für den Weg zur Schule und die Zeit danach war damit das Wichtigste geklärt.",
+          "alt": "Fahrrad und blau-weißes Surfbrett in einem Zimmer."
+        },
+        {
+          "id": "hawaii-11",
+          "publicId": "IMG_2524_nhc6hg",
+          "width": 3024,
+          "height": 4032,
+          "title": "Mein Schulparkplatz",
+          "caption": "Hier habe ich mein Fahrrad abgestellt, bevor es in den Unterricht ging. Auch ein Hawaii-Alltag braucht schließlich einen Parkplatz.",
+          "alt": "Fahrrad an einem Geländer im Schulgebäude."
+        },
+        {
+          "id": "hawaii-13",
+          "publicId": "IMG_2539_kzj0la",
+          "width": 3024,
+          "height": 4032,
+          "title": "Angeln gehört dazu",
+          "caption": "In der Nähe der Schule wurde überall geangelt. Am Wasser trafen sich ganz unterschiedliche Leute – ein schönes Stück Alltag am Rand meines Schulwegs.",
+          "alt": "Ein Angler an der Uferpromenade neben Segelbooten."
+        },
+        {
+          "id": "hawaii-12",
+          "publicId": "IMG_2537_hq6quz",
+          "width": 3024,
+          "height": 4032,
+          "title": "Andere Straßen, andere Autos",
+          "caption": "Unterwegs gab es immer wieder Autos zu entdecken, die mir zu Hause eher selten begegnen. Dieses hier passte bestens in meine kleine Sammlung.",
+          "alt": "Ein offener Geländewagen auf einer Straße mit Palmen."
+        },
+        {
+          "id": "hawaii-15",
+          "publicId": "IMG_2738_smh0og",
+          "width": 4032,
+          "height": 3024,
+          "title": "Honolulu bei Nacht",
+          "caption": "Auch die Feuerwehr ist mir vor die Kamera gefahren. Dieses gelbe Einsatzfahrzeug musste einfach mit ins Album.",
+          "alt": "Gelbes Feuerwehrauto in einer beleuchteten Straße bei Nacht."
+        },
+        {
+          "id": "hawaii-06",
+          "publicId": "6d73843f-d564-40ce-87b6-fd8394e7760f_be0dqm",
+          "width": 738,
+          "height": 1600,
+          "title": "Ein Stück Hawaii für Natascha",
+          "caption": "Mit Hansi und Flora bastle ich ein Armband für meine Schwester Natascha. Sogar im EF-Post ist dieser kleine Gruß nach Hause gelandet.",
+          "alt": "Screenshot eines EF-Posts: drei Personen basteln gemeinsam am Tisch."
+        },
+        {
+          "id": "hawaii-37",
+          "publicId": "IMG_4815_fbhnfq",
+          "width": 3024,
+          "height": 4032,
+          "title": "Geschafft – und so viel mitgenommen",
+          "caption": "Mein Abschluss an der EF-Schule. Sechs Wochen Hawaii, ein C1-Zertifikat und jede Menge Erinnerungen, die auf kein Zeugnis passen.",
+          "alt": "Steven mit Abschlusskappe und Zertifikat vor dem Fenster der Schule."
+        }
+      ]
+    },
+    {
+      "id": "oahu",
+      "title": "Oʻahu entdecken",
+      "intro": "Von dichtem Grün bis zum offenen Meer: Mit Freunden unterwegs, zu Fuß durch die Insel und immer wieder mit einem guten Grund zum Stehenbleiben.",
+      "photos": [
+        {
+          "id": "hawaii-24",
+          "publicId": "IMG_3223_eyxfd2",
+          "width": 3024,
+          "height": 4032,
+          "title": "Ein Strandtag zu dritt",
+          "caption": "Mit Hansi und Flora an der Hanauma Bay. Für den Strand haben wir Eintritt bezahlt; das klare Wasser und die gepflegte Bucht bleiben mir in Erinnerung.",
+          "alt": "Türkisfarbene Hanauma Bay mit Korallenriff und hellem Strand."
+        },
+        {
+          "id": "hawaii-16",
+          "publicId": "IMG_2834_hqbucn",
+          "width": 3024,
+          "height": 4032,
+          "title": "Mitten im Grün",
+          "caption": "Auf dem Weg zu den Mānoa Falls wurde aus Stadt ganz schnell Dschungel. Zwischen all dem Grün wirkt selbst ein kurzer Halt wie eine eigene kleine Szene.",
+          "alt": "Wanderer auf einem schmalen Weg zwischen dichtem Bambus."
+        },
+        {
+          "id": "hawaii-17",
+          "publicId": "IMG_2835_akoihi",
+          "width": 3024,
+          "height": 4032,
+          "title": "Noch ein Stück Dschungel",
+          "caption": "Mit Hansi und Lonny unterwegs auf Oʻahu. Vom Weg zu den Mānoa Falls gibt es gleich noch ein Foto – bei dieser Kulisse verständlich.",
+          "alt": "Wanderer zwischen hohen grünen Pflanzen auf dem Waldweg."
+        },
+        {
+          "id": "hawaii-26",
+          "publicId": "IMG_3428_qplxij",
+          "width": 3024,
+          "height": 4032,
+          "title": "Unter dem Wasserfall",
+          "caption": "Mit einer Gruppe aus der Schule ging es zu den Lulumahu Falls. Erst wandern, dann ins Wasser – so darf ein Ausflug enden.",
+          "alt": "Zwei Personen im Wasser unter einem hohen Wasserfall."
+        },
+        {
+          "id": "hawaii-34",
+          "publicId": "IMG_4389_jfdkgt",
+          "width": 3024,
+          "height": 4032,
+          "title": "Unterwegs zum Leuchtturm",
+          "caption": "Mit der Gruppe auf dem Weg zum Leuchtturm. Für einen Halt mit Aussicht war natürlich Zeit.",
+          "alt": "Steven am Aussichtsgeländer vor Küste, Bergen und bewölktem Himmel."
+        },
+        {
+          "id": "hawaii-38",
+          "publicId": "IMG_8958_nxbt8i",
+          "width": 4284,
+          "height": 5712,
+          "title": "Ein kleiner Umweg lohnt sich",
+          "caption": "Mit Hansi und Flora auch mal abseits der üblichen Wege unterwegs. Dieser Blick gehörte zu unseren Entdeckungen.",
+          "alt": "Eine Person sitzt auf einer Mauer mit Blick auf Küste und Hügel."
+        },
+        {
+          "id": "hawaii-40",
+          "publicId": "bcb8a434-ee7b-4e4a-b237-3cabf5e62935_eslcn9",
+          "width": 1200,
+          "height": 1600,
+          "title": "Noch ein Blick aufs Meer",
+          "caption": "Ein weiterer Aussichtsmoment aus meinem Hawaii-Album: Meer, kleine Inseln und ein bemalter Bunker im Vordergrund.",
+          "alt": "Blick von einem bemalten Bunker auf das Meer und zwei kleine Inseln."
+        },
+        {
+          "id": "hawaii-02",
+          "publicId": "21dd67ed-c2e4-45de-a631-a259bd5eefe7_t2fhcd",
+          "width": 1536,
+          "height": 2048,
+          "title": "Sand zwischen den Zehen",
+          "caption": "Feiner Sand, kühles Wasser und dieser Himmel. Die Erfrischung gab es hier direkt aus dem Pazifik.",
+          "alt": "Wellen am Sandstrand unter einem leuchtenden Abendhimmel."
+        },
+        {
+          "id": "hawaii-05",
+          "publicId": "64573bff-7d94-41d9-87c5-7289adfe8f8a_enxiyf",
+          "width": 1536,
+          "height": 2048,
+          "title": "Mein Lieblingsblick",
+          "caption": "Am Tantalus Lookout liegt Honolulu unter mir. Mein Lieblingsplatz, um auf der Insel den Sonnenuntergang anzuschauen.",
+          "alt": "Steven am Geländer mit weitem Blick über Honolulu."
+        }
+      ]
+    },
+    {
+      "id": "roadtrips",
+      "title": "Roadtrips & Skydiving",
+      "intro": "Mal mit vier Rädern, mal mit Fallschirm. Unsere Ausflüge auf Oʻahu hatten sehr unterschiedliche Flughöhen.",
+      "photos": [
+        {
+          "id": "hawaii-28",
+          "publicId": "IMG_3494_dxue7p",
+          "width": 1080,
+          "height": 810,
+          "title": "Unser Goldstück",
+          "caption": "Hansi und mein gelbes Goldstück. Der gemietete Mustang brachte nicht nur uns, sondern auch reichlich Farbe auf die Straße.",
+          "alt": "Gelbes Mustang-Cabrio mit geöffneter Tür im Sonnenschein."
+        },
+        {
+          "id": "hawaii-04",
+          "publicId": "61c0a0e5-21a9-436b-a96d-8cf8a823e6ba_ykhjdb",
+          "width": 1536,
+          "height": 2048,
+          "title": "Die Fahrerfrage",
+          "caption": "Hansi und ich vor unserem gelben Mustang. Wer fahren darf, war eine kleine Verhandlung – diesmal mit einem sehr guten Ergebnis für mich.",
+          "alt": "Gelber Mustang mit zwei Freunden am Straßenrand."
+        },
+        {
+          "id": "hawaii-29",
+          "publicId": "IMG_3549_utu8et",
+          "width": 3024,
+          "height": 4032,
+          "title": "Dach auf, Oʻahu vor uns",
+          "caption": "Mit dem Mustang Richtung Norden der Insel. So sah unser Roadtrip aus: offene Aussicht und jede Menge Platz über dem Kopf.",
+          "alt": "Blick von hinten in ein offenes Cabrio auf einer grünen Küstenstraße."
+        },
+        {
+          "id": "hawaii-30",
+          "publicId": "IMG_3551_ume4ik",
+          "width": 3024,
+          "height": 4032,
+          "title": "Noch eine Runde North Shore",
+          "caption": "Noch ein Moment aus dem Cabrio. Von diesen Fahrten habe ich gern mehr als nur ein Bild behalten.",
+          "alt": "Insassen im offenen Mustang unter blauem Himmel."
+        },
+        {
+          "id": "hawaii-39",
+          "publicId": "a69695a6-41b8-47e9-8f91-d6f28d84b0f0_khrvap",
+          "width": 1200,
+          "height": 1599,
+          "title": "Ein Wochenende mit Hellcat",
+          "caption": "Mit dem gemieteten Hellcat ging es an die North Shore. Hansi und Lonny waren anschließend noch mit Haien tauchen – ein Wochenende mit ordentlich Gesprächsstoff.",
+          "alt": "Drei Freunde vor einem roten Auto unter Bäumen."
+        },
+        {
+          "id": "hawaii-21",
+          "publicId": "IMG_3163_re9qbr",
+          "width": 3024,
+          "height": 4032,
+          "title": "Bereit zum Absprung",
+          "caption": "Noch stehen wir auf festem Boden. Die Ausrüstung sitzt, und mein spontaner Entschluss wird gerade sehr konkret.",
+          "alt": "Steven mit Fallschirmausrüstung in der Halle vor dem Sprung."
+        },
+        {
+          "id": "hawaii-14",
+          "publicId": "IMG_2603_feh5mo",
+          "width": 1082,
+          "height": 952,
+          "title": "Von der Idee in die Luft",
+          "caption": "Eine Stunde vorher war der Fallschirmsprung noch eine spontane Idee. Dann hing ich schon über Hawaii. Schuhe musste ich davor auch noch kaufen – mit Schlappen war der Plan doch etwas zu optimistisch.",
+          "alt": "Steven beim Tandem-Fallschirmsprung vor blauem Himmel."
+        }
+      ]
+    },
+    {
+      "id": "essen",
+      "title": "Essen & Abende",
+      "intro": "Nach der Schule zum Foodtruck, freitags in den Partybus. Dazwischen fanden wir Lieblingsplätze, Lieblingsburger und gelegentlich sogar Zeit fürs Feuerwerk.",
+      "photos": [
+        {
+          "id": "hawaii-36",
+          "publicId": "IMG_4599_zyxjgu",
+          "width": 3024,
+          "height": 4032,
+          "title": "Nach der Schule zum Foodtruck",
+          "caption": "Nach dem Unterricht ging es gern hierher. Lecker, bezahlbar und ohne große Planung – genau die richtige Kombination.",
+          "alt": "Mehrere Foodtrucks mit Holztischen im Schatten."
+        },
+        {
+          "id": "hawaii-25",
+          "publicId": "IMG_3398_kk1ua6",
+          "width": 3024,
+          "height": 4032,
+          "title": "Bei Betty’s fast zu Hause",
+          "caption": "Hansi und ich waren so oft bei Betty’s Burger, dass Daniel uns längst kannte. Unser Lieblingsburger hatte praktisch einen festen Platz im Stundenplan.",
+          "alt": "Die beleuchtete Theke von Betty’s Burgers."
+        },
+        {
+          "id": "hawaii-27",
+          "publicId": "IMG_3459_tebozn",
+          "width": 3024,
+          "height": 4032,
+          "title": "Ein sehr guter Zwischenstopp",
+          "caption": "Hotdog und Pommes vom Foodtruck. Auf Hawaii gab es für mich reichlich leckeres Fast Food zu entdecken – dieses gehört dazu.",
+          "alt": "Hotdog mit Senf und Pommes in einer geöffneten Essensbox."
+        },
+        {
+          "id": "hawaii-35",
+          "publicId": "IMG_4499_am5ash",
+          "width": 3024,
+          "height": 4032,
+          "title": "Drei Teller, gute Aussichten",
+          "caption": "Ein Tisch voller Foodtruck-Essen. Burger, Pommes und noch mehr: Bei dieser Aussicht musste man ausnahmsweise nicht aufs Meer schauen.",
+          "alt": "Drei gefüllte Teller mit Burgern, Pommes und weiteren Speisen auf einem Tisch."
+        },
+        {
+          "id": "hawaii-07",
+          "publicId": "92E53B7F-ECC7-4702-A042-DE6FF594553A_djjzoh",
+          "width": 2160,
+          "height": 3840,
+          "title": "Zwischenstopp bei Cane’s",
+          "caption": "Ab und zu führte uns der Hunger in die Mall in Waikiki zu Raising Cane’s. Knusprig, unkompliziert und ziemlich schnell aufgegessen.",
+          "alt": "Chicken-Finger-Menü mit Pommes und Getränk bei Raising Cane’s."
+        },
+        {
+          "id": "hawaii-18",
+          "publicId": "IMG_2958_elumk5",
+          "width": 3024,
+          "height": 4032,
+          "title": "Freitag mit Feuerwerk",
+          "caption": "Freitags leuchtet der Himmel über Waikiki. Ich habe es trotzdem erstaunlich oft verpasst: Die Vorbereitungen für den Partybus hatten offenbar einen sehr vollen Terminplan.",
+          "alt": "Feuerwerk über dem Wasser, davor Zuschauer am Strand."
+        },
+        {
+          "id": "hawaii-20",
+          "publicId": "IMG_3023_rnuydj",
+          "width": 3024,
+          "height": 4032,
+          "title": "Freitag fährt vor",
+          "caption": "Der Partybus gehörte zu unseren Freitagen. Einsteigen, tanzen und gemeinsam durch den Abend – ein ziemlich anderes Verkehrskonzept als mein Fahrrad.",
+          "alt": "Ein Bus auf einer nächtlichen Straße, vom Balkon aus fotografiert."
+        },
+        {
+          "id": "hawaii-23",
+          "publicId": "IMG_3206_tvdh4a",
+          "width": 3024,
+          "height": 4032,
+          "title": "Frische Luft für alle",
+          "caption": "Wenn es im Partybus zu stickig wurde, ging es kurz nach draußen. Kleine Pause, große Runde – und dann konnte es weitergehen.",
+          "alt": "Eine große Freundesgruppe posiert nachts im Freien."
+        },
+        {
+          "id": "hawaii-22",
+          "publicId": "IMG_3205_o6ktuj",
+          "width": 3024,
+          "height": 4032,
+          "title": "Eine Pause, ein Gruppenfoto",
+          "caption": "Noch ein kurzer Halt mit der Partybus-Runde. Zwischen zwei Etappen war offenbar immer noch Platz für ein gemeinsames Foto.",
+          "alt": "Freundesgruppe bei einem nächtlichen Halt."
+        }
+      ]
+    },
+    {
+      "id": "big-island",
+      "title": "Big Island",
+      "intro": "Ein Wochenende, eine andere Insel: hinauf auf den Mauna Kea und hinunter zum schwarzen Sand von Punaluʻu.",
+      "photos": [
+        {
+          "id": "hawaii-31",
+          "publicId": "IMG_4001_df8s1a",
+          "width": 3024,
+          "height": 4032,
+          "title": "Eine Pause auf dem Weg nach oben",
+          "caption": "Zu siebt fuhren wir auf den Mauna Kea. Unterwegs legten wir eine Pause ein, bevor es mit dem gemieteten Allradwagen weiter hinaufging.",
+          "alt": "Geländewagen und weitere Autos an einem Halt am Mauna Kea."
+        },
+        {
+          "id": "hawaii-03",
+          "publicId": "40774133-891b-46ca-9e8d-a4d3daadbe2e_dlqljt",
+          "width": 1200,
+          "height": 1600,
+          "title": "Drei über den Wolken",
+          "caption": "Mit Hansi und Antonio neben unserem Mietwagen auf dem Mauna Kea. Der Himmel übernimmt an diesem Abend die gesamte Dekoration.",
+          "alt": "Drei Freunde neben einem Auto vor dem Abendhimmel am Mauna Kea."
+        },
+        {
+          "id": "hawaii-41",
+          "publicId": "c65c6010-ab16-488b-95b6-ccd311ff49cd_rossh2",
+          "width": 1200,
+          "height": 1600,
+          "title": "Mit Hansi über den Wolken",
+          "caption": "Hansi und ich auf dem Mauna Kea. Wir haben so viel zusammen erlebt und gelacht – dieses Foto erinnert mich vor allem daran, wie schön die gemeinsame Zeit war.",
+          "alt": "Zwei Freunde vor dem farbigen Abendhimmel am Mauna Kea."
+        },
+        {
+          "id": "hawaii-33",
+          "publicId": "IMG_4163_wrbah1",
+          "width": 3024,
+          "height": 4032,
+          "title": "Punaluʻu, die andere Richtung",
+          "caption": "Unser Wochenende auf Big Island brachte auch diesen Strand mit sich. Schwarzer Sand bis zu den Palmen: Hawaii hatte noch einmal eine völlig andere Farbpalette ausgepackt.",
+          "alt": "Palmen und grüne Pflanzen hinter einem schwarzen Sandstrand."
+        },
+        {
+          "id": "hawaii-32",
+          "publicId": "IMG_4160_pd7l9s",
+          "width": 3024,
+          "height": 4032,
+          "title": "Schwarzer Sand, weiße Gischt",
+          "caption": "Am Punaluʻu Beach trifft die Brandung auf schwarzen Sand. Direkt daneben steht im Album der Blick Richtung Palmen – derselbe Strand, zwei ganz unterschiedliche Seiten.",
+          "alt": "Weiße Brandung rollt über schwarzen Sand und dunkle Felsen."
+        }
+      ]
+    }
+  ]
+}
