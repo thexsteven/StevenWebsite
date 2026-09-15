@@ -113,7 +113,7 @@ export function Travel() {
             <span className={styles.route}>Bangkok → Koh Phangan<br />Koh Samui → Phuket</span>
             <span className={styles.open}>Mein Fotoalbum öffnen ↗</span>
           </a>
-          <a href="/reisen/archiv/thailand" className="btn btn-ghost">Thailand-Album · mit Passwort →</a>
+          <div className="travel-album-action"><a href="/reisen/archiv/thailand" className="btn btn-ghost">Thailand-Album · mit Passwort →</a></div>
           <ul className="travel-stats">
             <li><strong>Dauer</strong> Drei Wochen im August 2026</li>
             <li><strong>Unterwegs</strong> Großstadt, Dschungel und Inseln</li>
@@ -126,7 +126,7 @@ export function Travel() {
             <span className="travel-date">02.03.2025 – 14.04.2025</span>
           </header>
           <Coverflow slides={HAWAII_SLIDES} label="Hawaii" />
-          <a href="/reisen/archiv/hawaii" className="btn btn-ghost">Neues Hawaii-Album · mit Passwort →</a>
+          <div className="travel-album-action"><a href="/reisen/archiv/hawaii" className="btn btn-ghost">Neues Hawaii-Album · mit Passwort →</a></div>
           <ul className="travel-stats">
             <li>
               <strong>Dauer</strong> ca. 6 Wochen
@@ -160,7 +160,7 @@ export function Travel() {
             <span className="travel-date">21.06.2025 – 01.07.2025</span>
           </header>
           <Coverflow slides={CANNES_SLIDES} label="Cannes" />
-          <a href="/reisen/archiv/cannes" className="btn btn-ghost">Neues Konstanz–Cannes-Album · mit Passwort →</a>
+          <div className="travel-album-action"><a href="/reisen/archiv/cannes" className="btn btn-ghost">Neues Konstanz–Cannes-Album · mit Passwort →</a></div>
           <ul className="travel-stats">
             <li>
               <strong>Antrieb</strong> Spontan, selbstfinanziert

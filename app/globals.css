@@ -1203,6 +1203,15 @@ header * {
   opacity: 0.9;
 }
 
+.travel-album-action {
+  padding: var(--space-lg);
+}
+
+.travel-album-action .btn {
+  max-width: 100%;
+  text-align: center;
+}
+
 .travel-stats {
   list-style: none;
   margin: 0;
