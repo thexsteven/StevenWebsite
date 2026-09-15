@@ -44,6 +44,7 @@ const ogImage =
 export const metadata: Metadata = {
   metadataBase: new URL('https://braun-steven.de'),
   title: 'Steven | Portfolio',
+  icons: { icon: { url: '/favicon.svg', type: 'image/svg+xml' } },
   description:
     'Steven Braun – dualer Informatikstudent aus Bad Mergentheim. Reisegeschichten, Fahrradabenteuer, Sport und Projekte über Informatik, Disziplin und kontinuierliches Lernen.',
   openGraph: {
