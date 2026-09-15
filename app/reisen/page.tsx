@@ -8,7 +8,7 @@ import { Travel } from '@/components/sections/Travel';
 export const metadata: Metadata = {
   title: 'Reisen | Steven',
   description:
-    'Reisegeschichten von Steven Braun: sechs Wochen Sprachreise auf Hawaii und eine Fahrradtour von Konstanz nach Cannes über die Alpen.',
+    'Reisegeschichten von Steven Braun: Thailand, sechs Wochen Sprachreise auf Hawaii und eine Fahrradtour von Konstanz nach Cannes über die Alpen.',
 };
 
 export default function ReisenPage() {

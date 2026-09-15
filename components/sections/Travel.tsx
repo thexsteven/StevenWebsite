@@ -1,5 +1,6 @@
 import { SectionHead } from '@/components/SectionHead';
 import { Coverflow, type CoverflowSlide } from '@/components/sections/Coverflow';
+import styles from '@/components/travel/ThailandPreview.module.css';
 
 // ——— Coverflow-Folien ———————————————————————————————————————
 // Neue Folie hinzufügen = eine Zeile. { src, alt, caption } – fertig.
@@ -97,9 +98,28 @@ export function Travel() {
         kicker="Reisen"
         titleId="travel-title"
         title="Meine Reisegeschichten"
-        intro="Hawaii als Sprachreise und eine Fahrradtour von Konstanz nach Cannes."
+        intro="Eine Sprachreise nach Hawaii, mit dem Rad nach Cannes und drei Wochen Thailand."
       />
       <div className="travel-grid">
+        <article className={`travel-box ${styles.card}`}>
+          <header className="travel-box-header">
+            <h3>Thailand</h3>
+            <span className="travel-date">06.08.2026 – 26.08.2026</span>
+          </header>
+          <a href="/reisen/archiv/thailand" className={styles.postcard} aria-label="Thailand-Fotoalbum öffnen – mit Passwort">
+            <span className={styles.stamp}>TH<br /><small>AUG / 26</small></span>
+            <span className={styles.kicker}>Drei Wochen · Vier Orte</span>
+            <span className={styles.title}>Vom Trubel<br />ins Inseltempo.</span>
+            <span className={styles.route}>Bangkok → Koh Phangan<br />Koh Samui → Phuket</span>
+            <span className={styles.open}>Mein Fotoalbum öffnen ↗</span>
+          </a>
+          <a href="/reisen/archiv/thailand" className="btn btn-ghost">Thailand-Album · mit Passwort →</a>
+          <ul className="travel-stats">
+            <li><strong>Dauer</strong> Drei Wochen im August 2026</li>
+            <li><strong>Unterwegs</strong> Großstadt, Dschungel und Inseln</li>
+            <li><strong>Erinnerungen</strong> 68 Fotos in vier Kapiteln</li>
+          </ul>
+        </article>
         <article className="travel-box">
           <header className="travel-box-header">
             <h3>Hawaii Sprachreise</h3>
