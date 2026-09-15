@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import { Timeline, type TimelineItem } from '@/components/Timeline';
+import { StudyPreview } from '@/components/StudyPreview';
 
 /**
  * Die fünf Stationen – einmal. Vorher lagen dieselben Daten dreifach auf der
@@ -90,6 +91,14 @@ export function Werdegang() {
 
           <Timeline items={STATIONS} />
         </div>
+        <section className="home-study" aria-labelledby="home-study-title">
+          <header className="home-head">
+            <p className="home-kicker">Duales Studium · DHBW Mosbach</p>
+            <h2 id="home-study-title" className="home-title">Theorie trifft Praxis.</h2>
+            <p className="home-intro">Was ich in den Modulen bearbeitet habe und aus der Praxis mitnehme. Mit Themenvorschau und ausgewählten Lernnotizen aus meinem Notion-Hub.</p>
+          </header>
+          <StudyPreview />
+        </section>
       </div>
     </section>
   );
