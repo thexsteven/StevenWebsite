@@ -38,7 +38,7 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
       variants={prefersReducedMotion ? STATIC_GRID_VARIANTS : GRID_VARIANTS}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.15 }}
+      viewport={{ once: true, amount: 'some' }}
     >
       {projects.map((project) => (
         <ProjectCard key={project.slug} project={project} />

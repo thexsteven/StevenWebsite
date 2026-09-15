@@ -48,8 +48,8 @@ export function FeaturedProjects() {
             Woran ich gerade baue.
           </h2>
           <p className="home-intro">
-            Drei Arbeiten, die zeigen, wie ich denke – mit Live-Daten direkt aus
-            GitHub: Sprachverteilung, Sterne und der letzte Commit.
+            Vom ersten Aha-Moment bis zur eigenen Anwendung. Drei Arbeiten zum
+            Reinschauen, Ausprobieren und Weiterdenken.
           </p>
         </header>
 
