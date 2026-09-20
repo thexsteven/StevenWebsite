@@ -1,0 +1,1853 @@
+{
+  "hinweis": "Generiert aus der Cloudinary Admin API. Nicht von Hand bearbeiten.",
+  "erzeugt": "2026-09-05",
+  "cloud_name": "dozdjb4fi",
+  "auslieferung": {
+    "regel": "Immer f_auto,q_auto und eine explizite Breite. Niemals das Original ohne Transformation einbinden.",
+    "next_image": "next.config.ts erlaubt res.cloudinary.com/dozdjb4fi/**.",
+    "breiten_empfehlung": [
+      640,
+      960,
+      1280,
+      1920
+    ]
+  },
+  "bestand": {
+    "nutzbar": 83,
+    "gesperrt": 48,
+    "gesamt": 131
+  },
+  "ordner": {
+    "person/portrait": [
+      {
+        "id": "auto-weisses-hemd",
+        "typ": "bild",
+        "ordner": "person/portrait",
+        "alt": "Selfie auf dem Beifahrersitz im weißen Hemd, angeschnallt, draußen dämmert es",
+        "bildunterschrift": "Auf dem Weg irgendwohin",
+        "tags": [
+          "archiv",
+          "portraet"
+        ],
+        "breite": 1242,
+        "hoehe": 2208,
+        "ausrichtung": "hochformat",
+        "public_id": "IMG_0385_y9ov7s",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_0385_y9ov7s"
+      },
+      {
+        "id": "spiegel-dunkles-shirt",
+        "typ": "bild",
+        "ordner": "person/portrait",
+        "alt": "Spiegelselfie im dunklen Shirt in einem gefliesten Bad, deutlich jünger",
+        "bildunterschrift": "Frühe Jahre",
+        "tags": [
+          "archiv",
+          "portraet",
+          "pruefen-datum"
+        ],
+        "breite": 722,
+        "hoehe": 1280,
+        "ausrichtung": "hochformat",
+        "public_id": "IMG_0383_x5xcp9",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_0383_x5xcp9"
+      },
+      {
+        "id": "spiegel-grauer-hoodie",
+        "typ": "bild",
+        "ordner": "person/portrait",
+        "alt": "Spiegelselfie im grauen Hoodie mit Cap verkehrt herum in einem Badezimmer",
+        "bildunterschrift": "Grauer Hoodie",
+        "tags": [
+          "archiv",
+          "portraet",
+          "pruefen-datum"
+        ],
+        "breite": 854,
+        "hoehe": 1570,
+        "ausrichtung": "hochformat",
+        "public_id": "IMG_0384_kngetr",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_0384_kngetr"
+      },
+      {
+        "id": "spiegel-polo-zimmer",
+        "typ": "bild",
+        "ordner": "person/portrait",
+        "alt": "Spiegelselfie im weinroten Polohemd im eigenen Zimmer, Arbeitskleidung hängt an der Tür",
+        "bildunterschrift": "Zwischen Vorlesung und Schicht",
+        "tags": [
+          "aktuell",
+          "portraet"
+        ],
+        "breite": 4284,
+        "hoehe": 5712,
+        "ausrichtung": "hochformat",
+        "public_id": "IMG_8821_l2mkjj",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_8821_l2mkjj"
+      },
+      {
+        "id": "spiegel-schwarzes-shirt",
+        "typ": "bild",
+        "ordner": "person/portrait",
+        "alt": "Spiegelselfie im schwarzen Shirt in einem hellen Flur",
+        "bildunterschrift": "Schwarzes Shirt, heller Flur",
+        "tags": [
+          "archiv",
+          "portraet"
+        ],
+        "breite": 1238,
+        "hoehe": 2200,
+        "ausrichtung": "hochformat",
+        "public_id": "IMG_0387_yma1fc",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_0387_yma1fc"
+      }
+    ],
+    "person/sport": [
+      {
+        "id": "beinheben-gym",
+        "typ": "bild",
+        "ordner": "person/sport",
+        "alt": "Seitliches Beinheben auf einer Bank im Outdoor-Gym vor grüner Wand",
+        "bildunterschrift": "Trainingstag",
+        "tags": [
+          "gym",
+          "sport",
+          "training"
+        ],
+        "breite": 1179,
+        "hoehe": 709,
+        "ausrichtung": "querformat",
+        "public_id": "IMG_0371_trtvnt",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_0371_trtvnt"
+      },
+      {
+        "id": "handstand",
+        "typ": "bild",
+        "ordner": "person/sport",
+        "alt": "Freier Handstand vor einer weißen Wand, daneben Kurzhanteln",
+        "bildunterschrift": "Handstand, ohne Wand",
+        "tags": [
+          "calisthenics",
+          "sport",
+          "training"
+        ],
+        "breite": 1179,
+        "hoehe": 682,
+        "ausrichtung": "querformat",
+        "public_id": "IMG_0375_yfltnr",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_0375_yfltnr"
+      },
+      {
+        "id": "lauf-schlosshof",
+        "typ": "bild",
+        "ordner": "person/sport",
+        "alt": "Laufend über das Kopfsteinpflaster eines Schlosshofs, weiße Fassaden ringsum",
+        "bildunterschrift": "Laufen, wo sonst Touristen stehen",
+        "tags": [
+          "laufen",
+          "pruefen-ort",
+          "sport"
+        ],
+        "breite": 1536,
+        "hoehe": 2048,
+        "ausrichtung": "hochformat",
+        "public_id": "WhatsApp_Image_2026-05-06_at_23.08.32_d7uqau",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/WhatsApp_Image_2026-05-06_at_23.08.32_d7uqau"
+      }
+    ],
+    "person/alltag": [
+      {
+        "id": "schreibtisch-nachts",
+        "typ": "bild",
+        "ordner": "person/alltag",
+        "alt": "Am Schreibtisch vor drei Bildschirmen mit Code, spätabends, nur die Lampe an",
+        "bildunterschrift": "Die andere Hälfte der Zeit",
+        "tags": [
+          "arbeit",
+          "code",
+          "nacht",
+          "schreibtisch"
+        ],
+        "breite": 1178,
+        "hoehe": 661,
+        "ausrichtung": "querformat",
+        "public_id": "IMG_0367_km3cq5",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_0367_km3cq5"
+      }
+    ],
+    "reisen/venedig-2026": [
+      {
+        "id": "mondlicht-grat",
+        "typ": "bild",
+        "ordner": "reisen/venedig-2026",
+        "alt": "Mondbeschienener Bergkamm mit Schneefeldern unter dunklen Wolken",
+        "bildunterschrift": "Der Mond macht die Arbeit der Sonne",
+        "tags": [
+          "2026",
+          "berge",
+          "landschaft",
+          "nacht",
+          "unterwegs",
+          "venedig"
+        ],
+        "breite": 3021,
+        "hoehe": 1776,
+        "ausrichtung": "querformat",
+        "public_id": "IMG_0126_bavula",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_0126_bavula"
+      },
+      {
+        "id": "nachthimmel-berge",
+        "typ": "bild",
+        "ordner": "reisen/venedig-2026",
+        "alt": "Sternenhimmel über einer gezackten Bergkette, unten ein beleuchteter Strauch",
+        "bildunterschrift": "Nacht in den Bergen, auf dem Weg nach Venedig",
+        "tags": [
+          "2026",
+          "berge",
+          "landschaft",
+          "nacht",
+          "sterne",
+          "unterwegs",
+          "venedig"
+        ],
+        "breite": 3021,
+        "hoehe": 1836,
+        "ausrichtung": "querformat",
+        "public_id": "IMG_0109_xoe48s",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_0109_xoe48s"
+      },
+      {
+        "id": "panorama-kalkmassiv",
+        "typ": "bild",
+        "ordner": "reisen/venedig-2026",
+        "alt": "Weites Bergpanorama mit hellem Kalkmassiv, Geröllfeldern und Schönwetterwolken",
+        "bildunterschrift": "Oben, wo der Weg aufhört",
+        "tags": [
+          "2026",
+          "berge",
+          "landschaft",
+          "panorama",
+          "unterwegs",
+          "venedig",
+          "wandern"
+        ],
+        "breite": 6338,
+        "hoehe": 3852,
+        "ausrichtung": "querformat",
+        "public_id": "IMG_6337_aezuso",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_6337_aezuso"
+      },
+      {
+        "id": "van-nacht-pass",
+        "typ": "bild",
+        "ordner": "reisen/venedig-2026",
+        "alt": "Ein Van steht nachts an einer Passstraße unter Sternen, dahinter eine steile Felswand",
+        "bildunterschrift": "Schlafplatz auf dem Weg nach Venedig",
+        "tags": [
+          "2026",
+          "berge",
+          "nacht",
+          "sterne",
+          "unterwegs",
+          "van",
+          "venedig"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "IMG_0124_zzcv8p",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_0124_zzcv8p"
+      }
+    ],
+    "reisen/hawaii/adventures": [
+      {
+        "id": "bambuswald-stehend",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/adventures",
+        "alt": "Mit Rucksack im Bambuswald stehend, der Pfad führt weiter ins Grüne",
+        "bildunterschrift": "Kurz stehen bleiben",
+        "tags": [
+          "bambus",
+          "oahu",
+          "portraet",
+          "wandern"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "WhatsApp_Image_2026-05-06_at_20.07.52_f4usek",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/WhatsApp_Image_2026-05-06_at_20.07.52_f4usek"
+      },
+      {
+        "id": "bambuswald-weg",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/adventures",
+        "alt": "Wanderer auf einem Erdpfad durch dichten Bambuswald",
+        "bildunterschrift": "Im Bambus wird es still",
+        "tags": [
+          "bambus",
+          "dschungel",
+          "oahu",
+          "wandern"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/adv_pali_2",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/adv_pali_2"
+      },
+      {
+        "id": "challenger-freunde",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/adventures",
+        "alt": "Drei junge Männer lehnen an einem roten Dodge Challenger unter Mangobäumen",
+        "bildunterschrift": "Der Mietwagen, mit dem alles anfing",
+        "tags": [
+          "auto",
+          "freunde",
+          "oahu",
+          "portraet"
+        ],
+        "breite": 1200,
+        "hoehe": 1599,
+        "ausrichtung": "hochformat",
+        "public_id": "a69695a6-41b8-47e9-8f91-d6f28d84b0f0_bh4b5r",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/a69695a6-41b8-47e9-8f91-d6f28d84b0f0_bh4b5r"
+      },
+      {
+        "id": "challenger-highway",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/adventures",
+        "alt": "Blick über die rote Motorhaube auf einen leeren Highway, rechts hohes Gras, am Horizont das Meer",
+        "bildunterschrift": "35 Meilen pro Stunde, mehr braucht die Insel nicht",
+        "tags": [
+          "auto",
+          "oahu",
+          "strasse",
+          "unterwegs"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "IMG_3114_mhldjw",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_3114_mhldjw",
+        "hinweis": "HEIC. Nur ueber f_auto ausliefern, Browser koennen das Original nicht anzeigen."
+      },
+      {
+        "id": "challenger-lenkrad",
+        "typ": "video",
+        "ordner": "reisen/hawaii/adventures",
+        "alt": "Hand am Lenkrad des Challenger, im Tacho stehen 24 Meilen pro Stunde",
+        "bildunterschrift": "Hinterm Steuer",
+        "tags": [
+          "auto",
+          "dublette",
+          "oahu",
+          "video"
+        ],
+        "breite": 1080,
+        "hoehe": 1920,
+        "ausrichtung": "hochformat",
+        "public_id": "IMG_3130_aruqpg",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto/IMG_3130_aruqpg.mp4",
+        "poster_url": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto,so_1,w_{BREITE}/IMG_3130_aruqpg.jpg",
+        "hinweis": "Fuer Scroll-Scrubbing lokal mit dichtem GOP neu kodieren, siehe scripts/encode.sh im Skill."
+      },
+      {
+        "id": "challenger-parkplatz",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/adventures",
+        "alt": "Roter Dodge Challenger auf einem leeren Parkplatz vor dichtem Grün",
+        "bildunterschrift": "Abgestellt am Aussichtspunkt",
+        "tags": [
+          "auto",
+          "oahu"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "IMG_3132_l49xho",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_3132_l49xho",
+        "hinweis": "HEIC. Nur ueber f_auto ausliefern, Browser koennen das Original nicht anzeigen."
+      },
+      {
+        "id": "dschungel-umgestuerzt",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/adventures",
+        "alt": "Über umgestürzte Äste im dichten Dschungel kletternd, Fächerpalmen im Hintergrund",
+        "bildunterschrift": "Der Weg war nicht immer ein Weg",
+        "tags": [
+          "dschungel",
+          "oahu",
+          "pruefen-ort",
+          "wandern"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/adv_manoa_1",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/adv_manoa_1"
+      },
+      {
+        "id": "dschungelpfad-video",
+        "typ": "video",
+        "ordner": "reisen/hawaii/adventures",
+        "alt": "Verwackelte Fahrt über einen Dschungelpfad, ein Freund läuft voraus",
+        "bildunterschrift": "Unterwegs im Grünen",
+        "tags": [
+          "dschungel",
+          "oahu",
+          "video",
+          "wandern"
+        ],
+        "breite": 480,
+        "hoehe": 848,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/alltag_deeptalk",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto/pages/travel/hawaii/videos/alltag_deeptalk.mp4",
+        "poster_url": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto,so_1,w_{BREITE}/pages/travel/hawaii/videos/alltag_deeptalk.jpg",
+        "hinweis": "Fuer Scroll-Scrubbing lokal mit dichtem GOP neu kodieren, siehe scripts/encode.sh im Skill."
+      },
+      {
+        "id": "fallschirm-absprung",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/adventures",
+        "alt": "Absprung aus der offenen Flugzeugtür, das Gesicht vom Fahrtwind verzogen",
+        "bildunterschrift": "Der Moment, in dem der Boden verschwindet",
+        "tags": [
+          "fallschirmsprung",
+          "hoehepunkt",
+          "oahu"
+        ],
+        "breite": 2057,
+        "hoehe": 1800,
+        "ausrichtung": "querformat",
+        "public_id": "IMG_9535_elvh72",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_9535_elvh72"
+      },
+      {
+        "id": "fallschirm-freifall",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/adventures",
+        "alt": "Freifall-Selfie im Tandem gegen die Sonne, tief darunter das Meer",
+        "bildunterschrift": "Freier Fall über Oahu",
+        "tags": [
+          "fallschirmsprung",
+          "hoehepunkt",
+          "oahu"
+        ],
+        "breite": 2057,
+        "hoehe": 1800,
+        "ausrichtung": "querformat",
+        "public_id": "IMG_9537_r6kk5x",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_9537_r6kk5x"
+      },
+      {
+        "id": "fallschirm-gurtzeug",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/adventures",
+        "alt": "Drei junge Männer im Fallschirmgurtzeug unter dem Hallendach, angespannt und grinsend",
+        "bildunterschrift": "Fünf Minuten vor dem Sprung",
+        "tags": [
+          "fallschirmsprung",
+          "freunde",
+          "oahu"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "IMG_3175_abs794",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_3175_abs794",
+        "hinweis": "HEIC. Nur ueber f_auto ausliefern, Browser koennen das Original nicht anzeigen."
+      },
+      {
+        "id": "fallschirm-schirm-offen",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/adventures",
+        "alt": "Tandemsprung unter orangem Schirm, der Springer zeigt auf die Küstenlinie tief unten",
+        "bildunterschrift": "Der Schirm ist offen, jetzt wird es schön",
+        "tags": [
+          "fallschirmsprung",
+          "hoehepunkt",
+          "kueste",
+          "oahu"
+        ],
+        "breite": 2057,
+        "hoehe": 1800,
+        "ausrichtung": "querformat",
+        "public_id": "IMG_9534_lnt1vz",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/IMG_9534_lnt1vz"
+      },
+      {
+        "id": "gojump-halle",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/adventures",
+        "alt": "In voller Sprungausrüstung in der Halle des Sprungbetriebs, Daumen hoch",
+        "bildunterschrift": "Anmeldung erledigt",
+        "tags": [
+          "fallschirmsprung",
+          "oahu"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/adv_northshore_2",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/adv_northshore_2"
+      },
+      {
+        "id": "kokohead-gipfel-arme",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/adventures",
+        "alt": "Mit ausgebreiteten Armen auf dem Gipfelgrat, unten die Bucht",
+        "bildunterschrift": "Der Blick, für den man tausend Stufen läuft",
+        "tags": [
+          "hoehepunkt",
+          "oahu",
+          "portraet",
+          "wandern"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/adv_kokohead_3",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/adv_kokohead_3"
+      },
+      {
+        "id": "kokohead-gipfel-daumen",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/adventures",
+        "alt": "Am Gipfel eines Bergrückens, Daumen hoch, dahinter die Küste und schwere Wolken",
+        "bildunterschrift": "Oben angekommen, Koko Head",
+        "tags": [
+          "oahu",
+          "portraet",
+          "wandern"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/adv_kokohead_2",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/adv_kokohead_2"
+      },
+      {
+        "id": "kokohead-sonnenuntergang",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/adventures",
+        "alt": "Bedeckter Sonnenuntergang über dem Pazifik, gesehen von einem Bergrücken",
+        "bildunterschrift": "Licht, das durch die Wolkendecke bricht",
+        "tags": [
+          "landschaft",
+          "oahu",
+          "sonnenuntergang",
+          "wandern"
+        ],
+        "breite": 4032,
+        "hoehe": 3024,
+        "ausrichtung": "querformat",
+        "public_id": "pages/travel/hawaii/videos/adv_kokohead_1",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/adv_kokohead_1"
+      },
+      {
+        "id": "koolau-grat",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/adventures",
+        "alt": "Posierend auf einem Grat vor den wolkenverhangenen Bergen der Koolau-Kette",
+        "bildunterschrift": "Die Koolau-Kette, wie sie meistens aussieht",
+        "tags": [
+          "berge",
+          "oahu",
+          "portraet",
+          "wandern"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/adv_pali_1",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/adv_pali_1"
+      },
+      {
+        "id": "sprung-brandung",
+        "typ": "video",
+        "ordner": "reisen/hawaii/adventures",
+        "alt": "Sprung kopfüber in die Brandung an einem türkisfarbenen Strand",
+        "bildunterschrift": "Rein in die Welle",
+        "tags": [
+          "meer",
+          "oahu",
+          "strand",
+          "video"
+        ],
+        "breite": 480,
+        "hoehe": 848,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/alltag_jump",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto/pages/travel/hawaii/videos/alltag_jump.mp4",
+        "poster_url": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto,so_1,w_{BREITE}/pages/travel/hawaii/videos/alltag_jump.jpg",
+        "hinweis": "Fuer Scroll-Scrubbing lokal mit dichtem GOP neu kodieren, siehe scripts/encode.sh im Skill."
+      },
+      {
+        "id": "wasserfall",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/adventures",
+        "alt": "Schmaler Wasserfall stürzt über bemooste Felsen in ein Becken",
+        "bildunterschrift": "Das Ende des Pfades",
+        "tags": [
+          "dschungel",
+          "oahu",
+          "wandern",
+          "wasserfall"
+        ],
+        "breite": 1980,
+        "hoehe": 3520,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/adv_pali_3",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/adv_pali_3"
+      },
+      {
+        "id": "windschutzscheibe-kueste",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/adventures",
+        "alt": "Blick durch die Windschutzscheibe auf eine leere Landstraße, am Ende das Meer",
+        "bildunterschrift": "Auf dem Weg zur North Shore",
+        "tags": [
+          "auto",
+          "oahu",
+          "strasse",
+          "unterwegs"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/adv_northshore_1",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/adv_northshore_1"
+      }
+    ],
+    "reisen/hawaii/big-island": [
+      {
+        "id": "fluss-lavagestein",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/big-island",
+        "alt": "Ein Fluss läuft über schwarzes Lavagestein durch dichten Regenwald",
+        "bildunterschrift": "Wasser über Lava",
+        "tags": [
+          "big-island",
+          "dschungel",
+          "fluss",
+          "natur"
+        ],
+        "breite": 1536,
+        "hoehe": 2048,
+        "ausrichtung": "hochformat",
+        "public_id": "jungle_uzfy6s",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/jungle_uzfy6s"
+      },
+      {
+        "id": "hilo-strasse",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/big-island",
+        "alt": "Blick aus dem Beifahrerfenster auf eine Kreuzung in Hilo, Straßenschild und Palmen",
+        "bildunterschrift": "Durch Hilo",
+        "tags": [
+          "big-island",
+          "stadt",
+          "strasse",
+          "unterwegs"
+        ],
+        "breite": 1536,
+        "hoehe": 2048,
+        "ausrichtung": "hochformat",
+        "public_id": "Kamehameha_street_laxcfw",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/Kamehameha_street_laxcfw"
+      },
+      {
+        "id": "kueche-aloha-abend",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/big-island",
+        "alt": "Küchentresen mit roten Bechern und Flaschen, an der Wand ein Aloha-Schriftzug, Leute im Hintergrund",
+        "bildunterschrift": "Abend in der Unterkunft",
+        "tags": [
+          "abend",
+          "big-island",
+          "freunde",
+          "unterkunft"
+        ],
+        "breite": 1242,
+        "hoehe": 2208,
+        "ausrichtung": "hochformat",
+        "public_id": "Wohnhaus_flur_ixjq0e",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/Wohnhaus_flur_ixjq0e"
+      },
+      {
+        "id": "lavatunnel",
+        "typ": "video",
+        "ordner": "reisen/hawaii/big-island",
+        "alt": "Ein Weg führt auf den dunklen Eingang einer Lavaröhre zu, ringsum Farne",
+        "bildunterschrift": "Rein in die Lavaröhre",
+        "tags": [
+          "big-island",
+          "lavatunnel",
+          "video",
+          "vulkan"
+        ],
+        "breite": 1080,
+        "hoehe": 1920,
+        "ausrichtung": "hochformat",
+        "public_id": "PahoaVolcano_xgrqzu",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto/PahoaVolcano_xgrqzu.mp4",
+        "poster_url": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto,so_1,w_{BREITE}/PahoaVolcano_xgrqzu.jpg",
+        "hinweis": "Fuer Scroll-Scrubbing lokal mit dichtem GOP neu kodieren, siehe scripts/encode.sh im Skill."
+      },
+      {
+        "id": "mantarochen",
+        "typ": "video",
+        "ordner": "reisen/hawaii/big-island",
+        "alt": "Ein Mantarochen zieht im dunkelblauen Wasser durch den Scheinwerferkegel",
+        "bildunterschrift": "Nachttauchgang mit den Mantas",
+        "tags": [
+          "big-island",
+          "hoehepunkt",
+          "tauchen",
+          "tiere",
+          "video"
+        ],
+        "breite": 480,
+        "hoehe": 848,
+        "ausrichtung": "hochformat",
+        "public_id": "Mantarochen_ff91y2",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto/Mantarochen_ff91y2.mp4",
+        "poster_url": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto,so_1,w_{BREITE}/Mantarochen_ff91y2.jpg",
+        "hinweis": "Fuer Scroll-Scrubbing lokal mit dichtem GOP neu kodieren, siehe scripts/encode.sh im Skill."
+      },
+      {
+        "id": "maunakea-daemmerung-van",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/big-island",
+        "alt": "An einen Van gelehnt in der Dämmerung, darunter das Wolkenmeer",
+        "bildunterschrift": "Warten, bis es kalt wird",
+        "tags": [
+          "big-island",
+          "daemmerung",
+          "maunakea",
+          "portraet"
+        ],
+        "breite": 1200,
+        "hoehe": 1600,
+        "ausrichtung": "hochformat",
+        "public_id": "MaunakeaSunset2_k0ceor",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/MaunakeaSunset2_k0ceor"
+      },
+      {
+        "id": "maunakea-sonnenuntergang",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/big-island",
+        "alt": "Silhouette gegen einen orangefarbenen Sonnenuntergang über einer geschlossenen Wolkendecke",
+        "bildunterschrift": "Sonnenuntergang über den Wolken, Mauna Kea",
+        "tags": [
+          "big-island",
+          "hoehepunkt",
+          "maunakea",
+          "sonnenuntergang"
+        ],
+        "breite": 1200,
+        "hoehe": 1600,
+        "ausrichtung": "hochformat",
+        "public_id": "MaunakeaSunset_ouuchw",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/MaunakeaSunset_ouuchw"
+      },
+      {
+        "id": "maunakea-visitor-station",
+        "typ": "video",
+        "ordner": "reisen/hawaii/big-island",
+        "alt": "Geparkte Autos an der Visitor Station am Mauna Kea, rote Schlackenhänge dahinter",
+        "bildunterschrift": "Zwischenstopp auf 2800 Metern",
+        "tags": [
+          "berge",
+          "big-island",
+          "maunakea",
+          "video"
+        ],
+        "breite": 720,
+        "hoehe": 1280,
+        "ausrichtung": "hochformat",
+        "public_id": "MaunaKeaPause_mkhvfh",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto/MaunaKeaPause_mkhvfh.mp4",
+        "poster_url": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto,so_1,w_{BREITE}/MaunaKeaPause_mkhvfh.jpg",
+        "hinweis": "Fuer Scroll-Scrubbing lokal mit dichtem GOP neu kodieren, siehe scripts/encode.sh im Skill."
+      },
+      {
+        "id": "palmenstrand-bodyboard",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/big-island",
+        "alt": "Mit Bodyboard unter dem Arm auf einen palmengesäumten Strand zulaufend",
+        "bildunterschrift": "Der kurze Weg vom Parkplatz ins Wasser",
+        "tags": [
+          "big-island",
+          "portraet",
+          "strand"
+        ],
+        "breite": 1536,
+        "hoehe": 2048,
+        "ausrichtung": "hochformat",
+        "public_id": "PunaluuBeachpark_mrvsqs",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/PunaluuBeachpark_mrvsqs"
+      },
+      {
+        "id": "punaluu-schwarzer-strand",
+        "typ": "video",
+        "ordner": "reisen/hawaii/big-island",
+        "alt": "Schwarzer Lavasandstrand, im Wasser ein paar Badende, dahinter bewaldete Klippen",
+        "bildunterschrift": "Punaluu, der Sand ist wirklich schwarz",
+        "tags": [
+          "big-island",
+          "lava",
+          "strand",
+          "video"
+        ],
+        "breite": 1080,
+        "hoehe": 1920,
+        "ausrichtung": "hochformat",
+        "public_id": "BlackSandBeach_ds6nzm",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto/BlackSandBeach_ds6nzm.mp4",
+        "poster_url": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto,so_1,w_{BREITE}/BlackSandBeach_ds6nzm.jpg",
+        "hinweis": "Fuer Scroll-Scrubbing lokal mit dichtem GOP neu kodieren, siehe scripts/encode.sh im Skill."
+      },
+      {
+        "id": "ruine-aloha-mural",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/big-island",
+        "alt": "Verlassenes Gebäude mit Aloha-Wandbild und großem Reetdach, Gras wächst durch den Beton",
+        "bildunterschrift": "Das aufgegebene Haus am schwarzen Strand",
+        "tags": [
+          "big-island",
+          "graffiti",
+          "streetart",
+          "verfall"
+        ],
+        "breite": 1536,
+        "hoehe": 2048,
+        "ausrichtung": "hochformat",
+        "public_id": "Blasksandhaus_lugi4s",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/Blasksandhaus_lugi4s"
+      },
+      {
+        "id": "ruine-graffiti-innen",
+        "typ": "video",
+        "ordner": "reisen/hawaii/big-island",
+        "alt": "Innenraum eines verfallenen Gebäudes, Wände voller Graffiti, das Dach halb eingestürzt",
+        "bildunterschrift": "Drinnen ist vom Haus nicht mehr viel übrig",
+        "tags": [
+          "big-island",
+          "graffiti",
+          "verfall",
+          "video"
+        ],
+        "breite": 1080,
+        "hoehe": 1920,
+        "ausrichtung": "hochformat",
+        "public_id": "BlacksandHaus_l8zjaq",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto/BlacksandHaus_l8zjaq.mp4",
+        "poster_url": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto,so_1,w_{BREITE}/BlacksandHaus_l8zjaq.jpg",
+        "hinweis": "Fuer Scroll-Scrubbing lokal mit dichtem GOP neu kodieren, siehe scripts/encode.sh im Skill."
+      },
+      {
+        "id": "strandbuggy",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/big-island",
+        "alt": "Schwarzer Strandbuggy mit Flammenlackierung auf Schotter, dahinter das Meer",
+        "bildunterschrift": "Nicht unser Auto, aber das schönere",
+        "tags": [
+          "auto",
+          "big-island",
+          "kueste"
+        ],
+        "breite": 1536,
+        "hoehe": 2048,
+        "ausrichtung": "hochformat",
+        "public_id": "coolesAuto_yz90ds",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/coolesAuto_yz90ds"
+      },
+      {
+        "id": "whirlpool-lanai",
+        "typ": "video",
+        "ordner": "reisen/hawaii/big-island",
+        "alt": "Whirlpool auf einer Veranda, ringsum tropisches Grün",
+        "bildunterschrift": "Der Tag hört im Whirlpool auf",
+        "tags": [
+          "big-island",
+          "unterkunft",
+          "video"
+        ],
+        "breite": 720,
+        "hoehe": 1280,
+        "ausrichtung": "hochformat",
+        "public_id": "whirlpoolPause_ifpes0",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto/whirlpoolPause_ifpes0.mp4",
+        "poster_url": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto,so_1,w_{BREITE}/whirlpoolPause_ifpes0.jpg",
+        "hinweis": "Fuer Scroll-Scrubbing lokal mit dichtem GOP neu kodieren, siehe scripts/encode.sh im Skill."
+      }
+    ],
+    "reisen/hawaii/alltag": [
+      {
+        "id": "ala-moana-palmen",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/alltag",
+        "alt": "Unter hohen Palmen auf einer Wiese am Wasser gehend, dahinter Hafen und Hochhäuser",
+        "bildunterschrift": "Ala Moana, der Park zwischen Sprachschule und Meer",
+        "tags": [
+          "2025",
+          "alamoana",
+          "alltag",
+          "oahu",
+          "park",
+          "portraet"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/me",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/me"
+      },
+      {
+        "id": "angler-hafenmauer",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/alltag",
+        "alt": "Ein Angler steht an der Hafenmauer und wirft aus, dahinter Segelboote im Morgenlicht",
+        "bildunterschrift": "Morgens am Hafen",
+        "tags": [
+          "alltag",
+          "hafen",
+          "menschen",
+          "oahu"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/alltag_angler",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/alltag_angler"
+      },
+      {
+        "id": "duke-statue",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/alltag",
+        "alt": "Die Statue von Duke Kahanamoku mit Blumenkränzen am Waikiki Beach zwischen Palmen",
+        "bildunterschrift": "Duke, immer mit frischen Leis",
+        "tags": [
+          "oahu",
+          "strand",
+          "wahrzeichen",
+          "waikiki"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/alltag_beach",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/alltag_beach"
+      },
+      {
+        "id": "feuerwerk-waikiki",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/alltag",
+        "alt": "Feuerwerk über dem Meer, davor eine Menschenmenge mit erhobenen Handys",
+        "bildunterschrift": "Freitagabend, Feuerwerk über Waikiki",
+        "tags": [
+          "abend",
+          "feuerwerk",
+          "hoehepunkt",
+          "oahu",
+          "waikiki"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/alltag_waikiki_beach",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/alltag_waikiki_beach"
+      },
+      {
+        "id": "honolulu-hochhaeuser",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/alltag",
+        "alt": "Straßenzug in Honolulu mit Hochhäusern und Palmen unter Schönwetterwolken",
+        "bildunterschrift": "Honolulu, zwischen Beton und Palmen",
+        "tags": [
+          "architektur",
+          "honolulu",
+          "oahu",
+          "stadt"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/alltag_stadt",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/alltag_stadt"
+      },
+      {
+        "id": "klimmzug-park",
+        "typ": "video",
+        "ordner": "reisen/hawaii/alltag",
+        "alt": "Klimmzug an einer blauen Reckstange im Park, dahinter Bäume und die Skyline",
+        "bildunterschrift": "Freiluft-Gym mit Skyline",
+        "tags": [
+          "oahu",
+          "park",
+          "sport",
+          "training",
+          "video"
+        ],
+        "breite": 480,
+        "hoehe": 848,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/alltag_workout",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto/pages/travel/hawaii/videos/alltag_workout.mp4",
+        "poster_url": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto,so_1,w_{BREITE}/pages/travel/hawaii/videos/alltag_workout.jpg",
+        "hinweis": "Fuer Scroll-Scrubbing lokal mit dichtem GOP neu kodieren, siehe scripts/encode.sh im Skill."
+      },
+      {
+        "id": "kreuzung-innenstadt",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/alltag",
+        "alt": "Leere Kreuzung in der Innenstadt von Honolulu, ringsum Wohntürme",
+        "bildunterschrift": "Sonntagvormittag in der Stadt",
+        "tags": [
+          "honolulu",
+          "oahu",
+          "stadt",
+          "strasse"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/City_1",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/City_1"
+      },
+      {
+        "id": "kreuzung-radfahrer",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/alltag",
+        "alt": "Breite Kreuzung in Waikiki mit Zebrastreifen, ein Radfahrer quert vor Ladenfassaden",
+        "bildunterschrift": "Der Weg zur Sprachschule",
+        "tags": [
+          "2025",
+          "alltag",
+          "oahu",
+          "schulweg",
+          "sprachreise",
+          "stadt",
+          "waikiki"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/alltag_schulweg",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/alltag_schulweg"
+      },
+      {
+        "id": "sonnenuntergang-uferweg",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/alltag",
+        "alt": "Gegenlicht-Sonnenuntergang über dem Wasser, eine Frau geht auf dem Uferweg unter Palmen",
+        "bildunterschrift": "Feierabendlicht am Ufer",
+        "tags": [
+          "alltag",
+          "oahu",
+          "sonnenuntergang"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/alltag_cali",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/alltag_cali"
+      },
+      {
+        "id": "sprachschule-stundenplan",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/alltag",
+        "alt": "Ein Lehrer steht vor einer Leinwand mit einem Wochenstundenplan, im Vordergrund Hinterköpfe von Mitschülern",
+        "bildunterschrift": "Der Stundenplan der Sprachschule in Ala Moana",
+        "tags": [
+          "2025",
+          "alamoana",
+          "alltag",
+          "oahu",
+          "sprachreise",
+          "sprachschule"
+        ],
+        "breite": 4032,
+        "hoehe": 3024,
+        "ausrichtung": "querformat",
+        "public_id": "pages/travel/hawaii/videos/alltag_alamoana",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/alltag_alamoana"
+      },
+      {
+        "id": "vogel-kanal",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/alltag",
+        "alt": "Ein Wasservogel steht im flachen, klaren Wasser am Kanalufer",
+        "bildunterschrift": "Am Kanal, jeden Morgen derselbe Vogel",
+        "tags": [
+          "alltag",
+          "kanal",
+          "oahu",
+          "tiere"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/alltag_kanal",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/alltag_kanal"
+      }
+    ],
+    "reisen/hawaii/essen": [
+      {
+        "id": "acai-bowl",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/essen",
+        "alt": "Acai-Bowl mit Bananenscheiben, Erdbeeren, Blaubeeren und Granola auf einem Holztisch",
+        "bildunterschrift": "Acai-Bowl, das Standardfrühstück",
+        "tags": [
+          "essen",
+          "fruehstueck",
+          "oahu"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/Acai_Bowl_",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/Acai_Bowl_"
+      },
+      {
+        "id": "burger-diner",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/essen",
+        "alt": "Burger auf rotem Tablett in einem Diner, im Hintergrund die offene Küche",
+        "bildunterschrift": "Burger, Tresen, Cola",
+        "tags": [
+          "burger",
+          "essen",
+          "oahu",
+          "restaurant"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/BettysBurger",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/BettysBurger"
+      },
+      {
+        "id": "chicken-bowl",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/essen",
+        "alt": "Reisschale mit gebratenem Hähnchen, Sesam und Frühlingszwiebeln",
+        "bildunterschrift": "Chicken Bowl",
+        "tags": [
+          "essen",
+          "oahu"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/ChickenBowl",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/ChickenBowl"
+      },
+      {
+        "id": "chicken-tenders",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/essen",
+        "alt": "Hähnchenstreifen mit Toast, Pommes und Soße auf einem grünen Tisch",
+        "bildunterschrift": "Der Klassiker nach dem Training",
+        "tags": [
+          "essen",
+          "oahu"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/RaisingCanes",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/RaisingCanes"
+      },
+      {
+        "id": "foodtruck-burger",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/essen",
+        "alt": "Burger mit einer kleinen Flagge auf dem Spieß, daneben Reis, gegenüber isst ein Freund",
+        "bildunterschrift": "Mittag am Foodtruck",
+        "tags": [
+          "burger",
+          "essen",
+          "foodtruck",
+          "freunde",
+          "oahu"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/FoodtruckBurger",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/FoodtruckBurger"
+      },
+      {
+        "id": "garlic-shrimp",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/essen",
+        "alt": "Teller mit Knoblauchgarnelen, Reis und Salat auf einem Picknicktisch",
+        "bildunterschrift": "Garlic Shrimp von der North Shore",
+        "tags": [
+          "essen",
+          "foodtruck",
+          "northshore",
+          "oahu"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/adv_northshore_3",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/adv_northshore_3"
+      },
+      {
+        "id": "hotdog-pommes",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/essen",
+        "alt": "Hotdog mit Senf und Ketchup neben Pommes in einer Styroporbox",
+        "bildunterschrift": "Hotdog to go",
+        "tags": [
+          "essen",
+          "oahu"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/HotDog",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/HotDog"
+      },
+      {
+        "id": "loco-moco",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/essen",
+        "alt": "Teller mit Reis, Fleisch und brauner Soße in einem Drive-In mit türkisen Wänden",
+        "bildunterschrift": "Rainbow Drive-In",
+        "tags": [
+          "essen",
+          "oahu",
+          "restaurant"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/RainbowRestaurant",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/RainbowRestaurant"
+      },
+      {
+        "id": "poke-bowl",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/essen",
+        "alt": "Poke-Bowl mit Lachswürfeln, Rogen und Frühlingszwiebeln auf Reis",
+        "bildunterschrift": "Poke, so oft es ging",
+        "tags": [
+          "essen",
+          "oahu",
+          "poke"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/PokeBowl",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/PokeBowl"
+      },
+      {
+        "id": "shave-ice",
+        "typ": "bild",
+        "ordner": "reisen/hawaii/essen",
+        "alt": "Shave Ice in Blau und Rot mit einer Kugel Eis obendrauf, dahinter Park und Meer",
+        "bildunterschrift": "Shave Ice am Ala Moana Beach Park",
+        "tags": [
+          "dessert",
+          "essen",
+          "oahu",
+          "strand"
+        ],
+        "breite": 1242,
+        "hoehe": 2208,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/Ice",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/hawaii/videos/Ice"
+      },
+      {
+        "id": "shrimp-shack",
+        "typ": "video",
+        "ordner": "reisen/hawaii/essen",
+        "alt": "Gelb-brauner Imbisswagen mit der Aufschrift Shrimp und Poke Shack unter Palmen",
+        "bildunterschrift": "Der Shrimp Shack an der Straße",
+        "tags": [
+          "essen",
+          "foodtruck",
+          "oahu",
+          "video"
+        ],
+        "breite": 1080,
+        "hoehe": 1920,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/Foodtruck",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto/pages/travel/hawaii/videos/Foodtruck.mp4",
+        "poster_url": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto,so_1,w_{BREITE}/pages/travel/hawaii/videos/Foodtruck.jpg",
+        "hinweis": "Fuer Scroll-Scrubbing lokal mit dichtem GOP neu kodieren, siehe scripts/encode.sh im Skill."
+      },
+      {
+        "id": "smoothie-truck",
+        "typ": "video",
+        "ordner": "reisen/hawaii/essen",
+        "alt": "Grüner Smoothie-Truck mit einer Reihe Ananas auf der Ablage",
+        "bildunterschrift": "Ananas, direkt vom Wagen",
+        "tags": [
+          "essen",
+          "foodtruck",
+          "oahu",
+          "video"
+        ],
+        "breite": 1080,
+        "hoehe": 1920,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/hawaii/videos/FoodtrucksSmoothie",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto/pages/travel/hawaii/videos/FoodtrucksSmoothie.mp4",
+        "poster_url": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto,so_1,w_{BREITE}/pages/travel/hawaii/videos/FoodtrucksSmoothie.jpg",
+        "hinweis": "Fuer Scroll-Scrubbing lokal mit dichtem GOP neu kodieren, siehe scripts/encode.sh im Skill."
+      }
+    ],
+    "reisen/radtour-cannes-2025": [
+      {
+        "id": "bergsee-selfie",
+        "typ": "bild",
+        "ordner": "reisen/radtour-cannes-2025",
+        "alt": "Selfie mit Helm und Regenjacke vor einem dunklen Bergsee im Geröllkessel, Augen zu, breites Grinsen",
+        "bildunterschrift": "Angekommen am See, mehr braucht es nicht",
+        "tags": [
+          "alpen",
+          "cannes",
+          "hoehepunkt",
+          "portraet",
+          "radtour",
+          "see"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/cannes/images/june30-alpine-lake",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/cannes/images/june30-alpine-lake"
+      },
+      {
+        "id": "biwakhuette-rot",
+        "typ": "bild",
+        "ordner": "reisen/radtour-cannes-2025",
+        "alt": "Rote Biwakhütte aus Metall auf einem Felsplateau, ringsum Geröll und Berge",
+        "bildunterschrift": "Die Biwakhütte, in der wir geschlafen haben",
+        "tags": [
+          "alpen",
+          "biwak",
+          "cannes",
+          "radtour",
+          "uebernachtung"
+        ],
+        "breite": 2160,
+        "hoehe": 3840,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/cannes/images/Abschied_Biwakhütte",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/cannes/images/Abschied_Biwakhütte"
+      },
+      {
+        "id": "calisthenics-park",
+        "typ": "bild",
+        "ordner": "reisen/radtour-cannes-2025",
+        "alt": "Grün-gelbe Calisthenics-Anlage auf einer Wiese unter blauem Himmel",
+        "bildunterschrift": "Auch auf Tour wird trainiert",
+        "tags": [
+          "cannes",
+          "pause",
+          "radtour",
+          "sport"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/cannes/images/june29-outdoor-gym",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/cannes/images/june29-outdoor-gym"
+      },
+      {
+        "id": "feierabendbier-terrasse",
+        "typ": "bild",
+        "ordner": "reisen/radtour-cannes-2025",
+        "alt": "Bierflasche auf einem Terrassentisch, davor die eigenen Beine, Abendlicht",
+        "bildunterschrift": "Feierabend",
+        "tags": [
+          "abend",
+          "cannes",
+          "pause",
+          "radtour"
+        ],
+        "breite": 2160,
+        "hoehe": 3840,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/cannes/images/2_Reto_",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/cannes/images/2_Reto_"
+      },
+      {
+        "id": "grand-tour-schild",
+        "typ": "bild",
+        "ordner": "reisen/radtour-cannes-2025",
+        "alt": "Rotes Wappenschild mit der Aufschrift Grand Tour an einem Alpenpass, dahinter verschneite Gipfel",
+        "bildunterschrift": "Der Pass ist geschafft",
+        "tags": [
+          "alpen",
+          "cannes",
+          "pass",
+          "radtour",
+          "schild"
+        ],
+        "breite": 1170,
+        "hoehe": 2078,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/cannes/images/june24-alpine-pass",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/cannes/images/june24-alpine-pass"
+      },
+      {
+        "id": "pizzateig-kueche",
+        "typ": "bild",
+        "ordner": "reisen/radtour-cannes-2025",
+        "alt": "Ein Mann mit Schürze formt Pizzateig auf einem Küchentisch in einer einfachen Landhausküche",
+        "bildunterschrift": "Abendessen bei Fremden, die keine mehr waren",
+        "tags": [
+          "begegnung",
+          "cannes",
+          "essen",
+          "hoehepunkt",
+          "italien",
+          "radtour"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/cannes/images/june27-pilgrim-cooking",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/cannes/images/june27-pilgrim-cooking"
+      },
+      {
+        "id": "rad-beladen-baum",
+        "typ": "bild",
+        "ordner": "reisen/radtour-cannes-2025",
+        "alt": "Vollbepacktes Reiserad an einem Baum auf einem Parkplatz, Helm am Lenker",
+        "bildunterschrift": "Das Rad, wie es die ganze Tour aussah",
+        "tags": [
+          "ausruestung",
+          "cannes",
+          "radtour"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/cannes/images/Fahrrad_Abschluss",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/cannes/images/Fahrrad_Abschluss"
+      },
+      {
+        "id": "radweg-see",
+        "typ": "bild",
+        "ordner": "reisen/radtour-cannes-2025",
+        "alt": "Radweg an einem See, links ein Zelt und eine Palme, auf dem Asphalt ein grünes Fahrradsymbol",
+        "bildunterschrift": "Am See entlang, Zeltplatz in Sicht",
+        "tags": [
+          "camping",
+          "cannes",
+          "radtour",
+          "radweg",
+          "see"
+        ],
+        "breite": 1170,
+        "hoehe": 2062,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/cannes/images/june25-lake-camping",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/cannes/images/june25-lake-camping"
+      },
+      {
+        "id": "schlucht-aussicht",
+        "typ": "bild",
+        "ordner": "reisen/radtour-cannes-2025",
+        "alt": "Aussichtsplattform über einer bewaldeten Schlucht mit hellen Felswänden und einem Fluss",
+        "bildunterschrift": "Die Aussicht, für die wir falsch abgebogen sind",
+        "tags": [
+          "cannes",
+          "landschaft",
+          "pruefen-ort",
+          "radtour",
+          "schlucht"
+        ],
+        "breite": 3024,
+        "hoehe": 4032,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/cannes/images/View_wrong_way",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/cannes/images/View_wrong_way"
+      },
+      {
+        "id": "selfie-bahngleis",
+        "typ": "bild",
+        "ordner": "reisen/radtour-cannes-2025",
+        "alt": "Selfie mit Helm und Sonnenbrille neben einem Bahngleis, dahinter ein grünes Feld",
+        "bildunterschrift": "Unterwegs, irgendwo an der Bahnlinie",
+        "tags": [
+          "cannes",
+          "portraet",
+          "radtour",
+          "unterwegs"
+        ],
+        "breite": 1242,
+        "hoehe": 2208,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/cannes/images/21062025_Bild_von_mir_",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/cannes/images/21062025_Bild_von_mir_"
+      },
+      {
+        "id": "tag00-start-einfahrt",
+        "typ": "bild",
+        "ordner": "reisen/radtour-cannes-2025",
+        "alt": "Mit Helm und rotem Trikot auf dem beladenen Reiserad in einer Hofeinfahrt, gelbe Regenhülle über der Gepäcktasche",
+        "bildunterschrift": "Tag null, die Einfahrt zu Hause",
+        "tags": [
+          "cannes",
+          "portraet",
+          "radtour",
+          "start"
+        ],
+        "breite": 1500,
+        "hoehe": 2000,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/cannes/images/1_Tour_Start",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/cannes/images/1_Tour_Start"
+      },
+      {
+        "id": "turin-galleria",
+        "typ": "bild",
+        "ordner": "reisen/radtour-cannes-2025",
+        "alt": "Blick durch eine Ladenpassage in Turin, gemusterter Marmorboden, Glasdach",
+        "bildunterschrift": "Turin, plötzlich Stadt",
+        "tags": [
+          "architektur",
+          "cannes",
+          "italien",
+          "radtour",
+          "turin"
+        ],
+        "breite": 1170,
+        "hoehe": 2085,
+        "ausrichtung": "hochformat",
+        "public_id": "pages/travel/cannes/images/june28-turin-gallery",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_{BREITE}/pages/travel/cannes/images/june28-turin-gallery"
+      }
+    ],
+    "reisen/hawaii/ankunft": [
+      {
+        "id": "flug-selfie",
+        "typ": "video",
+        "ordner": "reisen/hawaii/ankunft",
+        "alt": "Selfie im Flugzeugsitz mit Kopfhörern, Kabinenlicht gedimmt",
+        "bildunterschrift": "Irgendwo über dem Pazifik",
+        "tags": [
+          "ankunft",
+          "flug",
+          "portraet",
+          "video"
+        ],
+        "breite": 1080,
+        "hoehe": 1920,
+        "ausrichtung": "hochformat",
+        "public_id": "images/hawaii_content/Flug_Ankunft",
+        "url_muster": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto/images/hawaii_content/Flug_Ankunft.mp4",
+        "poster_url": "https://res.cloudinary.com/dozdjb4fi/video/upload/f_auto,q_auto,so_1,w_{BREITE}/images/hawaii_content/Flug_Ankunft.jpg",
+        "hinweis": "Fuer Scroll-Scrubbing lokal mit dichtem GOP neu kodieren, siehe scripts/encode.sh im Skill."
+      }
+    ]
+  },
+  "gesperrt": [
+    {
+      "id": "wallpaper-anime-1",
+      "ordner": "nicht-verwenden/fremdmaterial",
+      "public_id": "itachi-uchiha-sharingan-3840x2160-15325_nobtir",
+      "grund": "Fremdmaterial, Urheberrecht ungeklaert"
+    },
+    {
+      "id": "wallpaper-anime-3",
+      "ordner": "nicht-verwenden/fremdmaterial",
+      "public_id": "naruto-uzumaki-3840x2160-25435_wetnru",
+      "grund": "Fremdmaterial, Urheberrecht ungeklaert"
+    },
+    {
+      "id": "wallpaper-anime-2",
+      "ordner": "nicht-verwenden/fremdmaterial",
+      "public_id": "monkey-d-luffy-3840x2160-26035_suho2r",
+      "grund": "Fremdmaterial, Urheberrecht ungeklaert"
+    },
+    {
+      "id": "wallpaper-anime-5",
+      "ordner": "nicht-verwenden/fremdmaterial",
+      "public_id": "roronoa-zoro-katana-3840x2160-10544_jp48ok",
+      "grund": "Fremdmaterial, Urheberrecht ungeklaert"
+    },
+    {
+      "id": "wallpaper-anime-4",
+      "ordner": "nicht-verwenden/fremdmaterial",
+      "public_id": "naruto-uzumaki-minato-namikaze-black-background-amoled-5k-8k-3840x2160-8096_j6b1gu",
+      "grund": "Fremdmaterial, Urheberrecht ungeklaert"
+    },
+    {
+      "id": "Unterschrift_2_hv65wu",
+      "ordner": "privat/liebe/unsortiert",
+      "public_id": "Unterschrift_2_hv65wu",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "IMG_0973_hgtoic",
+      "ordner": "privat/liebe/2025",
+      "public_id": "IMG_0973_hgtoic",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "IMG_9904_khkryg",
+      "ordner": "privat/liebe/2022-2023",
+      "public_id": "IMG_9904_khkryg",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "IMG_9038_trtvgy",
+      "ordner": "privat/liebe/2025",
+      "public_id": "IMG_9038_trtvgy",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "IMG_8974_wmfpef",
+      "ordner": "privat/liebe/2025",
+      "public_id": "IMG_8974_wmfpef",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "5385460f-a584-4037-9388-01256bc63872_ucsaoo",
+      "ordner": "privat/liebe/2025",
+      "public_id": "5385460f-a584-4037-9388-01256bc63872_ucsaoo",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "IMG_9389_wgauhu",
+      "ordner": "privat/liebe/2025",
+      "public_id": "IMG_9389_wgauhu",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "f8bc5005-4712-47fd-96b9-bf17e8d05cd8_nkvna5",
+      "ordner": "privat/liebe/2025",
+      "public_id": "f8bc5005-4712-47fd-96b9-bf17e8d05cd8_nkvna5",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "IMG_9609_blqkd2",
+      "ordner": "privat/liebe/2025",
+      "public_id": "IMG_9609_blqkd2",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "IMG_9627_lmdmdq",
+      "ordner": "privat/liebe/2025",
+      "public_id": "IMG_9627_lmdmdq",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "IMG_9633_inbyco",
+      "ordner": "privat/liebe/2025",
+      "public_id": "IMG_9633_inbyco",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "IMG_9640_jtxwwy",
+      "ordner": "privat/liebe/2025",
+      "public_id": "IMG_9640_jtxwwy",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "e2bdef51-f1cd-4953-8a58-63828066da68_hmgxor",
+      "ordner": "privat/liebe/2025",
+      "public_id": "e2bdef51-f1cd-4953-8a58-63828066da68_hmgxor",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "IMG_0976_fqmfwu",
+      "ordner": "privat/liebe/2025",
+      "public_id": "IMG_0976_fqmfwu",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "IMG_9878_m44v16",
+      "ordner": "privat/liebe/2022-2023",
+      "public_id": "IMG_9878_m44v16",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "IMG_9871_v03enb",
+      "ordner": "privat/liebe/2022-2023",
+      "public_id": "IMG_9871_v03enb",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "IMG_9870_s7sgrc",
+      "ordner": "privat/liebe/2022-2023",
+      "public_id": "IMG_9870_s7sgrc",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "IMG_9867_la4sy6",
+      "ordner": "privat/liebe/2022-2023",
+      "public_id": "IMG_9867_la4sy6",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "IMG_9844_omvsyh",
+      "ordner": "privat/liebe/2019-2021",
+      "public_id": "IMG_9844_omvsyh",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "IMG_9839_smvpsy",
+      "ordner": "privat/liebe/2019-2021",
+      "public_id": "IMG_9839_smvpsy",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "IMG_9838_yupgqq",
+      "ordner": "privat/liebe/2019-2021",
+      "public_id": "IMG_9838_yupgqq",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "IMG_9835_zbmfmd",
+      "ordner": "privat/liebe/2019-2021",
+      "public_id": "IMG_9835_zbmfmd",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "IMG_9836_olny6r",
+      "ordner": "privat/liebe/2019-2021",
+      "public_id": "IMG_9836_olny6r",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "80069685-5162-442f-abd9-0450da47dd5a_kxhpvf",
+      "ordner": "privat/liebe/2019-2021",
+      "public_id": "80069685-5162-442f-abd9-0450da47dd5a_kxhpvf",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "c5917592-d832-4cca-8c10-b8d4b49e2440_orjsbm",
+      "ordner": "privat/liebe/unsortiert",
+      "public_id": "c5917592-d832-4cca-8c10-b8d4b49e2440_orjsbm",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "IMG_0420_ji4js7",
+      "ordner": "privat/liebe/2019-2021",
+      "public_id": "IMG_0420_ji4js7",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "44749c09-443f-4d10-a8ba-2bbc2de7382b_o54hwe",
+      "ordner": "privat/liebe/2022-2023",
+      "public_id": "44749c09-443f-4d10-a8ba-2bbc2de7382b_o54hwe",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "63872320792__5D84AD50-5874-4691-A4F9-A1BC88EC9A2A_cwjw12",
+      "ordner": "privat/liebe/unsortiert",
+      "public_id": "63872320792__5D84AD50-5874-4691-A4F9-A1BC88EC9A2A_cwjw12",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "IMG_1420_qhv9kz",
+      "ordner": "privat/liebe/2022-2023",
+      "public_id": "IMG_1420_qhv9kz",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "stock-surfen",
+      "ordner": "nicht-verwenden/fremdmaterial",
+      "public_id": "North-Shore-Surfen-auf-Oahu-1024x585_btzenz",
+      "grund": "Fremdmaterial, Urheberrecht ungeklaert"
+    },
+    {
+      "id": "rad-beladen-baum-kopie",
+      "ordner": "reisen/radtour-cannes-2025",
+      "public_id": "pages/travel/cannes/images/july01-arrival-bike",
+      "grund": "Dublette eines anderen Assets"
+    },
+    {
+      "id": "biwakhuette-rot-kopie",
+      "ordner": "reisen/radtour-cannes-2025",
+      "public_id": "pages/travel/cannes/images/june26-tent-morning",
+      "grund": "Dublette eines anderen Assets"
+    },
+    {
+      "id": "meme-gif",
+      "ordner": "nicht-verwenden/fremdmaterial",
+      "public_id": "images/Mr_Bean_GIF",
+      "grund": "Fremdmaterial, Urheberrecht ungeklaert"
+    },
+    {
+      "id": "cloudinary-sample",
+      "ordner": "nicht-verwenden/cloudinary-demo",
+      "public_id": "sample",
+      "grund": "Fremdmaterial, Urheberrecht ungeklaert"
+    },
+    {
+      "id": "copy_320CE1FB-F5EC-4015-8091-11F6231D087C_1_zl7xf2",
+      "ordner": "privat/liebe/2019-2021",
+      "public_id": "copy_320CE1FB-F5EC-4015-8091-11F6231D087C_1_zl7xf2",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "CFC9DF75-6282-41EF-A7C6-1D2BD3413C41_huro8p",
+      "ordner": "privat/liebe/2022-2023",
+      "public_id": "CFC9DF75-6282-41EF-A7C6-1D2BD3413C41_huro8p",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "122A941E-7FF4-4AC4-8E42-0D946030412F_ayis0u",
+      "ordner": "privat/liebe/2022-2023",
+      "public_id": "122A941E-7FF4-4AC4-8E42-0D946030412F_ayis0u",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "1C8C665C-B35F-4903-BAEF-6446B3984F57_mtsob8",
+      "ordner": "privat/liebe/2022-2023",
+      "public_id": "1C8C665C-B35F-4903-BAEF-6446B3984F57_mtsob8",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "26A7EBF8-4212-4801-AE1C-14A8843C91E6_tehxfk",
+      "ordner": "privat/liebe/2022-2023",
+      "public_id": "26A7EBF8-4212-4801-AE1C-14A8843C91E6_tehxfk",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "9A6DFD6C-7CB7-4847-92A4-DEF0A17D3896_gra2he",
+      "ordner": "privat/liebe/2022-2023",
+      "public_id": "9A6DFD6C-7CB7-4847-92A4-DEF0A17D3896_gra2he",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "0C032F9D-6FFA-43A5-9E9D-7478C18EA3B6_aryhii",
+      "ordner": "privat/liebe/2022-2023",
+      "public_id": "0C032F9D-6FFA-43A5-9E9D-7478C18EA3B6_aryhii",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "905BD0FF-8784-4813-A531-4948CB3A124C_jlmub2",
+      "ordner": "privat/liebe/2019-2021",
+      "public_id": "905BD0FF-8784-4813-A531-4948CB3A124C_jlmub2",
+      "grund": "privat, gehoert nicht auf die oeffentliche Seite"
+    },
+    {
+      "id": "challenger-lenkrad-kopie",
+      "ordner": "reisen/hawaii/adventures",
+      "public_id": "IMG_3130_kwubha",
+      "grund": "Dublette eines anderen Assets"
+    }
+  ]
+}

@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint app/**/*.site.tsx components/editorial/**/*.tsx lib/editorial/**/*.ts next.config.ts",
     "upload": "node scripts/upload-to-cloudinary.js",
-    "encrypt-love": "node scripts/encrypt-love.js"
+    "encrypt-love": "node scripts/encrypt-love.js",
+    "assets:manifest": "node scripts/gen-asset-manifest.mjs"
   },
   "dependencies": {
     "@next/mdx": "^15.1.0",
@@ -22,11 +23,11 @@
     "heic-convert": "^2.1.0",
     "leaflet": "^1.9.4",
     "next": "^15.1.0",
+    "playwright-core": "^1.63.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "sharp": "^0.34.5",
-    "tailwind-merge": "^2.5.5",
-    "playwright-core": "^1.63.0"
+    "tailwind-merge": "^2.5.5"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",

@@ -83,6 +83,28 @@ html:not(.sc-ready) .career-copy { opacity: 1; transform: none; }
 .timeline li { position: relative; padding-bottom: 2.5rem; }
 .timeline li::before { content: ''; position: absolute; left: calc(-2rem - 4px); top: .7rem; width: 7px; height: 7px; border-radius: 50%; background: #0B585C; }
 .timeline h3 { font-size: 1.5rem; margin-bottom: .8rem; }
+.study-section-title { margin-bottom: 2rem; }
+.study-preview { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+.study-card { display: flex; flex-direction: column; padding: clamp(1.5rem, 2.5vw, 2.5rem); border: 1px solid var(--sc-hairline); border-radius: 18px; background: var(--sc-surface); }
+.study-card .meta { font-size: .7rem; }
+.study-card h3 { font-size: clamp(1.6rem, 2.3vw, 2.4rem); margin-bottom: 1.25rem; }
+.study-card h3 a { text-decoration: none; }
+.study-card > p:not(.meta) { color: var(--sc-ink-soft); font-size: .95rem; }
+.study-card ul { list-style: none; padding: 1.5rem 0 2rem; font-size: .85rem; }
+.study-card li { padding-block: .6rem; border-top: 1px solid var(--sc-hairline); }
+.study-card > .text-link { align-self: flex-start; margin-top: auto; font-size: .9rem; }
+.study-modules { padding-bottom: 5rem; }
+.study-intro { margin-block: 1.5rem 2rem; color: var(--sc-ink-soft); }
+.study-index { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 3rem; }
+.study-index a { padding: .75rem 1rem; border: 1px solid var(--sc-hairline); border-radius: 100px; font-size: .85rem; }
+.study-module-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 3rem; margin-bottom: 3rem; }
+.study-module { border-top: 1px solid var(--sc-hairline); padding-top: 2rem; scroll-margin-top: 2rem; }
+.study-module h3 { font-size: clamp(1.7rem, 2.5vw, 2.4rem); margin-bottom: 1.25rem; }
+.study-module p { color: var(--sc-ink-soft); }
+.study-module ul { list-style: disc; padding-left: 1.2rem; margin-block: 1.5rem; }
+.study-module li + li { margin-top: .6rem; }
+.study-link-pending { font-size: .85rem; font-style: italic; }
+@media (max-width: 800px) { .study-preview, .study-module-grid { grid-template-columns: 1fr; } }
 .phase-list { margin-block: 2rem 4rem; }
 .phase-list a { display: grid; grid-template-columns: 1fr 2fr auto; gap: 1rem; padding: 2rem 0; border-top: 1px solid #C9C2B4; text-decoration: none; align-items: center; }
 .phase-list h2 { font-size: 2rem; }

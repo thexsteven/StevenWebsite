@@ -9,7 +9,7 @@ export const chapters: { slug: string; title: string; intro: string; media: Medi
 ];
 
 export const phases = [
-  { slug: 'semester-1', title: 'Erste Theoriephase', kind: 'Theorie', intro: 'Der Einstieg an der DHBW Mosbach.', question: 'Welche belegten Module, Aufgaben und eigenen Erkenntnisse möchtest du aus der ersten Theoriephase veröffentlichen? Bitte bestätige auch den Zeitraum.' },
-  { slug: 'praxis-1', title: 'Erste Praxisphase', kind: 'Praxis', intro: 'Lernen beim Praxispartner.', question: 'Welche persönliche Erkenntnis aus der ersten Praxisphase darf hier stehen, ohne Projektinhalte, Interna oder den Namen des Praxispartners zu nennen? Welcher Zeitraum ist freigegeben?' },
-  { slug: 'semester-2', title: 'Zweite Theoriephase', kind: 'Theorie', intro: 'Zurück an der Hochschule.', question: 'Was hat sich für dich gegenüber der ersten Theoriephase verändert? Welche Studieninhalte und welcher Zeitraum sind für diesen Rückblick bestätigt?' },
+  { slug: 'semester-1', title: 'Erste Theoriephase', kind: 'Theorie', intro: 'Mathematische Grundlagen, erste eigene Programme und das Zusammenspiel von Web, Hardware und Logik.', question: 'Welche belegten Module, Aufgaben und eigenen Erkenntnisse möchtest du aus der ersten Theoriephase veröffentlichen? Bitte bestätige auch den Zeitraum.' },
+  { slug: 'praxis-1', title: 'Erste Praxisphase', kind: 'Praxis', intro: 'Daten verstehen, Annahmen prüfen und die eigene Arbeit nachvollziehbar dokumentieren.', question: 'Welche persönliche Erkenntnis aus der ersten Praxisphase darf hier stehen, ohne Projektinhalte, Interna oder den Namen des Praxispartners zu nennen? Welcher Zeitraum ist freigegeben?' },
+  { slug: 'semester-2', title: 'Zweite Theoriephase', kind: 'Theorie', intro: 'Algorithmen vertiefen, Webprojekte weiterdenken und die Grundlagen digitaler Systeme verstehen.', question: 'Was hat sich für dich gegenüber der ersten Theoriephase verändert? Welche Studieninhalte und welcher Zeitraum sind für diesen Rückblick bestätigt?' },
 ];

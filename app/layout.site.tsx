@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: { default: 'Steven Braun · Unterwegs und am Lernen', template: '%s · Steven Braun' },
   description: 'Reisegeschichten aus Hawaii und von einer Radtour über die Alpen. Dazu das duale Studium, Software und der Mensch dahinter.',
   robots: { index: false, follow: false },
-  icons: { icon: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><rect width="48" height="48" fill="%2314161A"/><text x="12" y="35" fill="%23F4F1EA" font-size="36" font-family="Georgia">S</text></svg>' },
+  icons: { icon: { url: '/favicon.svg', type: 'image/svg+xml' } },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

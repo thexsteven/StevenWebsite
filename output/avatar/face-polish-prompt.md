@@ -1,0 +1,9 @@
+# Hero face refinement
+
+Built-in Imagegen edit of the approved full-body artwork using the user's two clothed portrait photographs. Visually checked for preserved framing, outfit and silhouette, with softer cheeks, relaxed brows, rounded nose and fuller lips/beard. The likeness remains an artistic interpretation.
+
+Production asset: `public/images/avatar/steven-tech-v2.webp` (1024 × 1536). The previous asset is retained.
+
+## Prompt
+
+Identity-preserving targeted edit. Image 1 is the production anime avatar to edit. Images 2 and 3 are real face references of the same adult man. User likes the artwork and wants ONLY subtle facial likeness polish. Preserve image 1 composition, exact full body placement, head size and location, hair silhouette, slim build, pose, fully clothed sleeveless black technical outfit, cyborg details, lighting, background and style. Do not redesign body or clothes. Refine only face: reference man has fuller softer cheeks and a less angular jaw, a substantial softly rounded nose tip and natural nostril width, natural relaxed heavy upper eyelids, soft low eyebrows rather than sharply arched confident-model eyebrows, moderately full lower lip, a connected dark moustache and rounded full chin beard with thinner natural cheek density. Capture this individual's quiet approachable expression rather than a generic heroic smirk. Use photo 3 for head proportions without the low-angle selfie distortion of photo 2, and photo 2 for exact feature shapes. Keep his compact dark brown curls and faded sides. Subtle adult facial asymmetry and warm human expression. Stay crisp hand-drawn 2D anime with cel shading, not photoreal, not giant eyes, no beautification, no changing face to a famous character. Entire head and both shoes visible, same portrait 2:3 canvas and framing. Essential: this is small facial correction of the existing approved artwork, NOT a new character or pose.
