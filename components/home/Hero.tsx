@@ -47,7 +47,7 @@ export function Hero({ outfit = techOutfit }: { outfit?: AvatarOutfit }) {
             priority
             unoptimized
           />
-          <figcaption>Steven, neu gezeichnet.</figcaption>
+          <figcaption>Cyborg Steven</figcaption>
         </figure>
       </div>
 
