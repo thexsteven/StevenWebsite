@@ -1,6 +1,9 @@
 # Claude AI working files
 .claude/
 
+# Love-Story Klartextquellen
+_love-source/
+
 # OS-Dateien
 .DS_Store
 Thumbs.db
