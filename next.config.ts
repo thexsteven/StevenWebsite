@@ -6,8 +6,16 @@ const withMDX = createMDX({
 });
 
 const nextConfig: NextConfig = {
-  // Only the rebuild participates in routing. Legacy areas stay on disk.
-  pageExtensions: ['site.tsx', 'site.mdx'],
+  // Limit page extensions to TypeScript + MDX so legacy *.js / *.html files
+  // in pages/ are NOT picked up as routes during the migration.
+  pageExtensions: ['ts', 'tsx', 'mdx'],
+  // Die Projektdateien werden zur Laufzeit per `fs` gelesen. Next.js kann
+  // ein dynamisch gelesenes Verzeichnis nicht selbst tracen – deshalb hier
+  // explizit ins Deployment-Bundle aufnehmen.
+  outputFileTracingIncludes: {
+    '/': ['./content/projects/**/*'],
+    '/reisen/archiv': ['./content/reisen/**/*'],
+  },
   images: {
     remotePatterns: [
       {
