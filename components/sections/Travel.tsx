@@ -1,6 +1,6 @@
 import { SectionHead } from '@/components/SectionHead';
 import { Coverflow, type CoverflowSlide } from '@/components/sections/Coverflow';
-import styles from '@/components/travel/ThailandPreview.module.css';
+import { v2 as cloudinary } from 'cloudinary';
 
 // ——— Coverflow-Folien ———————————————————————————————————————
 // Neue Folie hinzufügen = eine Zeile. { src, alt, caption } – fertig.
@@ -70,6 +70,48 @@ const CANNES_SLIDES: CoverflowSlide[] = [
   },
 ];
 
+const thailandPreviewUrl = (publicId: string) => cloudinary.url(publicId, {
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
+  type: 'authenticated',
+  secure: true,
+  sign_url: true,
+  transformation: [{ width: 1280, crop: 'limit', quality: 'auto', fetch_format: 'auto' }],
+});
+
+const THAILAND_SLIDES: CoverflowSlide[] = [
+  {
+    src: thailandPreviewUrl('od_photo-629_singular_display_fullPicture_jfm0fw'),
+    alt: 'Straße mit Fahrzeugen und Stromleitungen in Bangkok',
+    caption: 'Ankommen in Bangkok. Erst einmal ziemlich viel auf einmal.',
+  },
+  {
+    src: thailandPreviewUrl('photo-1273_singular_display_fullPicture_gwfap6'),
+    alt: 'Buddhafiguren an einem Tempel in Bangkok',
+    caption: 'Eine besondere Begegnung am Tempel in Bangkok.',
+  },
+  {
+    src: thailandPreviewUrl('IMG_2145_pxcz1c'),
+    alt: 'Sandstrand mit Palmen und türkisfarbenem Wasser',
+    caption: 'Koh Phangan. Hier durfte die Zeit langsamer vergehen.',
+  },
+  {
+    src: thailandPreviewUrl('IMG_1884_gxqpxx'),
+    alt: 'Blick über grünen Dschungel aufs Meer',
+    caption: 'Durch den Dschungel Richtung Bottle Beach.',
+  },
+  {
+    src: thailandPreviewUrl('photo-2364_singular_display_fullPicture_nvu6lt'),
+    alt: 'Boot und Wasser am Pier',
+    caption: 'Am Pier vor der Überfahrt nach Koh Samui.',
+  },
+  {
+    src: thailandPreviewUrl('IMG_2289_e3mhoh'),
+    alt: 'Blick über Patong bei Nacht',
+    caption: 'Der Blick über Patong bei Nacht.',
+  },
+];
+
 const VENEDIG_SLIDES: CoverflowSlide[] = [
   {
     src: 'https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_1280/IMG_0188_jbghpe',
@@ -124,18 +166,12 @@ export function Travel() {
         intro="Eine Sprachreise nach Hawaii, mit dem Rad nach Cannes, drei Wochen Thailand und ein Wohnmobil-Trip nach Venedig."
       />
       <div className="travel-grid">
-        <article className={`travel-box ${styles.card}`}>
+        <article className="travel-box">
           <header className="travel-box-header">
             <h3>Thailand</h3>
             <span className="travel-date">06.08.2026 – 26.08.2026</span>
           </header>
-          <a href="/reisen/archiv/thailand" className={styles.postcard} aria-label="Thailand-Fotoalbum öffnen – mit Passwort">
-            <span className={styles.stamp}>TH<br /><small>AUG / 26</small></span>
-            <span className={styles.kicker}>Drei Wochen · Vier Orte</span>
-            <span className={styles.title}>Vom Trubel<br />ins Inseltempo.</span>
-            <span className={styles.route}>Bangkok → Koh Phangan<br />Koh Samui → Phuket</span>
-            <span className={styles.open}>Mein Fotoalbum öffnen ↗</span>
-          </a>
+          <Coverflow slides={THAILAND_SLIDES} label="Thailand" />
           <div className="travel-album-action"><a href="/reisen/archiv/thailand" className="btn btn-ghost">Thailand-Album · mit Passwort →</a></div>
           <ul className="travel-stats">
             <li><strong>Dauer</strong> Drei Wochen im August 2026</li>
