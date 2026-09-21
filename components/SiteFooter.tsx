@@ -1,16 +1,7 @@
-type FooterVariant = 'default' | 'love';
-
-export function SiteFooter({
-  variant = 'default',
-}: {
-  variant?: FooterVariant;
-}) {
-  const text =
-    variant === 'love' ? 'Privater Bereich.' : 'Alle Rechte vorbehalten.';
-
+export function SiteFooter() {
   return (
     <footer className="site-footer" role="contentinfo">
-      <p>&copy; 2026 Steven. {text}</p>
+      <p>&copy; 2026 Steven. Alle Rechte vorbehalten.</p>
     </footer>
   );
 }

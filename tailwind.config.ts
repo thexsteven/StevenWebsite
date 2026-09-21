@@ -27,13 +27,6 @@ const config: Config = {
           travel: '#0d9488',
           projects: '#4f46e5',
         },
-        love: {
-          50: '#fdf2f8',
-          100: '#fce7f3',
-          300: '#f9a8d4',
-          500: '#ec4899',
-          700: '#be185d',
-        },
       },
       fontFamily: {
         sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],

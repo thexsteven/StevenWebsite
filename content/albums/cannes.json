@@ -1,0 +1,809 @@
+{
+  "slug": "cannes",
+  "title": "Von Konstanz nach Cannes",
+  "subtitle": "Zwei Räder. Ein Zelt. So viele Geschichten.",
+  "intro": "Mit dem Zug nach Konstanz, mit dem Fahrrad Richtung Mittelmeer. Dazwischen lagen die Schweiz, Italien, zwei Alpenüberquerungen und Menschen, die diese Reise besonders gemacht haben. Hier sind meine Erinnerungen – an schöne Umwege genauso wie an die ziemlich anstrengenden.",
+  "locationLabel": "Schweiz · Italien · Côte d’Azur · Juni – Juli 2025",
+  "durationLabel": "Mit Rad & Zelt",
+  "coverCaption": "Unterwegs zwischen Bodensee und Mittelmeer.",
+  "cover": "cannes-70",
+  "sections": [
+    {
+      "id": "aufbruch",
+      "title": "Aufbruch & Schweiz",
+      "intro": "Von der Haustür zum Bodensee und weiter in die Schweiz. Die ersten Kilometer brachten schöne Pausen – und mit Reto gleich eine Begegnung, die geblieben ist.",
+      "photos": [
+        {
+          "id": "cannes-74",
+          "publicId": "d1b5ecf6-a939-4a04-bd31-aaeda354f2b9_xikf4x",
+          "width": 1500,
+          "height": 2000,
+          "title": "Los vor der Haustür",
+          "caption": "Von zu Hause fuhr ich zum Bahnhof in Minden, dann mit dem Zug nach Konstanz. Das große Abenteuer begann ganz unspektakulär an der eigenen Haustür.",
+          "alt": "Steven mit Helm und bepacktem Fahrrad vor einem Haus."
+        },
+        {
+          "id": "cannes-04",
+          "publicId": "2847E746-9A2C-43A1-AB07-D7E69B91115B_wxkftc",
+          "width": 2160,
+          "height": 3840,
+          "title": "Hier geht’s los",
+          "caption": "Der Bahnhof in Konstanz: Von hier sollte es mit dem Fahrrad Richtung Süden gehen. Das Ziel stand fest – wie der Weg werden würde, noch nicht.",
+          "alt": "Bahnhofsvorplatz in Konstanz mit Reisenden und Gebäuden."
+        },
+        {
+          "id": "cannes-16",
+          "publicId": "IMG_5858_i8asvb",
+          "width": 1242,
+          "height": 2208,
+          "title": "Aufbruch am Bodensee",
+          "caption": "Mit Helm, Sonnenbrille und Gepäck war ich unterwegs Richtung Süden. Die Reise hatte begonnen – und mein Fahrrad sah noch erstaunlich ordentlich aus.",
+          "alt": "Steven mit Fahrradhelm und Sonnenbrille am Seeufer."
+        },
+        {
+          "id": "cannes-09",
+          "publicId": "670B48AF-071F-4178-97A6-8161E17A1275-4270-000001A08B1709E8_fbp6u4",
+          "width": 3024,
+          "height": 4032,
+          "title": "Die erste Pause am See",
+          "caption": "Am ersten Tag kurz anhalten und aufs Wasser schauen. Für Pausen mit Aussicht wollte ich auf dieser Tour schließlich auch Zeit haben.",
+          "alt": "Uferweg mit Springbrunnen im See und Bergen im Hintergrund."
+        },
+        {
+          "id": "cannes-17",
+          "publicId": "IMG_5874_erzx8x",
+          "width": 4032,
+          "height": 3024,
+          "title": "Die Schweiz vor dem Lenker",
+          "caption": "Weiter auf dem Radweg durch die Schweiz. Felder, Berge und viel Himmel – eine schöne Begleitung für die ersten Reisetage.",
+          "alt": "Heller Radweg zwischen Feldern unter einem wolkigen Himmel."
+        },
+        {
+          "id": "cannes-18",
+          "publicId": "IMG_5888_ykthet",
+          "width": 6240,
+          "height": 3808,
+          "title": "Der Rhein begleitet mich",
+          "caption": "Ein Blick auf den Rhein und die Berge dahinter. Solche Stellen waren ein guter Grund, kurz die Hand vom Lenker und ans Handy zu nehmen.",
+          "alt": "Fluss mit Kiesbänken vor einer Bergkette."
+        },
+        {
+          "id": "cannes-19",
+          "publicId": "IMG_5892_kichqr",
+          "width": 3024,
+          "height": 4032,
+          "title": "Abkühlung eingeplant",
+          "caption": "Hier legte ich eine Badepause im Rhein ein. Für einen Moment musste das Fahrrad warten – ich hatte einen Termin mit dem Wasser.",
+          "alt": "Klares Flusswasser und helle Kiesbänke vor grünen Ufern."
+        },
+        {
+          "id": "cannes-15",
+          "publicId": "CF2BB5E8-0ED4-4C47-BA12-FE731D251EE9_wuac1y",
+          "width": 3840,
+          "height": 2160,
+          "title": "Ein Platz in Retos Garten",
+          "caption": "Am zweiten Abend klingelte ich an verschiedenen Häusern und fragte nach einem Platz fürs Zelt. Reto ließ mich in seinem Garten übernachten. Auf seiner Terrasse aßen wir gemeinsam – aus einer Frage wurde ein besonderer Abend.",
+          "alt": "Gedeckter Terrassentisch mit Tellern und Essen."
+        },
+        {
+          "id": "cannes-02",
+          "publicId": "08A1AD5E-AFCE-477F-93F7-2B5AD9F566A2_gcgtfw",
+          "width": 3840,
+          "height": 2160,
+          "title": "Mehr als Proviant",
+          "caption": "Nach der Nacht in Retos Garten gab er mir noch einige Dinge mit auf den Weg. Eine Begegnung, die mir viel länger geblieben ist als diese kleine Pause.",
+          "alt": "Geschenke von Reto, darunter eine Banknote und kleine Gegenstände."
+        }
+      ]
+    },
+    {
+      "id": "san-bernardino",
+      "title": "Über den San Bernardino",
+      "intro": "Umwege, Regen und ein Fahrrad, das zwischendurch lieber geschoben werden wollte. Dann die Passhöhe, der Bergsee und das Gefühl, die erste Alpenüberquerung geschafft zu haben.",
+      "photos": [
+        {
+          "id": "cannes-20",
+          "publicId": "IMG_5904_puwwqy",
+          "width": 4032,
+          "height": 3024,
+          "title": "Kurz die Beine sortieren",
+          "caption": "Ein kleiner Halt unterwegs in der Schweiz. Fahrrad abstellen, kurz durchatmen und dann weiter.",
+          "alt": "Bepacktes Fahrrad an einer Straße am Waldrand."
+        },
+        {
+          "id": "cannes-21",
+          "publicId": "IMG_5905_bbgxcq",
+          "width": 4032,
+          "height": 3024,
+          "title": "Die Pause lohnt sich",
+          "caption": "Bei diesem Blick fiel das Weiterfahren nicht leichter. Ein paar Minuten länger stehen bleiben war da eine ziemlich naheliegende Entscheidung.",
+          "alt": "Weite Aussicht über eine bewaldete Schlucht und Berge."
+        },
+        {
+          "id": "cannes-22",
+          "publicId": "IMG_5910_jqycm7",
+          "width": 6790,
+          "height": 3812,
+          "title": "Noch einmal hinschauen",
+          "caption": "Derselbe Halt, noch ein Blick in die Schlucht. Manche Aussichten passen eben nicht auf ein einziges Foto.",
+          "alt": "Felswände und bewaldete Hänge über einem Tal."
+        },
+        {
+          "id": "cannes-24",
+          "publicId": "IMG_5918_vs2p4u",
+          "width": 3024,
+          "height": 4032,
+          "title": "Ein Café mit wichtiger Auskunft",
+          "caption": "Ich hatte mein Fahrrad stundenlang bergauf geschoben. Am Z Cafi erklärte mir die Frau, die das Essen auffüllte, dass der weitere Weg nur für Wanderer geeignet war. Das war leider keine Nachricht, die meine Beine hören wollten.",
+          "alt": "Holzhaus mit der Aufschrift z’cafi an einer nassen Straße."
+        },
+        {
+          "id": "cannes-23",
+          "publicId": "IMG_5915_alp1c4",
+          "width": 4032,
+          "height": 3024,
+          "title": "Zurück vom Z Cafi",
+          "caption": "Nach dem Abstecher zum Z Cafi ging es wieder zurück. Die Straße machte immerhin einen deutlich fahrradfreundlicheren Eindruck als das, was noch vor mir gelegen hätte.",
+          "alt": "Kurvige Bergstraße mit Leitplanke und grünen Hängen."
+        },
+        {
+          "id": "cannes-25",
+          "publicId": "IMG_5922_qkhb8s",
+          "width": 3088,
+          "height": 2316,
+          "title": "Die ersten harten Momente",
+          "caption": "Beim Hinunterfahren nach dem Z Cafi begann es in Strömen zu regnen. Umweg und Regen kamen an diesem Tag gemeinsam – ein ziemlich gründlicher Motivationstest.",
+          "alt": "Steven mit nasser Kapuze und Sonnenbrille vor Gebäuden im Bergtal."
+        },
+        {
+          "id": "cannes-26",
+          "publicId": "IMG_5928_hx77hm",
+          "width": 4032,
+          "height": 3024,
+          "title": "Zwischen Fels und Brücke",
+          "caption": "Ein Moment vom Weg: Wasser, Wald und eine Brücke hoch über dem Tal. Auch ohne lange Geschichte durfte dieses Bild mit ins Album.",
+          "alt": "Hohe Betonbrücke über einem felsigen Bach im Wald."
+        },
+        {
+          "id": "cannes-27",
+          "publicId": "IMG_5945_nu0jsa",
+          "width": 1242,
+          "height": 2208,
+          "title": "Oben am San Bernardino",
+          "caption": "Fahrrad abstellen und Pause machen. Den San-Bernardino-Pass hatte ich erreicht – diesmal passte der Weg auch zu meinem Verkehrsmittel.",
+          "alt": "Bepacktes Fahrrad am San-Bernardino-Pass, im Bild die Höhenangabe 2070 m."
+        },
+        {
+          "id": "cannes-28",
+          "publicId": "IMG_5946_ouyv1k",
+          "width": 3024,
+          "height": 4032,
+          "title": "Pause auf Passhöhe",
+          "caption": "Am höchsten Punkt meiner Fahrt über den San Bernardino gab es etwas zu essen und eine wohlverdiente Pause. Der Bergsee lieferte die passende Aussicht dazu.",
+          "alt": "Steven vor einem Bergsee am San-Bernardino-Pass."
+        },
+        {
+          "id": "cannes-29",
+          "publicId": "IMG_5954_fnwi8s",
+          "width": 1242,
+          "height": 2208,
+          "title": "Ein Rahmen für die Berge",
+          "caption": "Der Aussichtspunkt am San Bernardino hatte seinen eigenen Bilderrahmen. Viel mehr musste man mit dieser Landschaft eigentlich nicht machen.",
+          "alt": "Roter Fotopunkt der Grand Tour of Switzerland vor alpiner Landschaft."
+        },
+        {
+          "id": "cannes-30",
+          "publicId": "IMG_5975_dfnsvy",
+          "width": 2316,
+          "height": 3088,
+          "title": "Ein Foto für diesen Moment",
+          "caption": "Ich auf dem San-Bernardino-Pass. Nach all dem Treten und Schieben durfte ein Erinnerungsfoto natürlich nicht fehlen.",
+          "alt": "Steven steht vor Bergen und hält eine Getränkedose."
+        },
+        {
+          "id": "cannes-31",
+          "publicId": "IMG_6038_gknva1",
+          "width": 3024,
+          "height": 4032,
+          "title": "Wieder weiter unten",
+          "caption": "Nach dem San Bernardino ging es wieder ins Tal. Das Wasser leuchtete hier so klar, dass ich noch einmal anhalten musste.",
+          "alt": "Klares türkisfarbenes Wasser zwischen grünen Ufern und Bäumen."
+        },
+        {
+          "id": "cannes-32",
+          "publicId": "IMG_6043_bjlzxt",
+          "width": 3024,
+          "height": 4032,
+          "title": "Grün nach Grau",
+          "caption": "Weiter durch die Schweizer Alpen: Nach der felsigen Passhöhe kamen wieder Wiesen und weite grüne Hänge.",
+          "alt": "Bergwiese neben einem Radweg mit bewaldeten Hängen."
+        },
+        {
+          "id": "cannes-33",
+          "publicId": "IMG_6046_cka9v8",
+          "width": 3024,
+          "height": 4032,
+          "title": "Eine Brücke am Weg",
+          "caption": "Noch ein Fundstück vom Radweg. Zwischen den Etappen waren es oft gerade solche kleinen Szenen, die mich zum Anhalten brachten.",
+          "alt": "Alte Steinbogenbrücke über einem Bach in einer Schlucht."
+        },
+        {
+          "id": "cannes-34",
+          "publicId": "IMG_6047_wdaxrt",
+          "width": 3024,
+          "height": 4032,
+          "title": "Hilfe im richtigen Moment",
+          "caption": "Nach einer Verletzung am Schienbein wollte ich Essen und Desinfektionsmittel kaufen. Vor lauter Hunger vergaß ich das Zweite – und danach war der Laden zu. Dieser Mann half mir zufällig weiter. Solche Begegnungen vergisst man nicht.",
+          "alt": "Ein Mann steht neben einem kleinen Auto auf einem Parkplatz."
+        },
+        {
+          "id": "cannes-08",
+          "publicId": "465CF297-2147-47A0-BF7D-42CBD1D59F08_zzvqu0",
+          "width": 2160,
+          "height": 3840,
+          "title": "Ein Gruß aus der Küche zu Hause",
+          "caption": "In der Schweiz entdeckte ich Brot, das mich sofort an Mama und Oma erinnerte: Twojbak. Manchmal steckt ein kleines Stück Zuhause einfach im Backregal.",
+          "alt": "Goldbraune Brötchen in der Auslage eines Geschäfts."
+        }
+      ],
+      "mapStops": [
+        {
+          "photoId": "cannes-21",
+          "label": "Aussicht in der Schweiz",
+          "lat": 46.80974,
+          "lon": 9.34618
+        },
+        {
+          "photoId": "cannes-28",
+          "label": "San-Bernardino-Pass",
+          "lat": 46.49417,
+          "lon": 9.16927
+        },
+        {
+          "photoId": "cannes-32",
+          "label": "Weiter ins Tal",
+          "lat": 46.41451,
+          "lon": 9.23443
+        }
+      ]
+    },
+    {
+      "id": "italien",
+      "title": "Italien & Begegnungen",
+      "intro": "Pizza in Varese, selbstgemachte Gnocchi in Lamporo und ein Abstecher ins alte Ägypten mitten in Turin. Italien blieb mir auch wegen der Menschen in Erinnerung.",
+      "photos": [
+        {
+          "id": "cannes-35",
+          "publicId": "IMG_6067_msdw8p",
+          "width": 3024,
+          "height": 4032,
+          "title": "Durch Ganna",
+          "caption": "Mit dem Fahrrad durch Ganna. Häuser am Wasser und bewaldete Hügel – Italien fing für mich sehr schön an.",
+          "alt": "Blick über eine steinerne Brücke auf Häuser und einen grünen Berghang."
+        },
+        {
+          "id": "cannes-36",
+          "publicId": "IMG_6070_okswhx",
+          "width": 3024,
+          "height": 4032,
+          "title": "Die ersten Stunden in Italien",
+          "caption": "Durch Varese zu fahren fühlte sich richtig gut an. Eine neue Stadt, ein anderes Land und ich mittendrin mit meinem bepackten Fahrrad.",
+          "alt": "Reiterdenkmal auf einem Platz in Varese."
+        },
+        {
+          "id": "cannes-37",
+          "publicId": "IMG_6073_kya1kd",
+          "width": 3024,
+          "height": 4032,
+          "title": "Sechs Euro, sehr glücklich",
+          "caption": "Pizza, Pommes und ein Getränk für sechs Euro. Mein erstes Essen in Italien war lecker, günstig und traf auf einen äußerst aufgeschlossenen Radfahrer.",
+          "alt": "Pizza, Pommes und eine Dose Coca-Cola auf einem Tisch."
+        },
+        {
+          "id": "cannes-01",
+          "publicId": "054874C3-9943-45EF-AF87-BE4B37B4ED08_pbn9ym",
+          "width": 3664,
+          "height": 2062,
+          "title": "Mein Zimmer mit Aussicht",
+          "caption": "Manchmal war ein Schlafplatz schnell gefunden, manchmal brauchte es etwas Geduld. In Sant’Agabio lag ich wieder im Zelt – mein Fahrrad direkt vor der Tür.",
+          "alt": "Steven im Zelt, daneben das bepackte Fahrrad im Grünen."
+        },
+        {
+          "id": "cannes-07",
+          "publicId": "416A238D-3DFC-4674-AAA7-8C7CA79ABD5F_n2bzwg",
+          "width": 3840,
+          "height": 2160,
+          "title": "Die Zelttür bleibt offen",
+          "caption": "Noch ein Blick aus meinem Zelt in Sant’Agabio. Viel Ausstattung brauchte es nicht – für diesen Abend reichte mein kleines Zuhause unterwegs.",
+          "alt": "Blick aus einem geöffneten Zelt auf Bäume und Wiese."
+        },
+        {
+          "id": "cannes-14",
+          "publicId": "B9838B6D-2BA1-44EE-9058-12BEAD9EADE1_wykied",
+          "width": 3840,
+          "height": 2160,
+          "title": "Einfach geradeaus",
+          "caption": "Eine Straße, Felder und mein Lenker im Vordergrund. Auch die ruhigeren Kilometer zwischen den großen Erlebnissen gehören zu dieser Reise.",
+          "alt": "Gerade Straße zwischen grünen Feldern, vom Fahrrad aus gesehen."
+        },
+        {
+          "id": "cannes-38",
+          "publicId": "IMG_6110_nl3oct",
+          "width": 4032,
+          "height": 3024,
+          "title": "Zeit für eine Geschichte",
+          "caption": "Im A Casa di Ale in Lamporo war wenig los. Der Besitzer nahm sich mehrere Stunden Zeit, unterhielt sich mit uns und erzählte seine Geschichte. Aus dem Restaurantbesuch wurde eine Begegnung.",
+          "alt": "Fassade des Restaurants A Casa di Ale mit Markise und Außentischen."
+        },
+        {
+          "id": "cannes-06",
+          "publicId": "2dfac8d6-3cfb-4d16-9c7e-3c04a708e763_rtirra",
+          "width": 900,
+          "height": 1600,
+          "title": "Ein kleines Stück Pilgerreise",
+          "caption": "Auch diese Erinnerung an das Pilgerhaus gehört dazu. Unterwegs war ich zwar mit zwei Rädern, aber Begegnungen gab es zum Glück für alle Reisearten.",
+          "alt": "Eine Hand hält einen Pilgerausweis der Via Francigena."
+        },
+        {
+          "id": "cannes-39",
+          "publicId": "IMG_6112_vf8y9z",
+          "width": 4032,
+          "height": 3024,
+          "title": "Menschen statt bloß ein Bett",
+          "caption": "Im Pilgerhaus traf ich andere Reisende. Am gemeinsamen Tisch wurde aus einer Übernachtung ein Abend, an den ich gern zurückdenke.",
+          "alt": "Mehrere Menschen sitzen und arbeiten an einem langen Küchentisch."
+        },
+        {
+          "id": "cannes-40",
+          "publicId": "IMG_6116_opdiji",
+          "width": 4032,
+          "height": 3024,
+          "title": "Gnocchi statt Gänge schalten",
+          "caption": "Im Pilgerhaus in Lamporo machten wir gemeinsam Gnocchi. Für einen Abend arbeitete ich also mit Teig statt mit Pedalen – fast wie ein echter Italiener.",
+          "alt": "Steven und ein weiterer Gast formen gemeinsam Teig in der Küche."
+        },
+        {
+          "id": "cannes-41",
+          "publicId": "IMG_6117_dgxsii",
+          "width": 4032,
+          "height": 3024,
+          "title": "Lamporo am Abend",
+          "caption": "Der Blick aus dem Pilgerhaus, als es draußen schon dunkel wurde. Nach einem Reisetag war das genau die richtige Aussicht zum Runterkommen.",
+          "alt": "Abendlicher Blick auf beleuchtete Häuser und einen Kirchturm."
+        },
+        {
+          "id": "cannes-42",
+          "publicId": "IMG_6118_u6rigw",
+          "width": 4032,
+          "height": 3024,
+          "title": "Früh wieder unterwegs",
+          "caption": "Am nächsten Morgen brach ich in Lamporo auf. Ein weiterer Gast aus dem Pilgerhaus wollte ebenfalls nach Turin – unsere Wege hatten noch ein Stück dasselbe Ziel.",
+          "alt": "Lange Schatten von Radfahrern auf einer Straße neben einem Kanal in Lamporo."
+        },
+        {
+          "id": "cannes-43",
+          "publicId": "IMG_6126_rqj914",
+          "width": 4032,
+          "height": 3024,
+          "title": "Turin rückt näher",
+          "caption": "Das erste große Torino-Schild am Weg. Noch war ich nicht mitten in der Stadt, aber der nächste Stopp rückte näher.",
+          "alt": "Schild des Torino Outlet Village vor Bäumen und einer hohen weißen Skulptur."
+        },
+        {
+          "id": "cannes-44",
+          "publicId": "IMG_6128_tl5oak",
+          "width": 4032,
+          "height": 3024,
+          "title": "Weiter Richtung Torino",
+          "caption": "Noch ein Wegweiser nach Turin. Nach so vielen Kilometern werden selbst Straßenschilder zu kleinen Motivationshilfen.",
+          "alt": "Straße mit Wegweiser nach Torino vor blauem Himmel."
+        },
+        {
+          "id": "cannes-45",
+          "publicId": "IMG_6131_ge7hdt",
+          "width": 4032,
+          "height": 3024,
+          "title": "Mitten in Turin",
+          "caption": "Angekommen zwischen Häusern, Cafés und Stadtleben. Nach den Tagen auf dem Rad war das wieder eine ganz andere Kulisse.",
+          "alt": "Belebter Platz zwischen hohen Häusern in Turin."
+        },
+        {
+          "id": "cannes-46",
+          "publicId": "IMG_6134_h0fq3j",
+          "width": 4032,
+          "height": 3024,
+          "title": "Ein Blick weit zurück",
+          "caption": "Im Ägyptischen Museum wechselte die Zeitrechnung für eine Weile. Dieses Ausstellungsstück machte besonders deutlich, wie weit die Geschichten hier zurückreichen.",
+          "alt": "Menschliche Überreste mit Grabbeigaben in einer Museumsvitrine."
+        },
+        {
+          "id": "cannes-47",
+          "publicId": "IMG_6135_pyaxwr",
+          "width": 4032,
+          "height": 3024,
+          "title": "Kleine Dinge, lange Geschichte",
+          "caption": "Gefäße hinter Glas im Ägyptischen Museum. Nach all den großen Landschaften blieb ich hier einmal bei den Details stehen.",
+          "alt": "Vitrine mit verschiedenen historischen Gefäßen und Schalen."
+        },
+        {
+          "id": "cannes-48",
+          "publicId": "IMG_6137_p9ba49",
+          "width": 4032,
+          "height": 3024,
+          "title": "Unterwegs im Museum",
+          "caption": "Noch ein Blick in die Ausstellung. Für diese Strecke brauchte ich ausnahmsweise weder Helm noch Fahrrad.",
+          "alt": "Ausstellungsraum mit archäologischen Objekten und einer erläuterten Zeichnung."
+        },
+        {
+          "id": "cannes-49",
+          "publicId": "IMG_6166_xrcfap",
+          "width": 4032,
+          "height": 3024,
+          "title": "Was Menschen hinterlassen",
+          "caption": "Truhen, Gefäße und andere Ausstellungsstücke. Mein Zwischenstopp im Museum hatte deutlich mehr Vergangenheit zu bieten als meine bisherigen Reisetage.",
+          "alt": "Historische Kästen, Gefäße und weitere Objekte in einer Ausstellung."
+        },
+        {
+          "id": "cannes-50",
+          "publicId": "IMG_6178_xr8zhc",
+          "width": 3024,
+          "height": 4032,
+          "title": "Ein Abstecher ins alte Ägypten",
+          "caption": "In Turin besuchte ich das Ägyptische Museum. Zwischen zwei Radetappen war plötzlich Zeit für eine Reise, die noch ein paar Jahrtausende weiter zurückging.",
+          "alt": "Bemalte ägyptische Stele mit Figuren und Schriftzeichen."
+        },
+        {
+          "id": "cannes-51",
+          "publicId": "IMG_6181_uv6bkr",
+          "width": 4032,
+          "height": 3024,
+          "title": "Noch ein Museumsfund",
+          "caption": "Auch dieser Sarkophag kam mit ins Fotoalbum. Eine andere Art Reisegeschichte, mitten in meiner eigenen.",
+          "alt": "Aufrecht ausgestellter ägyptischer Sarkophag mit einem dargestellten Gesicht."
+        },
+        {
+          "id": "cannes-52",
+          "publicId": "IMG_6228_bcbh69",
+          "width": 4032,
+          "height": 3024,
+          "title": "Zurück auf Turins Straßen",
+          "caption": "Wieder draußen zwischen Fassaden und Plätzen. Nach dem Museum wartete die Stadt – und danach natürlich wieder das Fahrrad.",
+          "alt": "Sonniger Platz mit einer Kirche und hohen Gebäuden in Turin."
+        },
+        {
+          "id": "cannes-53",
+          "publicId": "IMG_6236_i5rpeq",
+          "width": 4032,
+          "height": 3024,
+          "title": "Noch Platz für Sport",
+          "caption": "In Cuneo entdeckte ich einen Sportpark und probierte ihn direkt aus. Die Beine hatten vom Radfahren offenbar noch nicht genug Beschäftigung bekommen.",
+          "alt": "Calisthenics-Geräte auf einem Sportplatz im Freien."
+        },
+        {
+          "id": "cannes-54",
+          "publicId": "IMG_6241_aytoqe",
+          "width": 4032,
+          "height": 3024,
+          "title": "Ein vertrautes Gesicht auf vier Rädern",
+          "caption": "Am Campingplatz stand ein Toyota Yaris Verso, der aussah wie mein erstes Auto. Für mich ein echter Klassiker – man muss nicht jeden Autogeschmack erklären können.",
+          "alt": "Toyota Yaris Verso auf einem schattigen Campingplatz."
+        }
+      ],
+      "mapStops": [
+        {
+          "photoId": "cannes-35",
+          "label": "Ganna",
+          "lat": 45.9009,
+          "lon": 8.82456
+        },
+        {
+          "photoId": "cannes-36",
+          "label": "Varese",
+          "lat": 45.81483,
+          "lon": 8.82794
+        },
+        {
+          "photoId": "cannes-38",
+          "label": "Lamporo",
+          "lat": 45.23044,
+          "lon": 8.09785
+        },
+        {
+          "photoId": "cannes-50",
+          "label": "Ägyptisches Museum, Turin",
+          "lat": 45.06888,
+          "lon": 7.6845
+        },
+        {
+          "photoId": "cannes-53",
+          "label": "Sportpause in Cuneo",
+          "lat": 44.37689,
+          "lon": 7.53496
+        }
+      ]
+    },
+    {
+      "id": "alpen",
+      "title": "Noch einmal über die Alpen",
+      "intro": "Im Argentera-Gebiet wurde aus der Radtour streckenweise eine Tour mit getragenem Fahrrad. Zwischen Bergseen, einer Biwakhütte und steinigen Pfaden lagen die härtesten Stunden der Reise.",
+      "photos": [
+        {
+          "id": "cannes-55",
+          "publicId": "IMG_6243_pndgz9",
+          "width": 1242,
+          "height": 2208,
+          "title": "Mein Gesicht sagt alles",
+          "caption": "So sah ich aus, als ich merkte, dass ich mein Fahrrad stundenlang in die falsche Richtung bergauf geschoben hatte. Begeisterung lässt sich offenbar nicht immer überzeugend vorspielen.",
+          "alt": "Nahaufnahme von Steven mit Fahrradhelm und erschöpftem Gesichtsausdruck."
+        },
+        {
+          "id": "cannes-56",
+          "publicId": "IMG_6245_oofwof",
+          "width": 4032,
+          "height": 3024,
+          "title": "Asphalt war noch nie so schön",
+          "caption": "Nach viereinhalb Stunden Fahrradschleppen bergab konnte ich endlich wieder fahren. Das Hinuntertragen war sogar schlimmer gewesen als das Hochschleppen. Diese Straße war in dem Moment mein Lieblingsmotiv.",
+          "alt": "Asphaltstraße zwischen Bäumen und steilen Bergen."
+        },
+        {
+          "id": "cannes-57",
+          "publicId": "IMG_6247_nr4hi4",
+          "width": 4032,
+          "height": 3024,
+          "title": "Vor dem nächsten Anstieg",
+          "caption": "Mein Fahrrad vor dem Weg hinauf ins Argentera-Gebiet. Das Gepäck war dabei – wie viel davon ich noch selbst tragen würde, wusste ich hier noch nicht.",
+          "alt": "Bepacktes Fahrrad mit gelber Tasche am Waldrand."
+        },
+        {
+          "id": "cannes-58",
+          "publicId": "IMG_6248_irlw2h",
+          "width": 3088,
+          "height": 2316,
+          "title": "Noch auf der Straße",
+          "caption": "Unterwegs in Richtung Argentera. Hier war der Untergrund noch angenehm eindeutig: Straße. Später wurde die Sache deutlich steiniger.",
+          "alt": "Steven mit Helm und Sonnenbrille auf einer Bergstraße."
+        },
+        {
+          "id": "cannes-59",
+          "publicId": "IMG_6270_pukawd",
+          "width": 4032,
+          "height": 3024,
+          "title": "Energie aus der Verpackung",
+          "caption": "So sah mein kleiner Energieschub aus: ein Snickers am Wegesrand. Die Bergkulisse war groß, die Verpflegung eher handlich.",
+          "alt": "Eine Hand hält einen angebissenen Schokoriegel vor steinigem Boden."
+        },
+        {
+          "id": "cannes-60",
+          "publicId": "IMG_6271_gbxfxt",
+          "width": 4032,
+          "height": 3024,
+          "title": "Noch ein Bissen",
+          "caption": "Noch ein Foto meiner Pause mit Schokoriegel. Auf dieser Etappe bekam auch die kleine Verpflegung ihren eigenen Platz im Album.",
+          "alt": "Schokoriegel in einer geöffneten Verpackung neben dem Fahrrad."
+        },
+        {
+          "id": "cannes-61",
+          "publicId": "IMG_6293_uzagzd",
+          "width": 4032,
+          "height": 3024,
+          "title": "Ein Moment zum Durchatmen",
+          "caption": "Oben zwischen Felsen und Bergsee kurz innehalten. Hinter diesem Gesicht steckten schon einige anstrengende Meter – und die Reise war noch nicht vorbei.",
+          "alt": "Steven vor einem kleinen Bergsee zwischen steilen Felswänden."
+        },
+        {
+          "id": "cannes-62",
+          "publicId": "IMG_6313_updawe",
+          "width": 4032,
+          "height": 3024,
+          "title": "Ein Dach für die Nacht",
+          "caption": "Im Bivacco Jacques Guiglia fand ich unterwegs einen Schlafplatz. Zwischen all den Felsen stand dieses kleine rote Haus – und ich war sehr froh darüber.",
+          "alt": "Rote Biwakhütte auf einem felsigen Berghang."
+        },
+        {
+          "id": "cannes-12",
+          "publicId": "8A2A5211-C6A1-4174-94B5-322384B6A1FF_oajzz8",
+          "width": 3840,
+          "height": 2160,
+          "title": "Rot zwischen Fels und Himmel",
+          "caption": "Noch ein Blick auf das Bivacco Jacques Guiglia. Dieses kleine rote Haus war unterwegs viel mehr als nur ein auffälliger Punkt in der Landschaft.",
+          "alt": "Rote Biwakhütte auf felsigem Gelände vor hohen Bergen."
+        },
+        {
+          "id": "cannes-63",
+          "publicId": "IMG_6314_ztis7e",
+          "width": 4032,
+          "height": 3024,
+          "title": "So sah es drinnen aus",
+          "caption": "Der Blick ins Bivacco Jacques Guiglia. Einfach, eng und für diese Nacht genau der richtige Ort zum Ausruhen.",
+          "alt": "Schmale Liegeflächen und Ausrüstung im Inneren einer Biwakhütte."
+        },
+        {
+          "id": "cannes-64",
+          "publicId": "IMG_6319_gntcfz",
+          "width": 4032,
+          "height": 3024,
+          "title": "Spuren am Berg",
+          "caption": "Unterwegs standen verlassene Gebäude, die ich als alte Militärhäuser in Erinnerung habe. Noch ein ganz anderer Eindruck zwischen Felsen und Aussicht.",
+          "alt": "Verfallenes Steingebäude mit leeren Fenstern am Berghang."
+        },
+        {
+          "id": "cannes-65",
+          "publicId": "IMG_6320_w3snca",
+          "width": 4032,
+          "height": 3024,
+          "title": "Ein Haus ohne Dach",
+          "caption": "Noch ein Blick auf eines der verlassenen Gebäude. Die Mauern standen noch, darüber begann direkt der Himmel.",
+          "alt": "Dachlose Ruine mit Fensteröffnungen vor blauem Himmel."
+        },
+        {
+          "id": "cannes-66",
+          "publicId": "IMG_6325_seobxv",
+          "width": 4032,
+          "height": 3024,
+          "title": "Dafür kurz stehen bleiben",
+          "caption": "Die Aussicht war atemberaubend. Zwischen den anstrengenden Abschnitten gab es immer wieder Momente, in denen ich einfach nur schauen wollte.",
+          "alt": "Weites Bergpanorama mit schroffen Gipfeln und felsigem Vordergrund."
+        },
+        {
+          "id": "cannes-68",
+          "publicId": "IMG_6330_ybp6ye",
+          "width": 3088,
+          "height": 2316,
+          "title": "Noch längst nicht durch",
+          "caption": "Hier ahnte ich noch nicht, was auf dem weiteren Weg auf mich zukommen würde. Hinter der Aussicht steckten noch einige sehr lange Stunden.",
+          "alt": "Steven mit Sonnenbrille vor einem felsigen Bergkessel."
+        },
+        {
+          "id": "cannes-69",
+          "publicId": "IMG_6332_vhnm1a",
+          "width": 4032,
+          "height": 3024,
+          "title": "Wasser im richtigen Moment",
+          "caption": "Nach der Nacht in der Biwakhütte ging es noch einmal bergauf. Mein Wasser war aufgebraucht. Ein Wanderer gab mir etwas von seinem – in diesem Moment eine Hilfe, für die ich unglaublich dankbar war.",
+          "alt": "Ein Wanderer auf einem Pfad oberhalb eines kleinen Bergsees."
+        },
+        {
+          "id": "cannes-67",
+          "publicId": "IMG_6327_y9ido4",
+          "width": 4032,
+          "height": 3024,
+          "title": "Frankreich kommt näher",
+          "caption": "Nach der Nacht in der Biwakhütte ging es weiter. Frankreich war näher gerückt, aber der Weg vor meinem Lenker sah noch nach Arbeit aus.",
+          "alt": "Fahrradlenker vor einem steinigen Bergpfad und steilen Hängen."
+        },
+        {
+          "id": "cannes-70",
+          "publicId": "IMG_6337_pdnncx",
+          "width": 6338,
+          "height": 3852,
+          "title": "Meine zweite Alpenüberquerung",
+          "caption": "Diese Aussicht gehört zur zweiten Alpenüberquerung auf meiner Reise. So schön die Berge waren: Einfach gemacht haben sie es mir nicht.",
+          "alt": "Breites Panorama über felsige Bergketten und grüne Hochtäler."
+        },
+        {
+          "id": "cannes-71",
+          "publicId": "IMG_6339_ybik8g",
+          "width": 4032,
+          "height": 3024,
+          "title": "Ein Radweg war das nicht mehr",
+          "caption": "Fahrrad, Gepäck und ein Pfad voller Steine. Spätestens hier war aus Radfahren eine sehr praktische Trageübung geworden.",
+          "alt": "Bepacktes Fahrrad auf einem schmalen steinigen Weg im Hochgebirge."
+        }
+      ],
+      "mapStops": [
+        {
+          "photoId": "cannes-57",
+          "label": "Vor dem Anstieg",
+          "lat": 44.22023,
+          "lon": 7.28815
+        },
+        {
+          "photoId": "cannes-63",
+          "label": "Bivacco Jacques Guiglia",
+          "lat": 44.1687,
+          "lon": 7.25261
+        },
+        {
+          "photoId": "cannes-66",
+          "label": "Zwischen den Bergen",
+          "lat": 44.15834,
+          "lon": 7.25486
+        },
+        {
+          "photoId": "cannes-70",
+          "label": "Blick über die Alpen",
+          "lat": 44.15501,
+          "lon": 7.25537
+        }
+      ]
+    },
+    {
+      "id": "cannes",
+      "title": "Ankommen an der Côte d’Azur",
+      "intro": "Lonny holte mich am Ende der Radetappe bei Nizza ab. Danach warteten Cannes, gemeinsame Abende, Ausflüge mit dem Boot und eine Woche, in der das Fahrrad einmal Pause hatte.",
+      "photos": [
+        {
+          "id": "cannes-72",
+          "publicId": "IMG_6342_j7tazy",
+          "width": 4032,
+          "height": 3024,
+          "title": "Die Radetappe geschafft",
+          "caption": "Am Ende meiner Fahrt bei Nizza holte mich Lonny ab. Mein Fahrrad und ich hatten genug erlebt – jetzt durfte der Urlaub mit Freunden anfangen.",
+          "alt": "Bepacktes Fahrrad an einem Parkplatz unter südlicher Sonne."
+        },
+        {
+          "id": "cannes-73",
+          "publicId": "IMG_6343_nntiar",
+          "width": 4032,
+          "height": 3024,
+          "title": "Noch ein letztes Fahrradfoto",
+          "caption": "Ein zweiter Blick auf meinen treuen Begleiter am Ende der Fahrt. Nicht mehr ganz so ordentlich wie am Anfang, aber angekommen.",
+          "alt": "Fahrrad mit Gepäck an einem Baum neben einer Straße."
+        },
+        {
+          "id": "cannes-03",
+          "publicId": "0a8efd96-0f42-4681-b5d8-2e5c556680d5_gbozus",
+          "width": 1600,
+          "height": 1200,
+          "title": "Endlich gemeinsam am Tisch",
+          "caption": "Mein erster Abend in Cannes: zusammen essen, durch die Straßen ziehen und lachen. Nach der Reise war allein dieses Zusammensitzen schon ein kleines Highlight.",
+          "alt": "Freundesgruppe an einem gedeckten Tisch im Restaurant."
+        },
+        {
+          "id": "cannes-10",
+          "publicId": "68002a07-c952-4e08-a643-edbe21446a3f_fqsfzi",
+          "width": 1200,
+          "height": 1600,
+          "title": "Ein Abend ohne Radkilometer",
+          "caption": "Gemeinsam im Restaurant in Cannes. Diesmal musste ich nach dem Essen keinen Schlafplatz mehr suchen – eine ausgesprochen angenehme Entwicklung.",
+          "alt": "Steven am Restauranttisch mit einem Dessert und sprühenden Wunderkerzen."
+        },
+        {
+          "id": "cannes-13",
+          "publicId": "ADE1768D-0860-48AC-85CA-CB9003BE50CE_wjngf7",
+          "width": 3840,
+          "height": 2160,
+          "title": "Diesmal trägt uns das Boot",
+          "caption": "Lonny nahm uns mit dem Boot zu Inseln, an denen wir schwimmen und entspannen konnten. Zur Abwechslung einmal vorankommen, ohne selbst in die Pedale zu treten.",
+          "alt": "Freunde an Bord eines Motorboots auf dem Meer."
+        },
+        {
+          "id": "cannes-11",
+          "publicId": "696c586e-8606-4147-a0d1-64fdc7412aec_o0juxz",
+          "width": 900,
+          "height": 1600,
+          "title": "Eine Woche zum Durchatmen",
+          "caption": "Bei Lonny verbrachten wir eine Woche mit gemeinsamen Abenden und Spielen. Danach ging es für mich zurück – das Fahrrad durfte als Sondergepäck mitfliegen.",
+          "alt": "Garten mit Pool, Liegen und einem beleuchteten Gartenhaus am Abend."
+        },
+        {
+          "id": "cannes-05",
+          "publicId": "2be1beac-0186-450c-b7a6-ffb71803c12a_paqfas",
+          "width": 900,
+          "height": 1600,
+          "title": "Abende bei Lonny",
+          "caption": "Spielen, zusammensitzen und den Abend ausklingen lassen. Bei Lonny war nach der Fahrt endlich Zeit für genau solche Momente.",
+          "alt": "Freunde sitzen abends an einem Tisch vor einem beleuchteten Gartenhaus."
+        },
+        {
+          "id": "cannes-75",
+          "publicId": "f0e84427-abd1-440a-9ab4-d588ec88f12e_gycqts",
+          "width": 1200,
+          "height": 1600,
+          "title": "Angekommen im Wasser",
+          "caption": "Lonny und ich am Pool. Nach den Bergen und langen Tagen unterwegs fühlte sich dieses Ankommen besonders gut an.",
+          "alt": "Zwei Freunde im Pool vor Palmen und einem farbigen Himmel."
+        },
+        {
+          "id": "cannes-76",
+          "publicId": "f1733da3-709f-49f2-8feb-1613e7be5e75_anxot9",
+          "width": 1200,
+          "height": 1600,
+          "title": "Danke, Lonny",
+          "caption": "Lonny kümmerte sich unglaublich gut um uns. Ich bin dankbar für seine Gastfreundschaft und die gemeinsame Zeit – ein schöneres Ende hätte ich mir für diese Reise kaum wünschen können.",
+          "alt": "Freunde am Pool unter einem Abendhimmel mit Palmen."
+        }
+      ]
+    }
+  ]
+}

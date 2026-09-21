@@ -1,0 +1,39 @@
+{
+  "id": "2025-03-hawaii",
+  "title": "Sechs Wochen Hawaii",
+  "country": "USA · Oʻahu & Big Island",
+  "startDate": "2025-03-02",
+  "endDate": "2025-04-14",
+  "description": "Sprachreise nach Honolulu: morgens Schule, nachmittags Surfen, dazwischen Vulkane, Wasserfälle und ein Sonnenaufgang auf 4.200 Metern.",
+  "coverImage": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774709605/MaunakeaSunset_ouuchw.jpg",
+  "images": [
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774709605/MaunakeaSunset_ouuchw.jpg",
+      "alt": "Sonnenuntergang über den Wolken auf dem Mauna Kea"
+    },
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237682/pages/travel/hawaii/videos/alltag_waikiki_beach.jpg",
+      "alt": "Waikiki Beach in Honolulu"
+    },
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237655/pages/travel/hawaii/videos/adv_manoa_1.jpg",
+      "alt": "Regenwald im Manoa Valley auf dem Weg zum Wasserfall"
+    },
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237657/pages/travel/hawaii/videos/adv_pali_1.jpg",
+      "alt": "Aussicht vom Pali Lookout über die Ostküste von Oʻahu"
+    },
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237650/pages/travel/hawaii/videos/adv_kokohead_1.jpg",
+      "alt": "Der Aufstieg über die Bahnschwellen am Koko Head"
+    },
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237661/pages/travel/hawaii/videos/adv_northshore_1.jpg",
+      "alt": "Wellen an der North Shore von Oʻahu"
+    },
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237665/pages/travel/hawaii/videos/alltag_schulweg.jpg",
+      "alt": "Schulweg mit dem Fahrrad entlang des Ala Wai Canal"
+    }
+  ]
+}

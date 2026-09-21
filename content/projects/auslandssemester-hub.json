@@ -1,0 +1,16 @@
+{
+  "slug": "auslandssemester-hub",
+  "title": "Auslandssemester-Hub",
+  "tagline": "Seoul, Taipeh oder Bangkok – ein Dashboard zur Entscheidung.",
+  "description": "Ein interaktives Vergleichs-Dashboard für die Wahl meines Auslandssemesters. Stellt Seoul, Taipeh und Bangkok nach den Kriterien gegenüber, die für die Entscheidung wirklich zählten – statt drei Browser-Tabs mit Hochschul-PDFs nebeneinander offen zu halten.",
+  "repo": "thexsteven/auslandssemester-hub",
+  "liveUrl": "https://auslandssemester-hub.vercel.app",
+  "screenshot": "/images/projects/auslandssemester-hub.png",
+  "techStack": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "featured": false,
+  "order": 70
+}

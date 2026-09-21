@@ -1,0 +1,30 @@
+{
+  "id": "2021-09-platzhalter",
+  "title": "Platzhalter · Herbst 2021",
+  "country": "Platzhalter-Land",
+  "startDate": "2021-09-11",
+  "endDate": "2021-09-18",
+  "description": "PLATZHALTER – die älteste Reise im Archiv und damit der letzte Eintrag im Feed. Prüft, ob das Ende der Wand sauber abschließt.",
+  "images": [
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237671/pages/travel/hawaii/videos/alltag_beach.jpg",
+      "alt": "Platzhalter-Motiv: Strand am späten Nachmittag"
+    },
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237678/pages/travel/hawaii/videos/alltag_cali.jpg",
+      "alt": "Platzhalter-Motiv: Straßenzug"
+    },
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237664/pages/travel/hawaii/videos/adv_northshore_3.jpg",
+      "alt": "Platzhalter-Motiv: Küste mit Brandung"
+    },
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237658/pages/travel/hawaii/videos/adv_pali_2.jpg",
+      "alt": "Platzhalter-Motiv: Aussichtspunkt im Gebirge"
+    },
+    {
+      "src": "https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237652/pages/travel/hawaii/videos/adv_kokohead_2.jpg",
+      "alt": "Platzhalter-Motiv: Treppenaufstieg"
+    }
+  ]
+}

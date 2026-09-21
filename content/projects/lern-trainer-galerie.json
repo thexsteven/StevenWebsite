@@ -1,0 +1,17 @@
+{
+  "slug": "lern-trainer-galerie",
+  "title": "Lern-Trainer Galerie",
+  "tagline": "Über 30 interaktive Trainer für die Klausurphase.",
+  "description": "Eine Galerie interaktiver Lern-Trainer, gebaut mit React und Vite. Von Sortier- und Graph-Algorithmen über Hashing und KV-Diagramme bis zu Flipflops, Java-Konzepten und Probeklausuren – jedes Thema als klickbare Übung statt als Textwüste. Entstanden aus dem eigenen Bedarf, Vorlesungsstoff wirklich zu durchdringen statt ihn nur zu lesen.",
+  "repo": "thexsteven/lern-trainer-galerie",
+  "liveUrl": "https://lern-trainer.vercel.app",
+  "screenshot": "/images/projects/lern-trainer-galerie.png",
+  "techStack": [
+    "React",
+    "Vite",
+    "JavaScript",
+    "Vercel"
+  ],
+  "featured": true,
+  "order": 10
+}

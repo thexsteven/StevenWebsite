@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import {
   Playfair_Display,
   Bricolage_Grotesque,
@@ -44,6 +44,7 @@ const ogImage =
 export const metadata: Metadata = {
   metadataBase: new URL('https://braun-steven.de'),
   title: 'Steven | Portfolio',
+  icons: { icon: { url: '/favicon.svg', type: 'image/svg+xml' } },
   description:
     'Steven Braun – dualer Informatikstudent aus Bad Mergentheim. Reisegeschichten, Fahrradabenteuer, Sport und Projekte über Informatik, Disziplin und kontinuierliches Lernen.',
   openGraph: {
@@ -59,6 +60,15 @@ export const metadata: Metadata = {
       'Steven Braun – dualer Informatikstudent aus Bad Mergentheim. Reisegeschichten, Fahrradabenteuer, Sport und Projekte über Informatik, Disziplin und kontinuierliches Lernen.',
     images: [ogImage],
   },
+};
+
+// Mobile: Inhalt bis in die Safe Areas ziehen, Browser-Chrome an die
+// Seitenfarbe angleichen.
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
+  themeColor: '#f8fafc',
 };
 
 export default function RootLayout({

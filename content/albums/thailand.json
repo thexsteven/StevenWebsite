@@ -1,0 +1,652 @@
+{
+  "slug": "thailand",
+  "title": "Thailand",
+  "subtitle": "Vom Großstadttrubel ins Inseltempo.",
+  "intro": "Drei Wochen unterwegs: Bangkok, Koh Phangan, Koh Samui und Phuket. Mein Fotoalbum zwischen neuen Begegnungen, Dschungelwegen und einem ganz eigenen Alltag am Meer.",
+  "locationLabel": "Südostasien · August 2026",
+  "durationLabel": "06.–26. August 2026",
+  "coverCaption": "Koh Phangan. Hier durfte die Zeit etwas langsamer vergehen.",
+  "cover": "thailand-48",
+  "sections": [
+    {
+      "id": "bangkok",
+      "title": "Bangkok. Erst einmal ankommen.",
+      "intro": "06.–09. August · Tuk-Tuks, riesige Gebäude und ein Tempelbesuch zur richtigen Zeit. Bangkok war mein Einstieg in Thailand – und erst einmal ziemlich viel auf einmal.",
+      "photos": [
+        {
+          "id": "thailand-03",
+          "publicId": "od_photo-629_singular_display_fullPicture_jfm0fw",
+          "width": 3024,
+          "height": 4032,
+          "title": "Ankommen in Bangkok",
+          "caption": "Die Straßen rund um den Flughafen waren für mich erst einmal ein Kulturschock.",
+          "alt": "Straße mit Fahrzeugen und Stromleitungen in Bangkok"
+        },
+        {
+          "id": "thailand-01",
+          "publicId": "photo-687_singular_display_fullPicture_ft7ncd",
+          "width": 2751,
+          "height": 3670,
+          "title": "Mitten im Verkehr",
+          "caption": "Mein erster Blick auf Bangkoks Straßen: Roller, Autos und ziemlich viel Bewegung.",
+          "alt": "Verkehr mit Rollern und Autos in Bangkok"
+        },
+        {
+          "id": "thailand-02",
+          "publicId": "photo-710_singular_display_fullPicture_ulxlhp",
+          "width": 2713,
+          "height": 3619,
+          "title": "Alle sind unterwegs",
+          "caption": "Schon bei der Ankunft staunte ich darüber, wie unterschiedlich die Menschen hier unterwegs sind.",
+          "alt": "Menschen auf der Ladefläche eines Pickups im Stadtverkehr"
+        },
+        {
+          "id": "thailand-04",
+          "publicId": "IMG_1537_bws1su",
+          "width": 3024,
+          "height": 4032,
+          "title": "Tuk-Tuks bei Nacht",
+          "caption": "Mein Blick auf die Tuk-Tuks am Straßenrand.",
+          "alt": "Geparkte Tuk-Tuks bei Nacht"
+        },
+        {
+          "id": "thailand-16",
+          "publicId": "photo-1254_singular_display_fullPicture_aviklx",
+          "width": 3024,
+          "height": 4032,
+          "title": "Drei Stunden Tuk-Tuk",
+          "caption": "Dieser Fahrer nahm mich drei Stunden lang durch Bangkok mit.",
+          "alt": "Blick auf den Fahrer aus einem Tuk-Tuk"
+        },
+        {
+          "id": "thailand-19",
+          "publicId": "photo-1577_singular_display_fullPicture_vf3ttx",
+          "width": 3024,
+          "height": 4032,
+          "title": "Mit Bolt durch die Stadt",
+          "caption": "Über die App kam ich günstig herum und fuhr bei Menschen mit, die in dieser riesigen Stadt als Fahrer arbeiten.",
+          "alt": "Bangkok bei Nacht während einer Fahrt"
+        },
+        {
+          "id": "thailand-11",
+          "publicId": "IMG_1610_clab4u",
+          "width": 4284,
+          "height": 5712,
+          "title": "Rund um meine Unterkunft",
+          "caption": "Die Hauptstraße in der Nähe meiner Unterkunft.",
+          "alt": "Straßenschild nahe meiner Unterkunft"
+        },
+        {
+          "id": "thailand-15",
+          "publicId": "photo-1181_singular_display_fullPicture_cuztur",
+          "width": 2709,
+          "height": 3613,
+          "title": "Straßenszene",
+          "caption": "Noch ein Ausschnitt aus meinem Bangkok.",
+          "alt": "Gebäude und Verkehr auf einer Straße in Bangkok"
+        },
+        {
+          "id": "thailand-06",
+          "publicId": "IMG_1535_vartxs",
+          "width": 3024,
+          "height": 4032,
+          "title": "Abseits der Hauptstraße",
+          "caption": "In den Seitenstraßen zeigte sich mir ein anderes Bangkok als in den großen Einkaufszentren.",
+          "alt": "Nächtliche Seitenstraße mit geparkten Fahrzeugen"
+        },
+        {
+          "id": "thailand-09",
+          "publicId": "photo-942_singular_display_fullPicture_ukef3m",
+          "width": 3024,
+          "height": 4032,
+          "title": "Zu Fuß durch Bangkok",
+          "caption": "Auf meinen Wegen sah ich auch Menschen, die sich am Straßenrand ausruhten.",
+          "alt": "Gehweg vor Häuserfassaden in Bangkok"
+        },
+        {
+          "id": "thailand-14",
+          "publicId": "photo-1111_singular_display_fullPicture_okooqt",
+          "width": 3024,
+          "height": 4032,
+          "title": "Platz fürs Fahrrad?",
+          "caption": "Die Radwege wirkten auf mich ungewohnt und stellenweise wenig ausgebaut.",
+          "alt": "Schmaler markierter Fahrradweg neben einem Gehweg"
+        },
+        {
+          "id": "thailand-10",
+          "publicId": "photo-950_singular_display_fullPicture_k55tms",
+          "width": 3024,
+          "height": 4032,
+          "title": "Porträts im Straßenbild",
+          "caption": "Diese großen Porträts begegneten mir an Straßen und Kreuzungen immer wieder.",
+          "alt": "Große Porträts über einer Straße in Bangkok"
+        },
+        {
+          "id": "thailand-12",
+          "publicId": "photo-1039_singular_display_fullPicture_fgrqgd",
+          "width": 3024,
+          "height": 4032,
+          "title": "Eine Pause im Grünen",
+          "caption": "Ein Park mitten in Bangkok.",
+          "alt": "Park mit Wasserbecken und Bäumen in Bangkok"
+        },
+        {
+          "id": "thailand-13",
+          "publicId": "photo-1103_singular_display_fullPicture_jnpfez",
+          "width": 2669,
+          "height": 3559,
+          "title": "Tempeldächer",
+          "caption": "Ein Tempel auf meinem Weg durch die Stadt.",
+          "alt": "Tempelgebäude mit roten Dächern"
+        },
+        {
+          "id": "thailand-17",
+          "publicId": "photo-1273_singular_display_fullPicture_gwfap6",
+          "width": 3024,
+          "height": 4032,
+          "title": "Eine besondere Begegnung",
+          "caption": "Am Tempel traf ich einen Mann aus Chiang Mai. Er erzählte mir, dass er zum Segen angereist sei und der Tempel nur an einem Tag im Monat für alle geöffnet werde.",
+          "alt": "Buddhafiguren am Tempel in Bangkok"
+        },
+        {
+          "id": "thailand-18",
+          "publicId": "photo-1343_singular_display_fullPicture_me4kn7",
+          "width": 3024,
+          "height": 4032,
+          "title": "Kleine Kostbarkeiten",
+          "caption": "Schmuck und Edelsteine in Bangkok.",
+          "alt": "Auslage mit Schmuck und Edelsteinen"
+        },
+        {
+          "id": "thailand-08",
+          "publicId": "photo-891_singular_display_fullPicture_u4feyl",
+          "width": 3024,
+          "height": 4032,
+          "title": "Terminal 21 Asok",
+          "caption": "Ein riesiges Einkaufszentrum, in dem jede Etage eine andere Stadt aufgreift.",
+          "alt": "Innenansicht des Einkaufszentrums Terminal 21 Asok"
+        },
+        {
+          "id": "thailand-07",
+          "publicId": "od_photo-882_singular_display_fullPicture_vckugs",
+          "width": 3024,
+          "height": 4032,
+          "title": "Eine Welt im Einkaufszentrum",
+          "caption": "Noch ein Blick ins Terminal 21 Asok.",
+          "alt": "Mehrere Etagen und rote Brücke im Terminal 21 Asok"
+        },
+        {
+          "id": "thailand-20",
+          "publicId": "IMG_1680_vxercy",
+          "width": 5712,
+          "height": 4284,
+          "title": "Mein Magen hatte Einwände",
+          "caption": "Koreanisches Essen in Bangkok. Für meinen deutschen Magen war das deutlich zu scharf.",
+          "alt": "Koreanisches Gericht mit Reis, Ei und Fleisch"
+        },
+        {
+          "id": "thailand-05",
+          "publicId": "IMG_1530_jrclp4",
+          "width": 1179,
+          "height": 2556,
+          "title": "Ein Stück Zuhause",
+          "caption": "Meine Familie rief per Video an. Bangkok auf meiner Seite, vertraute Gesichter auf dem Display.",
+          "alt": "Screenshot eines Videoanrufs mit meiner Familie"
+        }
+      ]
+    },
+    {
+      "id": "koh-phangan",
+      "title": "Koh Phangan. Ein bisschen bleiben.",
+      "intro": "09.–22. August · Erst ein Bungalow am Strand, dann eine Unterkunft im Dschungel. Dazwischen neue Freunde, Billard, Sport am Meer und ein Rückweg vom Bottle Beach, für den wir plötzlich einen Pickup brauchten.",
+      "photos": [
+        {
+          "id": "thailand-48",
+          "publicId": "IMG_2145_pxcz1c",
+          "width": 5712,
+          "height": 4284,
+          "title": "Sand, Palmen, Meer",
+          "caption": "Eine meiner Strandaufnahmen von Koh Phangan.",
+          "alt": "Sandstrand mit Palmen und türkisfarbenem Wasser"
+        },
+        {
+          "id": "thailand-27",
+          "publicId": "IMG_1914_tdkuq0",
+          "width": 3024,
+          "height": 4032,
+          "title": "Sieben Tage am Strand",
+          "caption": "Mein erstes Zuhause auf Koh Phangan: ein kleiner Bungalow direkt am Strand.",
+          "alt": "Beleuchteter Bungalow bei Nacht"
+        },
+        {
+          "id": "thailand-29",
+          "publicId": "IMG_1915_qgqd6h",
+          "width": 3024,
+          "height": 4032,
+          "title": "Direkt gegenüber",
+          "caption": "Gegenüber vom Bungalow gab es eine kleine Bar: Frühstück, kalte Getränke und Billard.",
+          "alt": "Bar mit Sitzgelegenheiten bei den Bungalows"
+        },
+        {
+          "id": "thailand-37",
+          "publicId": "IMG_1972_meikh8",
+          "width": 3024,
+          "height": 4032,
+          "title": "Mein täglicher Strand",
+          "caption": "Während meiner Zeit auf Koh Phangan kam ich jeden Tag an diesen Strand.",
+          "alt": "Strand bei den Bungalows in der Nacht"
+        },
+        {
+          "id": "thailand-38",
+          "publicId": "IMG_1973_tlzrxl",
+          "width": 4032,
+          "height": 3024,
+          "title": "Wenn es Abend wird",
+          "caption": "Der Strand bei meinem Bungalow am Abend.",
+          "alt": "Violett beleuchtete Palmen am Strand"
+        },
+        {
+          "id": "thailand-52",
+          "publicId": "IMG_2209_q7ztwg",
+          "width": 4032,
+          "height": 3024,
+          "title": "Billard statt Termine",
+          "caption": "Hier entspannten wir viel und arbeiteten nebenbei an unseren Billardkünsten.",
+          "alt": "Billardtisch mit Blick aufs Meer"
+        },
+        {
+          "id": "thailand-22",
+          "publicId": "photo-1920_singular_display_fullPicture_vnjpm2",
+          "width": 3024,
+          "height": 4032,
+          "title": "Rein in den Dschungel",
+          "caption": "Ich war oft im Dschungel unterwegs. Zwischen diesem Grün und den Affen fühlte sich jede Tour besonders an.",
+          "alt": "Dschungelpfad mit Wurzeln und Seilgeländer"
+        },
+        {
+          "id": "thailand-23",
+          "publicId": "IMG_1884_gxqpxx",
+          "width": 5712,
+          "height": 4284,
+          "title": "Richtung Bottle Beach",
+          "caption": "Auf dem Weg zum Bottle Beach öffnete sich dieser Blick aufs Meer.",
+          "alt": "Blick über grünen Dschungel aufs Meer"
+        },
+        {
+          "id": "thailand-24",
+          "publicId": "IMG_1888_turdgz",
+          "width": 1179,
+          "height": 2556,
+          "title": "Der Weg zum Strand",
+          "caption": "Meine Kartenansicht vom Bottle Beach. Wir nahmen den Weg durch den Dschungel.",
+          "alt": "Kartenansicht des Wegs zum Bottle Beach"
+        },
+        {
+          "id": "thailand-26",
+          "publicId": "IMG_1891_gmk6qc",
+          "width": 3024,
+          "height": 4032,
+          "title": "Noch nicht ganz da",
+          "caption": "Mein neuer Freund und ich waren noch ein gutes Stück vom Bottle Beach entfernt. Die Aussicht war schon da.",
+          "alt": "Felsiger Aussichtspunkt über dem Meer"
+        },
+        {
+          "id": "thailand-28",
+          "publicId": "IMG_1893_rpo2fl",
+          "width": 5712,
+          "height": 4284,
+          "title": "Endlich Bottle Beach",
+          "caption": "Wir kamen an und gingen schwimmen. Dass unser Rückweg anschließend anders aussehen würde, wussten wir da noch nicht.",
+          "alt": "Felsen und Sand am Bottle Beach"
+        },
+        {
+          "id": "thailand-25",
+          "publicId": "od_photo-1958_singular_display_fullPicture_bkdqsw",
+          "width": 3024,
+          "height": 4032,
+          "title": "Plan B hatte Allrad",
+          "caption": "Nach dem Schwimmen war unser Boot weg. Ein Einheimischer brachte uns im 4×4-Pickup durch den dunklen Dschungel zurück zu unseren Rollern. Zwei Stunden Rückweg, die ich so nicht geplant hatte.",
+          "alt": "Palmen im Scheinwerferlicht auf dem nächtlichen Rückweg"
+        },
+        {
+          "id": "thailand-47",
+          "publicId": "IMG_2139_jhh0bk",
+          "width": 3024,
+          "height": 4032,
+          "title": "Ein Weg durchs Grün",
+          "caption": "Ein weiterer Dschungelpfad auf Koh Phangan.",
+          "alt": "Felsiger Pfad zwischen dichtem Grün"
+        },
+        {
+          "id": "thailand-49",
+          "publicId": "IMG_2149_xc4ecx",
+          "width": 5712,
+          "height": 4284,
+          "title": "Noch ein Blick aufs Wasser",
+          "caption": "Strand und Meer auf Koh Phangan.",
+          "alt": "Bucht mit Sandstrand und bewaldetem Hügel"
+        },
+        {
+          "id": "thailand-33",
+          "publicId": "IMG_1950_bctjna",
+          "width": 3024,
+          "height": 4032,
+          "title": "Mein Lieblingsrhythmus",
+          "caption": "Wild Wood Beach Fitness wurde einer meiner Lieblingsorte: Sport, Eisbad, Sauna, Meer. Danach Kaffee und ein bisschen Arbeit an meiner T1000 fürs Studium.",
+          "alt": "Eingang zu Wild Wood Beach Fitness"
+        },
+        {
+          "id": "thailand-42",
+          "publicId": "242EDD54-8577-4CB2-9B5D-6FAD220B2DD6_ofqtnj",
+          "width": 2062,
+          "height": 3664,
+          "title": "Sport mit Meerblick",
+          "caption": "Ich bei Wild Wood Beach Fitness.",
+          "alt": "Selfie bei Wild Wood Beach Fitness"
+        },
+        {
+          "id": "thailand-39",
+          "publicId": "58E606D8-5B9D-4EFE-AEAC-58CEF29A4D7B_dct1t7",
+          "width": 2160,
+          "height": 3840,
+          "title": "Nach dem Training",
+          "caption": "Bei Wild Wood ließ es sich nach dem Workout wunderbar entspannen.",
+          "alt": "Ruheplatz mit freiem Blick aufs Meer"
+        },
+        {
+          "id": "thailand-46",
+          "publicId": "IMG_2136_rzxi6u",
+          "width": 3024,
+          "height": 4032,
+          "title": "Die Hochschule reist mit",
+          "caption": "Mein DHBW-Shirt hat es auch bis nach Thailand geschafft.",
+          "alt": "Ich im DHBW-Shirt unter Palmen"
+        },
+        {
+          "id": "thailand-34",
+          "publicId": "photo-2081_singular_display_fullPicture_drikln",
+          "width": 3024,
+          "height": 4032,
+          "title": "Neues probieren",
+          "caption": "Auf dem Pantip Market konnte ich immer wieder neues Essen entdecken.",
+          "alt": "Grillspieße an einem Stand auf dem Pantip Market"
+        },
+        {
+          "id": "thailand-35",
+          "publicId": "photo-2114_singular_display_fullPicture_iyuazn",
+          "width": 2742,
+          "height": 3656,
+          "title": "Eine Runde über den Markt",
+          "caption": "Essen auf dem Pantip Market.",
+          "alt": "Essensstand auf dem Pantip Market"
+        },
+        {
+          "id": "thailand-36",
+          "publicId": "photo-2157_singular_display_fullPicture_lynpcz",
+          "width": 3024,
+          "height": 4032,
+          "title": "Zwischen den Ständen",
+          "caption": "Ein weiterer Blick auf den Pantip Market.",
+          "alt": "Gang zwischen Marktständen"
+        },
+        {
+          "id": "thailand-45",
+          "publicId": "IMG_2118_fiuohm",
+          "width": 5712,
+          "height": 4284,
+          "title": "Frühstück in Haad Rin",
+          "caption": "So sah meine Frühstückspause in Haad Rin aus.",
+          "alt": "Frühstück mit Kaffee und mehreren Tellern"
+        },
+        {
+          "id": "thailand-41",
+          "publicId": "IMG_2042_kmis25",
+          "width": 3024,
+          "height": 4032,
+          "title": "Essen, reden, Strand",
+          "caption": "Mit meinem neuen Freund am Strand entspannen und essen.",
+          "alt": "Gemeinsames Entspannen bei den Bungalows"
+        },
+        {
+          "id": "thailand-32",
+          "publicId": "IMG_1946_pwmvj9",
+          "width": 3024,
+          "height": 4032,
+          "title": "Ein Abend im Rasta Home",
+          "caption": "Mit unserer Gruppe hörte ich hier Reggae und Livemusik. Ein sehr entspannter Ort.",
+          "alt": "Bunt beleuchtete Bühne im Rasta Home"
+        },
+        {
+          "id": "thailand-43",
+          "publicId": "IMG_2099_drivjt",
+          "width": 3024,
+          "height": 4032,
+          "title": "Berlin ist weit weg",
+          "caption": "11.129 Kilometer nach Berlin, sagt der Wegweiser. Ich blieb erst einmal hier.",
+          "alt": "Ich neben einem Wegweiser nach Berlin"
+        },
+        {
+          "id": "thailand-44",
+          "publicId": "IMG_2107_kqrtdy",
+          "width": 4032,
+          "height": 3024,
+          "title": "Strand bei Nacht",
+          "caption": "Noch ein Abend am Meer auf Koh Phangan.",
+          "alt": "Palmen am Strand bei Nacht"
+        },
+        {
+          "id": "thailand-30",
+          "publicId": "1DE7F0CF-9C15-406F-B18A-BB3BC753B5EA_ufsolj",
+          "width": 2160,
+          "height": 3840,
+          "title": "Ungebetener Besuch",
+          "caption": "Auch diese Badezimmerbegegnung gehört zu meinen Erinnerungen an die Unterkunft.",
+          "alt": "Ungebetener Besuch an der Badezimmerwand"
+        },
+        {
+          "id": "thailand-31",
+          "publicId": "4000DFCE-45F3-4203-BF5A-8CD9A963D705_n8f204",
+          "width": 2160,
+          "height": 3840,
+          "title": "Meine Lösung",
+          "caption": "Meine improvisierte Antwort auf den ungebetenen Besuch im Badezimmer.",
+          "alt": "Improvisierte Abdeckung am Boden des Badezimmers"
+        },
+        {
+          "id": "thailand-40",
+          "publicId": "IMG_2015_i7w8lx",
+          "width": 4284,
+          "height": 5712,
+          "title": "Umzug ins Grüne",
+          "caption": "Meine zweite Unterkunft lag direkt im Dschungel. Nachts gab es dort ziemlich spannende Geräusche.",
+          "alt": "Ich auf der Terrasse meiner Unterkunft im Grünen"
+        },
+        {
+          "id": "thailand-50",
+          "publicId": "IMG_2204_b6ih5v",
+          "width": 4284,
+          "height": 5712,
+          "title": "Eine unerwartete Lektüre",
+          "caption": "Dieses Buch lag in meiner zweiten Unterkunft. Ich konnte viele Erkenntnisse daraus mitnehmen.",
+          "alt": "Das Buch The Source of Yoga"
+        },
+        {
+          "id": "thailand-51",
+          "publicId": "IMG_2224_rab0if",
+          "width": 3024,
+          "height": 4032,
+          "title": "Bis zum nächsten Mal",
+          "caption": "An meinem letzten Tag auf Koh Phangan verabschiedete ich mich von einigen Menschen, die ich hier kennengelernt hatte.",
+          "alt": "Gruppenfoto zum Abschied am Strand"
+        }
+      ]
+    },
+    {
+      "id": "koh-samui",
+      "title": "Koh Samui. Ein kurzer Zwischenhalt.",
+      "intro": "23. August · Vom Pier auf Phangan ging es weiter nach Samui. Ein Tag zwischen Straßen, Muay-Thai-Plakaten und kleinen Entdeckungen am Wegesrand.",
+      "photos": [
+        {
+          "id": "thailand-53",
+          "publicId": "photo-2364_singular_display_fullPicture_nvu6lt",
+          "width": 3024,
+          "height": 4032,
+          "title": "Weiter nach Koh Samui",
+          "caption": "Am Pier, vor der Überfahrt von Phangan nach Samui.",
+          "alt": "Boot und Wasser am Pier"
+        },
+        {
+          "id": "thailand-54",
+          "publicId": "photo-2372_singular_display_fullPicture_d1rz5x",
+          "width": 2793,
+          "height": 3726,
+          "title": "Ein Inselwechsel",
+          "caption": "Noch ein Bild am Pier auf dem Weg nach Koh Samui.",
+          "alt": "Menschen auf dem Steg vor der Überfahrt"
+        },
+        {
+          "id": "thailand-55",
+          "publicId": "photo-2435_singular_display_fullPicture_gsv8tx",
+          "width": 2536,
+          "height": 3383,
+          "title": "Ein Tag auf Samui",
+          "caption": "Koh Samui wirkte auf mich sehr touristisch. Mein eintägiger Aufenthalt war ganz okay.",
+          "alt": "Straßenszene auf Koh Samui"
+        },
+        {
+          "id": "thailand-56",
+          "publicId": "photo-2396_singular_display_fullPicture_j0cqmp",
+          "width": 2583,
+          "height": 3445,
+          "title": "Muay Thai im Straßenbild",
+          "caption": "Ein Plakat für einen Muay-Thai-Kampf auf Koh Samui.",
+          "alt": "Muay-Thai-Plakat am Straßenrand"
+        },
+        {
+          "id": "thailand-57",
+          "publicId": "IMG_2280_rp4ig2",
+          "width": 3024,
+          "height": 4032,
+          "title": "Ein kleiner Zwischenstopp",
+          "caption": "Dieser Schmetterling fiel mir unterwegs auf.",
+          "alt": "Dunkler Schmetterling an einem Geländer"
+        },
+        {
+          "id": "thailand-58",
+          "publicId": "IMG_2255_epismz",
+          "width": 4284,
+          "height": 5712,
+          "title": "Samui bei Nacht",
+          "caption": "Unterwegs auf den Straßen von Koh Samui.",
+          "alt": "Beleuchtete Straße auf Koh Samui bei Nacht"
+        }
+      ]
+    },
+    {
+      "id": "phuket",
+      "title": "Phuket. Noch ein Sonnenuntergang.",
+      "intro": "24.–26. August · Drei Tage mit einem tollen Ausblick aus der Unterkunft. Die Stadt und ich wurden nicht ganz warm miteinander. Der letzte Sonnenuntergang am Meer bekam trotzdem seinen Platz.",
+      "photos": [
+        {
+          "id": "thailand-62",
+          "publicId": "IMG_2329_diyz5s",
+          "width": 3024,
+          "height": 4032,
+          "title": "Der Ausblick blieb",
+          "caption": "Hier war ich drei Tage untergebracht. Der Ausblick gefiel mir sehr, die Stadt ehrlich gesagt weniger.",
+          "alt": "Wohnraum mit großen Fenstern und Meerblick"
+        },
+        {
+          "id": "thailand-64",
+          "publicId": "IMG_2330_uwnbhp",
+          "width": 4284,
+          "height": 5712,
+          "title": "Logenplatz",
+          "caption": "Auch mein Kuscheltier hatte hier einen guten Ausblick.",
+          "alt": "Kuscheltier vor der Aussicht aufs Wasser"
+        },
+        {
+          "id": "thailand-59",
+          "publicId": "IMG_2289_e3mhoh",
+          "width": 3024,
+          "height": 4032,
+          "title": "Blick auf Patong",
+          "caption": "Mein Blick auf Patong bei Nacht.",
+          "alt": "Blick über Patong bei Nacht"
+        },
+        {
+          "id": "thailand-60",
+          "publicId": "IMG_2314_uodowe",
+          "width": 4032,
+          "height": 3024,
+          "title": "Phukets Straßen",
+          "caption": "Unterwegs durch Phuket.",
+          "alt": "Verkehr und Gebäude in Phuket"
+        },
+        {
+          "id": "thailand-61",
+          "publicId": "IMG_2313_vag2zv",
+          "width": 5712,
+          "height": 4284,
+          "title": "Noch eine Kreuzung",
+          "caption": "Eine weitere Straßenszene aus Phuket.",
+          "alt": "Kreuzung mit Fahrzeugen in Phuket"
+        },
+        {
+          "id": "thailand-63",
+          "publicId": "IMG_2316_zbip3m",
+          "width": 4284,
+          "height": 5712,
+          "title": "Am Straßenrand",
+          "caption": "Auf dem Weg begegneten mir auch Angebote für Elefantenattraktionen.",
+          "alt": "Straße bei einem Angebot für Elefantenattraktionen"
+        },
+        {
+          "id": "thailand-67",
+          "publicId": "IMG_2374_jomh6s",
+          "width": 2556,
+          "height": 1179,
+          "title": "Abschied auf dem Bildschirm",
+          "caption": "Auch für einige Arbeitskollegen war es der letzte Tag. Wir verabschiedeten uns per Videoanruf.",
+          "alt": "Screenshot eines Abschiedsvideoanrufs mit Arbeitskollegen"
+        },
+        {
+          "id": "thailand-65",
+          "publicId": "IMG_2366_incppr",
+          "width": 5712,
+          "height": 4284,
+          "title": "Ein letzter Sonnenuntergang",
+          "caption": "Mein letzter Sonnenuntergang in Thailand. Danach ging es von Phuket über Abu Dhabi zurück nach Deutschland.",
+          "alt": "Sonnenuntergang über dem Meer bei Phuket"
+        },
+        {
+          "id": "thailand-66",
+          "publicId": "96D7D745-48D1-4EB3-92E4-C7A34657ECD8_qqmjsn",
+          "width": 3664,
+          "height": 2062,
+          "title": "Noch einmal am Meer",
+          "caption": "Ich beim letzten Sonnenuntergang neben dem Flughafen von Phuket.",
+          "alt": "Selfie am Strand beim Sonnenuntergang"
+        },
+        {
+          "id": "thailand-68",
+          "publicId": "photo-2550_singular_display_fullPicture_fcthzc",
+          "width": 3024,
+          "height": 4032,
+          "title": "Vor dem Abflug",
+          "caption": "Burger King am Flughafen Phuket.",
+          "alt": "Bestellterminal bei Burger King am Flughafen"
+        },
+        {
+          "id": "thailand-69",
+          "publicId": "IMG_2380_ubzm8g",
+          "width": 3024,
+          "height": 4032,
+          "title": "Zum Gate",
+          "caption": "Ein letztes Foto am Flughafen Phuket, kurz bevor ich zum Gate ging.",
+          "alt": "Flugzeug durch ein Fenster des Flughafens Phuket"
+        }
+      ]
+    }
+  ]
+}
