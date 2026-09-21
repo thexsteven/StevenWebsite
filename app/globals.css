@@ -4549,24 +4549,108 @@ header * {
 .home-hero--avatar .home-btn--ghost:hover { background: #252a2e; border-color: #b6babc; }
 
 .home-avatar {
+  display: block;
   width: min(100%, 420px);
   margin: 0 auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
 }
 
-.home-avatar img {
+.home-avatar-stage {
+  position: relative;
+  display: block;
+}
+
+.home-avatar-stage::after {
+  position: absolute;
+  inset: 6% 4%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 229, 112, .72), transparent 68%);
+  opacity: 0;
+  content: '';
+  pointer-events: none;
+}
+
+.home-avatar-image {
   display: block;
   width: 100%;
   height: auto;
   mask-image: linear-gradient(to bottom, #000 93%, transparent), linear-gradient(to right, transparent, #000 18%, #000 82%, transparent);
   mask-composite: intersect;
+  transition: opacity .2s ease;
 }
 
-.home-avatar figcaption {
+.home-avatar-image--powered {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+.home-avatar--powered .home-avatar-stage {
+  animation: home-avatar-power-up 1s ease-out;
+}
+
+.home-avatar--powered .home-avatar-stage::after {
+  animation: home-avatar-flash 1s ease-out;
+}
+
+.home-avatar--powered .home-avatar-image--normal {
+  opacity: 0;
+  transition-delay: .48s;
+}
+
+.home-avatar--powered .home-avatar-image--powered {
+  opacity: 1;
+  transition-delay: .48s;
+}
+
+.home-avatar-label {
+  display: block;
   margin-top: .5rem;
   text-align: center;
   font-size: .7rem;
   letter-spacing: .08em;
   color: #b6babc;
+  transition: color .2s ease;
+}
+
+.home-avatar:hover .home-avatar-label,
+.home-avatar:focus-visible .home-avatar-label,
+.home-avatar--powered .home-avatar-label {
+  color: #f3ca52;
+}
+
+.home-avatar:focus-visible {
+  outline: 2px solid #58c6c2;
+  outline-offset: .5rem;
+}
+
+@keyframes home-avatar-power-up {
+  0%, 42% { transform: scale(1); }
+  52% { transform: scale(.985); }
+  66% { transform: scale(1.025); }
+  100% { transform: scale(1); }
+}
+
+@keyframes home-avatar-flash {
+  0%, 38%, 100% { opacity: 0; transform: scale(.82); }
+  58% { opacity: 1; transform: scale(1.04); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-avatar-stage,
+  .home-avatar-stage::after {
+    animation: none !important;
+  }
+
+  .home-avatar-image,
+  .home-avatar--powered .home-avatar-image {
+    transition-duration: .15s;
+    transition-delay: 0s;
+  }
 }
 
 @media (min-width: 768px) {

@@ -1,6 +1,5 @@
-import Image from 'next/image';
-
 import { HeroBadge } from '@/components/HeroBadge';
+import { AvatarMode } from '@/components/home/AvatarMode';
 import { techOutfit, type AvatarOutfit } from '@/lib/avatar';
 
 export function Hero({ outfit = techOutfit }: { outfit?: AvatarOutfit }) {
@@ -38,17 +37,7 @@ export function Hero({ outfit = techOutfit }: { outfit?: AvatarOutfit }) {
           </div>
         </div>
 
-        <figure className="home-avatar">
-          <Image
-            src={outfit.image}
-            alt={outfit.alt}
-            width={1024}
-            height={1536}
-            priority
-            unoptimized
-          />
-          <figcaption>Cyborg Steven</figcaption>
-        </figure>
+        <AvatarMode outfit={outfit} />
       </div>
 
       <HeroBadge />
