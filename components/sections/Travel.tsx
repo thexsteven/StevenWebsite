@@ -183,7 +183,7 @@ export function Travel() {
             <span className="travel-date">2026</span>
           </header>
           <Coverflow slides={VENEDIG_SLIDES} label="Venedig" />
-          <div className="travel-album-action"><a href="/reisen/venedig" className="btn btn-ghost">Venedig-Reise lesen →</a></div>
+          <div className="travel-album-action"><a href="/reisen/venedig" className="btn btn-ghost">Venedig-Reise · mit Passwort →</a></div>
           <ul className="travel-stats">
             <li><strong>Route</strong> München → Dolomiten → Venedig</li>
             <li><strong>Unterwegs</strong> Zu dritt im Wohnmobil</li>

@@ -6,6 +6,7 @@ import { redirect } from 'next/navigation';
 import {
   ARCHIVE_PATH,
   SESSION_COOKIE_NAME,
+  TRAVEL_COOKIE_PATH,
   createSessionToken,
   getArchivePassword,
   safeRedirectTarget,
@@ -43,6 +44,7 @@ export async function login(
   }
 
   const store = await cookies();
+  store.delete({ name: SESSION_COOKIE_NAME, path: ARCHIVE_PATH });
   store.set({
     name: SESSION_COOKIE_NAME,
     value: await createSessionToken(expected),
@@ -51,7 +53,7 @@ export async function login(
     sameSite: 'lax',
     // Kein `maxAge`/`expires`: Session-Cookie, es stirbt mit dem Browser.
     // Die serverseitige Obergrenze steckt im Token selbst.
-    path: ARCHIVE_PATH,
+    path: TRAVEL_COOKIE_PATH,
   });
 
   const target = formData.get('weiter');
@@ -62,5 +64,6 @@ export async function login(
 export async function logout(): Promise<void> {
   const store = await cookies();
   store.delete({ name: SESSION_COOKIE_NAME, path: ARCHIVE_PATH });
+  store.delete({ name: SESSION_COOKIE_NAME, path: TRAVEL_COOKIE_PATH });
   redirect('/reisen');
 }

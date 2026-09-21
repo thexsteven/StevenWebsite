@@ -42,5 +42,9 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/reisen/archiv', '/reisen/archiv/:path*'],
+  matcher: [
+    '/reisen/archiv',
+    '/reisen/archiv/:path*',
+    '/reisen/venedig',
+  ],
 };

@@ -19,6 +19,12 @@ export const SESSION_COOKIE_NAME = 'travel_archive_session';
 /** Geschützte Galerie. */
 export const ARCHIVE_PATH = '/reisen/archiv';
 
+/** Geschützte Venedig-Reise. */
+export const VENICE_PATH = '/reisen/venedig';
+
+/** Gemeinsamer Cookie-Pfad für Archiv und geschützte Reisegeschichten. */
+export const TRAVEL_COOKIE_PATH = '/reisen';
+
 /** Login-Formular – liegt innerhalb des geschützten Baums und ist ausgenommen. */
 export const ARCHIVE_LOGIN_PATH = '/reisen/archiv/login';
 
@@ -197,8 +203,8 @@ export async function hasValidSession(
  *
  * Ohne Prüfung wäre `?weiter=https://boese.example` eine offene
  * Weiterleitung: ein Link auf die eigene Domain, der woanders landet.
- * Erlaubt ist deshalb ausschließlich ein Pfad innerhalb der Galerie;
- * alles andere fällt auf `/reisen/archiv` zurück.
+ * Erlaubt sind deshalb ausschließlich die geschützte Galerie und die
+ * Venedig-Reise; alles andere fällt auf `/reisen/archiv` zurück.
  */
 export function safeRedirectTarget(target: string | null | undefined): string {
   if (typeof target !== 'string' || target === '') return ARCHIVE_PATH;
@@ -210,7 +216,11 @@ export function safeRedirectTarget(target: string | null | undefined): string {
   // Kein Query/Fragment durchreichen – der Pfad genügt.
   const path = target.split(/[?#]/)[0];
   if (path === ARCHIVE_LOGIN_PATH) return ARCHIVE_PATH;
-  if (path !== ARCHIVE_PATH && !path.startsWith(`${ARCHIVE_PATH}/`)) {
+  if (
+    path !== VENICE_PATH &&
+    path !== ARCHIVE_PATH &&
+    !path.startsWith(`${ARCHIVE_PATH}/`)
+  ) {
     return ARCHIVE_PATH;
   }
   return path;

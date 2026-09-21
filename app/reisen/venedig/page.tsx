@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { requireArchiveSession } from '@/lib/travelSession';
 import styles from './Venedig.module.css';
 
 const imageBase = 'https://res.cloudinary.com/dozdjb4fi/image/upload';
@@ -50,9 +51,12 @@ export const metadata: Metadata = {
     description: 'Von München durch die Dolomiten bis in die Lagunenstadt.',
     images: [{ url: heroImage, width: 1200, height: 630 }],
   },
+  robots: { index: false, follow: false },
 };
 
-export default function VenedigPage() {
+export default async function VenedigPage() {
+  await requireArchiveSession('/reisen/venedig');
+
   return (
     <article className={styles.story}>
       <header className={styles.hero}>

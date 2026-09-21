@@ -1,11 +1,12 @@
 import { NextRequest } from 'next/server';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 
-import { middleware } from '@/middleware';
+import { config, middleware } from '@/middleware';
 import {
   ARCHIVE_LOGIN_PATH,
   ARCHIVE_PATH,
   SESSION_COOKIE_NAME,
+  VENICE_PATH,
   createSessionToken,
 } from '@/lib/travelAuth';
 
@@ -37,6 +38,10 @@ describe('middleware', () => {
   const original = process.env.TRAVEL_PAGE_PASSWORD;
   let gueltigesToken: string;
 
+  it('führt die Middleware auch für die Venedig-Reise aus', () => {
+    expect(config.matcher).toContain(VENICE_PATH);
+  });
+
   beforeEach(async () => {
     process.env.TRAVEL_PAGE_PASSWORD = PASSWORD;
     gueltigesToken = await createSessionToken(PASSWORD);
@@ -59,6 +64,14 @@ describe('middleware', () => {
 
       expect(target?.pathname).toBe(ARCHIVE_LOGIN_PATH);
       expect(target?.searchParams.get('weiter')).toBe('/reisen/archiv/2025');
+    });
+
+    it('schützt die Venedig-Reise und merkt sie als Ziel', async () => {
+      const response = await middleware(request(VENICE_PATH));
+      const target = redirectTarget(response);
+
+      expect(target?.pathname).toBe(ARCHIVE_LOGIN_PATH);
+      expect(target?.searchParams.get('weiter')).toBe(VENICE_PATH);
     });
 
     it('hängt kein Ziel an, wenn die Galerie selbst gemeint war', async () => {
@@ -93,6 +106,11 @@ describe('middleware', () => {
       const response = await middleware(
         request('/reisen/archiv/2025', gueltigesToken),
       );
+      expect(redirectTarget(response)).toBeNull();
+    });
+
+    it('lässt die Venedig-Reise mit gültiger Session durch', async () => {
+      const response = await middleware(request(VENICE_PATH, gueltigesToken));
       expect(redirectTarget(response)).toBeNull();
     });
 

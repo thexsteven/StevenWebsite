@@ -3,6 +3,7 @@ import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import {
   ARCHIVE_PATH,
   SESSION_MAX_AGE_MS,
+  VENICE_PATH,
   createSessionToken,
   getArchivePassword,
   hasValidSession,
@@ -195,6 +196,10 @@ describe('safeRedirectTarget', () => {
     expect(safeRedirectTarget('/reisen/archiv/2025')).toBe(
       '/reisen/archiv/2025',
     );
+  });
+
+  it('lässt die geschützte Venedig-Reise als Ziel durch', () => {
+    expect(safeRedirectTarget(VENICE_PATH)).toBe(VENICE_PATH);
   });
 
   it('fällt bei fehlendem oder leerem Ziel auf die Galerie zurück', () => {
