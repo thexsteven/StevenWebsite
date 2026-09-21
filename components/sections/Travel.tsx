@@ -70,6 +70,29 @@ const CANNES_SLIDES: CoverflowSlide[] = [
   },
 ];
 
+const VENEDIG_SLIDES: CoverflowSlide[] = [
+  {
+    src: 'https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_1280/IMG_0188_jbghpe',
+    alt: 'Alex, Javier und Steven bei ihrer Ankunft vor dem Bahnhof in Venedig',
+    caption: 'Ankunft in Venedig.',
+  },
+  {
+    src: 'https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_1280/IMG_0240_kqp8hj',
+    alt: 'Klassischer Blick auf einen venezianischen Kanal',
+    caption: 'Venedig, wie man es sich vorstellt.',
+  },
+  {
+    src: 'https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_1280/IMG_0194_hvosrd',
+    alt: 'Innenraum einer alten katholischen Kirche in Venedig',
+    caption: 'Kirchen, Kunst und kühler Stein.',
+  },
+  {
+    src: 'https://res.cloudinary.com/dozdjb4fi/image/upload/f_auto,q_auto,w_1280/IMG_0263_tfr9le',
+    alt: 'Freunde mit ihrem einheimischen Begleiter in einer Bar in Venedig',
+    caption: 'Unterwegs mit einem Einheimischen durch Venedig.',
+  },
+];
+
 const HAWAII_STATIONS = [
   { slug: 'flug-ankunft', label: 'Flug & Ankunft' },
   { slug: 'alltag', label: 'Alltag' },
@@ -98,7 +121,7 @@ export function Travel() {
         kicker="Reisen"
         titleId="travel-title"
         title="Meine Reisegeschichten"
-        intro="Eine Sprachreise nach Hawaii, mit dem Rad nach Cannes und drei Wochen Thailand."
+        intro="Eine Sprachreise nach Hawaii, mit dem Rad nach Cannes, drei Wochen Thailand und ein Wohnmobil-Trip nach Venedig."
       />
       <div className="travel-grid">
         <article className={`travel-box ${styles.card}`}>
@@ -151,6 +174,27 @@ export function Travel() {
                 {s.label}
               </a>
             ))}
+          </nav>
+        </article>
+
+        <article className="travel-box">
+          <header className="travel-box-header">
+            <h3>Mit dem Wohnmobil nach Venedig</h3>
+            <span className="travel-date">2026</span>
+          </header>
+          <Coverflow slides={VENEDIG_SLIDES} label="Venedig" />
+          <div className="travel-album-action"><a href="/reisen/venedig" className="btn btn-ghost">Venedig-Reise lesen →</a></div>
+          <ul className="travel-stats">
+            <li><strong>Route</strong> München → Dolomiten → Venedig</li>
+            <li><strong>Unterwegs</strong> Zu dritt im Wohnmobil</li>
+            <li><strong>Kontrast</strong> Minus zwei bis fast dreißig Grad</li>
+            <li><strong>Höhepunkt</strong> Piano in einer Bar</li>
+          </ul>
+          <nav className="travel-stations" aria-label="Venedig-Reise">
+            <a href="/reisen/venedig#aufbruch" className="travel-station">Aufbruch</a>
+            <a href="/reisen/venedig#dolomiten" className="travel-station">Dolomiten</a>
+            <a href="/reisen/venedig#venedig" className="travel-station">Venedig</a>
+            <a href="/reisen/venedig#nacht" className="travel-station">Die Nacht</a>
           </nav>
         </article>
 

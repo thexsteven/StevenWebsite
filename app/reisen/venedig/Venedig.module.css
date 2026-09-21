@@ -1,0 +1,78 @@
+.story { --cream: #f2eadb; --lagoon: #174f50; --brick: #a84835; --wine: #692f34; background: var(--cream); color: #201b18; }
+.story h1, .story h2, .story h3 { font-family: var(--font-playfair), Georgia, serif; letter-spacing: -.045em; text-wrap: balance; }
+.story h2 { font-size: clamp(2.4rem, 4.7vw, 4.8rem); line-height: 1.08; }
+.story h3 { font-size: clamp(1.8rem, 2.5vw, 2.7rem); }
+.story p { max-width: 62ch; }
+.meta { font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; opacity: .62; margin-bottom: 1.4rem; }
+.hero { min-height: calc(100svh - 72px); display: grid; grid-template-columns: minmax(320px, .85fr) minmax(0, 1.15fr); position: relative; overflow: hidden; background: #e9dcc7; }
+.heroCopy { align-self: center; padding: clamp(3rem, 8vw, 8rem) clamp(1.25rem, 5vw, 5rem); z-index: 2; }
+.back { display: inline-block; color: var(--lagoon); font-size: .85rem; margin-bottom: 3rem; }
+.hero h1 { font-size: clamp(4rem, 8vw, 8.5rem); line-height: .86; color: var(--wine); margin: 0; }
+.hero h1 em { color: var(--lagoon); font-weight: 400; }
+.lede { margin-top: 2.5rem; color: #5d5048; font-size: clamp(1.05rem, 1.6vw, 1.35rem); line-height: 1.65; }
+.heroPhoto { min-width: 0; }
+.heroPhoto .photo { height: 100%; }
+.heroPhoto img { width: 100%; height: 100%; object-fit: cover; }
+.heroPhoto figcaption { position: absolute; right: 1.5rem; bottom: 1.25rem; color: white; text-shadow: 0 1px 12px #000; }
+.poles { position: absolute; left: calc(50% - 28px); bottom: -3rem; display: flex; gap: .65rem; z-index: 3; transform: rotate(4deg); }
+.poles span { width: 16px; height: 190px; border-radius: 8px 8px 0 0; background: repeating-linear-gradient(-45deg, #f6ead6 0 15px, var(--brick) 15px 30px); box-shadow: 0 8px 20px #201b1830; }
+.route { display: grid; grid-template-columns: repeat(4, 1fr); border-block: 1px solid #cbbda8; background: #f8f1e5; }
+.route a { padding: 1.35rem clamp(1.25rem, 5vw, 5rem); color: #201b18; text-decoration: none; font-family: var(--font-playfair), Georgia, serif; font-size: 1.2rem; border-right: 1px solid #cbbda8; }
+.route span { display: block; margin-bottom: .35rem; font: .7rem var(--font-bricolage), sans-serif; letter-spacing: .1em; color: var(--brick); }
+.chapter { display: grid; grid-template-columns: minmax(280px, .7fr) minmax(0, 1.3fr); gap: clamp(3rem, 8vw, 8rem); padding: clamp(5rem, 9vw, 9rem) clamp(1.25rem, 5vw, 5rem); }
+.copy { align-self: center; max-width: 560px; }
+.copy h2, .passage h2, .city h2, .finale h2 { color: var(--lagoon); margin-bottom: 2rem; }
+.copy p + p, .passageCopy p, .cityTitle > p:last-child, .local p, .finale p { margin-top: 1.4rem; color: #5d5048; }
+.pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; align-items: start; }
+.pair .photo:nth-child(2) { margin-top: 12%; }
+.photo { margin: 0; position: relative; }
+.photo img { display: block; width: 100%; height: auto; object-fit: cover; }
+.photo figcaption, .video figcaption { margin-top: .8rem; font-size: .8rem; color: inherit; opacity: .68; }
+.mountains { padding: clamp(5rem, 9vw, 9rem) clamp(1.25rem, 5vw, 5rem); background: #172122; color: #f2eadb; }
+.mountainCopy { display: grid; grid-template-columns: .55fr 1fr 1fr; gap: 2rem; align-items: end; margin-bottom: 4rem; }
+.mountainCopy h2 { color: #f2eadb; }
+.mountainCopy p:last-child { color: #bac7c3; }
+.mountainGrid { display: grid; grid-template-columns: 1.35fr .8fr .8fr; gap: 1.25rem; align-items: end; }
+.mountainGrid img { aspect-ratio: 3/4; object-fit: cover; }
+.mountainGrid .photo:first-child img { aspect-ratio: 4/3; }
+.passage { display: grid; grid-template-columns: .8fr 1fr .8fr; gap: clamp(1.5rem, 5vw, 5rem); align-items: center; padding: clamp(5rem, 8vw, 8rem) clamp(1.25rem, 5vw, 5rem); background: #d9b889; }
+.passage .photo:first-child { transform: rotate(-2deg); }
+.passage .photo:last-child { transform: translateY(9%) rotate(2deg); }
+.city { padding: clamp(5rem, 9vw, 9rem) clamp(1.25rem, 5vw, 5rem); background: #f6efe4; }
+.cityTitle { display: grid; grid-template-columns: .5fr 1.2fr 1fr; gap: 2rem; align-items: end; margin-bottom: 5rem; }
+.cityGrid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; align-items: start; }
+.cityGrid .photo:nth-child(even) { margin-top: 4rem; }
+.cityGrid img { aspect-ratio: 3/4; object-fit: cover; }
+.arch img { border-radius: 48% 48% 0 0 / 28% 28% 0 0; }
+.local { width: min(100%, 980px); margin: clamp(5rem, 9vw, 9rem) auto 0; display: grid; grid-template-columns: 1fr .62fr; gap: clamp(2rem, 7vw, 7rem); align-items: center; }
+.local h3 { color: var(--wine); }
+.night { display: grid; grid-template-columns: .85fr .75fr .8fr; gap: clamp(2rem, 5vw, 5rem); align-items: center; padding: clamp(5rem, 9vw, 9rem) clamp(1.25rem, 5vw, 5rem); background: #251a1c; color: #f2eadb; }
+.night h2 { color: #f2d9c0; margin-bottom: 2rem; }
+.nightCopy p:last-child { color: #c8b8b1; }
+.video { margin: 0; }
+.video video { display: block; width: 100%; max-height: 75vh; background: #100c0d; }
+.nightPhotos { display: grid; gap: 1rem; }
+.nightPhotos .photo:last-child { width: 72%; margin-left: auto; }
+.finale { display: grid; grid-template-columns: 1fr .55fr; gap: clamp(3rem, 9vw, 9rem); align-items: center; width: min(calc(100% - 2.5rem), 1080px); margin-inline: auto; padding-block: clamp(5rem, 9vw, 9rem); }
+.finalLink { display: inline-block; margin-top: 1.5rem; color: var(--wine); border-bottom: 1px solid currentColor; padding-block: .65rem; text-decoration: none; }
+
+@media (max-width: 800px) {
+  .hero { min-height: auto; grid-template-columns: 1fr; }
+  .heroCopy { padding-block: 3rem 4rem; }
+  .hero h1 { font-size: clamp(4rem, 19vw, 6rem); }
+  .heroPhoto { min-height: 66svh; }
+  .poles { left: auto; right: 1.5rem; bottom: -4rem; }
+  .route { grid-template-columns: repeat(2, 1fr); }
+  .route a:nth-child(2) { border-right: 0; }
+  .route a:nth-child(-n+2) { border-bottom: 1px solid #cbbda8; }
+  .chapter, .mountainCopy, .cityTitle, .local, .night, .finale { grid-template-columns: 1fr; }
+  .mountainGrid { grid-template-columns: 1.35fr .8fr; }
+  .mountainGrid .photo:last-child { grid-column: 2; margin-top: -55%; }
+  .passage { grid-template-columns: 1fr 1fr; }
+  .passageCopy { grid-column: 1 / -1; grid-row: 1; }
+  .cityGrid { grid-template-columns: repeat(2, 1fr); }
+  .cityGrid .photo:nth-child(even) { margin-top: 2.5rem; }
+  .local .photo, .finale .photo { width: 72%; margin-left: auto; }
+  .nightPhotos { grid-template-columns: 1fr 1fr; }
+  .nightPhotos .photo:last-child { width: 100%; margin-top: 2.5rem; }
+}
