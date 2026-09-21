@@ -44,6 +44,8 @@
 .panel-media { padding: 1.5rem 1.5rem 1.5rem 0; min-width: 0; }
 .panel-media .media-image { aspect-ratio: 5/4; border-radius: 10px; background: #2A3539; }
 .cycling-panel .media-image { background: #323A3B; }
+.venice-panel { border-color: #6d4a42; }
+.venice-panel .media-image { background: #322827; }
 .society-silence { padding-block: 6rem; margin: 0 auto; text-align: center; font-size: 1.3rem; line-height: 1.5; }
 .society-silence span { color: #B6BABC; }
 .society-home .fall-scene { background: #101215; }

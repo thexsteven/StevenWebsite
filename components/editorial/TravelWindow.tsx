@@ -8,7 +8,7 @@ import type { MediaName } from '@/lib/editorial/media';
 const journeys: { label: string; title: string; description: string; media: MediaName; href: string }[] = [
   { label: 'Hawaii', title: 'Ein anderer Alltag.', description: 'Sprachreise auf Oahu und unterwegs auf Big Island. Hawaii 2025.', media: 'hawaii', href: '/reisen/hawaii' },
   { label: 'Radtour', title: 'Über die Alpen.', description: 'Mit dem Fahrrad bis nach Südfrankreich. Sommer 2025.', media: 'cycling', href: '/reisen/radtour-cannes' },
-  { label: 'Anreise nach Venedig', title: 'Die Berge bei Nacht.', description: 'Zu viert im Van auf dem Weg nach Venedig. 2026.', media: 'night', href: '/reisen' },
+  { label: 'Venedig', title: 'Auf Umwegen.', description: 'Mit dem Wohnmobil über die Dolomiten bis in die Lagunenstadt. 2026.', media: 'venice', href: '/reisen/venedig' },
 ];
 
 export function TravelWindow() {

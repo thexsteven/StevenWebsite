@@ -18,7 +18,7 @@ const errors = [];
 const failures = [];
 page.on('pageerror', (error) => errors.push(error.message));
 page.on('response', (response) => { if (response.status() >= 400) failures.push(`${response.status()} ${response.url()}`); });
-const paths = ['/', '/reisen', '/reisen/hawaii', '/reisen/hawaii/flug-ankunft', '/reisen/hawaii/alltag', '/reisen/hawaii/adventures', '/reisen/hawaii/essen-kultur', '/reisen/hawaii/big-island', '/reisen/radtour-cannes', '/ueber-mich', '/karriere', '/karriere/semester-1', '/karriere/praxis-1', '/karriere/semester-2', '/impressum', '/datenschutz'];
+const paths = ['/', '/reisen', '/reisen/venedig', '/reisen/hawaii', '/reisen/hawaii/flug-ankunft', '/reisen/hawaii/alltag', '/reisen/hawaii/adventures', '/reisen/hawaii/essen-kultur', '/reisen/hawaii/big-island', '/reisen/radtour-cannes', '/ueber-mich', '/karriere', '/karriere/semester-1', '/karriere/praxis-1', '/karriere/semester-2', '/impressum', '/datenschutz'];
 const results = [];
 const placements = {};
 for (const width of [1440, 390, 360]) {
@@ -67,10 +67,10 @@ if (await selection.count()) {
   await selection.getByRole('button', { name: 'Radtour', exact: true }).click();
   assert.equal(await page.locator('.window-caption a').getAttribute('href'), '/reisen/radtour-cannes');
   assert.equal(await page.locator('.window-media [data-media]').getAttribute('data-media'), 'cycling');
-  await selection.getByRole('button', { name: 'Anreise nach Venedig', exact: true }).focus();
+  await selection.getByRole('button', { name: 'Venedig', exact: true }).focus();
   await page.keyboard.press('Enter');
-  assert.equal(await page.locator('.window-media [data-media]').getAttribute('data-media'), 'night');
-  assert.equal(await page.locator('.window-caption a').getAttribute('href'), '/reisen');
+  assert.equal(await page.locator('.window-media [data-media]').getAttribute('data-media'), 'venice');
+  assert.equal(await page.locator('.window-caption a').getAttribute('href'), '/reisen/venedig');
   await selection.getByRole('button', { name: 'Hawaii', exact: true }).click();
   await page.goto(base);
   await page.waitForFunction(() => window.ScrollCraft?.instances.length === 1);

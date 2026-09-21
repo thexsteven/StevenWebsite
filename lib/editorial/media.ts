@@ -5,6 +5,7 @@ export const media = {
   portrait: { desktop: 'spiegel-schwarzes-shirt' },
   hawaii: { desktop: 'kokohead-sonnenuntergang', mobile: 'ala-moana-palmen' },
   cycling: { desktop: 'grand-tour-schild' },
+  venice: { desktop: 'venedig-freunde' },
   fall: { desktop: 'fallschirm-absprung', mobile: 'fallschirm-gurtzeug' },
   freefall: { desktop: 'fallschirm-freifall' },
   parachute: { desktop: 'fallschirm-schirm-offen' },

@@ -175,3 +175,80 @@ html:not(.sc-ready) .career-copy { opacity: 1; transform: none; }
   .flight-scene { height: auto !important; }
   .flight-scene [data-sc-stage] { position: relative; height: 100svh; }
 }
+
+/* Venedig: Lagunenfarben, steinerne Bögen und die Streifen der Anlegepfähle. */
+.venice-story { --venice-cream: #f2eadb; --venice-lagoon: #174f50; --venice-brick: #a84835; --venice-wine: #692f34; background: var(--venice-cream); color: #201b18; }
+.venice-story .meta { color: inherit; opacity: .62; }
+.venice-hero { min-height: calc(100svh - 84px); display: grid; grid-template-columns: minmax(320px, .85fr) minmax(0, 1.15fr); position: relative; overflow: hidden; background: #e9dcc7; }
+.venice-hero-copy { align-self: center; padding: clamp(3rem, 8vw, 8rem) var(--sc-gutter); z-index: 2; }
+.venice-hero-copy h1 { font-size: clamp(4rem, 8vw, 8.5rem); line-height: .86; color: var(--venice-wine); }
+.venice-hero-copy h1 em { color: var(--venice-lagoon); font-weight: 300; }
+.venice-hero-copy .lede { margin-top: 2.5rem; color: #5d5048; }
+.venice-hero-photo { align-self: stretch; min-height: 72svh; }
+.venice-hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+.venice-hero-photo figcaption { position: absolute; right: 1.5rem; bottom: 1.25rem; color: white; text-shadow: 0 1px 12px #000; }
+.venice-poles { position: absolute; left: calc(50% - 28px); bottom: -3rem; display: flex; gap: .65rem; z-index: 3; transform: rotate(4deg); }
+.venice-poles span { width: 16px; height: 190px; border-radius: 8px 8px 0 0; background: repeating-linear-gradient(-45deg, #f6ead6 0 15px, var(--venice-brick) 15px 30px); box-shadow: 0 8px 20px #201b1830; }
+.venice-route { display: grid; grid-template-columns: repeat(4, 1fr); border-block: 1px solid #cbbda8; background: #f8f1e5; }
+.venice-route a { padding: 1.35rem var(--sc-gutter); text-decoration: none; font-family: var(--sc-font-display); font-size: 1.2rem; border-right: 1px solid #cbbda8; }
+.venice-route span { display: block; margin-bottom: .35rem; font: .7rem var(--sc-font-text); letter-spacing: .1em; color: var(--venice-brick); }
+.venice-chapter { display: grid; grid-template-columns: minmax(280px, .7fr) minmax(0, 1.3fr); gap: clamp(3rem, 8vw, 8rem); padding: clamp(5rem, 9vw, 9rem) var(--sc-gutter); }
+.venice-copy { align-self: center; max-width: 560px; }
+.venice-copy h2, .venice-passage h2, .venice-city h2, .venice-finale h2 { color: var(--venice-lagoon); margin-bottom: 2rem; }
+.venice-copy p + p, .venice-passage-copy p, .venice-city-title > p:last-child, .venice-local p, .venice-finale p { margin-top: 1.4rem; color: #5d5048; }
+.venice-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; align-items: start; }
+.venice-pair .venice-photo:nth-child(2) { margin-top: 12%; }
+.venice-photo { margin: 0; position: relative; }
+.venice-photo img { display: block; width: 100%; height: auto; object-fit: cover; }
+.venice-photo figcaption, .venice-video figcaption { margin-top: .8rem; font-size: .8rem; color: inherit; opacity: .68; }
+.venice-mountain { padding: clamp(5rem, 9vw, 9rem) var(--sc-gutter); background: #172122; }
+.venice-mountain-copy { display: grid; grid-template-columns: .55fr 1fr 1fr; gap: 2rem; align-items: end; margin-bottom: 4rem; }
+.venice-mountain-copy h2 { color: #f2eadb; }
+.venice-mountain-copy p:last-child { color: #bac7c3; padding-bottom: .5rem; }
+.venice-mountain-gallery { display: grid; grid-template-columns: 1.35fr .8fr .8fr; gap: 1.25rem; align-items: end; }
+.venice-mountain-gallery img { aspect-ratio: 3/4; height: auto; object-fit: cover; }
+.venice-mountain-gallery .venice-wide img { aspect-ratio: 4/3; }
+.venice-passage { display: grid; grid-template-columns: .8fr 1fr .8fr; gap: clamp(1.5rem, 5vw, 5rem); align-items: center; padding: clamp(5rem, 8vw, 8rem) var(--sc-gutter); background: #d9b889; }
+.venice-passage .venice-photo:first-child { transform: rotate(-2deg); }
+.venice-passage .venice-photo:last-child { transform: translateY(9%) rotate(2deg); }
+.venice-city { padding: clamp(5rem, 9vw, 9rem) var(--sc-gutter); background: #f6efe4; }
+.venice-city-title { display: grid; grid-template-columns: .5fr 1.2fr 1fr; gap: 2rem; align-items: end; margin-bottom: 5rem; }
+.venice-city-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; align-items: start; }
+.venice-city-grid .venice-photo:nth-child(even) { margin-top: 4rem; }
+.venice-city-grid img { aspect-ratio: 3/4; object-fit: cover; }
+.venice-arch img { border-radius: 48% 48% 0 0 / 28% 28% 0 0; }
+.venice-local { width: min(100%, 980px); margin: clamp(5rem, 9vw, 9rem) auto 0; display: grid; grid-template-columns: 1fr .62fr; gap: clamp(2rem, 7vw, 7rem); align-items: center; }
+.venice-local h3 { color: var(--venice-wine); }
+.venice-night { display: grid; grid-template-columns: .85fr .75fr .8fr; gap: clamp(2rem, 5vw, 5rem); align-items: center; padding: clamp(5rem, 9vw, 9rem) var(--sc-gutter); background: #251a1c; }
+.venice-night h2 { color: #f2d9c0; margin-bottom: 2rem; }
+.venice-night-copy p:last-child { color: #c8b8b1; }
+.venice-video { margin: 0; }
+.venice-video video { display: block; width: 100%; max-height: 75vh; background: #100c0d; }
+.venice-night-photos { display: grid; gap: 1rem; }
+.venice-night-photos .venice-photo:last-child { width: 72%; margin-left: auto; }
+.venice-finale { display: grid; grid-template-columns: 1fr .55fr; gap: clamp(3rem, 9vw, 9rem); align-items: center; width: min(100% - var(--sc-gutter) * 2, 1080px); margin-inline: auto; padding-block: clamp(5rem, 9vw, 9rem); }
+.venice-finale .text-link { margin-top: 1.5rem; color: var(--venice-wine); }
+
+@media (max-width: 800px) {
+  .venice-hero { min-height: auto; grid-template-columns: 1fr; }
+  .venice-hero-copy { padding-block: 3rem 4rem; }
+  .venice-hero-copy h1 { font-size: clamp(4rem, 19vw, 6rem); }
+  .venice-hero-photo { min-height: 66svh; }
+  .venice-poles { left: auto; right: 1.5rem; bottom: -4rem; }
+  .venice-route { grid-template-columns: repeat(2, 1fr); }
+  .venice-route a:nth-child(2) { border-right: 0; }
+  .venice-route a:nth-child(-n+2) { border-bottom: 1px solid #cbbda8; }
+  .venice-chapter, .venice-mountain-copy, .venice-city-title, .venice-local, .venice-night, .venice-finale { grid-template-columns: 1fr; }
+  .venice-chapter { gap: 3rem; }
+  .venice-mountain-gallery { grid-template-columns: 1.35fr .8fr; }
+  .venice-mountain-gallery .venice-photo:last-child { grid-column: 2; margin-top: -55%; }
+  .venice-passage { grid-template-columns: 1fr 1fr; }
+  .venice-passage-copy { grid-column: 1 / -1; grid-row: 1; }
+  .venice-passage .venice-photo:last-child { transform: translateY(8%) rotate(2deg); }
+  .venice-city-grid { grid-template-columns: repeat(2, 1fr); }
+  .venice-city-grid .venice-photo:nth-child(even) { margin-top: 2.5rem; }
+  .venice-local .venice-photo { width: 72%; margin-left: auto; }
+  .venice-night-photos { grid-template-columns: 1fr 1fr; }
+  .venice-night-photos .venice-photo:last-child { width: 100%; margin-top: 2.5rem; }
+  .venice-finale .venice-photo { width: 72%; margin-left: auto; }
+}
