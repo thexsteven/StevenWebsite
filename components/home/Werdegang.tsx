@@ -98,6 +98,7 @@ export function Werdegang() {
             <p className="home-intro">Was ich in den Modulen bearbeitet habe und aus der Praxis mitnehme. Mit Themenvorschau und ausgewählten Lernnotizen aus meinem Notion-Hub.</p>
           </header>
           <StudyPreview />
+          <p><Link href="/karriere/klausurvorbereitung-winter-2026" className="home-link">Mein Lernplan für die Klausuren Winter 2026 →</Link></p>
         </section>
       </div>
     </section>

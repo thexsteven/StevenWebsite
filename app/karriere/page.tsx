@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { StoryDetailHeader } from '@/components/StoryDetailHeader';
 import { StoryPagination } from '@/components/StoryPagination';
@@ -24,6 +25,7 @@ export default function KarriereHub() {
         <h2 id="phases-title">Theorie- und Praxissemester</h2>
         <StudyPreview />
       </section>
+      <p><Link href="/karriere/klausurvorbereitung-winter-2026" className="home-link">Mein Lernplan für die Klausuren Winter 2026 →</Link></p>
       <p>Die Übersichten zeigen die dokumentierten Schwerpunkte meines Lern-Hubs. Sie sind kein vollständiges Modulhandbuch. Weitere Studienphasen werden ergänzt.</p>
       <StoryPagination actions={[
         { href: '/#werdegang', label: 'Zur Startseite', ghost: true },
