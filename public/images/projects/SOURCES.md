@@ -5,7 +5,7 @@ keine erfundenen Oberflächen oder Messwerte.
 
 | Datei | Quelle und aufgenommene Ansicht |
 | --- | --- |
-| `lern-trainer-galerie.png` | https://lern-trainer.vercel.app · „Vl14 Dijkstra“, Graph nach zwei Schritten mit „Vor“. Eigener Browser-Screenshot. |
+| `lern-trainer-galerie-dijkstra.jpg` | https://lern-trainer.vercel.app · Aktueller Dijkstra-Trainer, Graph nach zwei Schritten mit „Vor“. Eigener Browser-Screenshot vom 27. September 2026, Detailansicht ohne Seitenränder. |
 | `digital-trainer.png` | https://digital-trainer-five.vercel.app · Themenübersicht als Gast. Eigener Browser-Screenshot. |
 | `auslandssemester-hub.png` | https://auslandssemester-hub.vercel.app · Standortvergleich. Eigener Browser-Screenshot; vorhandene TODOs sind Teil des Projekts. |
 | `reise-plan.png` | https://reise-plan.vercel.app · Reiseübersicht. Eigener Browser-Screenshot. |

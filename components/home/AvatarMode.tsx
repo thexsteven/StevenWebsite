@@ -5,40 +5,45 @@ import { useState } from 'react';
 
 import { learnModeOutfit, type AvatarOutfit } from '@/lib/avatar';
 
+import styles from './AvatarMode.module.css';
+
 export function AvatarMode({ outfit }: { outfit: AvatarOutfit }) {
   const [isLearnMode, setIsLearnMode] = useState(false);
 
   return (
-    <button
-      type="button"
-      className={`home-avatar${isLearnMode ? ' home-avatar--powered' : ''}`}
-      aria-pressed={isLearnMode}
-      aria-label={isLearnMode ? 'Normal mode aktivieren' : 'Learn mode aktivieren'}
-      onClick={() => setIsLearnMode((currentMode) => !currentMode)}
-    >
-      <span className="home-avatar-stage" aria-hidden="true">
-        <Image
-          className="home-avatar-image home-avatar-image--normal"
-          src={outfit.image}
-          alt=""
-          width={1024}
-          height={1536}
-          priority
-          unoptimized
-        />
-        <Image
-          className="home-avatar-image home-avatar-image--powered"
-          src={learnModeOutfit.image}
-          alt=""
-          width={1024}
-          height={1536}
-          priority
-          unoptimized
-        />
-      </span>
-      <span className="home-avatar-label">
-        {isLearnMode ? 'Normal mode' : 'Learn mode'}
-      </span>
-    </button>
+    <div className={styles.portrait}>
+      <Image
+        className={styles.image}
+        src={outfit.image}
+        alt={outfit.alt}
+        aria-hidden={isLearnMode}
+        width={1024}
+        height={1536}
+        priority
+        sizes="(max-width: 767px) 100vw, (max-width: 1320px) 40vw, 528px"
+      />
+      <Image
+        className={styles.image}
+        src={learnModeOutfit.image}
+        alt={learnModeOutfit.alt}
+        aria-hidden={!isLearnMode}
+        width={1024}
+        height={1536}
+        loading="eager"
+        fetchPriority="low"
+        sizes="(max-width: 767px) 100vw, (max-width: 1320px) 40vw, 528px"
+      />
+      <button
+        type="button"
+        className={styles.control}
+        aria-pressed={isLearnMode}
+        onClick={() => setIsLearnMode((currentMode) => !currentMode)}
+      >
+        <span className={styles.label}>
+          Learn Mode
+          <span className={styles.track} aria-hidden="true" />
+        </span>
+      </button>
+    </div>
   );
 }

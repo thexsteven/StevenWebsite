@@ -23,9 +23,11 @@ export function HeroBadge() {
     return () => document.removeEventListener('keydown', onKey);
   }, []);
 
+  if (!revealed) return null;
+
   return (
     <div
-      className={`hero-badge ${revealed ? 'is-visible' : 'is-hidden'}`}
+      className="hero-badge is-visible"
       role="status"
       aria-live="polite"
     >
@@ -33,6 +35,8 @@ export function HeroBadge() {
       <img
         src="https://res.cloudinary.com/dozdjb4fi/image/upload/v1774237627/images/Mr_Bean_GIF.gif"
         alt="Easter Egg: Winken"
+        width={36}
+        height={36}
         className="hero-badge-gif"
       />
       <span>Secret unlocked · HI</span>

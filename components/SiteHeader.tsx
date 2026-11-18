@@ -21,7 +21,6 @@ const VARIANTS: Record<Variant, VariantConfig> = {
       { href: '#projekte', label: 'Projekte' },
       { href: '#werdegang', label: 'Werdegang' },
       { href: '#beyond', label: 'Beyond Code' },
-      { href: '#contact', label: 'Kontakt' },
     ],
   },
   // Hub-Seiten der zweiten Ebene (/projekte, /reisen, /sport, /bibliothek).
@@ -31,7 +30,7 @@ const VARIANTS: Record<Variant, VariantConfig> = {
     links: [
       { href: '/#projekte', label: 'Projekte' },
       { href: '/#werdegang', label: 'Werdegang' },
-      { href: '/#contact', label: 'Kontakt' },
+      { href: '/#beyond', label: 'Beyond Code' },
     ],
   },
   career: {
@@ -40,7 +39,7 @@ const VARIANTS: Record<Variant, VariantConfig> = {
     links: [
       { href: '/#career', label: 'Karriere' },
       { href: '/#travel', label: 'Reisen' },
-      { href: '/#contact', label: 'Kontakt' },
+      { href: '/#projekte', label: 'Projekte' },
     ],
   },
   'travel-hawaii': {
@@ -49,7 +48,7 @@ const VARIANTS: Record<Variant, VariantConfig> = {
     links: [
       { href: '/#travel', label: 'Reisen' },
       { href: '/#about', label: 'Über mich' },
-      { href: '/#contact', label: 'Kontakt' },
+      { href: '/#projekte', label: 'Projekte' },
     ],
   },
   'travel-cannes': {
@@ -58,7 +57,7 @@ const VARIANTS: Record<Variant, VariantConfig> = {
     links: [
       { href: '/#travel', label: 'Travel' },
       { href: '/#about', label: 'About' },
-      { href: '/#contact', label: 'Contact' },
+      { href: '/#projekte', label: 'Projects' },
     ],
   },
   motivation: {
@@ -67,7 +66,7 @@ const VARIANTS: Record<Variant, VariantConfig> = {
     links: [
       { href: '/#about', label: 'Über mich' },
       { href: '/#resume', label: 'Lebenslauf' },
-      { href: '/#contact', label: 'Kontakt' },
+      { href: '/#projekte', label: 'Projekte' },
     ],
   },
 };
@@ -76,8 +75,8 @@ export function SiteHeader({ variant }: { variant: Variant }) {
   const { navLabel, logoHref, links } = VARIANTS[variant];
 
   return (
-    <header className="site-header" role="banner">
-      <nav className="site-nav" aria-label={navLabel}>
+    <header className={variant === 'home' ? 'site-header site-header--home nav' : 'site-header'} role="banner">
+      <nav className={variant === 'home' ? 'site-nav wrap' : 'site-nav'} aria-label={navLabel}>
         <a href={logoHref} className="logo">
           Steven
         </a>

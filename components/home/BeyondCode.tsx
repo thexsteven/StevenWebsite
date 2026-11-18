@@ -44,7 +44,7 @@ export function BeyondCode() {
       {/* Rücksprung `/#travel` aus den Reise-Unterseiten. */}
       <span id="travel" className="home-anchor-alias" aria-hidden="true" />
 
-      <div className="home-shell">
+      <div className="wrap">
         <header className="home-head">
           <p className="home-kicker">Beyond Code</p>
           <h2 id="home-beyond-title" className="home-title">

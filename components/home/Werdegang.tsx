@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { Timeline, type TimelineItem } from '@/components/Timeline';
 import { StudyPreview } from '@/components/StudyPreview';
 
+import styles from './Werdegang.module.css';
+
 /**
  * Die fünf Stationen – einmal. Vorher lagen dieselben Daten dreifach auf der
  * Startseite: als Bildstreifen (`About`), als Timeline und als Balkendiagramm
@@ -12,7 +14,7 @@ const STATIONS: TimelineItem[] = [
   {
     meta: 'Sept. 2025 – heute',
     title: 'Angewandte Informatik (DHBW Mosbach)',
-    desc: 'Duales Studium mit Praxisphasen bei Emerson.',
+    desc: 'Duales Studium mit Praxisphasen in der Industrie.',
   },
   {
     meta: 'März 2023 – Feb. 2025',
@@ -38,69 +40,67 @@ const STATIONS: TimelineItem[] = [
 
 export function Werdegang() {
   return (
-    <section
-      id="werdegang"
-      className="home-section home-werdegang"
-      aria-labelledby="home-werdegang-title"
-    >
-      {/* Rücksprünge aus den Unterseiten (`/#resume`, `/#career`, `/#about`)
-          landen weiter hier, ohne dass die Unterseiten angefasst werden. */}
-      <span id="resume" className="home-anchor-alias" aria-hidden="true" />
-      <span id="career" className="home-anchor-alias" aria-hidden="true" />
-      <span id="about" className="home-anchor-alias" aria-hidden="true" />
+    <>
+      <section id="werdegang" className="home-section" aria-labelledby="home-werdegang-title">
+        <span id="resume" className="home-anchor-alias" aria-hidden="true" />
+        <span id="career" className="home-anchor-alias" aria-hidden="true" />
+        <span id="about" className="home-anchor-alias" aria-hidden="true" />
 
-      <div className="home-shell">
-        <header className="home-head">
-          <p className="home-kicker">Werdegang</p>
-          <h2 id="home-werdegang-title" className="home-title">
-            Erst Maschinen gebaut. Jetzt Software.
-          </h2>
-        </header>
-
-        <div className="home-werdegang-layout">
-          <div className="home-werdegang-text">
-            <p>
-              Ich habe nie wirklich für die Schule gelernt – weder in der
-              Realschule noch in der Berufsschule. Arbeit war körperlich, und
-              das war okay, bis eine Knieverletzung diesen Plan zerstörte.
-            </p>
-            <p>
-              Plötzlich musste ich mit dem Kopf verdienen statt mit den Händen.
-              Beim Maschinenbau-Techniker habe ich mich zum ersten Mal in
-              meinem Leben wirklich angestrengt – und gemerkt, dass Lernen Spaß
-              macht. Abschluss: <strong>1,2</strong>.
-            </p>
-            <p>
-              Danach war klar: Ich wollte in ein Feld, das maximales Lernen
-              fordert. Aus acht Jahren Metall bleibt der Reflex, Dinge
-              auseinanderzunehmen, bis ich sie verstanden habe – heute sind es
-              eben Systeme statt Getriebe.
-            </p>
-
-            <p className="home-werdegang-links">
-              <Link href="/karriere" className="home-link">
-                Semester im Detail
-                <span aria-hidden="true"> →</span>
-              </Link>
-              <Link href="/karriere/praxis-1" className="home-link">
-                Praxisphase bei Emerson
-                <span aria-hidden="true"> →</span>
-              </Link>
-            </p>
+        <div className="wrap">
+          <header className="home-head">
+            <p className="home-kicker">Werdegang</p>
+            <h2 id="home-werdegang-title" className="home-title">
+              Wie ich zum Programmieren kam.
+            </h2>
+          </header>
+          <div className={styles.journey}>
+            <div className={styles.story}>
+              <p>
+                Ich habe nie wirklich für die Schule gelernt – weder in der
+                Realschule noch in der Berufsschule. Arbeit war körperlich, und
+                das war okay, bis eine Knieverletzung diesen Plan zerstörte.
+              </p>
+              <p>
+                Beim Maschinenbau-Techniker habe ich mich zum ersten Mal in
+                meinem Leben wirklich angestrengt – und gemerkt, dass Lernen
+                Spaß macht. Abgeschlossen habe ich mit <strong>1,2</strong>.
+              </p>
+              <p>
+                Aus acht Jahren Metall bleibt der Reflex, Dinge
+                auseinanderzunehmen, bis ich sie verstanden habe. Heute
+                sind es Systeme und Algorithmen.
+              </p>
+              <div className={styles.links}>
+                <Link href="/karriere" className="home-link">
+                  Semester im Detail <span aria-hidden="true">→</span>
+                </Link>
+                <Link href="/karriere/praxis-1" className="home-link">
+                  Einblicke in die Praxisphase <span aria-hidden="true">→</span>
+                </Link>
+              </div>
+            </div>
+            <Timeline items={STATIONS} />
           </div>
-
-          <Timeline items={STATIONS} />
         </div>
-        <section className="home-study" aria-labelledby="home-study-title">
+      </section>
+
+      <section id="studium" className={`home-section ${styles.study}`} aria-labelledby="home-study-title">
+        <div className="wrap">
           <header className="home-head">
             <p className="home-kicker">Duales Studium · DHBW Mosbach</p>
-            <h2 id="home-study-title" className="home-title">Theorie trifft Praxis.</h2>
-            <p className="home-intro">Was ich in den Modulen bearbeitet habe und aus der Praxis mitnehme. Mit Themenvorschau und ausgewählten Lernnotizen aus meinem Notion-Hub.</p>
+            <h2 id="home-study-title" className="home-title">Mein Studium zwischen Hörsaal und Betrieb.</h2>
+            <p className="home-intro">
+              Hier zeige ich, woran ich in den Semestern arbeite, und teile meine Lernnotizen.
+            </p>
           </header>
           <StudyPreview />
-          <p><Link href="/karriere/klausurvorbereitung-winter-2026" className="home-link">Mein Lernplan für die Klausuren Winter 2026 →</Link></p>
-        </section>
-      </div>
-    </section>
+          <div className={styles.links}>
+            <Link href="/karriere/klausurvorbereitung-winter-2026" className="home-link">
+              Mein Lernplan für die Klausuren Winter 2026 <span aria-hidden="true">→</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

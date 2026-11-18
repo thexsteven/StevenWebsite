@@ -1,0 +1,116 @@
+.portrait {
+  position: relative;
+  justify-self: end;
+  width: 100%;
+  height: var(--avatar-height, clamp(22rem, 64svh, 39rem));
+  overflow: hidden;
+  border-radius: 0.25rem;
+  background: #1c1c1c;
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 5%;
+  transition: opacity 240ms ease-out;
+}
+
+.image[aria-hidden='true'] {
+  opacity: 0;
+}
+
+.control {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  padding: clamp(0.75rem, 2vw, 1.5rem);
+  border: 0;
+  background: transparent;
+  color: #1b2940;
+  font: inherit;
+  cursor: pointer;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-height: 2.75rem;
+  padding: 0.5rem 0.85rem 0.5rem 1rem;
+  border-radius: 2rem;
+  background: #faf7ee;
+  font-size: 0.875rem;
+  font-weight: 650;
+  line-height: 1;
+  transition: transform 160ms ease;
+}
+
+.track {
+  display: inline-flex;
+  align-items: center;
+  width: 2.25rem;
+  height: 1.375rem;
+  padding: 0.1875rem;
+  border-radius: 2rem;
+  background: #62686d;
+}
+
+.track::after {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #fff;
+  content: '';
+  transition: transform 180ms ease;
+}
+
+.control[aria-pressed='true'] .track {
+  background: #875506;
+}
+
+.control[aria-pressed='true'] .track::after {
+  transform: translateX(0.875rem);
+}
+
+.control:focus-visible {
+  outline: 3px solid #faf7ee;
+  outline-offset: -5px;
+}
+
+.control:focus-visible .label {
+  outline: 3px solid #faf7ee;
+  outline-offset: 3px;
+}
+
+@media (hover: hover) {
+  .control:hover .label {
+    transform: translateY(-2px);
+  }
+}
+
+.control:active .label {
+  transform: translateY(1px);
+}
+
+@media (max-width: 767px) {
+  .portrait {
+    justify-self: center;
+    width: 100%;
+    height: var(--avatar-height, clamp(12rem, 34svh, 19rem));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .image,
+  .label,
+  .track::after {
+    transition: none;
+  }
+}

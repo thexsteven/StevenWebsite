@@ -1,75 +1,38 @@
-import { Suspense } from 'react';
 import Link from 'next/link';
 
-import { ProjectGrid } from '@/components/projects/ProjectGrid';
-import { ProjectGridSkeleton } from '@/components/projects/ProjectCardSkeleton';
-import { getProjectsWithStats } from '@/lib/projects';
-
-/** Kuratierte Karten auf der Startseite. Der Rest lebt auf `/projekte`. */
-const HOME_PROJECT_COUNT = 3;
-
-/**
- * Die drei vordersten Projekte plus GitHub-Live-Daten. Eigene async-Komponente,
- * damit `<Suspense>` währenddessen das Skeleton in identischen Maßen zeigt.
- */
-async function FeaturedProjectsContent() {
-  const projects = await getProjectsWithStats();
-
-  if (projects.length === 0) {
-    return (
-      <p className="home-empty">
-        Die Projektgalerie füllt sich gerade – die ersten Repositories landen
-        hier in Kürze.
-      </p>
-    );
-  }
-
-  // `getProjectsWithStats` sortiert Featured zuerst, dann nach `order`. Auf der
-  // Startseite stehen die drei gleichwertig nebeneinander: das zweispaltige
-  // Featured-Layout würde die Reihe aufbrechen, die hier die Aussage trägt.
-  const featured = projects
-    .slice(0, HOME_PROJECT_COUNT)
-    .map((project) => ({ ...project, featured: false }));
-
-  return <ProjectGrid projects={featured} />;
-}
+import gallery from '@/content/projects/lern-trainer-galerie.json';
+import { TrainerPreview } from './TrainerPreview';
+import styles from './FeaturedProjects.module.css';
 
 export function FeaturedProjects() {
   return (
     <section
       id="projekte"
-      className="home-section home-projects"
+      className={`home-section ${styles.project}`}
       aria-labelledby="home-projekte-title"
     >
-      <div className="home-shell">
-        <header className="home-head">
-          <p className="home-kicker">Projekte</p>
-          <h2 id="home-projekte-title" className="home-title">
-            Woran ich gerade baue.
+      <div className="wrap">
+        <header className={styles.intro}>
+          <h2 id="home-projekte-title" className={styles.title}>
+            Wie findet Dijkstra den kürzesten Weg?
           </h2>
-          <p className="home-intro">
-            Vom ersten Aha-Moment bis zur eigenen Anwendung. Drei Arbeiten zum
-            Reinschauen, Ausprobieren und Weiterdenken.
-          </p>
+          <div>
+            <p className={styles.copy}>
+              Für meine Klausuren habe ich über 30 interaktive Übungen gebaut.
+              Im <a className="home-link" href={new URL('/trainer/dijkstra', gallery.liveUrl).href}>Dijkstra-Trainer</a> gehst du den Graphen Schritt für Schritt durch
+              und siehst, welcher Knoten als Nächstes an der Reihe ist.
+            </p>
+            <div className={styles.actions}>
+              <a href={gallery.liveUrl} className="home-btn home-btn--primary">
+                Lerntrainer ausprobieren
+              </a>
+              <Link href="/projekte" className={`home-link ${styles.all}`}>
+                Alle Projekte <span aria-hidden="true">→</span>
+              </Link>
+            </div>
+          </div>
         </header>
-
-        <Suspense
-          fallback={
-            <ProjectGridSkeleton
-              count={HOME_PROJECT_COUNT}
-              featuredCount={0}
-            />
-          }
-        >
-          <FeaturedProjectsContent />
-        </Suspense>
-
-        <p className="home-more">
-          <Link href="/projekte" className="home-link">
-            Alle Projekte ansehen
-            <span aria-hidden="true"> →</span>
-          </Link>
-        </p>
+        <TrainerPreview src={gallery.screenshot} />
       </div>
     </section>
   );
