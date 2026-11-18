@@ -1,0 +1,16 @@
+{
+  "slug": "klausurtrainer",
+  "title": "Klausur-Trainer für Theoretische Informatik II",
+  "tagline": "Laufzeiten bestimmen, Rekursion nachvollziehen und Pseudocode lesen.",
+  "description": "Zur Klausurvorbereitung habe ich Übungen zu Algorithmen, Datenstrukturen und Hashing gesammelt. Musterlösungen erklären den Rechenweg. Ein lokales Profil speichert den Lernfortschritt im Browser.",
+  "repo": "thexsteven/klausurtrainer",
+  "liveUrl": "https://klausurtrainer.vercel.app",
+  "screenshot": "/images/projects/klausurtrainer.png",
+  "techStack": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "featured": false,
+  "order": 53
+}

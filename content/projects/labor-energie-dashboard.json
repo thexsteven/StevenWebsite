@@ -1,0 +1,17 @@
+{
+  "slug": "labor-energie-dashboard",
+  "title": "Energiemonitoring im Industrie-4.0-Labor",
+  "tagline": "Ein gemeinsames Dashboard für Energie- und Verbrauchsmesswerte.",
+  "description": "Im Anwendungsprojekt haben wir als Team ein Dashboard entwickelt, mit dem sich Messreihen aus dem Labor filtern und als interaktives Diagramm betrachten lassen. Python bereitet die Messwerte auf, eine REST-Schnittstelle stellt sie der Angular-Oberfläche bereit.",
+  "repo": null,
+  "liveUrl": null,
+  "screenshot": null,
+  "techStack": [
+    "Angular",
+    "Python",
+    "REST",
+    "Apache ECharts"
+  ],
+  "featured": false,
+  "order": 230
+}

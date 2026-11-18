@@ -26,7 +26,12 @@ export default function KarriereHub() {
         <StudyPreview />
       </section>
       <p><Link href="/karriere/klausurvorbereitung-winter-2026" className="home-link">Mein Lernplan für die Klausuren Winter 2026 →</Link></p>
-      <p>Die Übersichten zeigen die dokumentierten Schwerpunkte meines Lern-Hubs. Sie sind kein vollständiges Modulhandbuch. Weitere Studienphasen werden ergänzt.</p>
+      <section className="career-hub-section" aria-labelledby="international-title">
+        <h2 id="international-title">Fachenglisch und Auslandssemester</h2>
+        <p>Im Fachenglisch übe ich, technische Begriffe verständlich auszusprechen, einen Vortrag auf Englisch zu gliedern und auf Rückfragen einzugehen.</p>
+        <p>Für meine Auslandsplanung habe ich die Studienangebote in Seoul, Taipeh und Bangkok verglichen. Für die Mahidol University habe ich Kurse dem Studienplan in Mosbach gegenübergestellt.</p>
+        <Link href="/projekte#project-auslandssemester-hub-title" className="home-link">Zum Auslandssemester-Hub →</Link>
+      </section>
       <StoryPagination actions={[
         { href: '/#werdegang', label: 'Zur Startseite', ghost: true },
         { href: '/karriere/semester-1', label: 'Semester 1 ansehen' },

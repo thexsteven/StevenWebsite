@@ -1,0 +1,17 @@
+{
+  "slug": "immigration-desk",
+  "title": "Immigration Desk",
+  "tagline": "Eine fiktive Einreisekontrolle als Java-Bibliothek.",
+  "description": "Für Software Engineering habe ich den Ablauf einer Einreisekontrolle modelliert und in Java umgesetzt. Automatisierte Tests spielen durch, wie die Bibliothek auf gültige und ungültige Dokumente reagiert. Dokumentenprüfung, Biometrie und Gebührenberechnung sind über eigene Schnittstellen angebunden.",
+  "repo": null,
+  "liveUrl": null,
+  "screenshot": null,
+  "techStack": [
+    "Java",
+    "Maven",
+    "JUnit",
+    "Mockito"
+  ],
+  "featured": false,
+  "order": 210
+}

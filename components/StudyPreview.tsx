@@ -5,6 +5,7 @@ const phases = [
   { slug: 'semester-1', title: 'Theorie-Semester 1', label: 'Grundlagen', summary: 'Von Python und dem eigenen Dungeon-Spiel bis zu linearer Algebra, Web Engineering und Elektrotechnik.' },
   { slug: 'praxis-1', title: 'Praxissemester', label: 'Anwenden', summary: 'Daten verstehen, Annahmen überprüfen und Auswertungen nachvollziehbar dokumentieren.' },
   { slug: 'semester-2', title: 'Theorie-Semester 2', label: 'Vertiefen', summary: 'Algorithmen, Webprojekte und digitale Systeme – mit Einblicken in meine Lernnotizen.' },
+  { slug: 'semester-3', title: 'Theorie-Semester 3', label: 'Modellieren', summary: 'Kellerautomaten, Datenbankentwurf und Mikrocontroller. In Software Engineering gehören UML-Modelle und Tests zu meinen Projektarbeiten.' },
 ];
 
 export function StudyPreview() {

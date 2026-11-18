@@ -4957,7 +4957,7 @@ body:has(.home-main) .skip-link:focus { z-index: 101; }
 
 .study-preview {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--space-lg);
   margin-block: var(--space-xl);
 }
@@ -5019,9 +5019,14 @@ body:has(.home-main) .skip-link:focus { z-index: 101; }
   margin-top: 0.5rem;
 }
 
-.study-link-pending {
-  font-size: 0.9rem;
-  color: var(--color-muted);
+@media (min-width: 1180px) {
+  .study-preview {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.projects h3[id] {
+  scroll-margin-top: var(--scroll-offset);
 }
 
 @media (max-width: 800px) {

@@ -1,8 +1,10 @@
+import Link from 'next/link';
 import { learningHub, studyModules } from '@/lib/study';
 
 const anchors: Record<string, string[]> = {
   'semester-1': ['mathe', 'webeng', 'prog', 'elektro', 'thinf', 'schluessel', 'projekt'],
   'semester-2': ['mathe', 'webeng', 'algo', 'daten', 'anwendung', 'prog', 'digital'],
+  'semester-3': ['datenbanken', 'formale-sprachen', 'netztechnik', 'mathe', 'software-engineering', 'systemnah', 'webeng'],
   'praxis-1': ['daten', 'fragen', 'struktur'],
 };
 
@@ -28,13 +30,22 @@ export function StudyModules({ phase }: { phase: string }) {
           </header>
           <div className="module-intro"><p>{module.summary}</p></div>
           <ul className="study-topics">{module.topics.map((topic) => <li key={topic}>{topic}</li>)}</ul>
-          {theory && (
+          {module.projects && (
+            <ul className="study-topics">
+              {module.projects.map((project) => (
+                <li key={project.slug}>
+                  <Link className="home-link" href={`/projekte#project-${project.slug}-title`}>
+                    Projekt ansehen · {project.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
+          {theory && module.view && (
             <div className="module-deepdive">
-              {module.view ? (
-                <a className="module-deeplink-btn" href={`${learningHub}?v=${module.view}`} target="_blank" rel="noopener noreferrer" aria-label={`${module.title}: Lernnotizen in Notion (neuer Tab)`}>
-                  <span aria-hidden="true">↗</span> Lernnotizen in Notion
-                </a>
-              ) : <p className="study-link-pending">Notion-Link wird bald hinzugefügt.</p>}
+              <a className="module-deeplink-btn" href={`${learningHub}?v=${module.view}`} target="_blank" rel="noopener noreferrer" aria-label={`${module.title}: Lernnotizen in Notion (neuer Tab)`}>
+                <span aria-hidden="true">↗</span> Lernnotizen in Notion
+              </a>
             </div>
           )}
         </article>

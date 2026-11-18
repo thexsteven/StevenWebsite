@@ -18,12 +18,13 @@ export default function Semester2() {
         titleId="summary-title"
         title="Theorie-Semester 2"
         meta="Informatik · 7 Module"
-        summary="Algorithmen vertiefen, Webprojekte weiterdenken und digitale Systeme verstehen. Ein Einblick in meine Lernnotizen: Je nach Modul sind bereits ausführliche Lerneinheiten oder erste kurze Notizen dokumentiert."
+        summary="Wie findet ein Algorithmus den kürzesten Weg? Wann konvergiert eine Reihe? Meine Notizen und Übungen aus dem zweiten Semester reichen von Graphen und Analysis bis zur eigenen Prompt-Bibliothek."
       />
       <StudyModules phase="semester-2" />
       <StoryPagination actions={[
         { href: '/karriere/semester-1', label: 'Theorie-Semester 1', ghost: true },
         { href: '/karriere', label: 'Alle Studienphasen' },
+        { href: '/karriere/semester-3', label: 'Theorie-Semester 3' },
       ]} />
     </section>
   );

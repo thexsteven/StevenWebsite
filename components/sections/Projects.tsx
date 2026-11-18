@@ -30,8 +30,8 @@ export function Projects() {
       <SectionHead
         kicker="Projekte"
         titleId="projects-title"
-        title="Woran ich gerade baue."
-        intro="Eine kuratierte Auswahl – ergänzt um Live-Daten direkt aus GitHub: Sterne, Sprachverteilung und der letzte Commit."
+        title="Projekte aus Studium und Freizeit"
+        intro="Lerntrainer für meine Klausuren, Webanwendungen für den Alltag und gemeinsame Arbeiten aus dem Studium. Zu den Projekten findest du die verfügbaren Demos und den öffentlichen Quellcode."
       />
 
       <Suspense fallback={<ProjectGridSkeleton count={3} featuredCount={1} />}>

@@ -1,0 +1,16 @@
+{
+  "slug": "web-eng-2",
+  "title": "Web Engineering 2",
+  "tagline": "Meine Programmierübungen aus dem gleichnamigen DHBW-Modul.",
+  "description": "Zur Übungssammlung gehören eine Produktsuche, ein Explorer für die Star-Wars-API und eine HTTP-API mit Node.js. An diesen Beispielen übe ich, wie eine React-Oberfläche Daten abruft und darstellt.",
+  "repo": "thexsteven/web-eng-2",
+  "liveUrl": null,
+  "screenshot": null,
+  "techStack": [
+    "React",
+    "Node.js",
+    "Vite"
+  ],
+  "featured": false,
+  "order": 54
+}

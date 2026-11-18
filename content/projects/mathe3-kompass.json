@@ -1,0 +1,16 @@
+{
+  "slug": "mathe3-kompass",
+  "title": "Mathe3 Kompass",
+  "tagline": "Ein interaktives Skript für mehrdimensionale Differentialrechnung.",
+  "description": "Wie steil steigt eine Fläche in einer bestimmten Richtung an? Im Kompass helfen Visualisierungen und Aufgaben, Gradienten und Richtungsableitungen zu verstehen. Ein Formelblatt bündelt die Rechenregeln zum Nachschlagen.",
+  "repo": "thexsteven/mathe3-kompass",
+  "liveUrl": "https://mathe3-kompass.vercel.app",
+  "screenshot": "/images/projects/mathe3-kompass.png",
+  "techStack": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "featured": false,
+  "order": 51
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "netzwerk-spielwiese",
+  "title": "Netzwerk-Spielwiese",
+  "tagline": "Den Weg eines Datenpakets durch das Heimnetz verfolgen.",
+  "description": "Drei Missionen zeigen, welche Rolle Access Point, Switch, Router und Repeater spielen. Wer den Internetanschluss abschaltet, kann Schritt für Schritt beobachten, warum das Handy den lokalen Drucker weiterhin erreicht.",
+  "repo": "thexsteven/netzwerk-spielwiese",
+  "liveUrl": "https://netzwerk-spielwiese.vercel.app",
+  "screenshot": "/images/projects/netzwerk-spielwiese.png",
+  "techStack": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "featured": false,
+  "order": 52
+}

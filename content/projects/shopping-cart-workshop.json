@@ -1,0 +1,16 @@
+{
+  "slug": "shopping-cart-workshop",
+  "title": "Shopping Cart Workshop",
+  "tagline": "Softwareentwurf für den Warenkorb eines Selbstbedienungskiosks.",
+  "description": "Was passiert mit dem Warenkorb, wenn die Küche eine Bestellung nicht bestätigt? Für diesen Entwurf habe ich das Hinzufügen von Artikeln und das Bestellen modelliert. Die Anforderungen auf Deutsch und Englisch lassen sich bis zu den Abläufen, Zuständen und Fehlerfällen in den UML-Diagrammen verfolgen.",
+  "repo": null,
+  "liveUrl": null,
+  "screenshot": null,
+  "techStack": [
+    "PlantUML",
+    "UML",
+    "Requirements Engineering"
+  ],
+  "featured": false,
+  "order": 220
+}

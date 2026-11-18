@@ -8,7 +8,7 @@ import { Projects } from '@/components/sections/Projects';
 export const metadata: Metadata = {
   title: 'Projekte | Steven',
   description:
-    'Alle Projekte von Steven Braun – Lern-Trainer, Datenanalyse, Web-Apps. Kuratiert und mit Live-Daten aus der GitHub-API.',
+    'Stevens Lerntrainer, Webanwendungen und Studienprojekte mit Einblicken in die Umsetzung, öffentlichen Repositories und Live-Demos.',
 };
 
 export default function ProjektePage() {

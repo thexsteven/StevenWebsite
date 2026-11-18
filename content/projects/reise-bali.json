@@ -1,0 +1,16 @@
+{
+  "slug": "reise-bali",
+  "title": "Reisebudget für Indonesien",
+  "tagline": "Reisevarianten für Bali und die Nachbarinseln durchrechnen.",
+  "description": "Das Dashboard stellt die geschätzten Kosten verschiedener Reiserouten gegenüber. Eine Zeitleiste zeigt, wann welche Buchungen anstehen. Die zugrunde liegenden Recherchequellen lassen sich direkt nachschlagen.",
+  "repo": "thexsteven/reise-bali",
+  "liveUrl": "https://reise-bali.vercel.app",
+  "screenshot": null,
+  "techStack": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "featured": false,
+  "order": 81
+}

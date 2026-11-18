@@ -7,6 +7,7 @@ const routes = [
   '/karriere/klausurvorbereitung-winter-2026',
   '/karriere/semester-1',
   '/karriere/semester-2',
+  '/karriere/semester-3',
   '/karriere/praxis-1',
   '/sport',
   '/motivation',

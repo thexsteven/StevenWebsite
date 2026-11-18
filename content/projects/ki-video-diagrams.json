@@ -1,0 +1,17 @@
+{
+  "slug": "ki-video-diagrams",
+  "title": "Diagramme für KI-Erklärvideos",
+  "tagline": "Vom Videothema zum bearbeitbaren Excalidraw-Diagramm.",
+  "description": "Für meine Erklärvideos beschreibe ich ein Thema und beantworte Rückfragen im Browser. Mit Claude Code erzeugt das Werkzeug daraus ein Whiteboard-Diagramm, das ich in Excalidraw weiterbearbeiten oder als PNG ins Video einblenden kann.",
+  "repo": "thexsteven/ki-video-diagrams",
+  "liveUrl": null,
+  "screenshot": null,
+  "techStack": [
+    "JavaScript",
+    "Node.js",
+    "Express",
+    "Excalidraw"
+  ],
+  "featured": false,
+  "order": 70
+}

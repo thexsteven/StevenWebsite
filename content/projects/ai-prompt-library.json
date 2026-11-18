@@ -5,13 +5,13 @@
   "description": "Eine Anwendung zum Sammeln und Verschlagworten von KI-Prompts, entstanden als Prüfungsleistung in Backendentwicklung. Das Backend läuft mit FastAPI und SQLAlchemy inklusive Passwort-Hashing über bcrypt, das Frontend bewusst mit Vanilla JavaScript – ohne Framework, um die Schnittstelle wirklich zu verstehen.",
   "repo": "thexsteven/ai-prompt-library",
   "liveUrl": null,
-  "screenshot": "/images/projects/ai-prompt-library.png",
+  "screenshot": "/images/projects/ai-prompt-library.jpg",
   "techStack": [
     "Python",
     "FastAPI",
     "SQLAlchemy",
     "Vanilla JS"
   ],
-  "featured": false,
-  "order": 40
+  "featured": true,
+  "order": 20
 }

@@ -1,0 +1,16 @@
+{
+  "slug": "ai-token-prices",
+  "title": "AI-Token-Kostenrechner",
+  "tagline": "Token verstehen, Kosten berechnen und KI-Modelle vergleichen.",
+  "description": "Ein interaktives Tool für die Kosten von KI-Anwendungen. Berechnet aus Input- und Output-Tokens, monatlichen Requests und Cache-Anteil die geschätzten Monatskosten in Dollar und Euro. Vergleicht dieselbe Nutzung bei Modellen von OpenAI, Anthropic und Google und erklärt die Grundlagen der Token-Abrechnung.",
+  "repo": "thexsteven/ai-token-prices",
+  "liveUrl": "https://ai-token-prices-chi.vercel.app",
+  "screenshot": "/images/projects/ai-token-prices.jpg",
+  "techStack": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "featured": true,
+  "order": 30
+}
